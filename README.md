@@ -6,10 +6,10 @@ Ein gestyltes Bootstrap-5-Redesign der [Feelochamp](https://einseitensprung.at/c
 
 | Seite | GitHub Pages (öffentlich) | Claude-Artifact-Preview |
 |---|---|---|
-| Startseite / Login | **[einseitensprung.github.io/feelochamp](https://einseitensprung.github.io/feelochamp/)** | [Preview ansehen](https://claude.ai/code/artifact/37760093-ef79-47f2-8f58-d1f4152b59b4) |
-| Spiele (Matchday-Tipps) | **[einseitensprung.github.io/feelochamp/spiele.html](https://einseitensprung.github.io/feelochamp/spiele.html)** | [Preview ansehen](https://claude.ai/code/artifact/6f9f5e88-003d-46ad-a0ec-49276b67a568) |
-| 8 Fix Aufsteiger | **[einseitensprung.github.io/feelochamp/aufsteiger.html](https://einseitensprung.github.io/feelochamp/aufsteiger.html)** | – |
-| Start-Dashboard (nach Login) | **[einseitensprung.github.io/feelochamp/start.html](https://einseitensprung.github.io/feelochamp/start.html)** | – |
+| Startseite / Login | **[einseitensprung.github.io/feelochamp_nl](https://einseitensprung.github.io/feelochamp_nl/)** | [Preview ansehen](https://claude.ai/code/artifact/37760093-ef79-47f2-8f58-d1f4152b59b4) |
+| Spiele (Matchday-Tipps) | **[einseitensprung.github.io/feelochamp_nl/spiele.html](https://einseitensprung.github.io/feelochamp_nl/spiele.html)** | [Preview ansehen](https://claude.ai/code/artifact/6f9f5e88-003d-46ad-a0ec-49276b67a568) |
+| 8 Fix Aufsteiger | **[einseitensprung.github.io/feelochamp_nl/aufsteiger.html](https://einseitensprung.github.io/feelochamp_nl/aufsteiger.html)** | – |
+| Start-Dashboard (nach Login) | **[einseitensprung.github.io/feelochamp_nl/start.html](https://einseitensprung.github.io/feelochamp_nl/start.html)** | – |
 
 Die GitHub-Pages-Links sind die dauerhafte, öffentliche Vorschau (direkt aus diesem Repo deployed). Die Claude-Artifact-Links sind nur mit diesem Account aufrufbar. Alternativ lassen sich `index.html`, `spiele.html`, `aufsteiger.html` und `start.html` auch direkt lokal im Browser öffnen — sie laden Bootstrap und die gemeinsamen Styles aus dem `assets/`-Ordner, der dafür einfach neben den HTML-Dateien liegen bleiben muss.
 
