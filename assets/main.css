@@ -193,7 +193,7 @@ body.page-home .navbar-feelo .nav-link{ font-size:.86rem; padding:.5rem .9rem !i
     radial-gradient(ellipse 950px 720px at 88% -4%, rgba(45,125,216,0.30), transparent 58%),
     radial-gradient(ellipse 1300px 800px at 50% 118%, rgba(91,194,252,0.16), transparent 62%),
     url("pattern.svg"),
-    linear-gradient(180deg, #10141d 0%, #101010 45%, #131313 100%);
+    linear-gradient(180deg, #2d3750 0%, #29324a 100%);
   background-size: auto, auto, auto, 640px 320px, auto;
   background-position: 0 0, 0 0, 0 0, center top, 0 0;
 }
@@ -659,7 +659,7 @@ body.page-default .programme-head h2{
     radial-gradient(ellipse 900px 460px at 15% -10%, rgba(91,194,252,0.28), transparent 60%),
     radial-gradient(ellipse 800px 500px at 100% -10%, rgba(45,125,216,0.24), transparent 58%),
     url("pattern.svg"),
-    linear-gradient(180deg, #10141d 0%, #101010 60%, #131313 100%);
+    linear-gradient(180deg, #2d3750 0%, #29324a 100%);
   background-size: auto, auto, 640px 320px, auto;
   background-position: 0 0, 0 0, center top, 0 0;
 }
