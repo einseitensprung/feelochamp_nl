@@ -192,11 +192,10 @@ body.page-home .navbar-feelo .nav-link{ font-size:.86rem; padding:.5rem .9rem !i
     radial-gradient(ellipse 1100px 680px at 18% 6%, rgba(91,194,252,0.32), transparent 60%),
     radial-gradient(ellipse 950px 720px at 88% -4%, rgba(45,125,216,0.30), transparent 58%),
     radial-gradient(ellipse 1300px 800px at 50% 118%, rgba(91,194,252,0.16), transparent 62%),
-    repeating-linear-gradient(45deg, transparent 0 138px, rgba(255,255,255,0.05) 138px 140px),
-    repeating-linear-gradient(-45deg, transparent 0 138px, rgba(255,255,255,0.05) 138px 140px),
-    radial-gradient(circle at center, rgba(255,255,255,0.045) 0 58px, transparent 59px),
+    url("pattern.svg"),
     linear-gradient(180deg, #10141d 0%, #101010 45%, #131313 100%);
-  background-size: auto, auto, auto, auto, auto, 140px 140px, auto;
+  background-size: auto, auto, auto, 640px 320px, auto;
+  background-position: 0 0, 0 0, 0 0, center top, 0 0;
 }
 .hero-rays{
   position:absolute; inset:0; z-index:0; pointer-events:none;
@@ -659,11 +658,10 @@ body.page-default .programme-head h2{
   background-image:
     radial-gradient(ellipse 900px 460px at 15% -10%, rgba(91,194,252,0.28), transparent 60%),
     radial-gradient(ellipse 800px 500px at 100% -10%, rgba(45,125,216,0.24), transparent 58%),
-    repeating-linear-gradient(45deg, transparent 0 138px, rgba(255,255,255,0.05) 138px 140px),
-    repeating-linear-gradient(-45deg, transparent 0 138px, rgba(255,255,255,0.05) 138px 140px),
-    radial-gradient(circle at center, rgba(255,255,255,0.045) 0 58px, transparent 59px),
+    url("pattern.svg"),
     linear-gradient(180deg, #10141d 0%, #101010 60%, #131313 100%);
-  background-size: auto, auto, auto, auto, 140px 140px, auto;
+  background-size: auto, auto, 640px 320px, auto;
+  background-position: 0 0, 0 0, center top, 0 0;
 }
 .page-header-rays{ position:absolute; inset:0; z-index:0; pointer-events:none; opacity:.5; }
 .page-header-rays .twinkle{ animation: twinkle 3.4s ease-in-out infinite; }

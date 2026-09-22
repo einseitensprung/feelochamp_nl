@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <!-- Nahtlos kachelbares Rautenraster mit geteilten Kreisen (eigene Grafik, angelehnt an den
+       Nations-League-Footer). Nur halbtransparente Hell-/Dunkel-Overlays, damit die Kachel auf
+       jedem Navy-Hintergrund funktioniert. Linker und rechter Rand teilen sich die Farben. -->
+  <!-- Rauten um (200,200) und (600,200), je in obere/untere Hälfte geteilt -->
+  <path d="M0 200 200 0 400 200Z" fill="#fff" fill-opacity=".05"/>
+  <path d="M0 200 400 200 200 400Z" fill="#000" fill-opacity=".12"/>
+  <path d="M400 200 600 0 800 200Z" fill="#000" fill-opacity=".18"/>
+  <path d="M400 200 800 200 600 400Z" fill="#fff" fill-opacity=".08"/>
+  <!-- Rauten um (400,0)/(400,400) und die Randrauten um x=0/800 -->
+  <path d="M200 0 600 0 400 200Z" fill="#fff" fill-opacity=".1"/>
+  <path d="M200 400 400 200 600 400Z" fill="#000" fill-opacity=".08"/>
+  <path d="M0 0 200 0 0 200Z M600 0 800 0 800 200Z" fill="#000" fill-opacity=".22"/>
+  <path d="M0 400 0 200 200 400Z M800 400 800 200 600 400Z" fill="#fff" fill-opacity=".03"/>
+  <!-- Kreise (r=100) in den Rautenmitten, horizontal halbiert -->
+  <path d="M100 200A100 100 0 0 1 300 200Z" fill="#fff" fill-opacity=".06"/>
+  <path d="M100 200A100 100 0 0 0 300 200Z" fill="#fff" fill-opacity=".02"/>
+  <path d="M500 200A100 100 0 0 1 700 200Z" fill="#fff" fill-opacity=".1"/>
+  <path d="M500 200A100 100 0 0 0 700 200Z" fill="#000" fill-opacity=".1"/>
+  <path d="M300 0A100 100 0 0 0 500 0Z" fill="#000" fill-opacity=".16"/>
+  <path d="M300 400A100 100 0 0 1 500 400Z" fill="#fff" fill-opacity=".05"/>
+  <path d="M-100 0A100 100 0 0 0 100 0Z M700 0A100 100 0 0 0 900 0Z" fill="#fff" fill-opacity=".04"/>
+  <path d="M-100 400A100 100 0 0 1 100 400Z M700 400A100 100 0 0 1 900 400Z" fill="#000" fill-opacity=".2"/>
+</svg>
