@@ -2,7 +2,7 @@
 <html lang="de">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feelochamp – Playoffs & Turnierbaum</title>
+<title>Feelochamp – Playoffs & Final Four</title>
 <link rel="stylesheet" href="assets/fonts.css">
 
 <link rel="stylesheet" href="assets/bootstrap.min.css">
@@ -92,18 +92,18 @@
   <div class="container page-header-content">
     <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
       <div class="hero-panel">
-        <span class="eyebrow d-block mb-1">K.o.-Phase &middot; FeeloChamp</span>
-        <h1>Playoffs &amp; <span class="accent">Turnierbaum</span></h1>
+        <span class="eyebrow d-block mb-1">Nach der Gruppenphase &middot; UEFA Nations League 2026/27</span>
+        <h1>Playoffs &amp; <span class="accent">Final Four</span></h1>
       </div>
       <div class="dropdown md-select">
         <button class="btn dropdown-toggle" type="button" id="quickNav" data-bs-toggle="dropdown" aria-expanded="false">Quick Nav</button>
         <ul class="dropdown-menu dropdown-menu-feelo dropdown-menu-end" aria-labelledby="quickNav">
-          <li><a class="dropdown-item qn" href="#fixaufsteiger">8 Fix-Aufsteiger</a></li>
-          <li><a class="dropdown-item qn" href="#playoffs">Play-offs</a></li>
-          <li><a class="dropdown-item qn" href="#achtelfinale">Achtelfinale</a></li>
           <li><a class="dropdown-item qn" href="#viertelfinale">Viertelfinale</a></li>
-          <li><a class="dropdown-item qn" href="#halbfinale">Halbfinale</a></li>
+          <li><a class="dropdown-item qn" href="#finalfour">Halbfinale</a></li>
           <li><a class="dropdown-item qn" href="#finale">Finale</a></li>
+          <li><a class="dropdown-item qn" href="#relegation-ab">Relegation A/B</a></li>
+          <li><a class="dropdown-item qn" href="#relegation-bc">Relegation B/C</a></li>
+          <li><a class="dropdown-item qn" href="#direkt">Auf- &amp; Absteiger</a></li>
         </ul>
       </div>
     </div>
@@ -114,55 +114,55 @@
 <main>
   <div class="container">
 
-    <section class="ko-section" id="fixaufsteiger">
-      <div class="ko-head">
-        <h2>Ligaphase &ndash; 8 Fix-Aufsteiger</h2>
-        <span class="ko-sub">Platz 1&ndash;8 &middot; direkt im Achtelfinale</span>
-      </div>
-      <div class="content-card" style="padding:1rem 1.1rem;">
-        <div class="fix-wrap" id="fixWrap"><!-- injected --></div>
-      </div>
-    </section>
-
-    <section class="ko-section" id="playoffs">
-      <div class="ko-head">
-        <h2>Play-offs</h2>
-        <span class="ko-sub">Platz 9&ndash;24 der Ligaphase &middot; Hin- &amp; R&uuml;ckspiel &middot; 17.&ndash;25.02.</span>
-      </div>
-      <div class="tie-grid" id="poGrid"><!-- injected --></div>
-    </section>
-
-    <section class="ko-section" id="achtelfinale">
-      <div class="ko-head">
-        <h2>Achtelfinale</h2>
-        <span class="ko-sub">8 Fix-Aufsteiger vs. 8 Play-off-Sieger &middot; 04.&ndash;12.03.</span>
-      </div>
-      <div class="tie-grid" id="r16Grid"><!-- injected --></div>
-    </section>
-
     <section class="ko-section" id="viertelfinale">
       <div class="ko-head">
-        <h2>Viertelfinale</h2>
-        <span class="ko-sub">08.&ndash;16.04.</span>
+        <h2>Viertelfinale Liga A</h2>
+        <span class="ko-sub">Gruppensieger &amp; -zweite der Liga A &middot; Hin- &amp; R&uuml;ckspiel &middot; 25.03. &amp; 30.03.2027</span>
       </div>
-      <div class="tie-grid cols-2" id="qfGrid"><!-- injected --></div>
+      <div class="tie-grid" id="qfGrid"><!-- injected --></div>
     </section>
 
-    <section class="ko-section" id="halbfinale">
+    <section class="ko-section" id="finalfour">
       <div class="ko-head">
-        <h2>Halbfinale</h2>
-        <span class="ko-sub">29.04.&ndash;08.05.</span>
+        <h2>Final Four &ndash; Halbfinale</h2>
+        <span class="ko-sub">Die 4 VF-Sieger &middot; ein Spiel &middot; 09. &amp; 10.06.2027 &middot; Gastgeber: einer der vier Teilnehmer</span>
       </div>
       <div class="tie-grid cols-2" id="sfGrid"><!-- injected --></div>
     </section>
 
     <section class="ko-section" id="finale">
       <div class="ko-head">
-        <h2>Finale</h2>
-        <span class="ko-sub">Gruppe X &middot; 31.05. &middot; ein Spiel</span>
+        <h2>Finale &amp; Spiel um Platz 3</h2>
+        <span class="ko-sub">13.06.2027 &middot; ein Spiel</span>
       </div>
-      <div class="tie-grid cols-1" id="finGrid"><!-- injected --></div>
+      <div class="tie-grid cols-2" id="finGrid"><!-- injected --></div>
       <div class="champion-card" id="championCard"><!-- injected --></div>
+    </section>
+
+    <section class="ko-section" id="relegation-ab">
+      <div class="ko-head">
+        <h2>Relegation Liga A / B</h2>
+        <span class="ko-sub">2 schlechtere Dritte + 2 bessere Vierte der Liga A vs. 4 Gruppenzweite der Liga B &middot; 25.03. &amp; 30.03.2027</span>
+      </div>
+      <div class="tie-grid" id="relABGrid"><!-- injected --></div>
+    </section>
+
+    <section class="ko-section" id="relegation-bc">
+      <div class="ko-head">
+        <h2>Relegation Liga B / C</h2>
+        <span class="ko-sub">4 Gruppenvierte der Liga B vs. 4 Gruppenzweite der Liga C &middot; 25.03. &amp; 30.03.2027</span>
+      </div>
+      <div class="tie-grid" id="relBCGrid"><!-- injected --></div>
+    </section>
+
+    <section class="ko-section" id="direkt">
+      <div class="ko-head">
+        <h2>Direkte Auf- &amp; Absteiger</h2>
+        <span class="ko-sub">F&uuml;r die Nations League 2028/29</span>
+      </div>
+      <div class="content-card" style="padding:1rem 1.1rem;">
+        <div id="directWrap"><!-- injected --></div>
+      </div>
     </section>
 
   </div>
@@ -261,77 +261,75 @@
 <script src="assets/sidetabs.js"></script>
 
 <script>
-  // Turnierbaum – Aufbau von einseitensprung.at/cl/uebersicht.asp.
-  // Teams/Seeds aus der Ligaphase-Tabelle (tabelle.html), Ergebnisse = Demodaten.
-  // Gruppen-Buchstaben wie im Original: B–I Play-offs, J–Q Achtelfinale,
-  // R–U Viertelfinale, V–W Halbfinale, X Finale.
-  var CLUB = {
-    "AEK Athen":["AEK","#c9a227"], "Arsenal":["ARS","#d71920"], "Aston Villa":["AVL","#7a1f3d"],
-    "Atletico":["ATM","#d71920"], "Barcelona":["BAR","#a50044"], "Bayern":["FCB","#dc052d"],
-    "Bodö/Glimt":["BOD","#f4c300"], "Club Brügge":["CLB","#123a8f"], "Como":["COM","#003c7d"],
-    "Dortmund":["BVB","#f4d117"], "Fenerbahce":["FEN","#14226b"], "Feyenoord":["FEY","#c8102e"],
-    "Galatasaray":["GAL","#a90432"], "Inter":["INT","#1c2b6b"], "LASK":["LSK","#1a1a1a"],
-    "Leipzig":["RBL","#d0011b"], "Lens":["LEN","#ffcc00"], "Lille":["LIL","#c8102e"],
-    "Liverpool":["LIV","#c8102e"], "Man City":["MCI","#6cabdd"], "Man Utd":["MUN","#da291c"],
-    "Napoli":["NAP","#1c6dd0"], "Porto":["POR","#1f4e8c"], "PSG":["PSG","#0a2240"],
-    "PSV":["PSV","#d2122e"], "Real Betis":["BET","#0b6a3d"], "Real Madrid":["RMA","#1b3a6b"],
-    "Roma":["ROM","#8e1b3a"], "Sabah":["SAB","#d6336c"], "Shakhtar":["SHK","#e2711d"],
-    "Slavia Prag":["SLA","#c8102e"], "Slovan Bratislava":["SLB","#1e88c7"], "Sporting":["SCP","#007a3d"],
-    "Stuttgart":["VFB","#e30613"], "Viking":["VIK","#b71c2b"], "Villareal":["VIL","#f2c14e"]
-  };
+  // K.o.-Phase der UEFA Nations League 2026/27 nach der Gruppenphase
+  // (Modus laut de.wikipedia.org/wiki/UEFA_Nations_League_2026/27):
+  // - Viertelfinale Liga A: Gruppensieger vs. -zweite, Hin & Rück (25./30.03.2027)
+  // - Final Four: Halbfinale 09./10.06., Spiel um Platz 3 & Finale 13.06.2027
+  // - Relegation A/B und B/C parallel zum Viertelfinale, Hin & Rück
+  // - Direkt: 2 schlechtere Vierte der Liga A steigen ab, Gruppensieger
+  //   der Ligen B, C und D steigen auf.
+  // Paarungen stehen erst nach der Gruppenphase fest → Platzhalter-Slots.
 
-  // Platz 1–8 der Ligaphase → direkt im Achtelfinale
-  var FIX = ["Bayern","Arsenal","Barcelona","Real Madrid","Liverpool","PSG","Inter","Napoli"];
+  // Liga-Farben wie auf der Wikipedia-Karte
+  var LIGA = { A:"#e71827", B:"#2b8ac8", C:"#31aa61", D:"#f8c618" };
 
-  // Zweispiel-Paarung: [Gruppe, Datum, TeamA (Hinspiel daheim), TeamB, "Hin H:A", "Rück H:A", Sieger 0|1, Zusatz]
-  // Aggregat: A = Hin.heim + Rück.gast, B = Hin.gast + Rück.heim
-  var PLAYOFFS = [
-    ["B","17.02. & 25.02.","Como","Man City","0:1","3:0",1,""],
-    ["C","18.02. & 24.02.","Lille","Atletico","2:1","1:1",0,""],
-    ["D","17.02. & 25.02.","Fenerbahce","Feyenoord","1:2","2:0",1,""],
-    ["E","18.02. & 24.02.","PSV","Dortmund","3:1","2:1",0,""],
-    ["F","17.02. & 25.02.","Roma","Leipzig","0:0","2:1",1,""],
-    ["G","18.02. & 24.02.","Porto","Sporting","1:1","3:1",1,""],
-    ["H","18.02. & 24.02.","Galatasaray","Club Brügge","2:0","1:1",0,""],
-    ["I","17.02. & 25.02.","Villareal","Aston Villa","1:2","2:2",1,""]
-  ];
+  // Slot = Platzhalter für ein noch nicht feststehendes Team
+  function slot(code, liga, label, note){ return { code:code, liga:liga, label:label, note:note || '' }; }
+  var S1A = slot("1A","A","Gruppensieger Liga A");
+  var S2A = slot("2A","A","Gruppenzweiter Liga A");
 
-  var R16 = [
-    ["J","5.3. & 11.3.","Aston Villa","Bayern","1:2","3:0",1,""],
-    ["K","5.3. & 11.3.","Galatasaray","Arsenal","1:1","2:0",1,""],
-    ["L","4.3. & 12.3.","Sporting","Barcelona","2:1","4:1",1,""],
-    ["M","5.3. & 11.3.","Leipzig","Real Madrid","0:0","1:2",0,""],
-    ["N","4.3. & 12.3.","PSV","Liverpool","1:3","2:1",1,""],
-    ["O","5.3. & 11.3.","Feyenoord","PSG","2:2","3:1",1,""],
-    ["P","4.3. & 12.3.","Lille","Inter","1:0","3:1",1,""],
-    ["Q","4.3. & 12.3.","Man City","Napoli","2:1","1:1",0,""]
-  ];
-
+  // Zweispiel-Paarung: [Titel, Datum, Slot A (Hinspiel daheim), Slot B]
   var QF = [
-    ["R","8.4. & 16.4.","Man City","Bayern","1:1","3:1",1,""],
-    ["S","8.4. & 16.4.","Inter","Arsenal","0:1","2:2",1,""],
-    ["T","9.4. & 15.4.","Barcelona","PSG","2:2","3:1",1,""],
-    ["U","9.4. & 15.4.","Leipzig","Liverpool","1:1","2:0",1,""]
+    ["VF 1","25.03. & 30.03.", S2A, S1A],
+    ["VF 2","25.03. & 30.03.", S2A, S1A],
+    ["VF 3","25.03. & 30.03.", S2A, S1A],
+    ["VF 4","25.03. & 30.03.", S2A, S1A]
   ];
 
+  var S2B = slot("2B","B","Gruppenzweiter Liga B");
+  var REL_AB = [
+    ["A/B 1","25.03. & 30.03.", S2B, slot("3A","A","Dritter Liga A","Rang 3 der Gruppendritten")],
+    ["A/B 2","25.03. & 30.03.", S2B, slot("3A","A","Dritter Liga A","Rang 4 der Gruppendritten")],
+    ["A/B 3","25.03. & 30.03.", S2B, slot("4A","A","Vierter Liga A","Rang 1 der Gruppenvierten")],
+    ["A/B 4","25.03. & 30.03.", S2B, slot("4A","A","Vierter Liga A","Rang 2 der Gruppenvierten")]
+  ];
+
+  var S2C = slot("2C","C","Gruppenzweiter Liga C");
+  var S4B = slot("4B","B","Gruppenvierter Liga B");
+  var REL_BC = [
+    ["B/C 1","25.03. & 30.03.", S2C, S4B],
+    ["B/C 2","25.03. & 30.03.", S2C, S4B],
+    ["B/C 3","25.03. & 30.03.", S2C, S4B],
+    ["B/C 4","25.03. & 30.03.", S2C, S4B]
+  ];
+
+  function vfWinner(n){ return slot("VF","A","Sieger VF " + n); }
+  function sfResult(n, won){ return slot("HF","A",(won ? "Sieger" : "Verlierer") + " HF " + n); }
+
+  // Einzelspiel: [Titel, Datum, Slot A, Slot B]
   var SF = [
-    ["V","29.4. & 8.5.","Liverpool","Bayern","1:2","1:1",1,""],
-    ["W","30.4. & 7.5.","PSG","Arsenal","2:1","1:1",0,""]
+    ["Halbfinale 1","09.06.2027", vfWinner(1), vfWinner(2)],
+    ["Halbfinale 2","10.06.2027", vfWinner(3), vfWinner(4)]
+  ];
+  var FINALS = [
+    ["Finale","13.06.2027", sfResult(1,true), sfResult(2,true)],
+    ["Spiel um Platz 3","13.06.2027", sfResult(1,false), sfResult(2,false)]
   ];
 
-  // Finale: ein Spiel
-  var FINAL = ["X","31.05.","Bayern","PSG","2:1",0];
+  // Direkte Auf-/Absteiger: [Überschrift, Slots]
+  function groupWinners(liga, groups){
+    return groups.map(function(g){ return slot(g, liga, "Sieger Gruppe " + g); });
+  }
+  var DIRECT = [
+    ["Absteiger Liga A &rarr; B", [
+      slot("4A","A","Vierter Liga A","Rang 3 der Gruppenvierten"),
+      slot("4A","A","Vierter Liga A","Rang 4 der Gruppenvierten")
+    ]],
+    ["Aufsteiger Liga B &rarr; A", groupWinners("B", ["B1","B2","B3","B4"])],
+    ["Aufsteiger Liga C &rarr; B", groupWinners("C", ["C1","C2","C3","C4"])],
+    ["Aufsteiger Liga D &rarr; C", groupWinners("D", ["D1","D2"])]
+  ];
 
-  // Auslosung noch offen: alle Teamnamen als "TBD" anzeigen (graue Badges).
-  // Ergebnisse, Aggregat und Sieger-Markierung bleiben als Layout-Vorschau erhalten.
-  // Auf false setzen, um die echten Demo-Teams zu zeigen.
-  var TEAMS_TBD = true;
-  function dispName(n){ return TEAMS_TBD ? 'TBD' : n; }
-
-  // Noch keine Spiele ausgetragen: alle Ergebnisse als "-" zeigen,
-  // keine Aggregat-Zahlen, keine Sieger-Markierung.
-  // Auf false setzen, um die Demo-Ergebnisse zu zeigen.
-  var RESULTS_TBD = true;
   var DASH = '–';
 
   function crestTextColor(hex){
@@ -339,70 +337,49 @@
     var r = parseInt(c.substring(0,2),16), g = parseInt(c.substring(2,4),16), b = parseInt(c.substring(4,6),16);
     return (0.299*r + 0.587*g + 0.114*b) / 255 > 0.62 ? '#111' : '#fff';
   }
-  function crest(name){
-    var info = TEAMS_TBD ? ["?", "#9aa7bd"] : (CLUB[name] || ["?", "#5a6c8c"]);
-    return '<span class="crest" style="background:'+info[1]+'; color:'+crestTextColor(info[1])+';">'+info[0]+'</span>';
+  function crest(s){
+    var bg = LIGA[s.liga] || "#9aa7bd";
+    return '<span class="crest" style="background:'+bg+'; color:'+crestTextColor(bg)+';">'+s.code+'</span>';
   }
-  function parseScore(s){ var p = s.split(':'); return [parseInt(p[0],10), parseInt(p[1],10)]; }
+  function teamRow(s){
+    return '<div class="tie-team">' + crest(s) +
+      '<span class="team-name">' + s.label + (s.note ? '<small class="slot-note">' + s.note + '</small>' : '') + '</span>' +
+      '<span class="tie-agg">' + DASH + '</span></div>';
+  }
 
-  function tieCard(t){
-    var grp = t[0], date = t[1], a = t[2], b = t[3], leg1 = t[4], leg2 = t[5], win = t[6], extra = t[7];
-    var l1 = parseScore(leg1), l2 = parseScore(leg2);
-    var aggA = RESULTS_TBD ? DASH : (l1[0] + l2[1]);
-    var aggB = RESULTS_TBD ? DASH : (l1[1] + l2[0]);
-    var clsA = RESULTS_TBD ? '' : (win === 0 ? 'win' : 'out');
-    var clsB = RESULTS_TBD ? '' : (win === 1 ? 'win' : 'out');
-    var legDisp = RESULTS_TBD ? (DASH + ':' + DASH) : null;
-    var rowA = '<div class="tie-team ' + clsA + '">' + crest(a) +
-      '<span class="team-name">' + dispName(a) + '</span><span class="tie-agg">' + aggA + '</span></div>';
-    var rowB = '<div class="tie-team ' + clsB + '">' + crest(b) +
-      '<span class="team-name">' + dispName(b) + '</span><span class="tie-agg">' + aggB + '</span></div>';
+  function tieCard(t, twoLegs){
     return '<div class="tie">' +
-      '<div class="tie-head"><span class="tie-grp">Gruppe ' + grp + '</span><span class="tie-date">' + date + '</span></div>' +
-      '<div class="tie-body">' + rowA + rowB +
-        '<div class="tie-legs"><span>Hin ' + (legDisp || leg1) + '</span><span>R&uuml;ck ' + (legDisp || leg2) + '</span>' +
-        (!RESULTS_TBD && extra ? '<span class="pen">' + extra + '</span>' : '') + '</div>' +
+      '<div class="tie-head"><span class="tie-grp">' + t[0] + '</span><span class="tie-date">' + t[1] + '</span></div>' +
+      '<div class="tie-body">' + teamRow(t[2]) + teamRow(t[3]) +
+        (twoLegs ? '<div class="tie-legs"><span>Hin ' + DASH + ':' + DASH + '</span><span>R&uuml;ck ' + DASH + ':' + DASH + '</span></div>' : '') +
       '</div></div>';
   }
 
-  function renderTies(id, list){
-    document.getElementById(id).innerHTML = list.map(tieCard).join('');
+  function renderTies(id, list, twoLegs){
+    document.getElementById(id).innerHTML = list.map(function(t){ return tieCard(t, twoLegs); }).join('');
   }
 
-  function renderFix(){
-    document.getElementById('fixWrap').innerHTML = FIX.map(function(n){
-      return '<span class="fix-tag">' + crest(n) + dispName(n) + '</span>';
+  function renderDirect(){
+    document.getElementById('directWrap').innerHTML = DIRECT.map(function(d){
+      return '<div class="direct-group"><div class="direct-title">' + d[0] + '</div><div class="fix-wrap">' +
+        d[1].map(function(s){
+          return '<span class="fix-tag">' + crest(s) + s.label +
+            (s.note ? ' <small class="slot-note-inline">(' + s.note + ')</small>' : '') + '</span>';
+        }).join('') + '</div></div>';
     }).join('');
   }
 
-  function renderFinal(){
-    var grp = FINAL[0], date = FINAL[1], a = FINAL[2], b = FINAL[3], sc = FINAL[4], win = FINAL[5];
-    var s = parseScore(sc);
-    var scA = RESULTS_TBD ? DASH : s[0];
-    var scB = RESULTS_TBD ? DASH : s[1];
-    var clsA = RESULTS_TBD ? '' : (win === 0 ? 'win' : 'out');
-    var clsB = RESULTS_TBD ? '' : (win === 1 ? 'win' : 'out');
-    var rowA = '<div class="tie-team ' + clsA + '">' + crest(a) +
-      '<span class="team-name">' + dispName(a) + '</span><span class="tie-agg">' + scA + '</span></div>';
-    var rowB = '<div class="tie-team ' + clsB + '">' + crest(b) +
-      '<span class="team-name">' + dispName(b) + '</span><span class="tie-agg">' + scB + '</span></div>';
-    document.getElementById('finGrid').innerHTML =
-      '<div class="tie"><div class="tie-head"><span class="tie-grp">Gruppe ' + grp + '</span>' +
-      '<span class="tie-date">' + date + '</span></div><div class="tie-body">' + rowA + rowB + '</div></div>';
+  renderTies('qfGrid', QF, true);
+  renderTies('sfGrid', SF, false);
+  renderTies('finGrid', FINALS, false);
+  renderTies('relABGrid', REL_AB, true);
+  renderTies('relBCGrid', REL_BC, true);
+  renderDirect();
 
-    var champ = (RESULTS_TBD || TEAMS_TBD) ? 'TBD' : (win === 0 ? a : b);
-    document.getElementById('championCard').innerHTML =
-      crest(champ) +
-      '<div class="champ-label">FeeloChamp 2026/2027 &ndash; Sieger</div>' +
-      '<div class="champ-name">' + champ + '</div>';
-  }
-
-  renderFix();
-  renderTies('poGrid', PLAYOFFS);
-  renderTies('r16Grid', R16);
-  renderTies('qfGrid', QF);
-  renderTies('sfGrid', SF);
-  renderFinal();
+  document.getElementById('championCard').innerHTML =
+    '<span class="crest" style="background:#9aa7bd; color:#111;">?</span>' +
+    '<div class="champ-label">UEFA Nations League 2026/27 &ndash; Sieger</div>' +
+    '<div class="champ-name">TBD</div>';
 
   // Quick Nav: sanft zur Sektion scrollen
   document.querySelectorAll('a.qn').forEach(function(a){
