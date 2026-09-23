@@ -56,11 +56,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, .btn:focus-visible, 
 }
 
 /* ---------- Navbar ---------- */
+/* Hintergrund + Blur sitzen auf ::before statt auf der Navbar selbst:
+   backdrop-filter würde sonst zum Containing Block für das position:fixed
+   Offcanvas-Menü (Mobile) und es an die Navbar statt an den Viewport binden. */
 .navbar-feelo{
-  background: rgba(16,20,29,0.9);
+  --navbar-bg: rgba(16,20,29,0.9);
+  border-bottom: 1px solid var(--line);
+}
+.navbar-feelo::before{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background: var(--navbar-bg);
   backdrop-filter: blur(10px) saturate(140%);
   -webkit-backdrop-filter: blur(10px) saturate(140%);
-  border-bottom: 1px solid var(--line);
 }
 .navbar-feelo .navbar-brand{
   font-family:'Bebas Neue', sans-serif; font-size:1.5rem; letter-spacing:.06em;
@@ -109,18 +116,47 @@ a:focus-visible, button:focus-visible, input:focus-visible, .btn:focus-visible, 
 .navbar-feelo .navbar-toggler:focus-visible .navbar-toggler-icon{ background-color: var(--cyan); }
 
 /* geöffnet -> X: oberer + unterer Strich kreuzen sich, mittlerer blendet aus */
-.navbar-feelo .navbar-toggler[aria-expanded="true"]::before{
+/* Offcanvas setzt kein aria-expanded am Toggler -> Zustand per :has() am Menü ablesen */
+.navbar-feelo .navbar-toggler[aria-expanded="true"]::before,
+.navbar-feelo:has(#mainNav.showing, #mainNav.show:not(.hiding)) .navbar-toggler::before{
   transform: translateY(0) rotate(45deg);
 }
-.navbar-feelo .navbar-toggler[aria-expanded="true"]::after{
+.navbar-feelo .navbar-toggler[aria-expanded="true"]::after,
+.navbar-feelo:has(#mainNav.showing, #mainNav.show:not(.hiding)) .navbar-toggler::after{
   transform: translateY(0) rotate(-45deg);
 }
-.navbar-feelo .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
+.navbar-feelo .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon,
+.navbar-feelo:has(#mainNav.showing, #mainNav.show:not(.hiding)) .navbar-toggler .navbar-toggler-icon{
   opacity: 0; transform: scaleX(.2);
 }
 
+/* ---- Mobile: Menü fährt als Offcanvas von rechts rein ----
+   Das Panel liegt im Stacking-Context der sticky Navbar (z 1020), der Bootstrap-
+   Backdrop hängt aber an <body> (z 1040). Solange das Menü offen ist, hebt :has()
+   die Navbar deshalb über den Backdrop; der Toggler (jetzt X) bleibt über dem
+   Panel sichtbar und schliesst es wieder. */
+@media (max-width: 991.98px){
+  .navbar-feelo:has(#mainNav.showing, #mainNav.show){ z-index: 1045; }
+  .navbar-feelo .navbar-toggler{ z-index: 1046; }
+  .navbar-feelo #mainNav{
+    --bs-offcanvas-width: min(20rem, 85vw);
+    --bs-offcanvas-transition: transform .35s cubic-bezier(.4,.05,.2,1);
+    background: var(--ink-2);
+    border-left: 1px solid var(--line);
+    box-shadow: -18px 0 40px rgba(0,0,0,.45);
+  }
+  .navbar-feelo #mainNav .offcanvas-body{ padding: 4.5rem 1rem 1.5rem; }
+  .navbar-feelo #mainNav .nav-link.active-mark::after{ right: auto; width: 1.6rem; }
+}
+.offcanvas-backdrop.show{ opacity: .6; }
+/* Desktop: Offcanvas ist inline (navbar-expand-lg) -> wie früher .navbar-collapse
+   über die volle Breite ziehen, damit mx-auto die Links mittig setzt */
+@media (min-width: 992px){
+  .navbar-feelo #mainNav .offcanvas-body{ flex-grow: 1; align-items: center; }
+}
+
 /* Startseite verwendet einen minimal helleren/grösseren Navbar-Auftritt */
-body.page-home .navbar-feelo{ background: rgba(16,20,29,0.85); }
+body.page-home .navbar-feelo{ --navbar-bg: rgba(16,20,29,0.85); }
 body.page-home .navbar-feelo .navbar-brand{ font-size:1.55rem; }
 body.page-home .navbar-feelo .nav-link{ font-size:.86rem; padding:.5rem .9rem !important; }
 
@@ -163,17 +199,17 @@ body.page-home .navbar-feelo .nav-link{ font-size:.86rem; padding:.5rem .9rem !i
 /* Mobile: das User-Dropdown genau wie die anderen Nav-Dropdowns
    (inline aufklappen statt rechts überlagern) */
 @media (max-width: 991.98px){
-  .navbar-feelo .navbar-collapse > .dropdown{ width: 100%; }
-  .navbar-feelo .navbar-collapse > .dropdown .user-chip{
+  .navbar-feelo #mainNav .offcanvas-body > .dropdown{ width: 100%; }
+  .navbar-feelo #mainNav .offcanvas-body > .dropdown .user-chip{
     padding: .5rem .85rem;
     color: var(--slate); font-size: .85rem; font-weight: 600; letter-spacing: .02em;
   }
-  .navbar-feelo .navbar-collapse > .dropdown .user-chip:hover,
-  .navbar-feelo .navbar-collapse > .dropdown .user-chip.show{ color: var(--cyan-soft); }
-  .navbar-feelo .navbar-collapse > .dropdown .user-chip .user-avatar{
+  .navbar-feelo #mainNav .offcanvas-body > .dropdown .user-chip:hover,
+  .navbar-feelo #mainNav .offcanvas-body > .dropdown .user-chip.show{ color: var(--cyan-soft); }
+  .navbar-feelo #mainNav .offcanvas-body > .dropdown .user-chip .user-avatar{
     width: 1.45rem; height: 1.45rem; font-size: .56rem;
   }
-  .navbar-feelo .navbar-collapse > .dropdown .dropdown-menu{
+  .navbar-feelo #mainNav .offcanvas-body > .dropdown .dropdown-menu{
     position: static !important;
     inset: auto !important;
     transform: none !important;
