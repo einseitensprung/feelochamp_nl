@@ -1876,3 +1876,30 @@ body.page-preloader{ background: var(--ink); }
 @media (max-width: 575.98px){
   .team-select-panel{ left:.6rem; right:.6rem; }
 }
+
+/* ---------- Side-Tabs am rechten Fensterrand (assets/sidetabs.js) ----------
+   Nachbau der .side-links von einseitensprung.at, gespiegelt nach rechts:
+   vertikaler Text, beim Hover cyan und ein Stück weiter aus dem Rand gezogen. */
+.side-tabs{
+  position: fixed; right: 0; top: 50%; transform: translateY(-50%);
+  z-index: 1010; /* unter der sticky Navbar (1020) und dem Offcanvas */
+  display: flex; flex-direction: column; align-items: flex-end; gap: 2px;
+}
+.side-tabs a{
+  writing-mode: vertical-rl; text-orientation: mixed;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace; font-size: .78rem;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--white); background: var(--ink-2);
+  border: 1px solid var(--line); border-right: none;
+  border-radius: 8px 0 0 8px;
+  padding: 14px 7px;
+  transition: background .15s, color .15s, padding-right .15s, border-color .15s;
+}
+.side-tabs a:hover, .side-tabs a:focus-visible{
+  color: var(--ink); background: var(--cyan); border-color: var(--cyan);
+  padding-right: 11px;
+}
+@media (max-width: 1000px){
+  .side-tabs{ display: none; }
+}
