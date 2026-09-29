@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+ <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Feelochamp - NL - 26/27</title>
+
+
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<link href="assets/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/bootstrap-icons.min.css">
+<link href="assets/fonts.css" rel="stylesheet">
+<link href="assets/main.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/datatables.min.css">
+
+<link rel="stylesheet" href="css/bootstrap-multiselect.css">
+
+<link href="assets/feelo.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+
+
+<body class="page-default">
+
+
+<div id="preloader" class="preloader page-preloader">
+  <div class="preloader-card">
+    <div class="preloader-card-head"><h3>Loading&hellip;</h3></div>
+    <div class="preloader-card-body">
+      <div class="preloader-dots" role="status" aria-label="L&auml;dt"><span></span><span></span><span></span></div>
+      <p>alles wird vorbereitet...<br>
+      bitte geduldig sein und diese seite NICHT neu laden!<br>
+      kann bis zu 25 Sekunden dauern!</p>
+    </div>
+  </div>
+</div>
+
+<div id="mainWrapper" style="display:none">
+
+<!-- ================= NAVBAR (logged in) ================= -->
+<nav class="navbar navbar-expand-lg navbar-feelo sticky-top py-2">
+  <div class="container">
+    <a class="navbar-brand" href="start.asp">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5bc2fc" stroke-width="1.6" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 7.2l3.4 2.5-1.3 4h-4.2l-1.3-4L12 7.2z"/>
+        <path d="M12 7.2V4.3M15.4 9.7l2.7-1.6M14.1 13.7l1.7 2.8M9.9 13.7l-1.7 2.8M8.6 9.7l-2.7-1.6"/>
+      </svg>
+      
+      FEELOCHAMP
+		<span class="brand-suffix">/NL</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Navigation umschalten" style="border-color: var(--line-cyan);">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mainNav" aria-label="Navigation">
+      <div class="offcanvas-body">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tippen</a>
+          <ul class="dropdown-menu dropdown-menu-feelo">
+            <li><a class="dropdown-item" href="spiele.asp" aria-current="page">Spiele</a></li>
+            <li><a class="dropdown-item demo-link" href="aufsteiger.asp">Aufsteiger</a></li>
+             <li><a class="dropdown-item demo-link" href="absteiger.asp">Absteiger</a></li>
+            <li><a class="dropdown-item demo-link" href="champion.asp">Champion</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link demo-link" href="alletips.asp">Alle Tipps</a></li>
+        <li class="nav-item"><a class="nav-link demo-link" href="spielstand.asp">Spielstand</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Infos</a>
+          <ul class="dropdown-menu dropdown-menu-feelo">
+            <li><a class="dropdown-item demo-link" href="regeln.asp">Regeln</a></li>
+            <li><a class="dropdown-item demo-link" href="tabelle.asp">Tabellen</a></li>
+            <li><a class="dropdown-item demo-link" href="uebersicht.asp">Playoffs & K.O.-Phase</a></li>
+            <li><a class="dropdown-item demo-link" href="teams.asp">Teams</a></li>
+            <li><a class="dropdown-item demo-link" href="kalender.asp">Kalender</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Statistik</a>
+          <ul class="dropdown-menu dropdown-menu-feelo">
+            <li><a class="dropdown-item demo-link" href="statistik.asp">Statistik</a></li>
+            <li><a class="dropdown-item demo-link" href="verlauf.asp ">Verlauf nach Punkten</a></li>
+            <li><a class="dropdown-item demo-link" href="verlauf2.asp">Verlauf nach Positionen</a></li>
+          </ul>
+        </li>
+         
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-link-admin" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+          <ul class="dropdown-menu dropdown-menu-feelo">
+            <li><a class="dropdown-item demo-link" href="admin_start.asp">Übersicht</a></li>
+            <li><a class="dropdown-item demo-link" href="admin_bets.asp ">Spieleverwaltung</a></li>
+            <li><a class="dropdown-item demo-link" href="admin_matches.asp">Ergebnisverwaltung</a></li>
+            <li><a class="dropdown-item demo-link" href="admin_gruppe.asp">Gruppenverwaltung</a></li>
+            <li><a class="dropdown-item demo-link" href="admin_punkte.asp">Punkteverwaltung</a></li>
+            <li><a class="dropdown-item demo-link" href="admin_userranking.asp">Userranking eintragen</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      
+      <div class="dropdown">
+        <a class="user-chip dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="user-avatar"><img src="img/profile/sf.png" class="img-fluid"></span> sTe
+        </a>
+        <ul class="dropdown-menu dropdown-menu-feelo dropdown-menu-end">
+          <li><a class="dropdown-item" href="logout.asp">Logout</a></li>
+        </ul>
+      </div>
+      
+
+      <div class="navlinks-extra">
+        <span style="color: rgba(34,211,238,0.8)">Weitere Bewerbe:</span>
+        <a href="https://einseitensprung.at/cl/start.asp" target="_self" rel="noopener">Champions League ↗</a>
+        <a href="https://einseitensprung.at/el/start.asp" target="_self" rel="noopener">Europa League ↗</a>
+        
+      </div>
+
+       
+    </div>
+  </div>
+   </div>
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+<header class="page-header">
+  <svg class="page-header-rays" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="#eef4ee">
+      <circle class="twinkle" cx="180" cy="60" r="1.6"/>
+      <circle class="twinkle" cx="520" cy="40" r="1.4" style="animation-delay:.5s"/>
+      <circle class="twinkle" cx="900" cy="70" r="1.8"/>
+      <circle class="twinkle" cx="1250" cy="45" r="1.3" style="animation-delay:1s"/>
+      <circle class="twinkle" cx="1450" cy="90" r="1.5" style="animation-delay:1.4s"/>
+    </g>
+    <g stroke="#7fe3f5" stroke-width="1.2" opacity=".25">
+      <line x1="0" y1="300" x2="500" y2="0"/>
+      <line x1="1600" y1="280" x2="1050" y2="0"/>
+    </g>
+  </svg>
+  <div class="container page-header-content">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+      <div class="hero-panel">
+        <span class="eyebrow d-block mb-1">Statistik &middot; FeeloChamp</span>
+        <h1>Die <span class="accent">Statistik</span></h1>
+      </div>
+      <div class="dropdown md-select">
+        <button class="btn dropdown-toggle" type="button" id="quickNav" data-bs-toggle="dropdown" aria-expanded="false">Quick Nav</button>
+        <ul class="dropdown-menu dropdown-menu-feelo dropdown-menu-end" aria-labelledby="quickNav">
+          <li><a class="dropdown-item qn" href="#statPunkte">Punkte Gesamt</a></li>
+          <li><a class="dropdown-item qn" href="#statTipps">Richtige Tipps</a></li>
+          <li><a class="dropdown-item qn" href="#statTore">Geschossene Tore</a></li>
+          <li><a class="dropdown-item qn" href="#statGegentore">Bekommene Tore</a></li>
+          <li><a class="dropdown-item qn" href="#statVerteilung">Verteilung der Tipps</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= CONTENT ================= -->
+<main>
+  <div class="container">
+   
+
+	<div class="bracket-note d-none">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"></circle><path d="M12 8h.01M11 12h1v5h1"></path>
+      </svg>
+      <div>noch Demodaten </div>
+    </div>
+
+
+      
+
+
+<section class="stat-card mt-3" id="statPunkte">
+  <h2 class="stat-card-title">Anzahl an Punkten Gesamt</h2>
+  <div id="chartPunkte">
+    <div class="stat-bars">
+
+
+
+<div class='stat-bar-row'>  <span class='stat-bar-label' title='Albanien'>Albanien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(141, 0, 176, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Frankreich'>Frankreich</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(165, 173, 115, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Griechenland'>Griechenland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(36, 12, 6, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Montenegro'>Montenegro</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(1, 252, 172, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Österreich'>Österreich</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(5, 210, 165, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Portugal'>Portugal</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(111, 57, 119, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schweden'>Schweden</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(36, 67, 200, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schweiz'>Schweiz</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(21, 99, 241, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Slowakei'>Slowakei</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(69, 214, 228, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Spanien'>Spanien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:100%; background:rgba(138, 80, 150, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Bosnien und Herzegowina'>Bosnien und Herzegowina</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:67%; background:rgba(13, 13, 20, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Finnland'>Finnland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:67%; background:rgba(55, 42, 233, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Island'>Island</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:67%; background:rgba(214, 102, 61, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Litauen'>Litauen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:67%; background:rgba(126, 73, 158, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Niederlande'>Niederlande</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:67%; background:rgba(2, 55, 18, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Nordirland'>Nordirland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:67%; background:rgba(17, 116, 138, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Slowenien'>Slowenien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:67%; background:rgba(220, 77, 216, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Ukraine'>Ukraine</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:67%; background:rgba(59, 118, 241, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Armenien'>Armenien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(209, 67, 250, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Belgien'>Belgien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(92, 168, 134, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Dänemark'>Dänemark</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(203, 199, 253, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='England'>England</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(109, 251, 133, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Irland'>Irland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(209, 122, 188, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Italien'>Italien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(113, 15, 203, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kosovo'>Kosovo</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(79, 247, 164, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kroatien'>Kroatien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(15, 105, 116, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Luxemburg'>Luxemburg</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(253, 112, 112, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Malta'>Malta</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(250, 206, 82, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Norwegen'>Norwegen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:50%; background:rgba(73, 127, 141, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Estland'>Estland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:33%; background:rgba(227, 4, 60, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Färöer'>Färöer</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:33%; background:rgba(55, 197, 214, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Andorra'>Andorra</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(245, 119, 52, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Aserbaidschan'>Aserbaidschan</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(127, 117, 8, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Bulgarien'>Bulgarien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(108, 180, 198, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Deutschland'>Deutschland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(142, 48, 140, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Georgien'>Georgien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(201, 10, 253, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Gibraltar'>Gibraltar</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(231, 158, 91, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kasachstan'>Kasachstan</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(123, 115, 49, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Lettland'>Lettland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(142, 104, 78, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Moldawien'>Moldawien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(221, 114, 67, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Polen'>Polen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(175, 250, 106, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schottland'>Schottland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(30, 226, 31, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Ungarn'>Ungarn</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(187, 94, 2, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Weißrussland'>Weißrussland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(35, 5, 98, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Zypern'>Zypern</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:17%; background:rgba(32, 43, 131, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Israel'>Israel</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(70, 87, 240, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Liechtenstein'>Liechtenstein</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(176, 135, 0, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Nordmazedonien'>Nordmazedonien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(113, 137, 76, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Rumänien'>Rumänien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(18, 245, 150, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='San Marino'>San Marino</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(18, 52, 227, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Serbien'>Serbien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(195, 191, 80, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Tschechien'>Tschechien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(172, 14, 167, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Türkei'>Türkei</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(153, 118, 43, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Wales'>Wales</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' style='width:0%; background:rgba(220, 192, 231, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div>
+<!--
+, 'Frankreich(3)', 'Griechenland(3)', 'Montenegro(3)', 'Österreich(3)', 'Portugal(3)', 'Schweden(3)', 'Schweiz(3)', 'Slowakei(3)', 'Spanien(3)', 'Bosnien und Herzegowina(3)', 'Finnland(3)', 'Island(3)', 'Litauen(3)', 'Niederlande(3)', 'Nordirland(3)', 'Slowenien(3)', 'Ukraine(3)', 'Armenien(3)', 'Belgien(3)', 'Dänemark(3)', 'England(3)', 'Irland(3)', 'Italien(3)', 'Kosovo(3)', 'Kroatien(3)', 'Luxemburg(3)', 'Malta(2)', 'Norwegen(3)', 'Estland(3)', 'Färöer(3)', 'Andorra(3)', 'Aserbaidschan(2)', 'Bulgarien(3)', 'Deutschland(3)', 'Georgien(3)', 'Gibraltar(2)', 'Kasachstan(3)', 'Lettland(3)', 'Moldawien(3)', 'Polen(3)', 'Schottland(3)', 'Ungarn(3)', 'Weißrussland(3)', 'Zypern(3)', 'Israel(3)', 'Liechtenstein(2)', 'Nordmazedonien(3)', 'Rumänien(3)', 'San Marino(3)', 'Serbien(3)', 'Tschechien(3)', 'Türkei(3)', 'Wales(3)'
+<br>
+, 6, 6, 6, 6, 6, 6, 6, 6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+-->
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+
+      <div class="row mb-4">
+
+          <div class="col text-end">
+
+          <div class="dropdown md-select">
+              <button class="btn dropdown-toggle" type="button" id="quickNav2" data-bs-toggle="dropdown" aria-expanded="false">Quick Nav</button>
+              <ul class="dropdown-menu dropdown-menu-feelo dropdown-menu-end" aria-labelledby="quickNav">
+                <li><a class="dropdown-item qn" href="#statPunkte">Punkte Gesamt</a></li>
+                <li><a class="dropdown-item qn" href="#statTipps">Richtige Tipps</a></li>
+                <li><a class="dropdown-item qn" href="#statTore">Geschossene Tore</a></li>
+                <li><a class="dropdown-item qn" href="#statGegentore">Bekommene Tore</a></li>
+                <li><a class="dropdown-item qn" href="#statVerteilung">Verteilung der Tipps</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+ <section class="stat-card" id="statTipps">
+      <h2 class="stat-card-title">Anzahl an richtigen Tipps</h2>
+      <div id="chartTipps">
+      
+      <div class="stat-bars">
+      
+      
+      <div class='stat-bar-row'>  <span class='stat-bar-label' title='Albanien'>Albanien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='12' style='width:100%; background:rgba(23, 210, 26, 1)'></span>  </span>  <span class='stat-bar-val'>12</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Frankreich'>Frankreich</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='12' style='width:100%; background:rgba(89, 125, 93, 1)'></span>  </span>  <span class='stat-bar-val'>12</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Griechenland'>Griechenland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:100%; background:rgba(13, 247, 50, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Montenegro'>Montenegro</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='8' style='width:100%; background:rgba(7, 134, 166, 1)'></span>  </span>  <span class='stat-bar-val'>8</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Österreich'>Österreich</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='12' style='width:100%; background:rgba(15, 76, 6, 1)'></span>  </span>  <span class='stat-bar-val'>12</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Portugal'>Portugal</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:100%; background:rgba(140, 7, 238, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schweden'>Schweden</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='8' style='width:100%; background:rgba(125, 206, 92, 1)'></span>  </span>  <span class='stat-bar-val'>8</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schweiz'>Schweiz</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='11' style='width:100%; background:rgba(237, 229, 7, 1)'></span>  </span>  <span class='stat-bar-val'>11</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Slowakei'>Slowakei</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='12' style='width:100%; background:rgba(159, 144, 110, 1)'></span>  </span>  <span class='stat-bar-val'>12</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Spanien'>Spanien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='8' style='width:100%; background:rgba(51, 213, 199, 1)'></span>  </span>  <span class='stat-bar-val'>8</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Bosnien und Herzegowina'>Bosnien und Herzegowina</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:66,6666666666667%; background:rgba(43, 108, 8, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Finnland'>Finnland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:66,6666666666667%; background:rgba(118, 149, 146, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Island'>Island</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:66,6666666666667%; background:rgba(246, 244, 38, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Litauen'>Litauen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:66,6666666666667%; background:rgba(210, 228, 203, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Niederlande'>Niederlande</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:66,6666666666667%; background:rgba(146, 142, 93, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Nordirland'>Nordirland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:66,6666666666667%; background:rgba(28, 84, 111, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Slowenien'>Slowenien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:66,6666666666667%; background:rgba(193, 175, 32, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Ukraine'>Ukraine</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:66,6666666666667%; background:rgba(246, 251, 177, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Armenien'>Armenien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='7' style='width:50%; background:rgba(158, 22, 212, 1)'></span>  </span>  <span class='stat-bar-val'>7</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Belgien'>Belgien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='7' style='width:50%; background:rgba(175, 19, 189, 1)'></span>  </span>  <span class='stat-bar-val'>7</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Dänemark'>Dänemark</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='12' style='width:50%; background:rgba(254, 85, 116, 1)'></span>  </span>  <span class='stat-bar-val'>12</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='England'>England</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='7' style='width:50%; background:rgba(40, 113, 72, 1)'></span>  </span>  <span class='stat-bar-val'>7</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Irland'>Irland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:50%; background:rgba(63, 86, 205, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Italien'>Italien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:50%; background:rgba(127, 71, 156, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kosovo'>Kosovo</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='11' style='width:50%; background:rgba(4, 53, 16, 1)'></span>  </span>  <span class='stat-bar-val'>11</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kroatien'>Kroatien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='11' style='width:50%; background:rgba(239, 165, 96, 1)'></span>  </span>  <span class='stat-bar-val'>11</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Luxemburg'>Luxemburg</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:50%; background:rgba(118, 82, 70, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Malta'>Malta</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:50%; background:rgba(180, 28, 30, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Norwegen'>Norwegen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:50%; background:rgba(227, 240, 152, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Estland'>Estland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:33,3333333333333%; background:rgba(110, 85, 35, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Färöer'>Färöer</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:33,3333333333333%; background:rgba(221, 116, 155, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Andorra'>Andorra</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:16,6666666666667%; background:rgba(22, 175, 147, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Aserbaidschan'>Aserbaidschan</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(122, 47, 202, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Bulgarien'>Bulgarien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(251, 101, 153, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Deutschland'>Deutschland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(45, 40, 122, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Georgien'>Georgien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(65, 118, 82, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Gibraltar'>Gibraltar</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(235, 81, 230, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kasachstan'>Kasachstan</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='8' style='width:16,6666666666667%; background:rgba(44, 219, 49, 1)'></span>  </span>  <span class='stat-bar-val'>8</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Lettland'>Lettland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:16,6666666666667%; background:rgba(18, 147, 219, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Moldawien'>Moldawien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:16,6666666666667%; background:rgba(37, 192, 186, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Polen'>Polen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:16,6666666666667%; background:rgba(121, 130, 84, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schottland'>Schottland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:16,6666666666667%; background:rgba(122, 96, 26, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Ungarn'>Ungarn</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(40, 42, 22, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Weißrussland'>Weißrussland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:16,6666666666667%; background:rgba(121, 237, 127, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Zypern'>Zypern</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:16,6666666666667%; background:rgba(54, 215, 159, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Israel'>Israel</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:0%; background:rgba(113, 178, 16, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Liechtenstein'>Liechtenstein</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:0%; background:rgba(175, 165, 174, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Nordmazedonien'>Nordmazedonien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='12' style='width:0%; background:rgba(67, 121, 132, 1)'></span>  </span>  <span class='stat-bar-val'>12</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Rumänien'>Rumänien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:0%; background:rgba(206, 22, 209, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='San Marino'>San Marino</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='12' style='width:0%; background:rgba(29, 32, 198, 1)'></span>  </span>  <span class='stat-bar-val'>12</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Serbien'>Serbien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:0%; background:rgba(239, 169, 237, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Tschechien'>Tschechien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='10' style='width:0%; background:rgba(214, 56, 210, 1)'></span>  </span>  <span class='stat-bar-val'>10</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Türkei'>Türkei</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='7' style='width:0%; background:rgba(11, 188, 37, 1)'></span>  </span>  <span class='stat-bar-val'>7</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Wales'>Wales</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='12' style='width:0%; background:rgba(63, 231, 189, 1)'></span>  </span>  <span class='stat-bar-val'>12</span></div>
+      
+      
+      
+      
+      </div>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <div class="row mb-4">
+
+          <div class="col text-end">
+
+          <div class="dropdown md-select">
+              <button class="btn dropdown-toggle" type="button" id="quickNav3" data-bs-toggle="dropdown" aria-expanded="false">Quick Nav</button>
+              <ul class="dropdown-menu dropdown-menu-feelo dropdown-menu-end" aria-labelledby="quickNav">
+                <li><a class="dropdown-item qn" href="#statPunkte">Punkte Gesamt</a></li>
+                <li><a class="dropdown-item qn" href="#statTipps">Richtige Tipps</a></li>
+                <li><a class="dropdown-item qn" href="#statTore">Geschossene Tore</a></li>
+                <li><a class="dropdown-item qn" href="#statGegentore">Bekommene Tore</a></li>
+                <li><a class="dropdown-item qn" href="#statVerteilung">Verteilung der Tipps</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+  
+<section class="stat-card" id="statTore">
+      <h2 class="stat-card-title">Anzahl an geschossenen Toren</h2>
+      <div id="chartTore">
+      <div class="stat-bars">
+      
+      <div class='stat-bar-row'>  <span class='stat-bar-label' title='Albanien'>Albanien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:100%; background:rgba(141, 0, 176, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Frankreich'>Frankreich</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:100%; background:rgba(165, 173, 115, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Griechenland'>Griechenland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:100%; background:rgba(36, 12, 6, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Montenegro'>Montenegro</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:100%; background:rgba(1, 252, 172, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Österreich'>Österreich</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:100%; background:rgba(5, 210, 165, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Portugal'>Portugal</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:100%; background:rgba(111, 57, 119, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schweden'>Schweden</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:100%; background:rgba(36, 67, 200, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schweiz'>Schweiz</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:100%; background:rgba(21, 99, 241, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Slowakei'>Slowakei</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:100%; background:rgba(69, 214, 228, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Spanien'>Spanien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='7' style='width:100%; background:rgba(138, 80, 150, 1)'></span>  </span>  <span class='stat-bar-val'>7</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Bosnien und Herzegowina'>Bosnien und Herzegowina</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:66,6666666666667%; background:rgba(13, 13, 20, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Finnland'>Finnland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='7' style='width:66,6666666666667%; background:rgba(55, 42, 233, 1)'></span>  </span>  <span class='stat-bar-val'>7</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Island'>Island</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:66,6666666666667%; background:rgba(214, 102, 61, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Litauen'>Litauen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:66,6666666666667%; background:rgba(126, 73, 158, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Niederlande'>Niederlande</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:66,6666666666667%; background:rgba(2, 55, 18, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Nordirland'>Nordirland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:66,6666666666667%; background:rgba(17, 116, 138, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Slowenien'>Slowenien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:66,6666666666667%; background:rgba(220, 77, 216, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Ukraine'>Ukraine</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:66,6666666666667%; background:rgba(59, 118, 241, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Armenien'>Armenien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:50%; background:rgba(209, 67, 250, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Belgien'>Belgien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:50%; background:rgba(92, 168, 134, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Dänemark'>Dänemark</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:50%; background:rgba(203, 199, 253, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='England'>England</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:50%; background:rgba(109, 251, 133, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Irland'>Irland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:50%; background:rgba(209, 122, 188, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Italien'>Italien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:50%; background:rgba(113, 15, 203, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kosovo'>Kosovo</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:50%; background:rgba(79, 247, 164, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kroatien'>Kroatien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:50%; background:rgba(15, 105, 116, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Luxemburg'>Luxemburg</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:50%; background:rgba(253, 112, 112, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Malta'>Malta</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:50%; background:rgba(250, 206, 82, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Norwegen'>Norwegen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:50%; background:rgba(73, 127, 141, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Estland'>Estland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:33,3333333333333%; background:rgba(227, 4, 60, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Färöer'>Färöer</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:33,3333333333333%; background:rgba(55, 197, 214, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Andorra'>Andorra</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(245, 119, 52, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Aserbaidschan'>Aserbaidschan</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(127, 117, 8, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Bulgarien'>Bulgarien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(108, 180, 198, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Deutschland'>Deutschland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(142, 48, 140, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Georgien'>Georgien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(201, 10, 253, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Gibraltar'>Gibraltar</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(231, 158, 91, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kasachstan'>Kasachstan</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:16,6666666666667%; background:rgba(123, 115, 49, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Lettland'>Lettland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(142, 104, 78, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Moldawien'>Moldawien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(221, 114, 67, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Polen'>Polen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(175, 250, 106, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schottland'>Schottland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(30, 226, 31, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Ungarn'>Ungarn</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(187, 94, 2, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Weißrussland'>Weißrussland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(35, 5, 98, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Zypern'>Zypern</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(32, 43, 131, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Israel'>Israel</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:0%; background:rgba(70, 87, 240, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Liechtenstein'>Liechtenstein</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:0%; background:rgba(176, 135, 0, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Nordmazedonien'>Nordmazedonien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:0%; background:rgba(113, 137, 76, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Rumänien'>Rumänien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:0%; background:rgba(18, 245, 150, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='San Marino'>San Marino</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:0%; background:rgba(18, 52, 227, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Serbien'>Serbien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:0%; background:rgba(195, 191, 80, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Tschechien'>Tschechien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:0%; background:rgba(172, 14, 167, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Türkei'>Türkei</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:0%; background:rgba(153, 118, 43, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Wales'>Wales</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:0%; background:rgba(220, 192, 231, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div>
+      
+      </div></div>
+    </section>
+
+    <div class="container">
+
+      <div class="row mb-4">
+
+          <div class="col text-end">
+
+          <div class="dropdown md-select">
+              <button class="btn dropdown-toggle" type="button" id="quickNav4" data-bs-toggle="dropdown" aria-expanded="false">Quick Nav</button>
+              <ul class="dropdown-menu dropdown-menu-feelo dropdown-menu-end" aria-labelledby="quickNav">
+                <li><a class="dropdown-item qn" href="#statPunkte">Punkte Gesamt</a></li>
+                <li><a class="dropdown-item qn" href="#statTipps">Richtige Tipps</a></li>
+                <li><a class="dropdown-item qn" href="#statTore">Geschossene Tore</a></li>
+                <li><a class="dropdown-item qn" href="#statGegentore">Bekommene Tore</a></li>
+                <li><a class="dropdown-item qn" href="#statVerteilung">Verteilung der Tipps</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    <section class="stat-card" id="statGegentore">
+      <h2 class="stat-card-title">Anzahl an bekommenen Toren</h2>
+      <div id="chartGegentore">
+      <div class="stat-bars">
+      
+      <div class='stat-bar-row'>  <span class='stat-bar-label' title='Frankreich'>Frankreich</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:100%; background:rgba(165, 173, 115, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Griechenland'>Griechenland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:100%; background:rgba(36, 12, 6, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Montenegro'>Montenegro</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:100%; background:rgba(1, 252, 172, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Österreich'>Österreich</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:100%; background:rgba(5, 210, 165, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Portugal'>Portugal</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:100%; background:rgba(111, 57, 119, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schweden'>Schweden</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:100%; background:rgba(36, 67, 200, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schweiz'>Schweiz</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:100%; background:rgba(21, 99, 241, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Slowakei'>Slowakei</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:100%; background:rgba(69, 214, 228, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Spanien'>Spanien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:100%; background:rgba(138, 80, 150, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Bosnien und Herzegowina'>Bosnien und Herzegowina</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:66,6666666666667%; background:rgba(13, 13, 20, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Finnland'>Finnland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:66,6666666666667%; background:rgba(55, 42, 233, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Island'>Island</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:66,6666666666667%; background:rgba(214, 102, 61, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Litauen'>Litauen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:66,6666666666667%; background:rgba(126, 73, 158, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Niederlande'>Niederlande</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:66,6666666666667%; background:rgba(2, 55, 18, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Nordirland'>Nordirland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:66,6666666666667%; background:rgba(17, 116, 138, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Slowenien'>Slowenien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:66,6666666666667%; background:rgba(220, 77, 216, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Ukraine'>Ukraine</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:66,6666666666667%; background:rgba(59, 118, 241, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Armenien'>Armenien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:50%; background:rgba(209, 67, 250, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Belgien'>Belgien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:50%; background:rgba(92, 168, 134, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Dänemark'>Dänemark</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:50%; background:rgba(203, 199, 253, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='England'>England</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:50%; background:rgba(109, 251, 133, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Irland'>Irland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:50%; background:rgba(209, 122, 188, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Italien'>Italien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:50%; background:rgba(113, 15, 203, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kosovo'>Kosovo</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:50%; background:rgba(79, 247, 164, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kroatien'>Kroatien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:50%; background:rgba(15, 105, 116, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Luxemburg'>Luxemburg</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:50%; background:rgba(253, 112, 112, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Malta'>Malta</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:50%; background:rgba(250, 206, 82, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Norwegen'>Norwegen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:50%; background:rgba(73, 127, 141, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Estland'>Estland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:33,3333333333333%; background:rgba(227, 4, 60, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Färöer'>Färöer</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:33,3333333333333%; background:rgba(55, 197, 214, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Andorra'>Andorra</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:16,6666666666667%; background:rgba(245, 119, 52, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Aserbaidschan'>Aserbaidschan</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(127, 117, 8, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Bulgarien'>Bulgarien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:16,6666666666667%; background:rgba(108, 180, 198, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Deutschland'>Deutschland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:16,6666666666667%; background:rgba(142, 48, 140, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Georgien'>Georgien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(201, 10, 253, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Gibraltar'>Gibraltar</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='0' style='width:16,6666666666667%; background:rgba(231, 158, 91, 1)'></span>  </span>  <span class='stat-bar-val'>0</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Kasachstan'>Kasachstan</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:16,6666666666667%; background:rgba(123, 115, 49, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Lettland'>Lettland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:16,6666666666667%; background:rgba(142, 104, 78, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Moldawien'>Moldawien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:16,6666666666667%; background:rgba(221, 114, 67, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Polen'>Polen</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:16,6666666666667%; background:rgba(175, 250, 106, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Schottland'>Schottland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:16,6666666666667%; background:rgba(30, 226, 31, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Ungarn'>Ungarn</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='1' style='width:16,6666666666667%; background:rgba(187, 94, 2, 1)'></span>  </span>  <span class='stat-bar-val'>1</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Weißrussland'>Weißrussland</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:16,6666666666667%; background:rgba(35, 5, 98, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Zypern'>Zypern</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:16,6666666666667%; background:rgba(32, 43, 131, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Israel'>Israel</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:0%; background:rgba(70, 87, 240, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Liechtenstein'>Liechtenstein</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='2' style='width:0%; background:rgba(176, 135, 0, 1)'></span>  </span>  <span class='stat-bar-val'>2</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Nordmazedonien'>Nordmazedonien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:0%; background:rgba(113, 137, 76, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Rumänien'>Rumänien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='6' style='width:0%; background:rgba(18, 245, 150, 1)'></span>  </span>  <span class='stat-bar-val'>6</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='San Marino'>San Marino</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='10' style='width:0%; background:rgba(18, 52, 227, 1)'></span>  </span>  <span class='stat-bar-val'>10</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Serbien'>Serbien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:0%; background:rgba(195, 191, 80, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Tschechien'>Tschechien</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='4' style='width:0%; background:rgba(172, 14, 167, 1)'></span>  </span>  <span class='stat-bar-val'>4</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Türkei'>Türkei</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='5' style='width:0%; background:rgba(153, 118, 43, 1)'></span>  </span>  <span class='stat-bar-val'>5</span></div><div class='stat-bar-row'>  <span class='stat-bar-label' title='Wales'>Wales</span>  <span class='stat-bar-track'>    <span class='stat-bar-fill' data-value='3' style='width:0%; background:rgba(220, 192, 231, 1)'></span>  </span>  <span class='stat-bar-val'>3</span></div>
+      
+      </div></div>
+    </section>
+
+    <div class="container">
+
+      <div class="row mb-4">
+
+          <div class="col text-end">
+
+          <div class="dropdown md-select">
+              <button class="btn dropdown-toggle" type="button" id="quickNav5" data-bs-toggle="dropdown" aria-expanded="false">Quick Nav</button>
+              <ul class="dropdown-menu dropdown-menu-feelo dropdown-menu-end" aria-labelledby="quickNav">
+                <li><a class="dropdown-item qn" href="#statPunkte">Punkte Gesamt</a></li>
+                <li><a class="dropdown-item qn" href="#statTipps">Richtige Tipps</a></li>
+                <li><a class="dropdown-item qn" href="#statTore">Geschossene Tore</a></li>
+                <li><a class="dropdown-item qn" href="#statGegentore">Bekommene Tore</a></li>
+                <li><a class="dropdown-item qn" href="#statVerteilung">Verteilung der Tipps</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    
+
+    <section class="stat-card" id="statVerteilung">
+      <h2 class="stat-card-title">Verteilung der Tipps</h2>
+      <div class="stat-donut-grid">
+
+
+        <div>
+          <h3 class="stat-sub">1 / X / 2</h3>
+          <div id="donut12x"><div class="stat-donut">
+          
+          
+            <svg width="200" height="200" viewBox="0 0 42 42" style="transform: rotate(-90deg); transform-origin: center;">
+              <!-- Hintergrund-Kreis (grau) - zeigt die restlichen 10% an -->
+              <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#e5e7eb" stroke-width="5"></circle>
+              
+              <!-- Segment 1: 30% (Blau) -->
+              <!-- Start bei 12 Uhr (offset 100) -->
+              <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="var(--cyan)" stroke-width="5" 
+                      stroke-dasharray="59 41" stroke-dashoffset="100"></circle>
+              
+              <!-- Segment 2: 30% (Grün) -->
+              <!-- Start nach dem 1. Segment (offset 100 - 30 = 70) -->
+              <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#e8a72e" stroke-width="5" 
+                      stroke-dasharray="7 93" stroke-dashoffset="41"></circle>
+                      
+              <!-- Segment 3: 30% (Orange) -->
+              <!-- Start nach dem 2. Segment (offset 70 - 30 = 40) -->
+              <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#8e6bf0" stroke-width="5" 
+                      stroke-dasharray="34 66" stroke-dashoffset="34"></circle>
+
+              
+            </svg>
+          <div class="stat-donut-legend">
+          
+          <span class="stat-donut-key"><span class="stat-donut-dot" style="background:var(--cyan)"></span>1 · Heimsieg <b>59%</b> (257)</span>
+          
+          <span class="stat-donut-key"><span class="stat-donut-dot" style="background:#e8a72e"></span>X · Remis <b>7%</b> (32)</span>
+          
+          <span class="stat-donut-key"><span class="stat-donut-dot" style="background:#8e6bf0"></span>2 · Auswärts <b>34%</b> (149)</span>
+          
+          
+                  <span class="stat-donut-key mt-3">
+                Gesamt: <b>100%</b>  (438)
+                </span>
+          
+          </div></div></div>
+        </div>
+
+
+        <div>
+          <h3 class="stat-sub">Richtig / Falsch</h3>
+         
+          
+          
+          <div id="donutRF">
+
+
+          
+            <div class="stat-donut">
+           
+
+                   <svg width="150" height="150" viewBox="0 0 42 42" class="donut-chart">
+                <!-- Background Track -->
+                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="#da3a49" stroke-width="5"></circle>
+                
+                <!-- Value Arc (75%) -->
+                <circle cx="21" cy="21" r="15.9155" fill="transparent" stroke="var(--green)" stroke-width="5" 
+                        stroke-dasharray="52 48" stroke-dashoffset="25"></circle>
+                
+                
+             
+
+              </svg>
+
+
+              <div class="stat-donut-legend">
+                <span class="stat-donut-key">
+                  <span class="stat-donut-dot" style="background:var(--green)"></span>Richtig <b>52%</b> (159)
+                </span>
+                <span class="stat-donut-key">
+                  <span class="stat-donut-dot" style="background:#da3a49"></span>Falsch <b>48%</b> (148)
+                </span>
+                
+                  <span class="stat-donut-key mt-3">
+                Gesamt: <b>100%</b>  (307)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+  </div>
+</main>
+
+	<div class="hero-divider" role="presentation"></div>
+
+<!-- ================= MATCHDAY PROGRAMME (sitemap) ================= -->
+<section class="section-programme">
+  <div class="container">
+    <div class="programme-head mb-5">
+      <span class="eyebrow">Rund um den Tippbewerb</span>
+      <h2>Das Menu</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" id="programm-tippen">
+        <div class="card-feelo">
+          <div class="icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7.2l3.4 2.5-1.3 4h-4.2l-1.3-4L12 7.2z"/><path d="M12 7.2V4.3M15.4 9.7l2.7-1.6M14.1 13.7l1.7 2.8M9.9 13.7l-1.7 2.8M8.6 9.7l-2.7-1.6"/></svg>
+          </div>
+          <h3>Tippen</h3>
+          <ul>
+            <li><a href="spiele.asp">Spiele <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="aufsteiger.asp">Aufsteiger <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="absteiger.asp">Absteiger <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="champion.asp">Champion <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" id="programm-ergebnisse">
+        <div class="card-feelo">
+          <div class="icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><line x1="12" y1="5" x2="12" y2="19"/><path d="M7 10h2M15 10h2M7 14h2M15 14h2"/></svg>
+          </div>
+          <h3>Ergebnisse</h3>
+          <ul>
+            <li><a href="alletips.asp">Alle Tipps <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="spielstand.asp">Spielstand <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" id="programm-infos">
+        <div class="card-feelo">
+          <div class="icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+          </div>
+          <h3>Infos</h3>
+          <ul>
+            <li><a href="regeln.asp">Regeln <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="tabelle.asp">Tabellen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+
+             <li><a href="uebersicht.asp">Playoffs & K.O.-Phase <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+           
+            <li><a href="teams.asp">Teams <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="kalender.asp">Kalender <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" id="programm-statistik">
+        <div class="card-feelo">
+          <div class="icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18M8 17V10M13 17V6M18 17v-4"/></svg>
+          </div>
+          <h3>Statistik</h3>
+          <ul>
+            <li><a href="statistik.asp">Statistik <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="verlauf.asp">Verlauf nach Punkten <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="verlauf2.asp">Verlauf nach Positionen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-feelo">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <span class="text-slate">FEELOCHAMP 2026/2027 &nbsp;|&nbsp; gegr. 2002 von Soizbuaga Wettkaiser</span>
+    <span class="text-slate">&copy; 2026 <a href="https://einseitensprung.at" target="blank">einseitensprung.at</a> &nbsp;&middot;&nbsp; v6.11 &nbsp;&middot;&nbsp; <a href="javascript:void(null)"  class="ds-open">Datenschutz</a></span>
+  </div>
+</footer>
+
+<!-- toast host -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:1080;">
+  <div id="demoToast" class="toast toast-feelo" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body" id="demoToastText">Bitte zuerst einloggen um den inhalt zu sehen</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Schließen"></button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/bootstrap.bundle.min.js"></script>
+<script src="assets/datenschutz.js"></script>
+
+<script src="assets/sidetabs.js"></script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+			 
+			$("#preloader").fadeOut()
+
+			$("#mainWrapper").fadeIn()
+			
+    
+});
+
+//alert(12)
+//alert(7)
+//alert(10)
+
+$("#statTipps .stat-bar-fill").each(function(){
+    aktVal=parseInt($(this).attr("data-value"))
+    $(this).css("width", aktVal / 12 * 100 + "%")
+  });
+
+  $("#statTore .stat-bar-fill").each(function(){
+    aktVal=parseInt($(this).attr("data-value"))
+    $(this).css("width", aktVal / 7 * 100 + "%")
+  });
+
+  
+
+  $("#statGegentore .stat-bar-fill").each(function(){
+    aktVal=parseInt($(this).attr("data-value"))
+    $(this).css("width", aktVal / 10 * 100 + "%")
+  });
+  
+// Shared demo toast
+  var demoToastEl = document.getElementById('demoToast');
+  var demoToastTextEl = document.getElementById('demoToastText');
+  function showToast(text, delay){
+    demoToastTextEl.textContent = text;
+    bootstrap.Toast.getOrCreateInstance(demoToastEl, { delay: delay || 3200 }).show();
+  }
+
+  
+
+  // Alle leeren Links (href="#", ohne Dropdown-Funktion) lösen den Demo-Toast aus
+  document.querySelectorAll('a[href="#"]:not([data-bs-toggle])').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      showToast('bitte zuerst einloggen um den inhalt zu sehen.');
+    });
+  });
+
+  // Scroll-reveal for programme cards
+  (function(){
+    var cards = document.querySelectorAll('.card-feelo');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) {
+      cards.forEach(function(c){ c.classList.add('in-view'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry, i){
+        if (entry.isIntersecting){
+          setTimeout(function(){ entry.target.classList.add('in-view'); }, i * 70);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    cards.forEach(function(c){ io.observe(c); });
+  })();
+
+
+</script>
+</body>
+</html>
