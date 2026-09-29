@@ -10,22 +10,13 @@
  * „International Tournaments", Quoten erst ab „All-In"). Die Liga-ID wird zur Laufzeit per Namenssuche
  * ermittelt; fehlt die Liga im Plan, bricht der Abruf mit einer klaren Meldung ab.
  */
+const { normTeam, sameKickoff } = require("./teammatch");
+
 const API = "https://api.sportmonks.com/v3";
 // Markt 1 = „Fulltime Result" (1X2)
 const FULLTIME_RESULT = 1;
 // Sportmonks-Buchmacher-IDs -> Slugs wie bei OddsPapi, in Reihenfolge der Präferenz
 const BOOKMAKERS = [[20, "pinnacle"], [2, "bet365"], [28, "bwin"], [22, "tipico"]];
-
-// Schreibweisen, in denen sich OddsPapi und Sportmonks bei Ländernamen unterscheiden können
-const ALIASES = {
-  turkiye: "turkey", czechrepublic: "czechia", republicofireland: "ireland",
-  macedonia: "northmacedonia", fyrmacedonia: "northmacedonia",
-  bosniaandherzegovina: "bosnia", bosniaherzegovina: "bosnia", faroeislands: "faroe", faroes: "faroe",
-};
-function normTeam(name) {
-  const n = String(name || "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase().replace(/[^a-z]/g, "");
-  return ALIASES[n] || n;
-}
 
 async function sm(pathname, params, token) {
   const url = `${API}/${pathname}?${new URLSearchParams({ ...params, api_token: token })}`;
@@ -90,8 +81,8 @@ async function fetchSportmonksOdds(games, token, { leagueName = "UEFA Nations Le
     const ours = [[g.home, normTeam(g.homeName)], [g.away, normTeam(g.awayName)]];
     const same = (p, [abbr, name]) => p && (p.short_code === abbr || normTeam(p.name) === name);
     for (const f of fixtures) {
-      // Anstoß bis auf ±36 h gleich (Zeitzonen/Verschiebungen), beide Teams über Kürzel oder Namen gleich
-      if (Math.abs(Date.parse(f.starting_at.replace(" ", "T") + "Z") - Date.parse(g.start)) > 36 * 3600e3) continue;
+      // Anstoß gleich (±36 h), beide Teams über Kürzel oder Namen gleich
+      if (!sameKickoff(f.starting_at.replace(" ", "T") + "Z", g.start)) continue;
       const smHome = (f.participants || []).find((p) => p.meta && p.meta.location === "home");
       const smAway = (f.participants || []).find((p) => p.meta && p.meta.location === "away");
       const straight = same(smHome, ours[0]) && same(smAway, ours[1]);

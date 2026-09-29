@@ -20,6 +20,7 @@
 const fs = require("fs");
 const path = require("path");
 const { fetchSportmonksOdds } = require("./sportmonks");
+const { fetchTheOddsApiOdds } = require("./theoddsapi");
 
 const API = "https://api.oddspapi.io/v4";
 const SPORT_ID = 10;
@@ -196,7 +197,8 @@ function odds(g) {
   if (!g.odds) return `<span class="nl-odds-none">–</span>`;
   const fav = g.odds.prices.indexOf(Math.min(...g.odds.prices));
   const hit = g.status === "done" && g.score ? (g.score[0] > g.score[1] ? 0 : g.score[0] === g.score[1] ? 1 : 2) : -1;
-  const book = (BOOKMAKER_NAMES[g.odds.bookmaker] || g.odds.bookmaker) + (g.odds.source === "sportmonks" ? " via Sportmonks" : "");
+  const via = { sportmonks: " via Sportmonks", theoddsapi: " via The Odds API" }[g.odds.source] || "";
+  const book = (g.odds.bookmakerName || BOOKMAKER_NAMES[g.odds.bookmaker] || g.odds.bookmaker) + via;
   const when = fmt(g.odds.at, { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
   const cells = g.odds.prices.map((p, i) => {
     const cls = ["nl-odd", i === fav ? "is-fav" : "", i === hit ? "is-hit" : ""].filter(Boolean).join(" ");
@@ -234,15 +236,24 @@ async function nationsLeagueReplacements({ refresh = false } = {}) {
     console.log("nationsleague: aus Cache gebaut (API-Refresh: node build.js --nl-refresh)");
   } else {
     const key = readEnv("ODDSPAPI_KEY");
-    // Ist ein Sportmonks-Token gesetzt, kommen die Quoten von dort (1–2 Requests statt einem pro Spiel)
-    const smToken = readEnv("SPORTMONKS_TOKEN");
+    // Quoten-Quelle: The Odds API (1 Credit für alle Spiele), sonst Sportmonks (1–2 Requests),
+    // sonst OddsPapi selbst (1 Request pro Spiel)
+    const oddsProvider = readEnv("THE_ODDS_API_KEY")
+      ? { name: "The Odds API", fetch: async (games) => {
+          const { odds, remaining } = await fetchTheOddsApiOdds(games, readEnv("THE_ODDS_API_KEY"));
+          if (remaining !== null) console.log(`nationsleague: The Odds API – noch ${remaining} Credits diesen Monat`);
+          return odds;
+        } }
+      : readEnv("SPORTMONKS_TOKEN")
+        ? { name: "Sportmonks", fetch: (games) => fetchSportmonksOdds(games, readEnv("SPORTMONKS_TOKEN")) }
+        : null;
     let changed = false;
 
     if (!key) {
       console.warn("nationsleague: kein ODDSPAPI_KEY (.env) — Spielplan/Ergebnisse aus Cache");
     } else {
       try {
-        data = await fetchData(key, cache, { oddsViaOddsPapi: !smToken });
+        data = await fetchData(key, cache, { oddsViaOddsPapi: !oddsProvider });
         changed = true;
         console.log(`nationsleague: ${data.games.length} Spiele von OddsPapi geladen`);
       } catch (err) {
@@ -250,16 +261,16 @@ async function nationsLeagueReplacements({ refresh = false } = {}) {
       }
     }
 
-    // Sportmonks-Quoten auch dann, wenn OddsPapi gerade nicht will (dann auf Basis des gecachten Spielplans)
-    if (smToken && data) {
+    // Externe Quoten auch dann, wenn OddsPapi gerade nicht will (dann auf Basis des gecachten Spielplans)
+    if (oddsProvider && data) {
       const targets = data.games.filter((g) => g.status === "pre" && Date.parse(g.start) - Date.now() < ODDS_WINDOW_MS);
       try {
-        const odds = await fetchSportmonksOdds(targets, smToken);
+        const odds = await oddsProvider.fetch(targets);
         for (const g of targets) if (odds.has(g.id)) g.odds = odds.get(g.id);
         changed = changed || odds.size > 0;
-        console.log(`nationsleague: Sportmonks-Quoten für ${odds.size} von ${targets.length} anstehenden Spielen`);
+        console.log(`nationsleague: ${oddsProvider.name}-Quoten für ${odds.size} von ${targets.length} anstehenden Spielen`);
       } catch (err) {
-        console.warn(`nationsleague: Sportmonks-Fehler (${err.message}) — Quoten aus Cache`);
+        console.warn(`nationsleague: ${oddsProvider.name}-Fehler (${err.message}) — Quoten aus Cache`);
       }
     }
 
