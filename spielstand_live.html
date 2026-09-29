@@ -291,7 +291,19 @@
 
   
 <section class="stat-card" id="statTore">
-      <h2 class="stat-card-title">Anzahl an geschossenen Toren</h2>
+      <div class="stat-card-head">
+        <h2 class="stat-card-title">Anzahl an geschossenen Toren</h2>
+        <div class="stat-sort-group" role="group" aria-label="Sortierung">
+          <button type="button" class="stat-sort-btn" id="sortToreName" data-key="name" aria-pressed="false" aria-label="Nach Teamname sortieren (A bis Z)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
+            <span>Name A&ndash;Z</span>
+          </button>
+          <button type="button" class="stat-sort-btn" id="sortToreWert" data-key="value" data-label="Tore" aria-pressed="false" aria-label="Nach Tore sortieren (absteigend)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
+            <span>Tore &darr;</span>
+          </button>
+        </div>
+      </div>
       <div id="chartTore">
       <div class="stat-bars">
       
@@ -324,7 +336,19 @@
       </div>
 
     <section class="stat-card" id="statGegentore">
-      <h2 class="stat-card-title">Anzahl an bekommenen Toren</h2>
+      <div class="stat-card-head">
+        <h2 class="stat-card-title">Anzahl an bekommenen Toren</h2>
+        <div class="stat-sort-group" role="group" aria-label="Sortierung">
+          <button type="button" class="stat-sort-btn" id="sortGegentoreName" data-key="name" aria-pressed="false" aria-label="Nach Teamname sortieren (A bis Z)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
+            <span>Name A&ndash;Z</span>
+          </button>
+          <button type="button" class="stat-sort-btn" id="sortGegentoreWert" data-key="value" data-label="Gegentore" aria-pressed="false" aria-label="Nach Gegentore sortieren (absteigend)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
+            <span>Gegentore &darr;</span>
+          </button>
+        </div>
+      </div>
       <div id="chartGegentore">
       <div class="stat-bars">
       
@@ -628,7 +652,7 @@ $("#statTipps .stat-bar-fill").each(function(){
     cards.forEach(function(c){ io.observe(c); });
   })();
 
-  // Sortier-Toggles je Statistik-Karte (Punkte Gesamt, richtige Tipps): Name (A–Z <-> Z–A) und
+  // Sortier-Toggles je Statistik-Karte (Punkte Gesamt, richtige Tipps, Tore, Gegentore): Name (A–Z <-> Z–A) und
   // Wert (↓ <-> ↑, Beschriftung aus data-label). Aktiv ist, was im Markup .is-active hat
   // (Punkte Gesamt kommt vom Server nach Punkten absteigend sortiert, Tipps unsortiert).
   // Der zuletzt benutzte Button ist hervorgehoben; gleicher Wert -> alphabetisch nach Name.
