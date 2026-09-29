@@ -1675,7 +1675,7 @@ body.page-preloader{ background: var(--ink); }
 .stat-sort-btn[data-dir="desc"] svg{ transform: scaleY(-1); }
 .stat-sort-group{ display:inline-flex; flex-wrap:wrap; gap:.4rem; }
 
-/* Auf-/zuklappbare Statistik-Karte (spielstand_live.html: Punkte Gesamt).
+/* Auf-/zuklappbare Statistik-Karten (spielstand_live.html, alle .stat-card.is-collapsible).
    Inhalt klappt per grid-template-rows 1fr -> 0fr weich zu; Sortier-Buttons sind eingeklappt ausgeblendet. */
 .stat-card-tools{ display:inline-flex; align-items:center; flex-wrap:wrap; gap:.6rem; margin-left:auto; }
 .stat-collapse-btn{
@@ -1697,6 +1697,8 @@ body.page-preloader{ background: var(--ink); }
 .stat-card.is-collapsed .stat-card-head{ margin-bottom:0; }
 .stat-card.is-collapsed .stat-sort-group{ display:none; }
 .stat-card.is-collapsed .stat-collapse-btn svg{ transform: rotate(180deg); }
+/* Zustand aus dem Cookie beim Laden ohne Animation setzen */
+.stat-card.no-anim .stat-card-body, .stat-card.no-anim .stat-card-head, .stat-card.no-anim .stat-collapse-btn svg{ transition:none; }
 @media (prefers-reduced-motion: reduce){
   .stat-card.is-collapsible .stat-card-body, .stat-collapse-btn svg{ transition:none; }
 }
