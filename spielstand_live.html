@@ -654,10 +654,28 @@ $("#statTipps .stat-bar-fill").each(function(){
 
   // Sortier-Toggles je Statistik-Karte (Punkte Gesamt, richtige Tipps, Tore, Gegentore): Name (A–Z <-> Z–A) und
   // Wert (↓ <-> ↑, Beschriftung aus data-label). Aktiv ist, was im Markup .is-active hat
-  // (Punkte Gesamt kommt vom Server nach Punkten absteigend sortiert, Tipps unsortiert).
+  // (Punkte Gesamt kommt vom Server nach Punkten absteigend sortiert, die anderen unsortiert).
   // Der zuletzt benutzte Button ist hervorgehoben; gleicher Wert -> alphabetisch nach Name.
+  // Die gewählte Sortierung je Karte wird im Cookie "nl_sort" gemerkt ({ statPunkte: "value:desc", … })
+  // und beim nächsten Aufruf wiederhergestellt.
+  var SORT_COOKIE = "nl_sort";
+  function readSortCookie(){
+    try {
+      var m = document.cookie.match(new RegExp("(?:^|; )" + SORT_COOKIE + "=([^;]*)"));
+      return m ? JSON.parse(decodeURIComponent(m[1])) || {} : {};
+    } catch (e) { return {}; }
+  }
+  function writeSortCookie(state){
+    try {
+      document.cookie = SORT_COOKIE + "=" + encodeURIComponent(JSON.stringify(state)) +
+        "; max-age=" + (365 * 24 * 3600) + "; path=/; SameSite=Lax";
+    } catch (e) { /* Cookies blockiert – Sortierung gilt dann nur für diesen Aufruf */ }
+  }
+  var savedSort = readSortCookie();
+
   document.querySelectorAll(".stat-card .stat-sort-group").forEach(function(group){
-    var bars = group.closest(".stat-card").querySelector(".stat-bars");
+    var card = group.closest(".stat-card");
+    var bars = card.querySelector(".stat-bars");
     var btns = group.querySelectorAll(".stat-sort-btn");
     if (!bars) return;
     var name = function(r){ return r.querySelector(".stat-bar-label").textContent.trim(); };
@@ -670,35 +688,46 @@ $("#statTipps .stat-bar-fill").each(function(){
       return "Nach " + (btn.dataset.key === "name" ? "Teamname" : btn.dataset.label) + " sortieren (" +
         (btn.dataset.key === "name" ? (nextDir === "asc" ? "A bis Z" : "Z bis A") : (nextDir === "asc" ? "aufsteigend" : "absteigend")) + ")";
     }
+    function applySort(btn, dir){
+      var key = btn.dataset.key;
+      var rows = Array.prototype.slice.call(bars.querySelectorAll(".stat-bar-row"));
+      rows.sort(function(a, b){
+        var byName = name(a).localeCompare(name(b), "de");
+        if (key === "name") return dir === "asc" ? byName : -byName;
+        var byVal = val(a) - val(b);
+        return byVal !== 0 ? (dir === "asc" ? byVal : -byVal) : byName;
+      });
+      rows.forEach(function(r){ bars.appendChild(r); });
+      btns.forEach(function(o){
+        var active = o === btn;
+        o.classList.toggle("is-active", active);
+        o.setAttribute("aria-pressed", active);
+        if (active) return;
+        // Inaktiver Button zeigt wieder die Richtung, mit der ein Klick darauf startet
+        delete o.dataset.dir;
+        o.querySelector("span").textContent = text(o, START[o.dataset.key]);
+        o.setAttribute("aria-label", aria(o, START[o.dataset.key]));
+      });
+      btn.dataset.dir = dir;
+      // Beschriftung zeigt die aktuelle Sortierung, aria-label die Aktion beim nächsten Klick
+      btn.querySelector("span").textContent = text(btn, dir);
+      btn.setAttribute("aria-label", aria(btn, dir === "asc" ? "desc" : "asc"));
+    }
+
     btns.forEach(function(btn){
       btn.addEventListener("click", function(){
-        var key = btn.dataset.key;
         // Aktiver Button kehrt die Richtung um; ein inaktiver startet mit der naheliegenden Richtung
-        var dir = btn.classList.contains("is-active") ? (btn.dataset.dir === "asc" ? "desc" : "asc") : START[key];
-        var rows = Array.prototype.slice.call(bars.querySelectorAll(".stat-bar-row"));
-        rows.sort(function(a, b){
-          var byName = name(a).localeCompare(name(b), "de");
-          if (key === "name") return dir === "asc" ? byName : -byName;
-          var byVal = val(a) - val(b);
-          return byVal !== 0 ? (dir === "asc" ? byVal : -byVal) : byName;
-        });
-        rows.forEach(function(r){ bars.appendChild(r); });
-        btns.forEach(function(o){
-          var active = o === btn;
-          o.classList.toggle("is-active", active);
-          o.setAttribute("aria-pressed", active);
-          if (active) return;
-          // Inaktiver Button zeigt wieder die Richtung, mit der ein Klick darauf startet
-          delete o.dataset.dir;
-          o.querySelector("span").textContent = text(o, START[o.dataset.key]);
-          o.setAttribute("aria-label", aria(o, START[o.dataset.key]));
-        });
-        btn.dataset.dir = dir;
-        // Beschriftung zeigt die aktuelle Sortierung, aria-label die Aktion beim nächsten Klick
-        btn.querySelector("span").textContent = text(btn, dir);
-        btn.setAttribute("aria-label", aria(btn, dir === "asc" ? "desc" : "asc"));
+        var dir = btn.classList.contains("is-active") ? (btn.dataset.dir === "asc" ? "desc" : "asc") : START[btn.dataset.key];
+        applySort(btn, dir);
+        savedSort[card.id] = btn.dataset.key + ":" + dir;
+        writeSortCookie(savedSort);
       });
     });
+
+    // Gemerkte Sortierung dieser Karte wiederherstellen (ungültige Einträge werden ignoriert)
+    var saved = String(savedSort[card.id] || "").split(":");
+    var savedBtn = (saved[0] === "name" || saved[0] === "value") ? group.querySelector(".stat-sort-btn[data-key=\"" + saved[0] + "\"]") : null;
+    if (savedBtn && (saved[1] === "asc" || saved[1] === "desc")) applySort(savedBtn, saved[1]);
   });
 
 </script>
