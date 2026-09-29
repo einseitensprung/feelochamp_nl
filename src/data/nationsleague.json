@@ -1,0 +1,1723 @@
+{
+ "seasonId": 139802,
+ "season": "2026/27",
+ "updated": "2026-09-29T19:39:19.374Z",
+ "games": [
+  {
+   "id": "id1002375568932806",
+   "start": "2026-09-24T16:00:00.000Z",
+   "status": "done",
+   "home": "AND",
+   "away": "MLT",
+   "homeName": "Andorra",
+   "awayName": "Malta",
+   "score": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "id1002375568932720",
+   "start": "2026-09-24T18:45:00.000Z",
+   "status": "done",
+   "home": "AUT",
+   "away": "ISR",
+   "homeName": "Austria",
+   "awayName": "Israel",
+   "score": [
+    3,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568932722",
+   "start": "2026-09-24T18:45:00.000Z",
+   "status": "done",
+   "home": "KOS",
+   "away": "IRL",
+   "homeName": "Kosovo",
+   "awayName": "Ireland",
+   "score": [
+    1,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932068",
+   "start": "2026-09-24T18:45:00.000Z",
+   "status": "done",
+   "home": "LIE",
+   "away": "LTU",
+   "homeName": "Liechtenstein",
+   "awayName": "Lithuania",
+   "score": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "id1002375568931508",
+   "start": "2026-09-24T18:45:00.000Z",
+   "status": "done",
+   "home": "NED",
+   "away": "GER",
+   "homeName": "Netherlands",
+   "awayName": "Germany",
+   "score": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568931762",
+   "start": "2026-09-24T18:45:00.000Z",
+   "status": "done",
+   "home": "NOR",
+   "away": "DEN",
+   "homeName": "Norway",
+   "awayName": "Denmark",
+   "score": [
+    3,
+    2
+   ]
+  },
+  {
+   "id": "id1002375568931810",
+   "start": "2026-09-24T18:45:00.000Z",
+   "status": "done",
+   "home": "POR",
+   "away": "WAL",
+   "homeName": "Portugal",
+   "awayName": "Wales",
+   "score": [
+    1,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931512",
+   "start": "2026-09-24T18:45:00.000Z",
+   "status": "done",
+   "home": "SRB",
+   "away": "GRE",
+   "homeName": "Serbia",
+   "awayName": "Greece",
+   "score": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "id1002375568932406",
+   "start": "2026-09-25T16:00:00.000Z",
+   "status": "done",
+   "home": "ARM",
+   "away": "LAT",
+   "homeName": "Armenia",
+   "awayName": "Latvia",
+   "score": [
+    2,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932750",
+   "start": "2026-09-25T16:00:00.000Z",
+   "status": "done",
+   "home": "GEO",
+   "away": "NIR",
+   "homeName": "Georgia",
+   "awayName": "Northern Ireland",
+   "score": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568932752",
+   "start": "2026-09-25T18:45:00.000Z",
+   "status": "done",
+   "home": "HUN",
+   "away": "UKR",
+   "homeName": "Hungary",
+   "awayName": "Ukraine",
+   "score": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568931470",
+   "start": "2026-09-25T18:45:00.000Z",
+   "status": "done",
+   "home": "ITA",
+   "away": "BEL",
+   "homeName": "Italy",
+   "awayName": "Belgium",
+   "score": [
+    0,
+    2
+   ]
+  },
+  {
+   "id": "id1002375568932408",
+   "start": "2026-09-25T18:45:00.000Z",
+   "status": "done",
+   "home": "MNE",
+   "away": "CYP",
+   "homeName": "Montenegro",
+   "awayName": "Cyprus",
+   "score": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568932610",
+   "start": "2026-09-25T18:45:00.000Z",
+   "status": "done",
+   "home": "POL",
+   "away": "BIH",
+   "homeName": "Poland",
+   "awayName": "Bosnia and Herzegovina",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932612",
+   "start": "2026-09-25T18:45:00.000Z",
+   "status": "done",
+   "home": "SWE",
+   "away": "ROU",
+   "homeName": "Sweden",
+   "awayName": "Romania",
+   "score": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568931472",
+   "start": "2026-09-25T18:45:00.000Z",
+   "status": "done",
+   "home": "TUR",
+   "away": "FRA",
+   "homeName": "Turkiye",
+   "awayName": "France",
+   "score": [
+    0,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568932780",
+   "start": "2026-09-26T13:00:00.000Z",
+   "status": "done",
+   "home": "SLO",
+   "away": "SCO",
+   "homeName": "Slovenia",
+   "awayName": "Scotland",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932262",
+   "start": "2026-09-26T16:00:00.000Z",
+   "status": "done",
+   "home": "BUL",
+   "away": "LUX",
+   "homeName": "Bulgaria",
+   "awayName": "Luxembourg",
+   "score": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "id1002375568932356",
+   "start": "2026-09-26T16:00:00.000Z",
+   "status": "done",
+   "home": "FRO",
+   "away": "KAZ",
+   "homeName": "Faroe Islands",
+   "awayName": "Kazakhstan",
+   "score": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568932264",
+   "start": "2026-09-26T16:00:00.000Z",
+   "status": "done",
+   "home": "ISL",
+   "away": "EST",
+   "homeName": "Iceland",
+   "awayName": "Estonia",
+   "score": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568932502",
+   "start": "2026-09-26T16:00:00.000Z",
+   "status": "done",
+   "home": "SMR",
+   "away": "FIN",
+   "homeName": "San Marino",
+   "awayName": "Finland",
+   "score": [
+    0,
+    7
+   ]
+  },
+  {
+   "id": "id1002375568932504",
+   "start": "2026-09-26T18:45:00.000Z",
+   "status": "done",
+   "home": "ALB",
+   "away": "BLR",
+   "homeName": "Albania",
+   "awayName": "Belarus",
+   "score": [
+    2,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931644",
+   "start": "2026-09-26T18:45:00.000Z",
+   "status": "done",
+   "home": "CZE",
+   "away": "CRO",
+   "homeName": "Czechia",
+   "awayName": "Croatia",
+   "score": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "id1002375568931646",
+   "start": "2026-09-26T18:45:00.000Z",
+   "status": "done",
+   "home": "ENG",
+   "away": "ESP",
+   "homeName": "England",
+   "awayName": "Spain",
+   "score": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "id1002375568932782",
+   "start": "2026-09-26T18:45:00.000Z",
+   "status": "done",
+   "home": "MKD",
+   "away": "SUI",
+   "homeName": "North Macedonia",
+   "awayName": "Switzerland",
+   "score": [
+    0,
+    3
+   ]
+  },
+  {
+   "id": "id1002375568932358",
+   "start": "2026-09-26T18:45:00.000Z",
+   "status": "done",
+   "home": "SVK",
+   "away": "MDA",
+   "homeName": "Slovakia",
+   "awayName": "Moldova",
+   "score": [
+    2,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932070",
+   "start": "2026-09-27T13:00:00.000Z",
+   "status": "done",
+   "home": "LTU",
+   "away": "AZE",
+   "homeName": "Lithuania",
+   "awayName": "Azerbaijan",
+   "score": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568932724",
+   "start": "2026-09-27T16:00:00.000Z",
+   "status": "done",
+   "home": "AUT",
+   "away": "KOS",
+   "homeName": "Austria",
+   "awayName": "Kosovo",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931812",
+   "start": "2026-09-27T16:00:00.000Z",
+   "status": "done",
+   "home": "DEN",
+   "away": "WAL",
+   "homeName": "Denmark",
+   "awayName": "Wales",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932808",
+   "start": "2026-09-27T16:00:00.000Z",
+   "status": "done",
+   "home": "GIB",
+   "away": "AND",
+   "homeName": "Gibraltar",
+   "awayName": "Andorra",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931516",
+   "start": "2026-09-27T16:00:00.000Z",
+   "status": "done",
+   "home": "SRB",
+   "away": "NED",
+   "homeName": "Serbia",
+   "awayName": "Netherlands",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931520",
+   "start": "2026-09-27T18:45:00.000Z",
+   "status": "done",
+   "home": "GER",
+   "away": "GRE",
+   "homeName": "Germany",
+   "awayName": "Greece",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932726",
+   "start": "2026-09-27T18:45:00.000Z",
+   "status": "done",
+   "home": "ISR",
+   "away": "IRL",
+   "homeName": "Israel",
+   "awayName": "Ireland",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931814",
+   "start": "2026-09-27T18:45:00.000Z",
+   "status": "done",
+   "home": "NOR",
+   "away": "POR",
+   "homeName": "Norway",
+   "awayName": "Portugal",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932410",
+   "start": "2026-09-28T16:00:00.000Z",
+   "status": "done",
+   "home": "ARM",
+   "away": "MNE",
+   "homeName": "Armenia",
+   "awayName": "Montenegro",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932754",
+   "start": "2026-09-28T16:00:00.000Z",
+   "status": "done",
+   "home": "GEO",
+   "away": "UKR",
+   "homeName": "Georgia",
+   "awayName": "Ukraine",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932412",
+   "start": "2026-09-28T16:00:00.000Z",
+   "status": "done",
+   "home": "LAT",
+   "away": "CYP",
+   "homeName": "Latvia",
+   "awayName": "Cyprus",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931476",
+   "start": "2026-09-28T18:45:00.000Z",
+   "status": "done",
+   "home": "BEL",
+   "away": "FRA",
+   "homeName": "Belgium",
+   "awayName": "France",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932756",
+   "start": "2026-09-28T18:45:00.000Z",
+   "status": "done",
+   "home": "NIR",
+   "away": "HUN",
+   "homeName": "Northern Ireland",
+   "awayName": "Hungary",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932614",
+   "start": "2026-09-28T18:45:00.000Z",
+   "status": "done",
+   "home": "ROU",
+   "away": "BIH",
+   "homeName": "Romania",
+   "awayName": "Bosnia and Herzegovina",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932616",
+   "start": "2026-09-28T18:45:00.000Z",
+   "status": "done",
+   "home": "SWE",
+   "away": "POL",
+   "homeName": "Sweden",
+   "awayName": "Poland",
+   "score": [
+    3,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568931480",
+   "start": "2026-09-28T18:45:00.000Z",
+   "status": "done",
+   "home": "TUR",
+   "away": "ITA",
+   "homeName": "Turkiye",
+   "awayName": "Italy",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932506",
+   "start": "2026-09-29T16:00:00.000Z",
+   "status": "done",
+   "home": "FIN",
+   "away": "BLR",
+   "homeName": "Finland",
+   "awayName": "Belarus",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932360",
+   "start": "2026-09-29T16:00:00.000Z",
+   "status": "done",
+   "home": "MDA",
+   "away": "FRO",
+   "homeName": "Moldova",
+   "awayName": "Faroe Islands",
+   "score": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "id1002375568932266",
+   "start": "2026-09-29T18:45:00.000Z",
+   "status": "live",
+   "home": "BUL",
+   "away": "EST",
+   "homeName": "Bulgaria",
+   "awayName": "Estonia",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931694",
+   "start": "2026-09-29T18:45:00.000Z",
+   "status": "live",
+   "home": "CZE",
+   "away": "ENG",
+   "homeName": "Czechia",
+   "awayName": "England",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568931696",
+   "start": "2026-09-29T18:45:00.000Z",
+   "status": "live",
+   "home": "ESP",
+   "away": "CRO",
+   "homeName": "Spain",
+   "awayName": "Croatia",
+   "score": [
+    1,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932268",
+   "start": "2026-09-29T18:45:00.000Z",
+   "status": "live",
+   "home": "LUX",
+   "away": "ISL",
+   "homeName": "Luxembourg",
+   "awayName": "Iceland",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932784",
+   "start": "2026-09-29T18:45:00.000Z",
+   "status": "live",
+   "home": "SCO",
+   "away": "SUI",
+   "homeName": "Scotland",
+   "awayName": "Switzerland",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932786",
+   "start": "2026-09-29T18:45:00.000Z",
+   "status": "live",
+   "home": "SLO",
+   "away": "MKD",
+   "homeName": "Slovenia",
+   "awayName": "North Macedonia",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932508",
+   "start": "2026-09-29T18:45:00.000Z",
+   "status": "live",
+   "home": "SMR",
+   "away": "ALB",
+   "homeName": "San Marino",
+   "awayName": "Albania",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932362",
+   "start": "2026-09-29T18:45:00.000Z",
+   "status": "live",
+   "home": "SVK",
+   "away": "KAZ",
+   "homeName": "Slovakia",
+   "awayName": "Kazakhstan",
+   "score": [
+    0,
+    0
+   ]
+  },
+  {
+   "id": "id1002375568932072",
+   "start": "2026-10-01T16:00:00.000Z",
+   "status": "pre",
+   "home": "AZE",
+   "away": "LIE",
+   "homeName": "Azerbaijan",
+   "awayName": "Liechtenstein",
+   "score": null
+  },
+  {
+   "id": "id1002375568931862",
+   "start": "2026-10-01T18:45:00.000Z",
+   "status": "pre",
+   "home": "DEN",
+   "away": "POR",
+   "homeName": "Denmark",
+   "awayName": "Portugal",
+   "score": null
+  },
+  {
+   "id": "id1002375568931524",
+   "start": "2026-10-01T18:45:00.000Z",
+   "status": "pre",
+   "home": "GER",
+   "away": "SRB",
+   "homeName": "Germany",
+   "awayName": "Serbia",
+   "score": null
+  },
+  {
+   "id": "id1002375568931530",
+   "start": "2026-10-01T18:45:00.000Z",
+   "status": "pre",
+   "home": "GRE",
+   "away": "NED",
+   "homeName": "Greece",
+   "awayName": "Netherlands",
+   "score": null
+  },
+  {
+   "id": "id1002375568932730",
+   "start": "2026-10-01T18:45:00.000Z",
+   "status": "pre",
+   "home": "IRL",
+   "away": "AUT",
+   "homeName": "Ireland",
+   "awayName": "Austria",
+   "score": null
+  },
+  {
+   "id": "id1002375568932728",
+   "start": "2026-10-01T18:45:00.000Z",
+   "status": "pre",
+   "home": "ISR",
+   "away": "KOS",
+   "homeName": "Israel",
+   "awayName": "Kosovo",
+   "score": null
+  },
+  {
+   "id": "id1002375568932810",
+   "start": "2026-10-01T18:45:00.000Z",
+   "status": "pre",
+   "home": "MLT",
+   "away": "GIB",
+   "homeName": "Malta",
+   "awayName": "Gibraltar",
+   "score": null
+  },
+  {
+   "id": "id1002375568932042",
+   "start": "2026-10-01T18:45:00.000Z",
+   "status": "pre",
+   "home": "WAL",
+   "away": "NOR",
+   "homeName": "Wales",
+   "awayName": "Norway",
+   "score": null
+  },
+  {
+   "id": "id1002375568932364",
+   "start": "2026-10-02T14:00:00.000Z",
+   "status": "pre",
+   "home": "KAZ",
+   "away": "MDA",
+   "homeName": "Kazakhstan",
+   "awayName": "Moldova",
+   "score": null
+  },
+  {
+   "id": "id1002375568932414",
+   "start": "2026-10-02T16:00:00.000Z",
+   "status": "pre",
+   "home": "CYP",
+   "away": "ARM",
+   "homeName": "Cyprus",
+   "awayName": "Armenia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932416",
+   "start": "2026-10-02T16:00:00.000Z",
+   "status": "pre",
+   "home": "LAT",
+   "away": "MNE",
+   "homeName": "Latvia",
+   "awayName": "Montenegro",
+   "score": null
+  },
+  {
+   "id": "id1002375568931482",
+   "start": "2026-10-02T18:45:00.000Z",
+   "status": "pre",
+   "home": "BEL",
+   "away": "TUR",
+   "homeName": "Belgium",
+   "awayName": "Turkiye",
+   "score": null
+  },
+  {
+   "id": "id1002375568932618",
+   "start": "2026-10-02T18:45:00.000Z",
+   "status": "pre",
+   "home": "BIH",
+   "away": "SWE",
+   "homeName": "Bosnia and Herzegovina",
+   "awayName": "Sweden",
+   "score": null
+  },
+  {
+   "id": "id1002375568931484",
+   "start": "2026-10-02T18:45:00.000Z",
+   "status": "pre",
+   "home": "FRA",
+   "away": "ITA",
+   "homeName": "France",
+   "awayName": "Italy",
+   "score": null
+  },
+  {
+   "id": "id1002375568932366",
+   "start": "2026-10-02T18:45:00.000Z",
+   "status": "pre",
+   "home": "FRO",
+   "away": "SVK",
+   "homeName": "Faroe Islands",
+   "awayName": "Slovakia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932758",
+   "start": "2026-10-02T18:45:00.000Z",
+   "status": "pre",
+   "home": "HUN",
+   "away": "GEO",
+   "homeName": "Hungary",
+   "awayName": "Georgia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932620",
+   "start": "2026-10-02T18:45:00.000Z",
+   "status": "pre",
+   "home": "POL",
+   "away": "ROU",
+   "homeName": "Poland",
+   "awayName": "Romania",
+   "score": null
+  },
+  {
+   "id": "id1002375568932760",
+   "start": "2026-10-02T18:45:00.000Z",
+   "status": "pre",
+   "home": "UKR",
+   "away": "NIR",
+   "homeName": "Ukraine",
+   "awayName": "Northern Ireland",
+   "score": null
+  },
+  {
+   "id": "id1002375568932510",
+   "start": "2026-10-03T13:00:00.000Z",
+   "status": "pre",
+   "home": "FIN",
+   "away": "ALB",
+   "homeName": "Finland",
+   "awayName": "Albania",
+   "score": null
+  },
+  {
+   "id": "id1002375568932512",
+   "start": "2026-10-03T16:00:00.000Z",
+   "status": "pre",
+   "home": "BLR",
+   "away": "SMR",
+   "homeName": "Belarus",
+   "awayName": "San Marino",
+   "score": null
+  },
+  {
+   "id": "id1002375568931698",
+   "start": "2026-10-03T16:00:00.000Z",
+   "status": "pre",
+   "home": "CRO",
+   "away": "ENG",
+   "homeName": "Croatia",
+   "awayName": "England",
+   "score": null
+  },
+  {
+   "id": "id1002375568932270",
+   "start": "2026-10-03T16:00:00.000Z",
+   "status": "pre",
+   "home": "EST",
+   "away": "LUX",
+   "homeName": "Estonia",
+   "awayName": "Luxembourg",
+   "score": null
+  },
+  {
+   "id": "id1002375568932272",
+   "start": "2026-10-03T16:00:00.000Z",
+   "status": "pre",
+   "home": "ISL",
+   "away": "BUL",
+   "homeName": "Iceland",
+   "awayName": "Bulgaria",
+   "score": null
+  },
+  {
+   "id": "id1002375568931702",
+   "start": "2026-10-03T18:45:00.000Z",
+   "status": "pre",
+   "home": "ESP",
+   "away": "CZE",
+   "homeName": "Spain",
+   "awayName": "Czechia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932788",
+   "start": "2026-10-03T18:45:00.000Z",
+   "status": "pre",
+   "home": "MKD",
+   "away": "SCO",
+   "homeName": "North Macedonia",
+   "awayName": "Scotland",
+   "score": null
+  },
+  {
+   "id": "id1002375568932790",
+   "start": "2026-10-03T18:45:00.000Z",
+   "status": "pre",
+   "home": "SUI",
+   "away": "SLO",
+   "homeName": "Switzerland",
+   "awayName": "Slovenia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932074",
+   "start": "2026-10-04T13:00:00.000Z",
+   "status": "pre",
+   "home": "AZE",
+   "away": "LTU",
+   "homeName": "Azerbaijan",
+   "awayName": "Lithuania",
+   "score": null
+  },
+  {
+   "id": "id1002375568932732",
+   "start": "2026-10-04T16:00:00.000Z",
+   "status": "pre",
+   "home": "KOS",
+   "away": "AUT",
+   "homeName": "Kosovo",
+   "awayName": "Austria",
+   "score": null
+  },
+  {
+   "id": "id1002375568932812",
+   "start": "2026-10-04T16:00:00.000Z",
+   "status": "pre",
+   "home": "MLT",
+   "away": "AND",
+   "homeName": "Malta",
+   "awayName": "Andorra",
+   "score": null
+  },
+  {
+   "id": "id1002375568931532",
+   "start": "2026-10-04T18:45:00.000Z",
+   "status": "pre",
+   "home": "GRE",
+   "away": "GER",
+   "homeName": "Greece",
+   "awayName": "Germany",
+   "score": null
+  },
+  {
+   "id": "id1002375568932734",
+   "start": "2026-10-04T18:45:00.000Z",
+   "status": "pre",
+   "home": "IRL",
+   "away": "ISR",
+   "homeName": "Ireland",
+   "awayName": "Israel",
+   "score": null
+  },
+  {
+   "id": "id1002375568931582",
+   "start": "2026-10-04T18:45:00.000Z",
+   "status": "pre",
+   "home": "NED",
+   "away": "SRB",
+   "homeName": "Netherlands",
+   "awayName": "Serbia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932044",
+   "start": "2026-10-04T18:45:00.000Z",
+   "status": "pre",
+   "home": "POR",
+   "away": "NOR",
+   "homeName": "Portugal",
+   "awayName": "Norway",
+   "score": null
+  },
+  {
+   "id": "id1002375568932046",
+   "start": "2026-10-04T18:45:00.000Z",
+   "status": "pre",
+   "home": "WAL",
+   "away": "DEN",
+   "homeName": "Wales",
+   "awayName": "Denmark",
+   "score": null
+  },
+  {
+   "id": "id1002375568932418",
+   "start": "2026-10-05T16:00:00.000Z",
+   "status": "pre",
+   "home": "CYP",
+   "away": "LAT",
+   "homeName": "Cyprus",
+   "awayName": "Latvia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932622",
+   "start": "2026-10-05T18:45:00.000Z",
+   "status": "pre",
+   "home": "BIH",
+   "away": "POL",
+   "homeName": "Bosnia and Herzegovina",
+   "awayName": "Poland",
+   "score": null
+  },
+  {
+   "id": "id1002375568931486",
+   "start": "2026-10-05T18:45:00.000Z",
+   "status": "pre",
+   "home": "FRA",
+   "away": "BEL",
+   "homeName": "France",
+   "awayName": "Belgium",
+   "score": null
+  },
+  {
+   "id": "id1002375568931490",
+   "start": "2026-10-05T18:45:00.000Z",
+   "status": "pre",
+   "home": "ITA",
+   "away": "TUR",
+   "homeName": "Italy",
+   "awayName": "Turkiye",
+   "score": null
+  },
+  {
+   "id": "id1002375568932420",
+   "start": "2026-10-05T18:45:00.000Z",
+   "status": "pre",
+   "home": "MNE",
+   "away": "ARM",
+   "homeName": "Montenegro",
+   "awayName": "Armenia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932762",
+   "start": "2026-10-05T18:45:00.000Z",
+   "status": "pre",
+   "home": "NIR",
+   "away": "GEO",
+   "homeName": "Northern Ireland",
+   "awayName": "Georgia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932624",
+   "start": "2026-10-05T18:45:00.000Z",
+   "status": "pre",
+   "home": "ROU",
+   "away": "SWE",
+   "homeName": "Romania",
+   "awayName": "Sweden",
+   "score": null
+  },
+  {
+   "id": "id1002375568932764",
+   "start": "2026-10-05T18:45:00.000Z",
+   "status": "pre",
+   "home": "UKR",
+   "away": "HUN",
+   "homeName": "Ukraine",
+   "awayName": "Hungary",
+   "score": null
+  },
+  {
+   "id": "id1002375568932368",
+   "start": "2026-10-06T14:00:00.000Z",
+   "status": "pre",
+   "home": "KAZ",
+   "away": "FRO",
+   "homeName": "Kazakhstan",
+   "awayName": "Faroe Islands",
+   "score": null
+  },
+  {
+   "id": "id1002375568932514",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "ALB",
+   "away": "SMR",
+   "homeName": "Albania",
+   "awayName": "San Marino",
+   "score": null
+  },
+  {
+   "id": "id1002375568932516",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "BLR",
+   "away": "FIN",
+   "homeName": "Belarus",
+   "awayName": "Finland",
+   "score": null
+  },
+  {
+   "id": "id1002375568931704",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "CRO",
+   "away": "ESP",
+   "homeName": "Croatia",
+   "awayName": "Spain",
+   "score": null
+  },
+  {
+   "id": "id1002375568931706",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "ENG",
+   "away": "CZE",
+   "homeName": "England",
+   "awayName": "Czechia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932274",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "EST",
+   "away": "ISL",
+   "homeName": "Estonia",
+   "awayName": "Iceland",
+   "score": null
+  },
+  {
+   "id": "id1002375568932276",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "LUX",
+   "away": "BUL",
+   "homeName": "Luxembourg",
+   "awayName": "Bulgaria",
+   "score": null
+  },
+  {
+   "id": "id1002375568932370",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "MDA",
+   "away": "SVK",
+   "homeName": "Moldova",
+   "awayName": "Slovakia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932792",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "SCO",
+   "away": "SLO",
+   "homeName": "Scotland",
+   "awayName": "Slovenia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932794",
+   "start": "2026-10-06T18:45:00.000Z",
+   "status": "pre",
+   "home": "SUI",
+   "away": "MKD",
+   "homeName": "Switzerland",
+   "awayName": "North Macedonia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932422",
+   "start": "2026-11-12T17:00:00.000Z",
+   "status": "pre",
+   "home": "ARM",
+   "away": "CYP",
+   "homeName": "Armenia",
+   "awayName": "Cyprus",
+   "score": null
+  },
+  {
+   "id": "id1002375568931496",
+   "start": "2026-11-12T17:00:00.000Z",
+   "status": "pre",
+   "home": "TUR",
+   "away": "BEL",
+   "homeName": "Turkiye",
+   "awayName": "Belgium",
+   "score": null
+  },
+  {
+   "id": "id1002375568932518",
+   "start": "2026-11-12T19:45:00.000Z",
+   "status": "pre",
+   "home": "ALB",
+   "away": "FIN",
+   "homeName": "Albania",
+   "awayName": "Finland",
+   "score": null
+  },
+  {
+   "id": "id1002375568931754",
+   "start": "2026-11-12T19:45:00.000Z",
+   "status": "pre",
+   "home": "CZE",
+   "away": "ESP",
+   "homeName": "Czechia",
+   "awayName": "Spain",
+   "score": null
+  },
+  {
+   "id": "id1002375568931756",
+   "start": "2026-11-12T19:45:00.000Z",
+   "status": "pre",
+   "home": "ENG",
+   "away": "CRO",
+   "homeName": "England",
+   "awayName": "Croatia",
+   "score": null
+  },
+  {
+   "id": "id1002375568931500",
+   "start": "2026-11-12T19:45:00.000Z",
+   "status": "pre",
+   "home": "ITA",
+   "away": "FRA",
+   "homeName": "Italy",
+   "awayName": "France",
+   "score": null
+  },
+  {
+   "id": "id1002375568932424",
+   "start": "2026-11-12T19:45:00.000Z",
+   "status": "pre",
+   "home": "MNE",
+   "away": "LAT",
+   "homeName": "Montenegro",
+   "awayName": "Latvia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932520",
+   "start": "2026-11-12T19:45:00.000Z",
+   "status": "pre",
+   "home": "SMR",
+   "away": "BLR",
+   "homeName": "San Marino",
+   "awayName": "Belarus",
+   "score": null
+  },
+  {
+   "id": "id1002375568932372",
+   "start": "2026-11-13T17:00:00.000Z",
+   "status": "pre",
+   "home": "MDA",
+   "away": "KAZ",
+   "homeName": "Moldova",
+   "awayName": "Kazakhstan",
+   "score": null
+  },
+  {
+   "id": "id1002375568932814",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "AND",
+   "away": "GIB",
+   "homeName": "Andorra",
+   "awayName": "Gibraltar",
+   "score": null
+  },
+  {
+   "id": "id1002375568932278",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "BUL",
+   "away": "ISL",
+   "homeName": "Bulgaria",
+   "awayName": "Iceland",
+   "score": null
+  },
+  {
+   "id": "id1002375568932076",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "LIE",
+   "away": "AZE",
+   "homeName": "Liechtenstein",
+   "awayName": "Azerbaijan",
+   "score": null
+  },
+  {
+   "id": "id1002375568932280",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "LUX",
+   "away": "EST",
+   "homeName": "Luxembourg",
+   "awayName": "Estonia",
+   "score": null
+  },
+  {
+   "id": "id1002375568931584",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "NED",
+   "away": "GRE",
+   "homeName": "Netherlands",
+   "awayName": "Greece",
+   "score": null
+  },
+  {
+   "id": "id1002375568932796",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "SCO",
+   "away": "MKD",
+   "homeName": "Scotland",
+   "awayName": "North Macedonia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932798",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "SLO",
+   "away": "SUI",
+   "homeName": "Slovenia",
+   "awayName": "Switzerland",
+   "score": null
+  },
+  {
+   "id": "id1002375568931586",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "SRB",
+   "away": "GER",
+   "homeName": "Serbia",
+   "awayName": "Germany",
+   "score": null
+  },
+  {
+   "id": "id1002375568932374",
+   "start": "2026-11-13T19:45:00.000Z",
+   "status": "pre",
+   "home": "SVK",
+   "away": "FRO",
+   "homeName": "Slovakia",
+   "awayName": "Faroe Islands",
+   "score": null
+  },
+  {
+   "id": "id1002375568932736",
+   "start": "2026-11-14T14:00:00.000Z",
+   "status": "pre",
+   "home": "KOS",
+   "away": "ISR",
+   "homeName": "Kosovo",
+   "awayName": "Israel",
+   "score": null
+  },
+  {
+   "id": "id1002375568932766",
+   "start": "2026-11-14T17:00:00.000Z",
+   "status": "pre",
+   "home": "GEO",
+   "away": "HUN",
+   "homeName": "Georgia",
+   "awayName": "Hungary",
+   "score": null
+  },
+  {
+   "id": "id1002375568932050",
+   "start": "2026-11-14T17:00:00.000Z",
+   "status": "pre",
+   "home": "NOR",
+   "away": "WAL",
+   "homeName": "Norway",
+   "awayName": "Wales",
+   "score": null
+  },
+  {
+   "id": "id1002375568932738",
+   "start": "2026-11-14T19:45:00.000Z",
+   "status": "pre",
+   "home": "AUT",
+   "away": "IRL",
+   "homeName": "Austria",
+   "awayName": "Ireland",
+   "score": null
+  },
+  {
+   "id": "id1002375568932768",
+   "start": "2026-11-14T19:45:00.000Z",
+   "status": "pre",
+   "home": "NIR",
+   "away": "UKR",
+   "homeName": "Northern Ireland",
+   "awayName": "Ukraine",
+   "score": null
+  },
+  {
+   "id": "id1002375568932052",
+   "start": "2026-11-14T19:45:00.000Z",
+   "status": "pre",
+   "home": "POR",
+   "away": "DEN",
+   "homeName": "Portugal",
+   "awayName": "Denmark",
+   "score": null
+  },
+  {
+   "id": "id1002375568932626",
+   "start": "2026-11-14T19:45:00.000Z",
+   "status": "pre",
+   "home": "ROU",
+   "away": "POL",
+   "homeName": "Romania",
+   "awayName": "Poland",
+   "score": null
+  },
+  {
+   "id": "id1002375568932628",
+   "start": "2026-11-14T19:45:00.000Z",
+   "status": "pre",
+   "home": "SWE",
+   "away": "BIH",
+   "homeName": "Sweden",
+   "awayName": "Bosnia and Herzegovina",
+   "score": null
+  },
+  {
+   "id": "id1002375568932426",
+   "start": "2026-11-15T14:00:00.000Z",
+   "status": "pre",
+   "home": "CYP",
+   "away": "MNE",
+   "homeName": "Cyprus",
+   "awayName": "Montenegro",
+   "score": null
+  },
+  {
+   "id": "id1002375568932428",
+   "start": "2026-11-15T14:00:00.000Z",
+   "status": "pre",
+   "home": "LAT",
+   "away": "ARM",
+   "homeName": "Latvia",
+   "awayName": "Armenia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932522",
+   "start": "2026-11-15T17:00:00.000Z",
+   "status": "pre",
+   "home": "BLR",
+   "away": "ALB",
+   "homeName": "Belarus",
+   "awayName": "Albania",
+   "score": null
+  },
+  {
+   "id": "id1002375568932524",
+   "start": "2026-11-15T17:00:00.000Z",
+   "status": "pre",
+   "home": "FIN",
+   "away": "SMR",
+   "homeName": "Finland",
+   "awayName": "San Marino",
+   "score": null
+  },
+  {
+   "id": "id1002375568931504",
+   "start": "2026-11-15T19:45:00.000Z",
+   "status": "pre",
+   "home": "BEL",
+   "away": "ITA",
+   "homeName": "Belgium",
+   "awayName": "Italy",
+   "score": null
+  },
+  {
+   "id": "id1002375568931758",
+   "start": "2026-11-15T19:45:00.000Z",
+   "status": "pre",
+   "home": "CRO",
+   "away": "CZE",
+   "homeName": "Croatia",
+   "awayName": "Czechia",
+   "score": null
+  },
+  {
+   "id": "id1002375568931760",
+   "start": "2026-11-15T19:45:00.000Z",
+   "status": "pre",
+   "home": "ESP",
+   "away": "ENG",
+   "homeName": "Spain",
+   "awayName": "England",
+   "score": null
+  },
+  {
+   "id": "id1002375568931506",
+   "start": "2026-11-15T19:45:00.000Z",
+   "status": "pre",
+   "home": "FRA",
+   "away": "TUR",
+   "homeName": "France",
+   "awayName": "Turkiye",
+   "score": null
+  },
+  {
+   "id": "id1002375568932376",
+   "start": "2026-11-16T15:00:00.000Z",
+   "status": "pre",
+   "home": "FRO",
+   "away": "MDA",
+   "homeName": "Faroe Islands",
+   "awayName": "Moldova",
+   "score": null
+  },
+  {
+   "id": "id1002375568932378",
+   "start": "2026-11-16T15:00:00.000Z",
+   "status": "pre",
+   "home": "KAZ",
+   "away": "SVK",
+   "homeName": "Kazakhstan",
+   "awayName": "Slovakia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932282",
+   "start": "2026-11-16T17:00:00.000Z",
+   "status": "pre",
+   "home": "EST",
+   "away": "BUL",
+   "homeName": "Estonia",
+   "awayName": "Bulgaria",
+   "score": null
+  },
+  {
+   "id": "id1002375568932284",
+   "start": "2026-11-16T17:00:00.000Z",
+   "status": "pre",
+   "home": "ISL",
+   "away": "LUX",
+   "homeName": "Iceland",
+   "awayName": "Luxembourg",
+   "score": null
+  },
+  {
+   "id": "id1002375568932078",
+   "start": "2026-11-16T17:00:00.000Z",
+   "status": "pre",
+   "home": "LTU",
+   "away": "LIE",
+   "homeName": "Lithuania",
+   "awayName": "Liechtenstein",
+   "score": null
+  },
+  {
+   "id": "id1002375568931588",
+   "start": "2026-11-16T19:45:00.000Z",
+   "status": "pre",
+   "home": "GER",
+   "away": "NED",
+   "homeName": "Germany",
+   "awayName": "Netherlands",
+   "score": null
+  },
+  {
+   "id": "id1002375568932816",
+   "start": "2026-11-16T19:45:00.000Z",
+   "status": "pre",
+   "home": "GIB",
+   "away": "MLT",
+   "homeName": "Gibraltar",
+   "awayName": "Malta",
+   "score": null
+  },
+  {
+   "id": "id1002375568931590",
+   "start": "2026-11-16T19:45:00.000Z",
+   "status": "pre",
+   "home": "GRE",
+   "away": "SRB",
+   "homeName": "Greece",
+   "awayName": "Serbia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932800",
+   "start": "2026-11-16T19:45:00.000Z",
+   "status": "pre",
+   "home": "MKD",
+   "away": "SLO",
+   "homeName": "North Macedonia",
+   "awayName": "Slovenia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932802",
+   "start": "2026-11-16T19:45:00.000Z",
+   "status": "pre",
+   "home": "SUI",
+   "away": "SCO",
+   "homeName": "Switzerland",
+   "awayName": "Scotland",
+   "score": null
+  },
+  {
+   "id": "id1002375568932630",
+   "start": "2026-11-17T19:45:00.000Z",
+   "status": "pre",
+   "home": "BIH",
+   "away": "ROU",
+   "homeName": "Bosnia and Herzegovina",
+   "awayName": "Romania",
+   "score": null
+  },
+  {
+   "id": "id1002375568932054",
+   "start": "2026-11-17T19:45:00.000Z",
+   "status": "pre",
+   "home": "DEN",
+   "away": "NOR",
+   "homeName": "Denmark",
+   "awayName": "Norway",
+   "score": null
+  },
+  {
+   "id": "id1002375568932770",
+   "start": "2026-11-17T19:45:00.000Z",
+   "status": "pre",
+   "home": "HUN",
+   "away": "NIR",
+   "homeName": "Hungary",
+   "awayName": "Northern Ireland",
+   "score": null
+  },
+  {
+   "id": "id1002375568932742",
+   "start": "2026-11-17T19:45:00.000Z",
+   "status": "pre",
+   "home": "IRL",
+   "away": "KOS",
+   "homeName": "Ireland",
+   "awayName": "Kosovo",
+   "score": null
+  },
+  {
+   "id": "id1002375568932740",
+   "start": "2026-11-17T19:45:00.000Z",
+   "status": "pre",
+   "home": "ISR",
+   "away": "AUT",
+   "homeName": "Israel",
+   "awayName": "Austria",
+   "score": null
+  },
+  {
+   "id": "id1002375568932632",
+   "start": "2026-11-17T19:45:00.000Z",
+   "status": "pre",
+   "home": "POL",
+   "away": "SWE",
+   "homeName": "Poland",
+   "awayName": "Sweden",
+   "score": null
+  },
+  {
+   "id": "id1002375568932772",
+   "start": "2026-11-17T19:45:00.000Z",
+   "status": "pre",
+   "home": "UKR",
+   "away": "GEO",
+   "homeName": "Ukraine",
+   "awayName": "Georgia",
+   "score": null
+  },
+  {
+   "id": "id1002375568932056",
+   "start": "2026-11-17T19:45:00.000Z",
+   "status": "pre",
+   "home": "WAL",
+   "away": "POR",
+   "homeName": "Wales",
+   "awayName": "Portugal",
+   "score": null
+  }
+ ]
+}

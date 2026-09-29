@@ -2,7 +2,7 @@
 <html lang="de">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feelochamp – Playoffs & Final Four</title>
+<title>Feelochamp – Nations League</title>
 <link rel="stylesheet" href="assets/fonts.css">
 
 <link rel="stylesheet" href="assets/bootstrap.min.css">
@@ -43,11 +43,11 @@
           <ul class="dropdown-menu dropdown-menu-feelo">
             <li><a class="dropdown-item" href="{{REGELN_URL}}">Regeln</a></li>
             <li><a class="dropdown-item" href="{{TABELLE_URL}}">Ligaphase Tabelle</a></li>
-            <li><a class="dropdown-item" href="{{PLAYOFF_URL}}" aria-current="page">Playoffs</a></li>
+            <li><a class="dropdown-item" href="{{PLAYOFF_URL}}">Playoffs</a></li>
             <li><a class="dropdown-item" href="{{TURNIERBAUM_URL}}">Turnierbaum</a></li>
             <li><a class="dropdown-item" href="{{TEAMS_URL}}">Teams</a></li>
             <li><a class="dropdown-item" href="{{KALENDER_URL}}">Kalender</a></li>
-            <li><a class="dropdown-item" href="{{NATIONSLEAGUE_URL}}">Nations League</a></li>
+            <li><a class="dropdown-item" href="{{NATIONSLEAGUE_URL}}" aria-current="page">Nations League</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -75,6 +75,7 @@
   </div>
 </nav>
 
+
 <!-- ================= PAGE HEADER ================= -->
 <header class="page-header">
   <svg class="page-header-rays" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -91,83 +92,61 @@
     </g>
   </svg>
   <div class="container page-header-content">
-    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
-      <div class="hero-panel">
-        <span class="eyebrow d-block mb-1">Nach der Gruppenphase &middot; UEFA Nations League 2026/27</span>
-        <h1>Playoffs &amp; <span class="accent">Final Four</span></h1>
-      </div>
-      <div class="dropdown md-select">
-        <button class="btn dropdown-toggle" type="button" id="quickNav" data-bs-toggle="dropdown" aria-expanded="false">Quick Nav</button>
-        <ul class="dropdown-menu dropdown-menu-feelo dropdown-menu-end" aria-labelledby="quickNav">
-          <li><a class="dropdown-item qn" href="#viertelfinale">Viertelfinale</a></li>
-          <li><a class="dropdown-item qn" href="#finalfour">Halbfinale</a></li>
-          <li><a class="dropdown-item qn" href="#finale">Finale</a></li>
-          <li><a class="dropdown-item qn" href="#relegation-ab">Relegation A/B</a></li>
-          <li><a class="dropdown-item qn" href="#relegation-bc">Relegation B/C</a></li>
-          <li><a class="dropdown-item qn" href="#direkt">Auf- &amp; Absteiger</a></li>
-        </ul>
-      </div>
+    <div class="hero-panel">
+      <span class="eyebrow d-block mb-1">Infos &middot; UEFA Nations League 2026/27</span>
+      <h1>Alle <span class="accent">Spiele</span></h1>
     </div>
   </div>
 </header>
 
 <!-- ================= CONTENT ================= -->
+<!-- Spiele-Zeilen generiert build.js zur Build-Zeit aus der OddsPapi-API (Turnier 23755, aktuelle Saison) -->
 <main>
   <div class="container">
-
-    <section class="ko-section" id="viertelfinale">
-      <div class="ko-head">
-        <h2>Viertelfinale Liga A</h2>
-        <span class="ko-sub">Gruppensieger &amp; -zweite der Liga A &middot; Hin- &amp; R&uuml;ckspiel &middot; 25.03. &amp; 30.03.2027</span>
+    <div class="content-card">
+      <div class="content-card-toolbar">
+        <span class="toolbar-title">UEFA Nations League {{NL_SEASON}}</span>
+        <span class="nl-updated">Stand: {{NL_UPDATED}} &middot; Daten: <a href="https://oddspapi.io/sports/football" target="_blank" rel="noopener">OddsPapi</a></span>
       </div>
-      <div class="tie-grid" id="qfGrid"><!-- injected --></div>
-    </section>
 
-    <section class="ko-section" id="finalfour">
-      <div class="ko-head">
-        <h2>Final Four &ndash; Halbfinale</h2>
-        <span class="ko-sub">Die 4 VF-Sieger &middot; ein Spiel &middot; 09. &amp; 10.06.2027 &middot; Gastgeber: einer der vier Teilnehmer</span>
+      <div class="nl-filters">
+        <div class="nl-status-filter" role="group" aria-label="Status filtern">
+          <button type="button" class="nl-chip is-active" data-filter="all">Alle <span class="nl-count">{{NL_COUNT_ALL}}</span></button>
+          <button type="button" class="nl-chip" data-filter="done">Gespielt <span class="nl-count">{{NL_COUNT_DONE}}</span></button>
+          <button type="button" class="nl-chip" data-filter="live">Live <span class="nl-count">{{NL_COUNT_LIVE}}</span></button>
+          <button type="button" class="nl-chip" data-filter="pre">Anstehend <span class="nl-count">{{NL_COUNT_PRE}}</span></button>
+        </div>
+        <div class="search-feelo">
+          <label for="nlSearch">Team</label>
+          <input type="search" id="nlSearch" placeholder="z. B. Österreich" autocomplete="off">
+        </div>
       </div>
-      <div class="tie-grid cols-2" id="sfGrid"><!-- injected --></div>
-    </section>
 
-    <section class="ko-section" id="finale">
-      <div class="ko-head">
-        <h2>Finale &amp; Spiel um Platz 3</h2>
-        <span class="ko-sub">13.06.2027 &middot; ein Spiel</span>
+      <div class="table-responsive">
+        <table class="table-feelo nl-table">
+          <thead>
+            <tr>
+              <th style="width:6rem;">Anstoß</th>
+              <th>Heim</th>
+              <th class="col-res" style="width:7rem;">Ergebnis</th>
+              <th class="text-end">Gast</th>
+            </tr>
+          </thead>
+          <tbody id="nlRows">
+{{NL_ROWS}}
+          </tbody>
+        </table>
       </div>
-      <div class="tie-grid cols-2" id="finGrid"><!-- injected --></div>
-      <div class="champion-card" id="championCard"><!-- injected --></div>
-    </section>
+      <p class="nl-empty" id="nlEmpty" hidden>Keine Spiele für diesen Filter.</p>
 
-    <section class="ko-section" id="relegation-ab">
-      <div class="ko-head">
-        <h2>Relegation Liga A / B</h2>
-        <span class="ko-sub">2 schlechtere Dritte + 2 bessere Vierte der Liga A vs. 4 Gruppenzweite der Liga B &middot; 25.03. &amp; 30.03.2027</span>
+      <div class="table-footbar">
+        <span class="row-count"><span id="nlVisible">{{NL_COUNT_ALL}}</span> Spiele</span>
+        <span class="nl-note">Anstoßzeiten in MEZ/MESZ &middot; Live-Stände sind eine Momentaufnahme zum Build-Zeitpunkt</span>
       </div>
-      <div class="tie-grid" id="relABGrid"><!-- injected --></div>
-    </section>
-
-    <section class="ko-section" id="relegation-bc">
-      <div class="ko-head">
-        <h2>Relegation Liga B / C</h2>
-        <span class="ko-sub">4 Gruppenvierte der Liga B vs. 4 Gruppenzweite der Liga C &middot; 25.03. &amp; 30.03.2027</span>
-      </div>
-      <div class="tie-grid" id="relBCGrid"><!-- injected --></div>
-    </section>
-
-    <section class="ko-section" id="direkt">
-      <div class="ko-head">
-        <h2>Direkte Auf- &amp; Absteiger</h2>
-        <span class="ko-sub">F&uuml;r die Nations League 2028/29</span>
-      </div>
-      <div class="content-card" style="padding:1rem 1.1rem;">
-        <div id="directWrap"><!-- injected --></div>
-      </div>
-    </section>
-
+    </div>
   </div>
 </main>
+
 
 <!-- ================= RUND UM DEN TIPPBEWERB (Sitemap) ================= -->
 <section class="section-programme">
@@ -214,11 +193,11 @@
           <ul>
             <li><a href="{{REGELN_URL}}">Regeln <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
             <li><a href="{{TABELLE_URL}}">Ligaphase Tabelle <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
-            <li><a href="{{PLAYOFF_URL}}" aria-current="page">Playoffs <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="{{PLAYOFF_URL}}">Playoffs <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
             <li><a href="{{TURNIERBAUM_URL}}">Turnierbaum <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
             <li><a href="{{TEAMS_URL}}">Teams <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
             <li><a href="{{KALENDER_URL}}">Kalender <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
-            <li><a href="{{NATIONSLEAGUE_URL}}">Nations League <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
+            <li><a href="{{NATIONSLEAGUE_URL}}" aria-current="page">Nations League <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a></li>
           </ul>
         </div>
       </div>
@@ -263,148 +242,49 @@
 <script src="assets/sidetabs.js"></script>
 
 <script>
-  // K.o.-Phase der UEFA Nations League 2026/27 nach der Gruppenphase
-  // (Modus laut de.wikipedia.org/wiki/UEFA_Nations_League_2026/27):
-  // - Viertelfinale Liga A: Gruppensieger vs. -zweite, Hin & Rück (25./30.03.2027)
-  // - Final Four: Halbfinale 09./10.06., Spiel um Platz 3 & Finale 13.06.2027
-  // - Relegation A/B und B/C parallel zum Viertelfinale, Hin & Rück
-  // - Direkt: 2 schlechtere Vierte der Liga A steigen ab, Gruppensieger
-  //   der Ligen B, C und D steigen auf.
-  // Paarungen stehen erst nach der Gruppenphase fest → Platzhalter-Slots.
-
-  // Liga-Farben wie auf der Wikipedia-Karte
-  var LIGA = { A:"#e71827", B:"#2b8ac8", C:"#31aa61", D:"#f8c618" };
-
-  // Slot = Platzhalter für ein noch nicht feststehendes Team
-  function slot(code, liga, label, note){ return { code:code, liga:liga, label:label, note:note || '' }; }
-  var S1A = slot("1A","A","Gruppensieger Liga A");
-  var S2A = slot("2A","A","Gruppenzweiter Liga A");
-
-  // Zweispiel-Paarung: [Titel, Datum, Slot A (Hinspiel daheim), Slot B]
-  var QF = [
-    ["VF 1","25.03. & 30.03.", S2A, S1A],
-    ["VF 2","25.03. & 30.03.", S2A, S1A],
-    ["VF 3","25.03. & 30.03.", S2A, S1A],
-    ["VF 4","25.03. & 30.03.", S2A, S1A]
-  ];
-
-  var S2B = slot("2B","B","Gruppenzweiter Liga B");
-  var REL_AB = [
-    ["A/B 1","25.03. & 30.03.", S2B, slot("3A","A","Dritter Liga A","Rang 3 der Gruppendritten")],
-    ["A/B 2","25.03. & 30.03.", S2B, slot("3A","A","Dritter Liga A","Rang 4 der Gruppendritten")],
-    ["A/B 3","25.03. & 30.03.", S2B, slot("4A","A","Vierter Liga A","Rang 1 der Gruppenvierten")],
-    ["A/B 4","25.03. & 30.03.", S2B, slot("4A","A","Vierter Liga A","Rang 2 der Gruppenvierten")]
-  ];
-
-  var S2C = slot("2C","C","Gruppenzweiter Liga C");
-  var S4B = slot("4B","B","Gruppenvierter Liga B");
-  var REL_BC = [
-    ["B/C 1","25.03. & 30.03.", S2C, S4B],
-    ["B/C 2","25.03. & 30.03.", S2C, S4B],
-    ["B/C 3","25.03. & 30.03.", S2C, S4B],
-    ["B/C 4","25.03. & 30.03.", S2C, S4B]
-  ];
-
-  function vfWinner(n){ return slot("VF","A","Sieger VF " + n); }
-  function sfResult(n, won){ return slot("HF","A",(won ? "Sieger" : "Verlierer") + " HF " + n); }
-
-  // Einzelspiel: [Titel, Datum, Slot A, Slot B]
-  var SF = [
-    ["Halbfinale 1","09.06.2027", vfWinner(1), vfWinner(2)],
-    ["Halbfinale 2","10.06.2027", vfWinner(3), vfWinner(4)]
-  ];
-  var FINALS = [
-    ["Finale","13.06.2027", sfResult(1,true), sfResult(2,true)],
-    ["Spiel um Platz 3","13.06.2027", sfResult(1,false), sfResult(2,false)]
-  ];
-
-  // Direkte Auf-/Absteiger: [Überschrift, Slots]
-  function groupWinners(liga, groups){
-    return groups.map(function(g){ return slot(g, liga, "Sieger Gruppe " + g); });
-  }
-  var DIRECT = [
-    ["Absteiger Liga A &rarr; B", [
-      slot("4A","A","Vierter Liga A","Rang 3 der Gruppenvierten"),
-      slot("4A","A","Vierter Liga A","Rang 4 der Gruppenvierten")
-    ]],
-    ["Aufsteiger Liga B &rarr; A", groupWinners("B", ["B1","B2","B3","B4"])],
-    ["Aufsteiger Liga C &rarr; B", groupWinners("C", ["C1","C2","C3","C4"])],
-    ["Aufsteiger Liga D &rarr; C", groupWinners("D", ["D1","D2"])]
-  ];
-
-  var DASH = '–';
-
-  function crestTextColor(hex){
-    var c = hex.replace('#','');
-    var r = parseInt(c.substring(0,2),16), g = parseInt(c.substring(2,4),16), b = parseInt(c.substring(4,6),16);
-    return (0.299*r + 0.587*g + 0.114*b) / 255 > 0.62 ? '#111' : '#fff';
-  }
-  function crest(s){
-    var bg = LIGA[s.liga] || "#9aa7bd";
-    return '<span class="crest" style="background:'+bg+'; color:'+crestTextColor(bg)+';">'+s.code+'</span>';
-  }
-  function teamRow(s){
-    return '<div class="tie-team">' + crest(s) +
-      '<span class="team-name">' + s.label + (s.note ? '<small class="slot-note">' + s.note + '</small>' : '') + '</span>' +
-      '<span class="tie-agg">' + DASH + '</span></div>';
-  }
-
-  function tieCard(t, twoLegs){
-    return '<div class="tie">' +
-      '<div class="tie-head"><span class="tie-grp">' + t[0] + '</span><span class="tie-date">' + t[1] + '</span></div>' +
-      '<div class="tie-body">' + teamRow(t[2]) + teamRow(t[3]) +
-        (twoLegs ? '<div class="tie-legs"><span>Hin ' + DASH + ':' + DASH + '</span><span>R&uuml;ck ' + DASH + ':' + DASH + '</span></div>' : '') +
-      '</div></div>';
-  }
-
-  function renderTies(id, list, twoLegs){
-    document.getElementById(id).innerHTML = list.map(function(t){ return tieCard(t, twoLegs); }).join('');
-  }
-
-  function renderDirect(){
-    document.getElementById('directWrap').innerHTML = DIRECT.map(function(d){
-      return '<div class="direct-group"><div class="direct-title">' + d[0] + '</div><div class="fix-wrap">' +
-        d[1].map(function(s){
-          return '<span class="fix-tag">' + crest(s) + s.label +
-            (s.note ? ' <small class="slot-note-inline">(' + s.note + ')</small>' : '') + '</span>';
-        }).join('') + '</div></div>';
-    }).join('');
-  }
-
-  renderTies('qfGrid', QF, true);
-  renderTies('sfGrid', SF, false);
-  renderTies('finGrid', FINALS, false);
-  renderTies('relABGrid', REL_AB, true);
-  renderTies('relBCGrid', REL_BC, true);
-  renderDirect();
-
-  document.getElementById('championCard').innerHTML =
-    '<span class="crest" style="background:#9aa7bd; color:#111;">?</span>' +
-    '<div class="champ-label">UEFA Nations League 2026/27 &ndash; Sieger</div>' +
-    '<div class="champ-name">TBD</div>';
-
-  // Quick Nav: sanft zur Sektion scrollen
-  document.querySelectorAll('a.qn').forEach(function(a){
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      var el = document.querySelector(a.getAttribute('href'));
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Nations League: Status-Filter (Alle/Gespielt/Live/Anstehend) + Team-Suche.
+  // Datums-Kopfzeilen werden ausgeblendet, wenn darunter kein Spiel mehr sichtbar ist.
+  (function(){
+    var rows = Array.prototype.slice.call(document.querySelectorAll("#nlRows tr"));
+    var chips = document.querySelectorAll(".nl-chip");
+    var search = document.getElementById("nlSearch");
+    var status = "all";
+    function norm(s){ return s.toLowerCase().normalize("NFD").replace(/\p{M}/gu, ""); }
+    function apply(){
+      var q = norm(search.value.trim()), visible = 0, dayRow = null, dayHas = false;
+      function closeDay(){ if (dayRow) dayRow.classList.toggle("is-hidden", !dayHas); }
+      rows.forEach(function(tr){
+        if (tr.classList.contains("nl-day")){ closeDay(); dayRow = tr; dayHas = false; return; }
+        var show = (status === "all" || tr.dataset.status === status) && (!q || norm(tr.dataset.teams).indexOf(q) !== -1);
+        tr.classList.toggle("is-hidden", !show);
+        if (show){ visible++; dayHas = true; }
+      });
+      closeDay();
+      document.getElementById("nlVisible").textContent = visible;
+      document.getElementById("nlEmpty").hidden = visible > 0;
+    }
+    chips.forEach(function(c){
+      c.addEventListener("click", function(){
+        chips.forEach(function(o){ o.classList.toggle("is-active", o === c); o.setAttribute("aria-pressed", o === c); });
+        status = c.dataset.filter; apply();
+      });
+      c.setAttribute("aria-pressed", c.classList.contains("is-active"));
     });
-  });
+    search.addEventListener("input", apply);
+  })();
 
+  var toastEl = document.getElementById("demoToast");
   function showToast(text){
-    var toastEl = document.getElementById('demoToast');
-    document.getElementById('demoToastText').textContent = text;
+    document.getElementById("demoToastText").textContent = text;
     bootstrap.Toast.getOrCreateInstance(toastEl, { delay: 3000 }).show();
   }
-  document.querySelectorAll('.demo-link').forEach(function(a){
-    a.addEventListener('click', function(e){
+  document.querySelectorAll(".demo-link").forEach(function(a){
+    a.addEventListener("click", function(e){
       e.preventDefault();
-      showToast('Diese Unterseite ist in der Demo nicht verknüpft.');
+      showToast("Diese Unterseite ist in der Demo nicht verknüpft.");
     });
   });
 
-  // Scroll-reveal für die "Rund um den Tippbewerb"-Karten
   (function(){
     var cards = document.querySelectorAll('.card-feelo');
     var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
