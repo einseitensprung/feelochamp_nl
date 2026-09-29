@@ -9,6 +9,8 @@
  * Usage:
  *   node build.js            -> relative links (index.html / spiele.html)
  *                                for GitHub Pages / any static host
+ *   node build.js --nl-refresh -> zusätzlich Nations-League-Daten frisch von der OddsPapi-API
+ *                                (sonst nur aus dem Cache src/data/nationsleague.json)
  *   node build.js artifact   -> absolute claude.ai artifact links,
  *                                used only when publishing to Claude Artifacts
  */
@@ -17,7 +19,8 @@ const path = require("path");
 const { nationsLeagueReplacements } = require("./src/nationsleague");
 
 const dir = __dirname;
-const mode = process.argv[2] || "relative";
+const args = process.argv.slice(2);
+const mode = args.find((a) => !a.startsWith("--")) || "relative";
 
 const ARTIFACT_HOME_URL = "https://claude.ai/code/artifact/37760093-ef79-47f2-8f58-d1f4152b59b4";
 const ARTIFACT_SPIELE_URL = "https://claude.ai/code/artifact/6f9f5e88-003d-46ad-a0ec-49276b67a568";
@@ -68,6 +71,6 @@ build("verlauf.template.html", "verlauf.html", COMMON);
 build("verlauf2.template.html", "verlauf2.html", COMMON);
 
 // Nations League: Spiele zur Build-Zeit von der OddsPapi-API (Key aus .env), Fallback auf Cache
-nationsLeagueReplacements().then((nl) => {
+nationsLeagueReplacements({ refresh: args.includes("--nl-refresh") }).then((nl) => {
   build("nationsleague.template.html", "nationsleague.html", { ...COMMON, ...nl });
 });

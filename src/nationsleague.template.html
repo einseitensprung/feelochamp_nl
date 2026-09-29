@@ -123,13 +123,14 @@
       </div>
 
       <div class="table-responsive">
-        <table class="table-feelo nl-table">
+        <table class="table-feelo nl-table{{NL_TABLE_CLASS}}">
           <thead>
             <tr>
               <th style="width:6rem;">Anstoß</th>
               <th>Heim</th>
               <th class="col-res" style="width:7rem;">Ergebnis</th>
               <th class="text-end">Gast</th>
+              <th class="col-odds" style="width:12.5rem;">Quoten 1 &middot; X &middot; 2</th>
             </tr>
           </thead>
           <tbody id="nlRows">
@@ -141,7 +142,7 @@
 
       <div class="table-footbar">
         <span class="row-count"><span id="nlVisible">{{NL_COUNT_ALL}}</span> Spiele</span>
-        <span class="nl-note">Anstoßzeiten in MEZ/MESZ &middot; Live-Stände sind eine Momentaufnahme zum Build-Zeitpunkt</span>
+        <span class="nl-note">Anstoßzeiten in MEZ/MESZ &middot; Live-Stände sind eine Momentaufnahme zum Build-Zeitpunkt<span class="nl-odds-legend"> &middot; Quoten: Pinnacle (sonst bet365/bwin/tipico), <span class="nl-odd is-fav nl-odd-key">Favorit</span> <span class="nl-odd is-hit nl-odd-key">eingetreten</span></span></span>
       </div>
     </div>
   </div>

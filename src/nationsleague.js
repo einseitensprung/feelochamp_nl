@@ -6,8 +6,13 @@
  * Der API-Key kommt aus ODDSPAPI_KEY (Umgebung oder lokale .env, per .gitignore
  * ausgeschlossen) und landet nie im HTML.
  *
+ * API-Aufrufe nur mit `node build.js --nl-refresh` — ein normaler Build nutzt nur den Cache
+ * (der Free-Plan hat ein festes Kontingent von 250 Requests; jeder Refresh kostet 1 + Live-Scores + Quoten).
+ *
  * Cache: src/data/nationsleague.json (enthält keinen Key, wird committed).
  *  - Ohne Key oder bei API-Fehlern baut die Seite aus dem Cache.
+ *  - 1X2-Quoten (Pinnacle, Fallback bet365/bwin/tipico) höchstens stündlich neu; beendete Spiele
+ *    behalten ihre letzte bekannte Quote aus dem Cache.
  *  - Ergebnisse beendeter Spiele ändern sich nicht mehr und werden aus dem Cache
  *    übernommen — pro Build werden nur Scores für Live- und neu beendete Spiele geholt.
  */
@@ -19,6 +24,11 @@ const SPORT_ID = 10;
 const TOURNAMENT_ID = 23755;
 const TZ = "Europe/Vienna";
 const CACHE_FILE = path.join(__dirname, "data", "nationsleague.json");
+// Buchmacher für die 1X2-Quoten, in Reihenfolge der Präferenz (Slugs laut API)
+const BOOKMAKERS = ["pinnacle", "bet365", "bwin", "tipico"];
+const BOOKMAKER_NAMES = { pinnacle: "Pinnacle", bet365: "bet365", bwin: "bwin", tipico: "tipico" };
+// Quoten werden höchstens stündlich neu geholt (jeder Build ruft sonst ~60× /odds auf)
+const ODDS_MAX_AGE_MS = 60 * 60 * 1000;
 
 // API-Kürzel -> [deutscher Name, Badge-Hintergrund, Badge-Schrift] (Nationalfarben, keine Verbandswappen)
 const TEAMS = {
@@ -63,21 +73,53 @@ function readKey() {
   return key && key !== "HIER_DEINEN_KEY_EINTRAGEN" ? key : null;
 }
 
+function quotaError(details) {
+  const err = new Error(`OddsPapi-Kontingent erschöpft${details ? ` (${details})` : ""}`);
+  err.quota = true;
+  return err;
+}
+
 async function api(endpoint, params, key) {
   const url = `${API}/${endpoint}?${new URLSearchParams({ ...params, apiKey: key })}`;
   for (let attempt = 0; ; attempt++) {
     const res = await fetch(url);
-    if (res.status === 429 && attempt < 4) {
-      await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt));
+    if (res.status === 429 && attempt < 5) {
+      // Rate limit (v. a. /odds, ca. 1 Request pro 0,5 s): die von der API genannte Wartezeit einhalten.
+      // Ausnahme: Kontingent des Plans erschöpft (REQUEST_LIMIT_EXCEEDED) — Warten hilft nicht, sofort abbrechen.
+      const body = await res.json().catch(() => ({}));
+      if (body.error && body.error.code === "REQUEST_LIMIT_EXCEEDED") throw quotaError(body.error.details);
+      const wait = (body.error && body.error.retryMs) || 1000 * 2 ** attempt;
+      await new Promise((r) => setTimeout(r, wait + 100));
       continue;
     }
-    if (!res.ok) throw new Error(`${endpoint}: HTTP ${res.status}`);
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({}));
+      throw new Error(`${endpoint}: HTTP ${res.status}${body.error ? ` ${body.error.code}` : ""}`);
+    }
     return res.json();
   }
 }
 
 function readCache() {
   try { return JSON.parse(fs.readFileSync(CACHE_FILE, "utf8")); } catch { return null; }
+}
+
+// 1X2-Quoten: Markt 101, Outcomes 101 = Heimsieg (1), 102 = Remis (X), 103 = Auswärtssieg (2).
+// Pinnacle als Referenz (niedrige Marge = neutralste Quote), sonst der erste Buchmacher der Liste mit Preis.
+// Der bookmakers-Filter ist Pflicht: ungefiltert liefert /odds ~34 MB pro Spiel (264 Buchmacher).
+async function fetchOdds(fixtureId, key) {
+  const o = await api("odds", { fixtureId, bookmakers: BOOKMAKERS.join(",") }, key);
+  for (const bm of BOOKMAKERS) {
+    const m = o.bookmakerOdds && o.bookmakerOdds[bm] && o.bookmakerOdds[bm].markets["101"];
+    if (!m || m.marketActive === false) continue;
+    const price = (id) => {
+      const p = m.outcomes[id] && m.outcomes[id].players && m.outcomes[id].players["0"];
+      return p && p.active !== false && p.price > 1 ? p.price : null;
+    };
+    const prices = ["101", "102", "103"].map(price);
+    if (prices.every(Boolean)) return { bookmaker: bm, prices, at: new Date().toISOString() };
+  }
+  return null;
 }
 
 async function fetchData(key, cache) {
@@ -87,10 +129,11 @@ async function fetchData(key, cache) {
   const cachedScores = new Map((cache && cache.seasonId === seasonId ? cache.games : []).map((g) => [g.id, g]));
 
   const games = [];
+  const oddsErrors = [];
   for (const f of all.filter((f) => f.seasonId === seasonId)) {
     const status = STATUS[f.statusId] || "pre";
     const game = { id: f.fixtureId, start: f.startTime, status, home: f.participant1Abbr, away: f.participant2Abbr,
-                   homeName: f.participant1Name, awayName: f.participant2Name, score: null };
+                   homeName: f.participant1Name, awayName: f.participant2Name, score: null, odds: null };
     const cached = cachedScores.get(game.id);
     if (status === "done" && cached && cached.status === "done" && cached.score) {
       game.score = cached.score;
@@ -100,8 +143,23 @@ async function fetchData(key, cache) {
       const r = p && (p.result || p.fulltime);
       if (r) game.score = [r.participant1Score, r.participant2Score];
     }
+
+    // 1X2-Quoten: nur für anstehende Spiele (Live-Quoten sind im OddsPapi-Plan gesperrt: 403 RESTRICTED_ACCESS)
+    // und höchstens alle ODDS_MAX_AGE_MS. Live/beendete Spiele behalten die letzte Vorab-Quote aus dem Cache.
+    // Ein Fehler bei einem Spiel kostet nur dessen Quote, nicht den ganzen Refresh.
+    game.odds = (cached && cached.odds) || null;
+    const oddsFresh = game.odds && Date.now() - Date.parse(game.odds.at) < ODDS_MAX_AGE_MS;
+    if (status === "pre" && f.hasOdds && !oddsFresh) {
+      try {
+        game.odds = (await fetchOdds(f.fixtureId, key)) || game.odds;
+      } catch (err) {
+        if (err.quota) throw err;
+        oddsErrors.push(`${f.participant1Abbr}-${f.participant2Abbr} (${err.message})`);
+      }
+    }
     games.push(game);
   }
+  if (oddsErrors.length) console.warn(`nationsleague: keine Quoten für ${oddsErrors.length} Spiel(e): ${oddsErrors.join(", ")}`);
   games.sort((a, b) => a.start.localeCompare(b.start) || a.home.localeCompare(b.home));
 
   const years = [...new Set(games.map((g) => g.start.slice(0, 4)))];
@@ -125,6 +183,20 @@ function result(g) {
   return g.status === "live" ? `${score}<span class="nl-badge is-live">Live</span>` : score;
 }
 
+// 1 · X · 2 — Favorit (niedrigste Quote) hervorgehoben; bei beendeten Spielen der eingetretene Ausgang
+function odds(g) {
+  if (!g.odds) return `<span class="nl-odds-none">–</span>`;
+  const fav = g.odds.prices.indexOf(Math.min(...g.odds.prices));
+  const hit = g.status === "done" && g.score ? (g.score[0] > g.score[1] ? 0 : g.score[0] === g.score[1] ? 1 : 2) : -1;
+  const book = BOOKMAKER_NAMES[g.odds.bookmaker] || g.odds.bookmaker;
+  const when = fmt(g.odds.at, { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" });
+  const cells = g.odds.prices.map((p, i) => {
+    const cls = ["nl-odd", i === fav ? "is-fav" : "", i === hit ? "is-hit" : ""].filter(Boolean).join(" ");
+    return `<span class="${cls}"><small>${["1", "X", "2"][i]}</small>${p.toFixed(2)}</span>`;
+  }).join("");
+  return `<span class="nl-odds" title="Quote ${esc(book)}, Stand ${when}">${cells}</span>`;
+}
+
 function renderRows(games) {
   let day = null;
   const out = [];
@@ -132,7 +204,7 @@ function renderRows(games) {
     const d = fmt(g.start, { weekday: "long", day: "numeric", month: "long", year: "numeric" });
     if (d !== day) {
       day = d;
-      out.push(`            <tr class="nl-day"><td colspan="4">${esc(d)}</td></tr>`);
+      out.push(`            <tr class="nl-day"><td colspan="5">${esc(d)}</td></tr>`);
     }
     const [homeName] = TEAMS[g.home] || [g.homeName];
     const [awayName] = TEAMS[g.away] || [g.awayName];
@@ -141,23 +213,26 @@ function renderRows(games) {
       `<td><span class="kickoff-time">${fmt(g.start, { hour: "2-digit", minute: "2-digit" })}</span></td>` +
       `<td>${team(g.home, g.homeName)}</td>` +
       `<td class="col-res">${result(g)}</td>` +
-      `<td>${team(g.away, g.awayName, true)}</td></tr>`);
+      `<td>${team(g.away, g.awayName, true)}</td>` +
+      `<td class="col-odds">${odds(g)}</td></tr>`);
   }
   return out.join("\n");
 }
 
-async function nationsLeagueReplacements() {
+async function nationsLeagueReplacements({ refresh = false } = {}) {
   const cache = readCache();
-  const key = readKey();
+  const key = refresh ? readKey() : null;
   let data = cache;
-  if (!key) {
+  if (!refresh) {
+    console.log("nationsleague: aus Cache gebaut (API-Refresh: node build.js --nl-refresh)");
+  } else if (!key) {
     console.warn("nationsleague: kein ODDSPAPI_KEY (.env) — verwende Cache");
   } else {
     try {
       data = await fetchData(key, cache);
       fs.mkdirSync(path.dirname(CACHE_FILE), { recursive: true });
       fs.writeFileSync(CACHE_FILE, JSON.stringify(data, null, 1) + "\n", "utf8");
-      console.log(`nationsleague: ${data.games.length} Spiele von OddsPapi geladen`);
+      console.log(`nationsleague: ${data.games.length} Spiele von OddsPapi geladen, ${data.games.filter((g) => g.odds).length} mit Quoten`);
     } catch (err) {
       console.warn(`nationsleague: API-Fehler (${err.message}) — verwende Cache`);
     }
@@ -166,9 +241,10 @@ async function nationsLeagueReplacements() {
   const games = data ? data.games : [];
   const count = (s) => games.filter((g) => g.status === s).length;
   return {
+    "{{NL_TABLE_CLASS}}": games.some((g) => g.odds) ? "" : " nl-no-odds",
     "{{NL_SEASON}}": data ? data.season : "",
     "{{NL_UPDATED}}": data ? `${fmt(data.updated, { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" })} Uhr` : "–",
-    "{{NL_ROWS}}": games.length ? renderRows(games) : `            <tr><td colspan="4" class="nl-empty">Noch keine Spieldaten — ODDSPAPI_KEY in .env eintragen und <code>node build.js</code> ausführen.</td></tr>`,
+    "{{NL_ROWS}}": games.length ? renderRows(games) : `            <tr><td colspan="5" class="nl-empty">Noch keine Spieldaten — ODDSPAPI_KEY in .env eintragen und <code>node build.js</code> ausführen.</td></tr>`,
     "{{NL_COUNT_ALL}}": String(games.length),
     "{{NL_COUNT_DONE}}": String(count("done")),
     "{{NL_COUNT_LIVE}}": String(count("live")),

@@ -1997,6 +1997,22 @@ body:has(.modal-feelo.show) .modal-backdrop.show{ opacity:.7; }
 .nl-game.is-pre .team-name{ color:#3d4350; }
 .nl-empty{ padding:1.5rem 1.3rem; margin:0; text-align:center; color:#6b6b6b; font-size:.9rem; }
 .nl-note{ font-size:.78rem; color:#6b6b6b; }
+/* 1 · X · 2 Quoten: Favorit blau, eingetretener Ausgang (beendete Spiele) grün */
+.nl-table th.col-odds, .nl-table td.col-odds{ text-align:center; white-space:nowrap; }
+.nl-odds{ display:inline-flex; gap:.3rem; }
+.nl-odd{
+  display:inline-flex; flex-direction:column; align-items:center; min-width:3.3rem;
+  border:1px solid rgba(16,20,29,0.12); border-radius:.45rem; background:#fff;
+  padding:.15rem .4rem; font-family:"JetBrains Mono", monospace; font-size:.8rem; font-weight:700; color:#3d4350; line-height:1.25;
+}
+.nl-odd small{ font-family:"Inter", sans-serif; font-size:.58rem; font-weight:700; color:#9aa3b2; }
+.nl-odd.is-fav{ border-color: var(--blue); color: var(--blue); background: rgba(45,125,216,0.07); }
+.nl-odd.is-hit{ border-color: var(--green-dark); background: var(--green); color:#04220f; }
+.nl-odd.is-hit small{ color:#04220f; opacity:.7; }
+.nl-odd-key{ display:inline-block; min-width:0; font-family:"Inter", sans-serif; font-size:.7rem; padding:.02rem .4rem; vertical-align:middle; }
+.nl-odds-none{ color:#b0b6c2; font-weight:700; }
+.nl-table.nl-no-odds .col-odds, .nl-note .nl-odds-legend{ display:none; }
+.content-card:has(.nl-table:not(.nl-no-odds)) .nl-odds-legend{ display:inline; }
 
 @media (max-width: 575.98px){
   .nl-filters .search-feelo{ width:100%; }
@@ -2008,5 +2024,7 @@ body:has(.modal-feelo.show) .modal-backdrop.show{ opacity:.7; }
   .nl-table tr.nl-game td:first-child{ grid-column: 1 / -1; text-align:center; }
   .nl-table tr.nl-game .team-cell{ flex-direction:column; gap:.3rem; text-align:center; }
   .nl-table tr.nl-game .team-name{ font-size:.8rem; }
+  .nl-table tr.nl-game td.col-odds{ grid-column: 1 / -1; }
+  .nl-table tr.nl-game td.col-odds:has(.nl-odds-none){ display:none; }
   .nl-table tr.nl-day td{ display:block; }
 }
