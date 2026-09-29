@@ -120,13 +120,7 @@
     </p>
 
     <section class="stat-card" id="statPunkte">
-      <div class="stat-card-head">
-        <h2 class="stat-card-title">Anzahl an Punkten Gesamt</h2>
-        <button type="button" class="stat-sort-btn" id="sortPunkte" data-dir="asc" aria-label="Sortierung nach Name umkehren (aktuell A bis Z)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
-          <span>Name A&ndash;Z</span>
-        </button>
-      </div>
+      <h2 class="stat-card-title">Anzahl an Punkten Gesamt</h2>
       <div id="chartPunkte"></div>
     </section>
 
@@ -286,18 +280,12 @@
   ];
   var GAMES = 8;
 
-  // o.dir: 'asc' / 'desc' sortiert die Balken nach Teamname (Standard: Reihenfolge von TEAMS = A–Z)
   function barChart(id, get, o){
     o = o || {};
-    var teams = TEAMS.slice();
-    if (o.dir) {
-      teams.sort(function(a, b){ return a[0].localeCompare(b[0], 'de'); });
-      if (o.dir === 'desc') teams.reverse();
-    }
-    var vals = teams.map(get);
+    var vals = TEAMS.map(get);
     var max = o.max || Math.max.apply(null, vals) || 1;
     var html = '<div class="stat-bars">';
-    teams.forEach(function(t, i){
+    TEAMS.forEach(function(t, i){
       var v = vals[i];
       var pct = Math.max(0, v / max * 100);
       var disp = o.decimals != null ? v.toFixed(o.decimals) : v;
@@ -334,16 +322,7 @@
         arcs + '</svg><div class="stat-donut-legend">' + legend + '</div></div>';
   }
 
-  barChart('chartPunkte',    function(t){ return t[2]; }, { dir: 'asc' });
-
-  // Punkte Gesamt: Toggle-Button Name A–Z <-> Z–A
-  document.getElementById('sortPunkte').addEventListener('click', function(){
-    var dir = this.dataset.dir === 'asc' ? 'desc' : 'asc';
-    this.dataset.dir = dir;
-    this.querySelector('span').textContent = dir === 'asc' ? 'Name A–Z' : 'Name Z–A';
-    this.setAttribute('aria-label', 'Sortierung nach Name umkehren (aktuell ' + (dir === 'asc' ? 'A bis Z' : 'Z bis A') + ')');
-    barChart('chartPunkte', function(t){ return t[2]; }, { dir: dir });
-  });
+  barChart('chartPunkte',    function(t){ return t[2]; });
   barChart('chartSchnitt',   function(t){ return t[2] / GAMES; }, { decimals: 2, max: 3 });
   barChart('chartTore',      function(t){ return t[3]; });
   barChart('chartGegentore', function(t){ return t[4]; });
