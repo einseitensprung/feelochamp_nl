@@ -186,10 +186,16 @@
 <section class="stat-card mt-3" id="statPunkte">
   <div class="stat-card-head">
     <h2 class="stat-card-title">Anzahl an Punkten Gesamt</h2>
-    <button type="button" class="stat-sort-btn" id="sortPunkte" aria-label="Nach Teamname sortieren (A bis Z)">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
-      <span>Name A&ndash;Z</span>
-    </button>
+    <div class="stat-sort-group" role="group" aria-label="Sortierung">
+      <button type="button" class="stat-sort-btn" id="sortPunkteName" data-key="name" aria-label="Nach Teamname sortieren (A bis Z)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
+        <span>Name A&ndash;Z</span>
+      </button>
+      <button type="button" class="stat-sort-btn is-active" id="sortPunkteWert" data-key="points" data-dir="desc" aria-pressed="true" aria-label="Nach Punkten sortieren (aufsteigend)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
+        <span>Punkte &darr;</span>
+      </button>
+    </div>
   </div>
   <div id="chartPunkte">
     <div class="stat-bars">
@@ -610,25 +616,48 @@ $("#statTipps .stat-bar-fill").each(function(){
     cards.forEach(function(c){ io.observe(c); });
   })();
 
-  // Punkte Gesamt: Toggle-Button sortiert die Balken nach Teamname A–Z <-> Z–A
-  // (beim Laden bleibt die Server-Reihenfolge nach Punkten; erster Klick = A–Z)
+  // Punkte Gesamt: zwei Toggle-Buttons sortieren die Balken nach Teamname (A–Z <-> Z–A)
+  // bzw. nach Punkten (↓ <-> ↑). Beim Laden gilt die Server-Reihenfolge = Punkte absteigend.
+  // Der zuletzt benutzte Button ist hervorgehoben (.is-active); gleiche Punkte -> nach Name.
   (function(){
-    var btn = document.getElementById('sortPunkte');
     var bars = document.querySelector('#chartPunkte .stat-bars');
-    if (!btn || !bars) return;
-    btn.addEventListener('click', function(){
-      var dir = btn.dataset.dir === 'asc' ? 'desc' : 'asc';
-      var rows = Array.prototype.slice.call(bars.querySelectorAll('.stat-bar-row'));
-      rows.sort(function(a, b){
-        var cmp = a.querySelector('.stat-bar-label').textContent.trim()
-          .localeCompare(b.querySelector('.stat-bar-label').textContent.trim(), 'de');
-        return dir === 'asc' ? cmp : -cmp;
+    var btns = document.querySelectorAll('#statPunkte .stat-sort-btn');
+    if (!bars || !btns.length) return;
+    var name = function(r){ return r.querySelector('.stat-bar-label').textContent.trim(); };
+    var pts = function(r){ return parseFloat(r.querySelector('.stat-bar-val').textContent) || 0; };
+    var TEXT = {
+      name:   { asc: 'Name A–Z', desc: 'Name Z–A', next: { asc: 'Z bis A', desc: 'A bis Z' }, what: 'Teamname' },
+      points: { asc: 'Punkte ↑', desc: 'Punkte ↓', next: { asc: 'absteigend', desc: 'aufsteigend' }, what: 'Punkten' }
+    };
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var key = btn.dataset.key;
+        // Aktiver Button kehrt die Richtung um; ein inaktiver startet mit der naheliegenden Richtung
+        var dir = btn.classList.contains('is-active')
+          ? (btn.dataset.dir === 'asc' ? 'desc' : 'asc')
+          : (key === 'name' ? 'asc' : 'desc');
+        var rows = Array.prototype.slice.call(bars.querySelectorAll('.stat-bar-row'));
+        rows.sort(function(a, b){
+          var cmp = key === 'points' ? pts(a) - pts(b) : 0;
+          if (cmp === 0) cmp = name(a).localeCompare(name(b), 'de') * (key === 'points' ? (dir === 'asc' ? 1 : -1) : 1);
+          return dir === 'asc' ? cmp : -cmp;
+        });
+        rows.forEach(function(r){ bars.appendChild(r); });
+        btns.forEach(function(o){
+          o.classList.toggle('is-active', o === btn);
+          o.setAttribute('aria-pressed', o === btn);
+          if (o === btn) return;
+          // Inaktiver Button zeigt wieder die Richtung, mit der ein Klick darauf startet
+          var start = o.dataset.key === 'name' ? 'asc' : 'desc';
+          delete o.dataset.dir;
+          o.querySelector('span').textContent = TEXT[o.dataset.key][start];
+          o.setAttribute('aria-label', 'Nach ' + TEXT[o.dataset.key].what + ' sortieren (' + (o.dataset.key === 'name' ? 'A bis Z' : 'absteigend') + ')');
+        });
+        btn.dataset.dir = dir;
+        // Beschriftung zeigt die aktuelle Sortierung, aria-label die Aktion beim nächsten Klick
+        btn.querySelector('span').textContent = TEXT[key][dir];
+        btn.setAttribute('aria-label', 'Nach ' + TEXT[key].what + ' sortieren (' + TEXT[key].next[dir] + ')');
       });
-      rows.forEach(function(r){ bars.appendChild(r); });
-      btn.dataset.dir = dir;
-      // Beschriftung zeigt die aktuelle Sortierung, aria-label die Aktion beim nächsten Klick
-      btn.querySelector('span').textContent = dir === 'asc' ? 'Name A–Z' : 'Name Z–A';
-      btn.setAttribute('aria-label', 'Nach Teamname sortieren (' + (dir === 'asc' ? 'Z bis A' : 'A bis Z') + ')');
     });
   })();
 

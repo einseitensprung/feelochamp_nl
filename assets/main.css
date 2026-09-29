@@ -1673,6 +1673,9 @@ body.page-preloader{ background: var(--ink); }
 .stat-sort-btn:hover{ background: var(--cyan); color: var(--ink); border-color: var(--cyan); }
 .stat-sort-btn svg{ transition: transform .2s ease; }
 .stat-sort-btn[data-dir="desc"] svg{ transform: scaleY(-1); }
+.stat-sort-group{ display:inline-flex; flex-wrap:wrap; gap:.4rem; }
+/* zuletzt benutzte Sortierung hervorgehoben */
+.stat-sort-btn.is-active{ background: rgba(91,194,252,0.16); color: var(--white); border-color: var(--cyan); }
 .stat-sub{
   font-family:'JetBrains Mono', monospace; font-size:.82rem; font-weight:700;
   color: var(--cyan-soft); margin:0 0 .7rem; letter-spacing:.04em;
