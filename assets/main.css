@@ -1660,6 +1660,19 @@ body.page-preloader{ background: var(--ink); }
   font-family:'Bebas Neue', sans-serif; letter-spacing:.03em; font-size:1.5rem;
   color: var(--white); margin:0 0 1rem;
 }
+/* Kartenkopf mit Titel + Sortier-Toggle (z. B. Punkte Gesamt) */
+.stat-card-head{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.6rem; margin-bottom:1rem; }
+.stat-card-head .stat-card-title{ margin:0; }
+.stat-sort-btn{
+  display:inline-flex; align-items:center; gap:.4rem;
+  background: transparent; color: var(--cyan-soft);
+  border:1px solid var(--line-cyan); border-radius:999px;
+  padding:.3rem .8rem; font-size:.78rem; font-weight:700; letter-spacing:.03em;
+  transition: background .15s ease, color .15s ease;
+}
+.stat-sort-btn:hover{ background: var(--cyan); color: var(--ink); border-color: var(--cyan); }
+.stat-sort-btn svg{ transition: transform .2s ease; }
+.stat-sort-btn[data-dir="desc"] svg{ transform: scaleY(-1); }
 .stat-sub{
   font-family:'JetBrains Mono', monospace; font-size:.82rem; font-weight:700;
   color: var(--cyan-soft); margin:0 0 .7rem; letter-spacing:.04em;
