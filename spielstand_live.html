@@ -403,16 +403,8 @@
 
     
 
-    <section class="stat-card is-collapsible" id="statVerteilung">
-      <div class="stat-card-head">
-        <h2 class="stat-card-title">Verteilung der Tipps</h2>
-        <div class="stat-card-tools">
-          <button type="button" class="stat-collapse-btn" aria-expanded="true" aria-controls="verteilungBody" aria-label="Verteilung der Tipps einklappen">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
-          </button>
-        </div>
-      </div>
-      <div id="verteilungBody" class="stat-card-body">
+    <section class="stat-card" id="statVerteilung">
+      <h2 class="stat-card-title">Verteilung der Tipps</h2>
       <div class="stat-donut-grid">
 
 
@@ -503,7 +495,6 @@
 
 
 
-      </div>
       </div>
     </section>
   </div>
@@ -746,6 +737,31 @@ $("#statTipps .stat-bar-fill").each(function(){
       card.classList.remove("no-anim");
     }
   });
+
+  // Einträge für Karten, die (nicht mehr) klappbar sind – z. B. "Verteilung der Tipps" (immer offen) –
+  // aus dem Cookie entfernen
+  var collapsibleIds = Array.prototype.map.call(document.querySelectorAll(".stat-card.is-collapsible"), function(c){ return c.id; });
+  if (collapsedCards.some(function(id){ return collapsibleIds.indexOf(id) === -1; })) {
+    collapsedCards = collapsedCards.filter(function(id){ return collapsibleIds.indexOf(id) !== -1; });
+    try {
+      document.cookie = COLLAPSE_COOKIE + "=" + encodeURIComponent(JSON.stringify(collapsedCards)) +
+        "; max-age=" + (365 * 24 * 3600) + "; path=/; SameSite=Lax";
+    } catch (e) {}
+  }
+
+  // Sprung zu einer eingeklappten Karte (Quick Nav oder Aufruf mit #statTore o. ä.) klappt sie auf.
+  // Geht über den Button-Klick, damit auch das Cookie aktualisiert wird.
+  function openCardFor(hash){
+    var card = hash && hash.length > 1 ? document.getElementById(hash.slice(1)) : null;
+    if (card && card.classList.contains("is-collapsible") && card.classList.contains("is-collapsed")) {
+      card.querySelector(".stat-collapse-btn").click();
+    }
+  }
+  document.querySelectorAll("a.qn[href^=\"#\"]").forEach(function(a){
+    a.addEventListener("click", function(){ openCardFor(a.getAttribute("href")); });
+  });
+  window.addEventListener("hashchange", function(){ openCardFor(location.hash); });
+  openCardFor(location.hash);
 
   document.querySelectorAll(".stat-card .stat-sort-group").forEach(function(group){
     var card = group.closest(".stat-card");
