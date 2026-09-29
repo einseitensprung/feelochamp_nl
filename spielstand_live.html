@@ -187,11 +187,11 @@
   <div class="stat-card-head">
     <h2 class="stat-card-title">Anzahl an Punkten Gesamt</h2>
     <div class="stat-sort-group" role="group" aria-label="Sortierung">
-      <button type="button" class="stat-sort-btn" id="sortPunkteName" data-key="name" aria-label="Nach Teamname sortieren (A bis Z)">
+      <button type="button" class="stat-sort-btn" id="sortPunkteName" data-key="name" aria-pressed="false" aria-label="Nach Teamname sortieren (A bis Z)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
         <span>Name A&ndash;Z</span>
       </button>
-      <button type="button" class="stat-sort-btn is-active" id="sortPunkteWert" data-key="points" data-dir="desc" aria-pressed="true" aria-label="Nach Punkten sortieren (aufsteigend)">
+      <button type="button" class="stat-sort-btn is-active" id="sortPunkteWert" data-key="value" data-label="Punkte" data-dir="desc" aria-pressed="true" aria-label="Nach Punkten sortieren (aufsteigend)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
         <span>Punkte &darr;</span>
       </button>
@@ -239,7 +239,19 @@
 
 
  <section class="stat-card" id="statTipps">
-      <h2 class="stat-card-title">Anzahl an richtigen Tipps</h2>
+      <div class="stat-card-head">
+        <h2 class="stat-card-title">Anzahl an richtigen Tipps</h2>
+        <div class="stat-sort-group" role="group" aria-label="Sortierung">
+          <button type="button" class="stat-sort-btn" id="sortTippsName" data-key="name" aria-pressed="false" aria-label="Nach Teamname sortieren (A bis Z)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
+            <span>Name A&ndash;Z</span>
+          </button>
+          <button type="button" class="stat-sort-btn" id="sortTippsWert" data-key="value" data-label="Tipps" aria-pressed="false" aria-label="Nach Tipps sortieren (absteigend)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
+            <span>Tipps &darr;</span>
+          </button>
+        </div>
+      </div>
       <div id="chartTipps">
       
       <div class="stat-bars">
@@ -616,50 +628,54 @@ $("#statTipps .stat-bar-fill").each(function(){
     cards.forEach(function(c){ io.observe(c); });
   })();
 
-  // Punkte Gesamt: zwei Toggle-Buttons sortieren die Balken nach Teamname (A–Z <-> Z–A)
-  // bzw. nach Punkten (↓ <-> ↑). Beim Laden gilt die Server-Reihenfolge = Punkte absteigend.
-  // Der zuletzt benutzte Button ist hervorgehoben (.is-active); gleiche Punkte -> nach Name.
-  (function(){
-    var bars = document.querySelector('#chartPunkte .stat-bars');
-    var btns = document.querySelectorAll('#statPunkte .stat-sort-btn');
-    if (!bars || !btns.length) return;
-    var name = function(r){ return r.querySelector('.stat-bar-label').textContent.trim(); };
-    var pts = function(r){ return parseFloat(r.querySelector('.stat-bar-val').textContent) || 0; };
-    var TEXT = {
-      name:   { asc: 'Name A–Z', desc: 'Name Z–A', next: { asc: 'Z bis A', desc: 'A bis Z' }, what: 'Teamname' },
-      points: { asc: 'Punkte ↑', desc: 'Punkte ↓', next: { asc: 'absteigend', desc: 'aufsteigend' }, what: 'Punkten' }
-    };
+  // Sortier-Toggles je Statistik-Karte (Punkte Gesamt, richtige Tipps): Name (A–Z <-> Z–A) und
+  // Wert (↓ <-> ↑, Beschriftung aus data-label). Aktiv ist, was im Markup .is-active hat
+  // (Punkte Gesamt kommt vom Server nach Punkten absteigend sortiert, Tipps unsortiert).
+  // Der zuletzt benutzte Button ist hervorgehoben; gleicher Wert -> alphabetisch nach Name.
+  document.querySelectorAll(".stat-card .stat-sort-group").forEach(function(group){
+    var bars = group.closest(".stat-card").querySelector(".stat-bars");
+    var btns = group.querySelectorAll(".stat-sort-btn");
+    if (!bars) return;
+    var name = function(r){ return r.querySelector(".stat-bar-label").textContent.trim(); };
+    var val = function(r){ return parseFloat(r.querySelector(".stat-bar-val").textContent) || 0; };
+    var START = { name: "asc", value: "desc" };
+    function text(btn, dir){
+      return btn.dataset.key === "name" ? (dir === "asc" ? "Name A–Z" : "Name Z–A") : btn.dataset.label + (dir === "asc" ? " ↑" : " ↓");
+    }
+    function aria(btn, nextDir){
+      return "Nach " + (btn.dataset.key === "name" ? "Teamname" : btn.dataset.label) + " sortieren (" +
+        (btn.dataset.key === "name" ? (nextDir === "asc" ? "A bis Z" : "Z bis A") : (nextDir === "asc" ? "aufsteigend" : "absteigend")) + ")";
+    }
     btns.forEach(function(btn){
-      btn.addEventListener('click', function(){
+      btn.addEventListener("click", function(){
         var key = btn.dataset.key;
         // Aktiver Button kehrt die Richtung um; ein inaktiver startet mit der naheliegenden Richtung
-        var dir = btn.classList.contains('is-active')
-          ? (btn.dataset.dir === 'asc' ? 'desc' : 'asc')
-          : (key === 'name' ? 'asc' : 'desc');
-        var rows = Array.prototype.slice.call(bars.querySelectorAll('.stat-bar-row'));
+        var dir = btn.classList.contains("is-active") ? (btn.dataset.dir === "asc" ? "desc" : "asc") : START[key];
+        var rows = Array.prototype.slice.call(bars.querySelectorAll(".stat-bar-row"));
         rows.sort(function(a, b){
-          var cmp = key === 'points' ? pts(a) - pts(b) : 0;
-          if (cmp === 0) cmp = name(a).localeCompare(name(b), 'de') * (key === 'points' ? (dir === 'asc' ? 1 : -1) : 1);
-          return dir === 'asc' ? cmp : -cmp;
+          var byName = name(a).localeCompare(name(b), "de");
+          if (key === "name") return dir === "asc" ? byName : -byName;
+          var byVal = val(a) - val(b);
+          return byVal !== 0 ? (dir === "asc" ? byVal : -byVal) : byName;
         });
         rows.forEach(function(r){ bars.appendChild(r); });
         btns.forEach(function(o){
-          o.classList.toggle('is-active', o === btn);
-          o.setAttribute('aria-pressed', o === btn);
-          if (o === btn) return;
+          var active = o === btn;
+          o.classList.toggle("is-active", active);
+          o.setAttribute("aria-pressed", active);
+          if (active) return;
           // Inaktiver Button zeigt wieder die Richtung, mit der ein Klick darauf startet
-          var start = o.dataset.key === 'name' ? 'asc' : 'desc';
           delete o.dataset.dir;
-          o.querySelector('span').textContent = TEXT[o.dataset.key][start];
-          o.setAttribute('aria-label', 'Nach ' + TEXT[o.dataset.key].what + ' sortieren (' + (o.dataset.key === 'name' ? 'A bis Z' : 'absteigend') + ')');
+          o.querySelector("span").textContent = text(o, START[o.dataset.key]);
+          o.setAttribute("aria-label", aria(o, START[o.dataset.key]));
         });
         btn.dataset.dir = dir;
         // Beschriftung zeigt die aktuelle Sortierung, aria-label die Aktion beim nächsten Klick
-        btn.querySelector('span').textContent = TEXT[key][dir];
-        btn.setAttribute('aria-label', 'Nach ' + TEXT[key].what + ' sortieren (' + TEXT[key].next[dir] + ')');
+        btn.querySelector("span").textContent = text(btn, dir);
+        btn.setAttribute("aria-label", aria(btn, dir === "asc" ? "desc" : "asc"));
       });
     });
-  })();
+  });
 
 </script>
 </body>
