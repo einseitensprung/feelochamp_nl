@@ -1790,7 +1790,7 @@ body.page-preloader{ background: var(--ink); }
   color:#231a00; font-weight:600;
   box-shadow: 0 14px 34px rgba(245,163,0,0.45);
 }
-/* ---------- Bestätigungs-Modal (Login Ja/Nein, hell wie die Login-Card) ---------- */
+/* ---------- Bestätigungs-Modal .modal-feelo (seitenunabhängig, z. B. Login Ja/Nein; hell wie die Login-Card) ---------- */
 .modal-feelo .modal-content{
   background: linear-gradient(180deg, #fafafa, #efefef);
   color:#10141d;
@@ -1799,7 +1799,8 @@ body.page-preloader{ background: var(--ink); }
   padding: 1.8rem 1.6rem 1.5rem;
   text-align:center;
 }
-body.page-home .modal-backdrop.show{ opacity:.7; }
+/* Backdrop hängt Bootstrap ans <body> — per :has() nur abdunkeln, wenn ein Feelo-Modal offen ist */
+body:has(.modal-feelo.show) .modal-backdrop.show{ opacity:.7; }
 .modal-feelo-icon{
   width:56px; height:56px; margin:0 auto 1rem;
   display:flex; align-items:center; justify-content:center;
@@ -1816,7 +1817,8 @@ body.page-home .modal-backdrop.show{ opacity:.7; }
 .modal-feelo-text{ font-size:.95rem; color:#4b5160; margin:0 0 1.5rem; }
 .modal-feelo-text strong{ color:#10141d; }
 .modal-feelo-actions{ display:flex; gap:.7rem; }
-.modal-feelo-actions .btn{ flex:1; padding:.65rem 1rem; }
+/* höher spezifisch als die seitenweisen body.page-* .btn-kickoff-Paddings, damit beide Buttons überall gleich groß sind */
+.modal-feelo .modal-feelo-actions .btn{ flex:1; padding:.65rem 1rem; }
 .btn-feelo-no{
   background:#fff; color:#10141d; font-weight:600;
   border:1px solid rgba(16,20,29,0.18); border-radius:.6rem;
