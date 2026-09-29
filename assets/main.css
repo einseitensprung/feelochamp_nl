@@ -1790,6 +1790,39 @@ body.page-preloader{ background: var(--ink); }
   color:#231a00; font-weight:600;
   box-shadow: 0 14px 34px rgba(245,163,0,0.45);
 }
+/* ---------- Bestätigungs-Modal (Login Ja/Nein, hell wie die Login-Card) ---------- */
+.modal-feelo .modal-content{
+  background: linear-gradient(180deg, #fafafa, #efefef);
+  color:#10141d;
+  border:none; border-radius:1rem;
+  box-shadow: var(--shadow), 0 0 0 1px rgba(91,194,252,0.3);
+  padding: 1.8rem 1.6rem 1.5rem;
+  text-align:center;
+}
+body.page-home .modal-backdrop.show{ opacity:.7; }
+.modal-feelo-icon{
+  width:56px; height:56px; margin:0 auto 1rem;
+  display:flex; align-items:center; justify-content:center;
+  border-radius:50%;
+  background: linear-gradient(160deg, var(--cyan), var(--blue));
+  color:#fff;
+  box-shadow: 0 10px 24px rgba(45,125,216,0.35);
+}
+.modal-feelo-title{
+  font-family:'Bebas Neue', sans-serif;
+  letter-spacing:.04em; font-size:1.7rem;
+  margin:0 0 .4rem; color:#10141d;
+}
+.modal-feelo-text{ font-size:.95rem; color:#4b5160; margin:0 0 1.5rem; }
+.modal-feelo-text strong{ color:#10141d; }
+.modal-feelo-actions{ display:flex; gap:.7rem; }
+.modal-feelo-actions .btn{ flex:1; padding:.65rem 1rem; }
+.btn-feelo-no{
+  background:#fff; color:#10141d; font-weight:600;
+  border:1px solid rgba(16,20,29,0.18); border-radius:.6rem;
+}
+.btn-feelo-no:hover, .btn-feelo-no:focus-visible{ background:#e9eef5; border-color:rgba(16,20,29,0.3); color:#10141d; }
+
 .toast-feelo .btn-close{ filter:none; opacity:.6; }
 .toast-feelo .btn-close:hover, .toast-feelo .btn-close:focus{ opacity:1; }
 
