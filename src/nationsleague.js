@@ -7,11 +7,11 @@
  * ausgeschlossen) und landet nie im HTML.
  *
  * API-Aufrufe nur mit `node build.js --nl-refresh` — ein normaler Build nutzt nur den Cache
- * (der Free-Plan hat ein festes Kontingent von 250 Requests; jeder Refresh kostet 1 + Live-Scores + Quoten).
+ * (der Free-Plan hat ein festes Kontingent von 250 Requests; jeder Refresh kostet 1 + Live-/neu beendete Scores + Quoten der nächsten 7 Tage).
  *
  * Cache: src/data/nationsleague.json (enthält keinen Key, wird committed).
  *  - Ohne Key oder bei API-Fehlern baut die Seite aus dem Cache.
- *  - 1X2-Quoten (Pinnacle, Fallback bet365/bwin/tipico) höchstens stündlich neu; beendete Spiele
+ *  - 1X2-Quoten (Pinnacle, Fallback bet365/bwin/tipico) für Spiele der nächsten 7 Tage, höchstens stündlich neu; beendete Spiele
  *    behalten ihre letzte bekannte Quote aus dem Cache.
  *  - Ergebnisse beendeter Spiele ändern sich nicht mehr und werden aus dem Cache
  *    übernommen — pro Build werden nur Scores für Live- und neu beendete Spiele geholt.
@@ -29,6 +29,8 @@ const BOOKMAKERS = ["pinnacle", "bet365", "bwin", "tipico"];
 const BOOKMAKER_NAMES = { pinnacle: "Pinnacle", bet365: "bet365", bwin: "bwin", tipico: "tipico" };
 // Quoten werden höchstens stündlich neu geholt (jeder Build ruft sonst ~60× /odds auf)
 const ODDS_MAX_AGE_MS = 60 * 60 * 1000;
+// … und nur für Spiele, die in den nächsten 7 Tagen angepfiffen werden (spart Requests, weiter entfernte Quoten sind ohnehin wenig aussagekräftig)
+const ODDS_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
 
 // API-Kürzel -> [deutscher Name, Badge-Hintergrund, Badge-Schrift] (Nationalfarben, keine Verbandswappen)
 const TEAMS = {
@@ -144,12 +146,13 @@ async function fetchData(key, cache) {
       if (r) game.score = [r.participant1Score, r.participant2Score];
     }
 
-    // 1X2-Quoten: nur für anstehende Spiele (Live-Quoten sind im OddsPapi-Plan gesperrt: 403 RESTRICTED_ACCESS)
+    // 1X2-Quoten: nur für anstehende Spiele der nächsten 7 Tage (Live-Quoten sind im OddsPapi-Plan gesperrt: 403 RESTRICTED_ACCESS)
     // und höchstens alle ODDS_MAX_AGE_MS. Live/beendete Spiele behalten die letzte Vorab-Quote aus dem Cache.
     // Ein Fehler bei einem Spiel kostet nur dessen Quote, nicht den ganzen Refresh.
     game.odds = (cached && cached.odds) || null;
     const oddsFresh = game.odds && Date.now() - Date.parse(game.odds.at) < ODDS_MAX_AGE_MS;
-    if (status === "pre" && f.hasOdds && !oddsFresh) {
+    const inWindow = Date.parse(f.startTime) - Date.now() < ODDS_WINDOW_MS;
+    if (status === "pre" && f.hasOdds && inWindow && !oddsFresh) {
       try {
         game.odds = (await fetchOdds(f.fixtureId, key)) || game.odds;
       } catch (err) {
