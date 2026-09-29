@@ -183,9 +183,10 @@
       
 
 
-<section class="stat-card mt-3" id="statPunkte">
+<section class="stat-card mt-3 is-collapsible" id="statPunkte">
   <div class="stat-card-head">
     <h2 class="stat-card-title">Anzahl an Punkten Gesamt</h2>
+    <div class="stat-card-tools">
     <div class="stat-sort-group" role="group" aria-label="Sortierung">
       <button type="button" class="stat-sort-btn" id="sortPunkteName" data-key="name" aria-pressed="false" aria-label="Nach Teamname sortieren (A bis Z)">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4"/><path d="M17 20V4M13 8l4-4 4 4"/></svg>
@@ -196,8 +197,12 @@
         <span>Punkte &darr;</span>
       </button>
     </div>
+    <button type="button" class="stat-collapse-btn" aria-expanded="true" aria-controls="chartPunkte" aria-label="Anzahl an Punkten Gesamt einklappen">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+    </button>
+    </div>
   </div>
-  <div id="chartPunkte">
+  <div id="chartPunkte" class="stat-card-body">
     <div class="stat-bars">
 
 
@@ -682,6 +687,19 @@ $("#statTipps .stat-bar-fill").each(function(){
     } catch (e) { /* Cookies blockiert – Sortierung gilt dann nur für diesen Aufruf */ }
   }
   var savedSort = readSortCookie();
+
+  // Auf-/zuklappbare Statistik-Karten (.stat-card.is-collapsible, z. B. Punkte Gesamt):
+  // der Pfeil-Button rechts im Kartenkopf klappt den Inhalt (.stat-card-body) ein und aus.
+  document.querySelectorAll(".stat-card.is-collapsible").forEach(function(card){
+    var btn = card.querySelector(".stat-collapse-btn");
+    var title = card.querySelector(".stat-card-title").textContent.trim();
+    if (!btn) return;
+    btn.addEventListener("click", function(){
+      var collapsed = card.classList.toggle("is-collapsed");
+      btn.setAttribute("aria-expanded", !collapsed);
+      btn.setAttribute("aria-label", title + (collapsed ? " ausklappen" : " einklappen"));
+    });
+  });
 
   document.querySelectorAll(".stat-card .stat-sort-group").forEach(function(group){
     var card = group.closest(".stat-card");

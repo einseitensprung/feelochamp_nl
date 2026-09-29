@@ -1674,6 +1674,32 @@ body.page-preloader{ background: var(--ink); }
 .stat-sort-btn svg{ transition: transform .2s ease; }
 .stat-sort-btn[data-dir="desc"] svg{ transform: scaleY(-1); }
 .stat-sort-group{ display:inline-flex; flex-wrap:wrap; gap:.4rem; }
+
+/* Auf-/zuklappbare Statistik-Karte (spielstand_live.html: Punkte Gesamt).
+   Inhalt klappt per grid-template-rows 1fr -> 0fr weich zu; Sortier-Buttons sind eingeklappt ausgeblendet. */
+.stat-card-tools{ display:inline-flex; align-items:center; flex-wrap:wrap; gap:.6rem; margin-left:auto; }
+.stat-collapse-btn{
+  display:inline-flex; align-items:center; justify-content:center; flex:none;
+  width:2rem; height:2rem; border-radius:50%;
+  background: transparent; color: var(--cyan-soft);
+  border:1px solid var(--line-cyan);
+  transition: background .15s ease, color .15s ease;
+}
+.stat-collapse-btn:hover{ background: var(--cyan); color: var(--ink); border-color: var(--cyan); }
+.stat-collapse-btn svg{ transition: transform .25s ease; }
+.stat-card.is-collapsible .stat-card-body{
+  display:grid; grid-template-rows:1fr;
+  transition: grid-template-rows .3s ease, opacity .3s ease;
+}
+.stat-card.is-collapsible .stat-card-body > *{ min-height:0; overflow:hidden; }
+.stat-card.is-collapsible .stat-card-head{ transition: margin-bottom .3s ease; }
+.stat-card.is-collapsed .stat-card-body{ grid-template-rows:0fr; opacity:0; }
+.stat-card.is-collapsed .stat-card-head{ margin-bottom:0; }
+.stat-card.is-collapsed .stat-sort-group{ display:none; }
+.stat-card.is-collapsed .stat-collapse-btn svg{ transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce){
+  .stat-card.is-collapsible .stat-card-body, .stat-collapse-btn svg{ transition:none; }
+}
 /* zuletzt benutzte Sortierung hervorgehoben */
 .stat-sort-btn.is-active{ background: rgba(91,194,252,0.16); color: var(--white); border-color: var(--cyan); }
 .stat-sub{
