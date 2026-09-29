@@ -656,14 +656,24 @@ $("#statTipps .stat-bar-fill").each(function(){
   // Wert (↓ <-> ↑, Beschriftung aus data-label). Aktiv ist, was im Markup .is-active hat
   // (Punkte Gesamt kommt vom Server nach Punkten absteigend sortiert, die anderen unsortiert).
   // Der zuletzt benutzte Button ist hervorgehoben; gleicher Wert -> alphabetisch nach Name.
-  // Die gewählte Sortierung je Karte wird im Cookie "nl_sort" gemerkt ({ statPunkte: "value:desc", … })
+  // Die gewählte Sortierung je Karte wird im Cookie "fc_stat_sort" gemerkt ({ statPunkte: "value:desc", … })
   // und beim nächsten Aufruf wiederhergestellt.
-  var SORT_COOKIE = "nl_sort";
-  function readSortCookie(){
+  var SORT_COOKIE = "fc_stat_sort";
+  var OLD_SORT_COOKIE = "nl_sort"; // früherer Name – wird einmalig übernommen und gelöscht
+  function readCookieJSON(cookieName){
     try {
-      var m = document.cookie.match(new RegExp("(?:^|; )" + SORT_COOKIE + "=([^;]*)"));
-      return m ? JSON.parse(decodeURIComponent(m[1])) || {} : {};
-    } catch (e) { return {}; }
+      var m = document.cookie.match(new RegExp("(?:^|; )" + cookieName + "=([^;]*)"));
+      return m ? JSON.parse(decodeURIComponent(m[1])) || null : null;
+    } catch (e) { return null; }
+  }
+  function readSortCookie(){
+    var state = readCookieJSON(SORT_COOKIE);
+    var old = readCookieJSON(OLD_SORT_COOKIE);
+    if (document.cookie.indexOf(OLD_SORT_COOKIE + "=") !== -1) {
+      try { document.cookie = OLD_SORT_COOKIE + "=; max-age=0; path=/; SameSite=Lax"; } catch (e) {}
+      if (!state && old) { state = old; writeSortCookie(state); }
+    }
+    return state || {};
   }
   function writeSortCookie(state){
     try {
