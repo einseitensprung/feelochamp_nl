@@ -358,6 +358,14 @@ body.page-home .navbar-feelo .nav-link{ font-size:.86rem; padding:.5rem .9rem !i
   padding: .65rem .85rem;
   border-radius:.55rem;
 }
+.form-check-feelo .form-check-input{
+  width:1.15em; height:1.15em; margin-top:.15em;
+  border: 1px solid rgba(16,20,29,0.25);
+  cursor:pointer;
+}
+.form-check-feelo .form-check-input:checked{ background-color: var(--blue); border-color: var(--blue); }
+.form-check-feelo .form-check-input:focus{ border-color: var(--blue); box-shadow: 0 0 0 3px rgba(45,125,216,0.18); }
+.form-check-feelo .form-check-label{ font-size:.88rem; color:#4a4a4a; cursor:pointer; user-select:none; }
 .input-feelo::placeholder{ color: rgba(74,74,74,0.55); }
 .input-feelo:focus{
   background:#fff;

@@ -117,9 +117,13 @@
                 <label for="feelo-user" class="form-label-feelo">Benutzer</label>
                 <input type="text" class="form-control input-feelo" id="feelo-user" placeholder="dein Kürzel" autocomplete="username">
               </div>
-              <div class="mb-4">
+              <div class="mb-3">
                 <label for="feelo-pass" class="form-label-feelo">Passwort</label>
                 <input type="password" class="form-control input-feelo" id="feelo-pass" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" autocomplete="current-password">
+              </div>
+              <div class="form-check form-check-feelo mb-4">
+                <input class="form-check-input" type="checkbox" id="feelo-remember">
+                <label class="form-check-label" for="feelo-remember">Angemeldet bleiben</label>
               </div>
               <button type="submit" class="btn btn-kickoff w-100">Log in</button>
             </form>
@@ -288,8 +292,9 @@
   });
   document.getElementById('loginConfirmYes').addEventListener('click', function(){
     this.disabled = true;
-    // Login-Daten als Cookies merken (fc_user / fc_pass, 30 Tage)
-    var cookieOpts = '; path=/; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : '');
+    // Login-Daten als Cookies merken (fc_user / fc_pass): mit "Angemeldet bleiben" 30 Tage, sonst nur bis zum Schließen des Browsers
+    var remember = document.getElementById('feelo-remember').checked;
+    var cookieOpts = '; path=/' + (remember ? '; max-age=' + (30 * 24 * 60 * 60) : '') + '; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : '');
     document.cookie = 'fc_user=' + encodeURIComponent(document.getElementById('feelo-user').value.trim()) + cookieOpts;
     document.cookie = 'fc_pass=' + encodeURIComponent(document.getElementById('feelo-pass').value) + cookieOpts;
     loginConfirm.hide();
