@@ -288,6 +288,10 @@
   });
   document.getElementById('loginConfirmYes').addEventListener('click', function(){
     this.disabled = true;
+    // Login-Daten als Cookies merken (fc_user / fc_pass, 30 Tage)
+    var cookieOpts = '; path=/; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax' + (location.protocol === 'https:' ? '; Secure' : '');
+    document.cookie = 'fc_user=' + encodeURIComponent(document.getElementById('feelo-user').value.trim()) + cookieOpts;
+    document.cookie = 'fc_pass=' + encodeURIComponent(document.getElementById('feelo-pass').value) + cookieOpts;
     loginConfirm.hide();
     showToast("Los geht's, Champion! Das ist eine Design-Demo – kein echtes Login.", 1600);
     setTimeout(function(){ window.location.href = '{{START_URL}}'; }, 900);
