@@ -2102,3 +2102,71 @@ body:has(.modal-feelo.show) .modal-backdrop.show{ opacity:.7; }
   .nl-table tr.nl-game td.col-odds:has(.nl-odds-none){ display:none; }
   .nl-table tr.nl-day td{ display:block; }
 }
+
+/* ---------- Quoten der Spiele (quoten.html): Tippverteilung 1 · X · 2 je Spiel ---------- */
+.q-mode{ display:inline-flex; background:#eef2f7; border-radius:999px; padding:.2rem; gap:.15rem; }
+.q-mode-btn{
+  border:0; background:transparent; border-radius:999px; padding:.35rem .9rem;
+  font-size:.8rem; font-weight:700; color:#4a5568; transition: background .15s ease, color .15s ease, box-shadow .15s ease;
+}
+.q-mode-btn:hover{ color:#10141d; }
+.q-mode-btn.is-active{ background:#10141d; color:#fff; box-shadow: 0 2px 8px rgba(16,20,29,0.25); }
+
+.q-kpis{
+  display:grid; grid-template-columns: repeat(3, minmax(0,1fr)) minmax(0,1.6fr); gap:1px;
+  background: rgba(16,20,29,0.08); border-bottom:1px solid rgba(16,20,29,0.08);
+}
+.q-kpi{ background:#fff; padding:1rem 1.3rem; display:flex; flex-direction:column; gap:.2rem; min-width:0; }
+.q-kpi-label{ font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#6b6b6b; }
+.q-kpi-value{ font-family:'Bebas Neue', sans-serif; font-size:2.2rem; line-height:1; color:#10141d; letter-spacing:.02em; }
+.q-kpi-sub{ font-size:.76rem; color:#6b6b6b; }
+.q-kpi-split .q-bar{ margin:.55rem 0 .35rem; }
+.q-key{ display:inline-block; width:.6rem; height:.6rem; border-radius:2px; margin-right:.25rem; vertical-align:baseline; }
+
+/* gestapelter Balken: Heim blau, Remis grau, Gast dunkel */
+.q-bar{ display:flex; height:.45rem; border-radius:999px; overflow:hidden; background:#eef2f7; gap:2px; }
+.q-bar-lg{ height:.7rem; }
+.q-seg{ display:block; height:100%; transform-origin:left; animation: q-grow .7s cubic-bezier(.2,.7,.2,1) both; }
+.q-seg-home, .q-key-home{ background: linear-gradient(90deg, var(--blue), var(--cyan)); }
+.q-seg-draw, .q-key-draw{ background:#b7c0cd; }
+.q-seg-away, .q-key-away{ background:#10141d; }
+@keyframes q-grow{ from{ transform:scaleX(0); } }
+@media (prefers-reduced-motion: reduce){ .q-seg{ animation:none; } }
+
+.q-table td.q-mid, .q-table th.q-mid{ text-align:center; }
+.q-table td.q-mid{ min-width:13rem; }
+.q-table .q-bar{ max-width:13.5rem; margin:0 auto .45rem; }
+.q-odds{ display:inline-flex; gap:.3rem; }
+.q-odd{
+  display:inline-flex; flex-direction:column; align-items:center; min-width:3.6rem;
+  border:1px solid rgba(16,20,29,0.12); border-radius:.45rem; background:#fff;
+  padding:.15rem .4rem; font-family:"JetBrains Mono", monospace; font-size:.8rem; font-weight:700; color:#3d4350; line-height:1.25;
+}
+.q-odd small{ font-family:"Inter", sans-serif; font-size:.58rem; font-weight:700; color:#9aa3b2; }
+.q-odd.is-zero{ color:#b0b6c2; border-style:dashed; }
+.q-odd.is-fav{ border-color: var(--blue); color: var(--blue); background: rgba(45,125,216,0.07); }
+.q-odd.nl-odd-key{ display:inline-block; min-width:0; font-family:"Inter", sans-serif; font-size:.7rem; padding:.02rem .4rem; vertical-align:middle; }
+.q-table td:first-child{ white-space:nowrap; }
+.q-table td:first-child .kickoff-time{ display:inline-block; font-weight:700; color:#10141d; margin-right:.5rem; vertical-align:middle; }
+.q-table .q-info{ display:inline-flex; vertical-align:middle; }
+.q-note[hidden]{ display:none; }
+
+@media (max-width: 991.98px){
+  .q-kpis{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .q-kpi-split{ grid-column: 1 / -1; }
+}
+@media (max-width: 575.98px){
+  .content-card-toolbar .q-mode{ width:100%; }
+  .q-mode-btn{ flex:1; }
+  .q-kpi{ padding:.8rem .9rem; }
+  .q-kpi-value{ font-size:1.8rem; }
+  .q-table thead{ display:none; }
+  .q-table tr.q-game{ display:grid; grid-template-columns: 1fr 1fr; align-items:center; gap:.5rem .6rem; padding:.8rem .9rem; }
+  .q-table tr.q-game.is-hidden{ display:none; }
+  .q-table tr.q-game td, .q-table tr.q-game td.q-mid{ display:block; padding:0; min-width:0; }
+  .q-table tr.q-game .team-cell{ flex-direction:column; gap:.3rem; text-align:center; }
+  .q-table tr.q-game td:first-child{ grid-column: 1 / -1; text-align:center; }
+  .q-table tr.q-game td.q-mid{ grid-column: 1 / -1; grid-row: 3; }
+  .q-table tr.q-game .team-name{ font-size:.85rem; }
+  .q-table tr.nl-day td{ display:block; }
+}
