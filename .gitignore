@@ -1,2 +1,5 @@
 # Lokale Secrets — nicht committen
 .env
+
+# macOS
+.DS_Store

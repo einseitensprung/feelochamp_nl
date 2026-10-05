@@ -5,7 +5,8 @@
 (function () {
   var TABS = [
     { label: 'Europa League', href: 'https://einseitensprung.at/el/' },
-    { label: 'Champions League', href: 'https://einseitensprung.at/cl/' }
+    { label: 'Champions League', href: 'https://einseitensprung.at/cl/' },
+    { label: 'Deutsche Bundesliga', href: 'https://einseitensprung.at/db/' },
   ];
 
   var nav = document.createElement('nav');
