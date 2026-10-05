@@ -2013,6 +2013,9 @@ body:has(.modal-feelo.show) .modal-backdrop.show{ opacity:.7; }
   padding: 14px 7px;
   transition: background .15s, color .15s, padding-right .15s, border-color .15s;
 }
+.side-tabs .st-short{ display: none; }
+.side-tabs.is-short .st-full{ display: none; }
+.side-tabs.is-short .st-short{ display: inline; }
 .side-tabs a:hover, .side-tabs a:focus-visible{
   color: var(--ink); background: var(--cyan); border-color: var(--cyan);
   padding-right: 11px;
