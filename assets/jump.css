@@ -199,6 +199,12 @@ body.page-jump{
   box-shadow: 0 16px 36px -10px rgba(0,0,0,.75), 0 0 28px -4px rgba(91,194,252,.45);
 }
 @media (prefers-reduced-motion: reduce){ .jump-cal-icon{ transition:none; } }
+/* Mobile: Icons (Kalender + Jumppage) auf ~50 %. zoom statt transform, weil
+   transform schon für Drehung/Hover belegt ist; zoom skaliert auch top/right,
+   daher die Abstände hier verdoppelt (wirken effektiv wie 1rem / 16px). */
+@media (max-width: 767.98px){
+  .jump-cal-icon{ zoom:.5; top:2rem; right:32px; }
+}
 
 /* Gegenstück auf jump_kalender.html: zurück zur Jumppage. Gleiches Blatt,
    Inhalt = 3×2-Raster in den Rundenfarben (.c-* aus dem Kalender-Abschnitt)
