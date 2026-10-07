@@ -288,6 +288,15 @@ body.page-jump{
 .jk-day-num{ font: 600 .78rem/1 'JetBrains Mono', ui-monospace, monospace; color: var(--slate); padding:.15rem .2rem .2rem; }
 .jk-day.is-today{ background: rgba(91,194,252,.08); box-shadow: inset 0 0 0 1px rgba(91,194,252,.45); }
 .jk-day.is-today .jk-day-num{ color: var(--cyan); }
+.jk-day.is-next{ box-shadow: inset 0 0 0 2px rgba(169,224,255,.55); background: rgba(91,194,252,.06); scroll-margin:1rem; }
+.jk-day.is-next .jk-day-num{ color: var(--cyan-soft); display:flex; align-items:center; gap:.4rem; flex-wrap:wrap; }
+.jk-next-tag{
+  font-family:'JetBrains Mono', ui-monospace, monospace; font-size:.56rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  padding:.18rem .4rem; border-radius:999px; background: var(--cyan-soft); color:#06121f; white-space:nowrap; vertical-align:middle;
+}
+.jk-list-day .jk-next-tag{ margin-left:.4rem; font-size:.62rem; }
+.jk-list-day{ scroll-margin-top:1rem; }
+.jk-list-day.is-next{ color: var(--cyan-soft); }
 .jk-day-week{ min-height:260px; }
 .jk-empty{ color: rgba(166,166,166,.5); padding:.2rem; }
 

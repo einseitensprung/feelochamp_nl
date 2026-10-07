@@ -13,6 +13,8 @@
 <!-- Eigenstaendige Seite zur Jumppage (kein Template, nicht in build.js), aufgebaut
      wie kalender.html (Monat / Woche / Liste, "+ weitere" -> Tages-Lightbox), aber
      mit den Terminen ALLER Tipprunden, farbcodiert nach Runde statt nach Phase.
+     Jede Ansicht springt beim Laden, beim Ansichtswechsel und über "Heute" zum
+     nächsten Spieltag ab heute (markiert mit "Nächster Termin").
      Daten: assets/jump-kalender-data.js, erzeugt per `node src/jumpkalender.js`
      aus den live kalender.asp-Seiten. Rundenfarben = Akzentfarben aus jump.html. -->
 <body class="page-jump page-jump-cal">
@@ -55,7 +57,7 @@
         <button type="button" class="jk-arrow" id="calPrev" aria-label="Zur&uuml;ck">&#8249;</button>
         <h2 id="calTitle">&nbsp;</h2>
         <button type="button" class="jk-arrow" id="calNext" aria-label="Weiter">&#8250;</button>
-        <button type="button" class="jk-today" id="calToday">Heute</button>
+        <button type="button" class="jk-today" id="calToday" title="Zum nächsten Termin ab heute">Heute</button>
       </div>
       <div class="jk-views" role="group" aria-label="Ansicht">
         <button type="button" class="jk-view-btn is-active" data-view="month">Monat</button>
@@ -115,6 +117,16 @@
   var BY_DAY = {};
   ALL.forEach(function(e){ (BY_DAY[e.d] = BY_DAY[e.d] || []).push(e); });
   function eventsOn(d){ return (BY_DAY[d] || []).filter(function(e){ return active[e.c]; }); }
+  var DAY_KEYS = Object.keys(BY_DAY).sort();
+  // Nächster Spieltag ab heute (inkl. heute) mit sichtbaren Terminen
+  function nextDay(){
+    for (var i = 0; i < DAY_KEYS.length; i++){
+      if (DAY_KEYS[i] >= TODAY_ISO && eventsOn(DAY_KEYS[i]).length) return DAY_KEYS[i];
+    }
+    return null;
+  }
+  var NEXT = null; // wird in render() gesetzt
+  function nextTag(k){ return k === NEXT && k !== TODAY_ISO ? '<span class="jk-next-tag">Nächster Termin</span>' : ''; }
 
   var MIN_D = ALL.length ? parseISO(ALL[0].d) : TODAY;
   var MAX_D = ALL.length ? parseISO(ALL[ALL.length - 1].d) : TODAY;
@@ -170,8 +182,8 @@
       for (var d = 0; d < 7; d++){
         var cur = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + w * 7 + d);
         var k = isoOf(cur), evs = eventsOn(k);
-        html += '<div class="jk-day' + (cur.getMonth() === m ? '' : ' is-out') + (k === TODAY_ISO ? ' is-today' : '') + '">' +
-          '<div class="jk-day-num">' + cur.getDate() + '</div>' +
+        html += '<div class="jk-day' + (cur.getMonth() === m ? '' : ' is-out') + (k === TODAY_ISO ? ' is-today' : '') + (k === NEXT ? ' is-next' : '') + '" data-date="' + k + '">' +
+          '<div class="jk-day-num">' + cur.getDate() + nextTag(k) + '</div>' +
           evs.slice(0, MAX_CHIPS).map(chip).join('') +
           (evs.length > MAX_CHIPS ? '<button type="button" class="jk-more" data-date="' + k + '">+ weitere ' + (evs.length - MAX_CHIPS) + '</button>' : '') +
         '</div>';
@@ -190,8 +202,8 @@
     for (var d = 0; d < 7; d++){
       var cur = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + d);
       var k = isoOf(cur), evs = eventsOn(k);
-      html += '<div class="jk-day jk-day-week' + (k === TODAY_ISO ? ' is-today' : '') + '">' +
-        '<div class="jk-day-num">' + cur.getDate() + '</div>' +
+      html += '<div class="jk-day jk-day-week' + (k === TODAY_ISO ? ' is-today' : '') + (k === NEXT ? ' is-next' : '') + '" data-date="' + k + '">' +
+        '<div class="jk-day-num">' + cur.getDate() + nextTag(k) + '</div>' +
         (evs.length ? evs.map(chip).join('') : '<span class="jk-empty">–</span>') + '</div>';
     }
     body.innerHTML = html + '</div></div>';
@@ -205,14 +217,15 @@
     if (!days.length){ body.innerHTML = '<p class="jk-list-empty">Keine Spiele in diesem Monat.</p>'; return; }
     body.innerHTML = '<div class="jk-list">' + days.map(function(k){
       var wd = (parseISO(k).getDay() + 6) % 7, isToday = k === TODAY_ISO;
-      return '<div class="jk-list-day' + (isToday ? ' is-today' : '') + '"><span>' + dayLabel(k) +
-        (isToday ? ' <span class="jk-today-tag">Heute</span>' : '') + '</span><span class="jk-list-wd">' + WEEKDAYS_LONG[wd] + '</span></div>' +
+      return '<div class="jk-list-day' + (isToday ? ' is-today' : '') + (k === NEXT ? ' is-next' : '') + '" data-date="' + k + '"><span>' + dayLabel(k) +
+        (isToday ? ' <span class="jk-today-tag">Heute</span>' : '') + nextTag(k) + '</span><span class="jk-list-wd">' + WEEKDAYS_LONG[wd] + '</span></div>' +
         eventsOn(k).map(row).join('');
     }).join('') + '</div>';
   }
 
   function render(){
     clampRef();
+    NEXT = nextDay();
     if (state.view === 'month') renderMonth(); else if (state.view === 'week') renderWeek(); else renderList();
     document.getElementById('calPrev').disabled = atMin();
     document.getElementById('calNext').disabled = atMax();
@@ -220,7 +233,27 @@
   function setView(v){
     state.view = v;
     document.querySelectorAll('.jk-view-btn').forEach(function(x){ x.classList.toggle('is-active', x.dataset.view === v); });
+    jumpToNext();
+  }
+  // In jeder Ansicht zum nächsten Spieltag ab heute springen: Monat/Woche/Liste
+  // mit diesem Tag anzeigen und ihn ins Bild scrollen. Läuft beim Laden, beim
+  // Wechsel der Ansicht und über "Heute" – nicht beim Blättern oder Filtern.
+  var firstJump = true;
+  function jumpToNext(){
+    var k = nextDay();
+    state.ref = k ? parseISO(k) : new Date();
     render();
+    var smooth = !firstJump && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    firstJump = false;
+    var el = k && body.querySelector('[data-date="' + k + '"].jk-day, [data-date="' + k + '"].jk-list-day');
+    if (!el) return;
+    if (state.view === 'list'){
+      // Tag an den oberen Rand – außer er ist ohnehin der erste der Liste
+      if (el.previousElementSibling) el.scrollIntoView({ block: 'start', behavior: smooth ? 'smooth' : 'auto' });
+    } else {
+      // Raster: nur so weit scrollen, dass der Tag sichtbar ist
+      el.scrollIntoView({ block: 'nearest', behavior: smooth ? 'smooth' : 'auto' });
+    }
   }
   function step(dir){
     state.ref = state.view === 'week'
@@ -231,7 +264,7 @@
   document.querySelectorAll('.jk-view-btn').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); }); });
   document.getElementById('calPrev').addEventListener('click', function(){ step(-1); });
   document.getElementById('calNext').addEventListener('click', function(){ step(1); });
-  document.getElementById('calToday').addEventListener('click', function(){ state.ref = new Date(); render(); });
+  document.getElementById('calToday').addEventListener('click', jumpToNext);
 
   document.querySelectorAll('.jk-filter').forEach(function(b){
     function sync(){ b.setAttribute('aria-pressed', active[b.dataset.c] ? 'true' : 'false'); }
@@ -279,7 +312,7 @@
 
   // Mobile: Liste als Default (< 768px); eine manuell gewählte Woche bleibt.
   var mq = window.matchMedia('(max-width: 767.98px)');
-  function applyMq(){ if (mq.matches && state.view === 'month') setView('list'); else if (!mq.matches && state.view === 'list') setView('month'); else render(); }
+  function applyMq(){ if (mq.matches && state.view === 'month') setView('list'); else if (!mq.matches && state.view === 'list') setView('month'); else jumpToNext(); }
   if (mq.addEventListener) mq.addEventListener('change', applyMq); else mq.addListener(applyMq);
   applyMq();
 })();
