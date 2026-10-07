@@ -1,5 +1,5 @@
 // Datenquelle für jump_kalender.html: holt die Spieltermine aller fünf
-// Tipprunden aus deren live kalender.asp (einseitensprung.at/{cl,el,nl,db,oel}/)
+// Tippbewerbe aus deren live kalender.asp (einseitensprung.at/{cl,el,nl,db,oel}/)
 // und schreibt sie als assets/jump-kalender-data.js (window.JUMP_KALENDER).
 //
 //   node src/jumpkalender.js

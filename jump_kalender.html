@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feelochamp &ndash; Kalender aller Tipprunden</title>
-<meta name="description" content="Alle Spieltermine der Feelochamp-Tipprunden in einem Kalender: Champions League, Europa League, Nations League, Deutsche Bundesliga und Österreichische Bundesliga.">
+<title>Feelochamp &ndash; Kalender aller Tippbewerbe</title>
+<meta name="description" content="Alle Spieltermine der Feelochamp-Tippbewerbe in einem Kalender: Champions League, Europa League, Nations League, Deutsche Bundesliga und Österreichische Bundesliga.">
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/jump.css">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -12,7 +12,7 @@
 
 <!-- Eigenstaendige Seite zur Jumppage (kein Template, nicht in build.js), aufgebaut
      wie kalender.html (Monat / Woche / Liste, "+ weitere" -> Tages-Lightbox), aber
-     mit den Terminen ALLER Tipprunden, farbcodiert nach Runde statt nach Phase.
+     mit den Terminen ALLER Tippbewerbe, farbcodiert nach Runde statt nach Phase.
      Jede Ansicht springt beim Laden, beim Ansichtswechsel und über "Heute" zum
      nächsten Spieltag ab heute (markiert mit "Nächster Termin").
      Daten: assets/jump-kalender-data.js, erzeugt per `node src/jumpkalender.js`
@@ -51,7 +51,7 @@
     </div>
   </header>
 
-  <div class="jk-filters" role="group" aria-label="Tipprunden ein-/ausblenden">
+  <div class="jk-filters" role="group" aria-label="Tippbewerbe ein-/ausblenden">
     <button type="button" class="jk-filter" data-c="cl" aria-pressed="true"><b>CL</b> Champions League</button>
     <button type="button" class="jk-filter" data-c="el" aria-pressed="true"><b>EL</b> Europa League</button>
     <button type="button" class="jk-filter" data-c="nl" aria-pressed="true"><b>NL</b> Nations League</button>
@@ -76,7 +76,7 @@
     <div id="calBody" aria-live="polite"><!-- injected --></div>
   </section>
 
-  <footer class="jump-foot mono" id="calStand">&copy; Feelochamp &middot; private Tipprunde</footer>
+  <footer class="jump-foot mono" id="calStand">&copy; Feelochamp &middot; privater Tippbewerb</footer>
 </main>
 
 <!-- Tages-Lightbox ("+ weitere N") -->

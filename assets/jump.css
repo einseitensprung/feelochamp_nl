@@ -41,7 +41,7 @@ a:focus-visible{ outline: 2px solid var(--cyan); outline-offset:3px; border-radi
   margin:0;
 }
 
-/* Eigenständige Einstiegsseite zu allen Tipprunden. Jede Karte bringt ihre
+/* Eigenständige Einstiegsseite zu allen Tippbewerben. Jede Karte bringt ihre
    Akzentfarben als --acc / --acc-2 / --acc-text im style-Attribut mit –
    jeweils --cyan / --blue / --cyan-soft aus der main.css der Zielseite. */
 body.page-jump{
@@ -226,7 +226,7 @@ body.page-jump{
 .jump-home-icon:hover .jhi-grid i:not(.jhi-arrow){ transform: scale(1.12); }
 .jump-home-icon:hover .jhi-arrow{ transform: translateX(-2px); }
 
-/* ---------- Kalender aller Tipprunden (jump_kalender.html) ---------- */
+/* ---------- Kalender aller Tippbewerbe (jump_kalender.html) ---------- */
 /* Rundenfarben = Akzentfarben der Karten in jump.html (aus den Paletten
    der Zielseiten). Jeder Termin trägt .c-{cl,el,nl,db,oel}. */
 .c-cl { --acc:#22d3ee; --acc-2:#3b82f6; --acc-text:#8fe9f7; }
