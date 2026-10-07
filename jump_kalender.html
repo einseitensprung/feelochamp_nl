@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feelochamp &ndash; Kalender aller Tipprunden</title>
+<meta name="description" content="Alle Spieltermine der Feelochamp-Tipprunden in einem Kalender: Champions League, Europa League, Nations League, Deutsche Bundesliga und Österreichische Bundesliga.">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/jump.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+
+<!-- Eigenstaendige Seite zur Jumppage (kein Template, nicht in build.js), aufgebaut
+     wie kalender.html (Monat / Woche / Liste, "+ weitere" -> Tages-Lightbox), aber
+     mit den Terminen ALLER Tipprunden, farbcodiert nach Runde statt nach Phase.
+     Daten: assets/jump-kalender-data.js, erzeugt per `node src/jumpkalender.js`
+     aus den live kalender.asp-Seiten. Rundenfarben = Akzentfarben aus jump.html. -->
+<body class="page-jump page-jump-cal">
+<main class="jump jk">
+  <header class="jk-head">
+    <a class="jk-back" href="jump.html">&larr; Tipprunden</a>
+    <div class="jk-brand">
+      <svg class="jump-logo" viewBox="0 0 24 24" aria-hidden="true">
+        <defs>
+          <linearGradient id="jumpRainbow" gradientUnits="userSpaceOnUse" x1="3" y1="3" x2="21" y2="21">
+            <stop offset="0" stop-color="#ff3b3b"/><stop offset=".2" stop-color="#ff9f1c"/>
+            <stop offset=".38" stop-color="#ffe135"/><stop offset=".56" stop-color="#3ddc6b"/>
+            <stop offset=".74" stop-color="#3a9bff"/><stop offset="1" stop-color="#b44dff"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke="url(#jumpRainbow)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7.2l3.4 2.5-1.3 4h-4.2l-1.3-4L12 7.2z"/>
+          <path d="M12 7.2V4.3M15.4 9.7l2.7-1.6M14.1 13.7l1.7 2.8M9.9 13.7l-1.7 2.8M8.6 9.7l-2.7-1.6"/>
+        </g>
+      </svg>
+      <div>
+        <p class="eyebrow">Feelochamp &middot; est. 2002</p>
+        <h1 class="jump-title jk-title">Der <span>Kalender</span></h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="jk-filters" role="group" aria-label="Tipprunden ein-/ausblenden">
+    <button type="button" class="jk-filter" data-c="cl" aria-pressed="true"><b>CL</b> Champions League</button>
+    <button type="button" class="jk-filter" data-c="el" aria-pressed="true"><b>EL</b> Europa League</button>
+    <button type="button" class="jk-filter" data-c="nl" aria-pressed="true"><b>NL</b> Nations League</button>
+    <button type="button" class="jk-filter" data-c="db" aria-pressed="true"><b>DB</b> Dt. Bundesliga</button>
+    <button type="button" class="jk-filter" data-c="oel" aria-pressed="true"><b>&Ouml;L</b> &Ouml;st. Bundesliga</button>
+  </div>
+
+  <section class="jk-card">
+    <div class="jk-toolbar">
+      <div class="jk-nav">
+        <button type="button" class="jk-arrow" id="calPrev" aria-label="Zur&uuml;ck">&#8249;</button>
+        <h2 id="calTitle">&nbsp;</h2>
+        <button type="button" class="jk-arrow" id="calNext" aria-label="Weiter">&#8250;</button>
+        <button type="button" class="jk-today" id="calToday">Heute</button>
+      </div>
+      <div class="jk-views" role="group" aria-label="Ansicht">
+        <button type="button" class="jk-view-btn is-active" data-view="month">Monat</button>
+        <button type="button" class="jk-view-btn" data-view="week">Woche</button>
+        <button type="button" class="jk-view-btn" data-view="list">Liste</button>
+      </div>
+    </div>
+    <div id="calBody" aria-live="polite"><!-- injected --></div>
+  </section>
+
+  <footer class="jump-foot mono" id="calStand">&copy; Feelochamp &middot; private Tipprunde</footer>
+</main>
+
+<!-- Tages-Lightbox ("+ weitere N") -->
+<div class="jk-lightbox" id="dayLightbox" role="dialog" aria-modal="true" aria-labelledby="dayLightboxTitle">
+  <div class="jk-lightbox-card">
+    <div class="jk-lightbox-head">
+      <h3 id="dayLightboxTitle"></h3>
+      <button type="button" class="jk-lightbox-close" id="dayLightboxClose" aria-label="Schlie&szlig;en">&times;</button>
+    </div>
+    <div class="jk-lightbox-body" id="dayLightboxBody"></div>
+  </div>
+</div>
+
+<script src="assets/jump-kalender-data.js"></script>
+<script>
+(function(){
+  var MONTHS = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+  var WEEKDAYS = ['Mo','Di','Mi','Do','Fr','Sa','So'];
+  var WEEKDAYS_LONG = ['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'];
+  var ROUNDS = {
+    cl:  { code:'CL', name:'Champions League',          url:'https://einseitensprung.at/cl/' },
+    el:  { code:'EL', name:'Europa League',             url:'https://einseitensprung.at/el/' },
+    nl:  { code:'NL', name:'Nations League',            url:'https://einseitensprung.at/nl/' },
+    db:  { code:'DB', name:'Deutsche Bundesliga',       url:'https://einseitensprung.at/db/' },
+    oel: { code:'ÖL', name:'Österreichische Bundesliga', url:'https://einseitensprung.at/oel/' }
+  };
+  var DATA = window.JUMP_KALENDER || { events: [] };
+  var ALL = DATA.events;
+  var MAX_CHIPS = 3;
+
+  // ---- Filter (welche Runden sichtbar), pro Besucher gemerkt ----
+  var STORE = 'jumpKalenderFilter';
+  var active = { cl:true, el:true, nl:true, db:true, oel:true };
+  try { var saved = JSON.parse(localStorage.getItem(STORE)); if (saved) Object.keys(active).forEach(function(k){ if (k in saved) active[k] = !!saved[k]; }); } catch (e) {}
+  function saveFilter(){ try { localStorage.setItem(STORE, JSON.stringify(active)); } catch (e) {} }
+
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function iso(y, m, d){ return y + '-' + pad(m) + '-' + pad(d); }
+  function isoOf(dt){ return iso(dt.getFullYear(), dt.getMonth() + 1, dt.getDate()); }
+  function parseISO(s){ var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  var TODAY = new Date();
+  var TODAY_ISO = isoOf(TODAY);
+
+  // Termine nach Tag indizieren
+  var BY_DAY = {};
+  ALL.forEach(function(e){ (BY_DAY[e.d] = BY_DAY[e.d] || []).push(e); });
+  function eventsOn(d){ return (BY_DAY[d] || []).filter(function(e){ return active[e.c]; }); }
+
+  var MIN_D = ALL.length ? parseISO(ALL[0].d) : TODAY;
+  var MAX_D = ALL.length ? parseISO(ALL[ALL.length - 1].d) : TODAY;
+  function firstOfMonth(d){ return new Date(d.getFullYear(), d.getMonth(), 1); }
+  function mondayOf(d){ var o = (d.getDay() + 6) % 7; return new Date(d.getFullYear(), d.getMonth(), d.getDate() - o); }
+
+  // Start: heute (innerhalb der Saison), sonst erster Termin
+  var state = { ref: TODAY, view: 'month' };
+  function clampRef(){
+    if (state.view === 'week'){
+      var lo = mondayOf(MIN_D), hi = mondayOf(MAX_D), cm = mondayOf(state.ref);
+      if (cm < lo) state.ref = lo; else if (cm > hi) state.ref = hi;
+    } else {
+      var loM = firstOfMonth(MIN_D), hiM = firstOfMonth(MAX_D);
+      if (state.ref < loM) state.ref = loM; else if (state.ref > hiM) state.ref = hiM;
+    }
+  }
+  function atMin(){ return state.view === 'week' ? mondayOf(state.ref) <= mondayOf(MIN_D) : firstOfMonth(state.ref) <= firstOfMonth(MIN_D); }
+  function atMax(){ return state.view === 'week' ? mondayOf(state.ref) >= mondayOf(MAX_D) : firstOfMonth(state.ref) >= firstOfMonth(MAX_D); }
+
+  function scoreHTML(e){ return e.score ? ' <span class="jk-score">' + esc(e.score) + '</span>' : ''; }
+  function chip(e){
+    var r = ROUNDS[e.c];
+    return '<a class="jk-ev c-' + e.c + (e.ko ? ' is-ko' : '') + '" href="' + r.url + '" title="' + esc(r.name + ' · ' + e.t + ' · ' + e.title) + '">' +
+      '<span class="jk-ev-code">' + r.code + '</span>' +
+      '<span class="jk-ev-time">' + esc(e.t) + '</span> ' +
+      '<span class="jk-ev-title">' + esc(e.title) + '</span>' + scoreHTML(e) + '</a>';
+  }
+  function row(e){
+    var r = ROUNDS[e.c];
+    return '<a class="jk-row c-' + e.c + (e.ko ? ' is-ko' : '') + '" href="' + r.url + '">' +
+      '<span class="jk-row-time">' + esc(e.t) + '</span>' +
+      '<span class="jk-ev-code">' + r.code + '</span>' +
+      '<span class="jk-row-title">' + esc(e.title) + scoreHTML(e) + '</span></a>';
+  }
+  function dayLabel(dk){
+    var dt = parseISO(dk);
+    return dt.getDate() + '. ' + MONTHS[dt.getMonth()] + ' ' + dt.getFullYear();
+  }
+
+  var body = document.getElementById('calBody');
+  var title = document.getElementById('calTitle');
+
+  function renderMonth(){
+    var y = state.ref.getFullYear(), m = state.ref.getMonth();
+    title.textContent = MONTHS[m] + ' ' + y;
+    var first = new Date(y, m, 1);
+    var gridStart = new Date(y, m, 1 - (first.getDay() + 6) % 7);
+    var html = '<div class="jk-grid"><div class="jk-weekdays">' +
+      WEEKDAYS.map(function(w){ return '<div>' + w + '</div>'; }).join('') + '</div>';
+    for (var w = 0; w < 6; w++){
+      html += '<div class="jk-week">';
+      for (var d = 0; d < 7; d++){
+        var cur = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + w * 7 + d);
+        var k = isoOf(cur), evs = eventsOn(k);
+        html += '<div class="jk-day' + (cur.getMonth() === m ? '' : ' is-out') + (k === TODAY_ISO ? ' is-today' : '') + '">' +
+          '<div class="jk-day-num">' + cur.getDate() + '</div>' +
+          evs.slice(0, MAX_CHIPS).map(chip).join('') +
+          (evs.length > MAX_CHIPS ? '<button type="button" class="jk-more" data-date="' + k + '">+ weitere ' + (evs.length - MAX_CHIPS) + '</button>' : '') +
+        '</div>';
+      }
+      html += '</div>';
+    }
+    body.innerHTML = html + '</div>';
+  }
+
+  function renderWeek(){
+    var monday = mondayOf(state.ref);
+    var sunday = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + 6);
+    title.textContent = monday.getDate() + '. ' + MONTHS[monday.getMonth()] + ' – ' + sunday.getDate() + '. ' + MONTHS[sunday.getMonth()] + ' ' + sunday.getFullYear();
+    var html = '<div class="jk-grid jk-grid-week"><div class="jk-weekdays">' +
+      WEEKDAYS.map(function(w){ return '<div>' + w + '</div>'; }).join('') + '</div><div class="jk-week">';
+    for (var d = 0; d < 7; d++){
+      var cur = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + d);
+      var k = isoOf(cur), evs = eventsOn(k);
+      html += '<div class="jk-day jk-day-week' + (k === TODAY_ISO ? ' is-today' : '') + '">' +
+        '<div class="jk-day-num">' + cur.getDate() + '</div>' +
+        (evs.length ? evs.map(chip).join('') : '<span class="jk-empty">–</span>') + '</div>';
+    }
+    body.innerHTML = html + '</div></div>';
+  }
+
+  function renderList(){
+    var y = state.ref.getFullYear(), m = state.ref.getMonth();
+    title.textContent = MONTHS[m] + ' ' + y;
+    var prefix = y + '-' + pad(m + 1) + '-';
+    var days = Object.keys(BY_DAY).filter(function(k){ return k.indexOf(prefix) === 0 && eventsOn(k).length; }).sort();
+    if (!days.length){ body.innerHTML = '<p class="jk-list-empty">Keine Spiele in diesem Monat.</p>'; return; }
+    body.innerHTML = '<div class="jk-list">' + days.map(function(k){
+      var wd = (parseISO(k).getDay() + 6) % 7, isToday = k === TODAY_ISO;
+      return '<div class="jk-list-day' + (isToday ? ' is-today' : '') + '"><span>' + dayLabel(k) +
+        (isToday ? ' <span class="jk-today-tag">Heute</span>' : '') + '</span><span class="jk-list-wd">' + WEEKDAYS_LONG[wd] + '</span></div>' +
+        eventsOn(k).map(row).join('');
+    }).join('') + '</div>';
+  }
+
+  function render(){
+    clampRef();
+    if (state.view === 'month') renderMonth(); else if (state.view === 'week') renderWeek(); else renderList();
+    document.getElementById('calPrev').disabled = atMin();
+    document.getElementById('calNext').disabled = atMax();
+  }
+  function setView(v){
+    state.view = v;
+    document.querySelectorAll('.jk-view-btn').forEach(function(x){ x.classList.toggle('is-active', x.dataset.view === v); });
+    render();
+  }
+  function step(dir){
+    state.ref = state.view === 'week'
+      ? new Date(state.ref.getFullYear(), state.ref.getMonth(), state.ref.getDate() + dir * 7)
+      : new Date(state.ref.getFullYear(), state.ref.getMonth() + dir, 1);
+    render();
+  }
+  document.querySelectorAll('.jk-view-btn').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); }); });
+  document.getElementById('calPrev').addEventListener('click', function(){ step(-1); });
+  document.getElementById('calNext').addEventListener('click', function(){ step(1); });
+  document.getElementById('calToday').addEventListener('click', function(){ state.ref = new Date(); render(); });
+
+  document.querySelectorAll('.jk-filter').forEach(function(b){
+    function sync(){ b.setAttribute('aria-pressed', active[b.dataset.c] ? 'true' : 'false'); }
+    sync();
+    b.addEventListener('click', function(){ active[b.dataset.c] = !active[b.dataset.c]; sync(); saveFilter(); render(); });
+  });
+
+  // ---- "+ weitere N" -> Lightbox mit allen Spielen des Tages ----
+  var box = document.getElementById('dayLightbox');
+  var boxTitle = document.getElementById('dayLightboxTitle');
+  var boxBody = document.getElementById('dayLightboxBody');
+  var boxClose = document.getElementById('dayLightboxClose');
+  var lastFocus = null;
+  function onKey(e){ if (e.key === 'Escape') closeDay(); }
+  function openDay(k){
+    var evs = eventsOn(k);
+    if (!evs.length) return;
+    var wd = (parseISO(k).getDay() + 6) % 7;
+    boxTitle.innerHTML = dayLabel(k) + '<small>' + WEEKDAYS_LONG[wd] + ' &middot; ' + evs.length + (evs.length === 1 ? ' Spiel' : ' Spiele') + '</small>';
+    boxBody.innerHTML = evs.map(row).join('');
+    lastFocus = document.activeElement;
+    box.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    boxClose.focus();
+    document.addEventListener('keydown', onKey);
+  }
+  function closeDay(){
+    box.classList.remove('is-open');
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', onKey);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  boxClose.addEventListener('click', closeDay);
+  box.addEventListener('click', function(e){ if (e.target === box) closeDay(); });
+  body.addEventListener('click', function(e){
+    var more = e.target.closest('.jk-more');
+    if (more) openDay(more.dataset.date);
+  });
+
+  // Datenstand im Footer
+  if (DATA.generated){
+    var g = new Date(DATA.generated);
+    document.getElementById('calStand').innerHTML = '&copy; Feelochamp &middot; ' + ALL.length + ' Termine &middot; Stand ' + g.getDate() + '.' + (g.getMonth() + 1) + '.' + g.getFullYear();
+  }
+
+  // Mobile: Liste als Default (< 768px); eine manuell gewählte Woche bleibt.
+  var mq = window.matchMedia('(max-width: 767.98px)');
+  function applyMq(){ if (mq.matches && state.view === 'month') setView('list'); else if (!mq.matches && state.view === 'list') setView('month'); else render(); }
+  if (mq.addEventListener) mq.addEventListener('change', applyMq); else mq.addListener(applyMq);
+  applyMq();
+})();
+</script>
+</body>
+</html>
