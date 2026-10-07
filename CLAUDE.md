@@ -34,7 +34,7 @@ Quelltemplate **und** das neu gebaute HTML gehören in denselben Commit — nie 
 `spiele_info.html`, `preloader.html` und `jump.html` sind **eigenständige** statische Seiten (kein Template, nicht in `build.js`), ohne Navbar/Footer, direkt editieren:
 - `spiele_info.html` — iframe-Ziel der Info-Lightbox auf der Spiele-Seite. Inhalt = `spiele_info.asp?id=1` (Tipp-Übersicht je Spiel), echte Vereinswappen durch Initialen-Badges ersetzt.
 - `preloader.html` — Inhalt von `preloader.asp` (Loading-Overlay). Original-Hintergrund `img/bg2026_2.jpg` (am Server 404, wäre UEFA-Material) durch den Feelochamp-Verlauf ersetzt, der `808.gif`-Spinner als reines CSS (`.preloader-dots`) nachgebaut.
-- `jump.html` — Jumppage zu allen Tipprunden auf einseitensprung.at (`/cl/`, `/el/`, `/nl/`, `/db/`, `/oel/`): Karten mit Kürzel, Name, Claim; Akzentfarben je Karte per `--acc`/`--acc-2`/`--acc-text` im `style`-Attribut = `--cyan`/`--blue`/`--cyan-soft` aus der `assets/main.css` der jeweiligen Zielseite, Styles unter `.jump-*` in `main.css` (unter 576px eine Spalte mit Querkarten).
+- `jump.html` — Jumppage zu allen Tipprunden auf einseitensprung.at (`/cl/`, `/el/`, `/nl/`, `/db/`, `/oel/`): Karten mit Kürzel, Name, Claim; Akzentfarben je Karte per `--acc`/`--acc-2`/`--acc-text` im `style`-Attribut = `--cyan`/`--blue`/`--cyan-soft` aus der `assets/main.css` der jeweiligen Zielseite, Styles komplett in eigenem `assets/jump.css` (bindet `main.css` **nicht** ein, bringt die nötigen Basisregeln selbst mit; nur `assets/fonts.css` zusätzlich), unter 576px eine Spalte mit Querkarten.
 
 ## Projektkontext
 
