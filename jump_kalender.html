@@ -13,6 +13,7 @@
 <!-- Eigenstaendige Seite zur Jumppage (kein Template, nicht in build.js), aufgebaut
      wie kalender.html (Monat / Woche / Liste, "+ weitere" -> Tages-Lightbox), aber
      mit den Terminen ALLER Tipprunden, farbcodiert nach Runde statt nach Phase.
+     Listenansicht springt beim Öffnen (und über "Heute") zum nächsten Spieltag ab heute.
      Daten: assets/jump-kalender-data.js, erzeugt per `node src/jumpkalender.js`
      aus den live kalender.asp-Seiten. Rundenfarben = Akzentfarben aus jump.html. -->
 <body class="page-jump page-jump-cal">
@@ -115,6 +116,14 @@
   var BY_DAY = {};
   ALL.forEach(function(e){ (BY_DAY[e.d] = BY_DAY[e.d] || []).push(e); });
   function eventsOn(d){ return (BY_DAY[d] || []).filter(function(e){ return active[e.c]; }); }
+  var DAY_KEYS = Object.keys(BY_DAY).sort();
+  // Nächster Spieltag ab heute (inkl. heute) mit sichtbaren Terminen
+  function nextDay(){
+    for (var i = 0; i < DAY_KEYS.length; i++){
+      if (DAY_KEYS[i] >= TODAY_ISO && eventsOn(DAY_KEYS[i]).length) return DAY_KEYS[i];
+    }
+    return null;
+  }
 
   var MIN_D = ALL.length ? parseISO(ALL[0].d) : TODAY;
   var MAX_D = ALL.length ? parseISO(ALL[ALL.length - 1].d) : TODAY;
@@ -203,10 +212,12 @@
     var prefix = y + '-' + pad(m + 1) + '-';
     var days = Object.keys(BY_DAY).filter(function(k){ return k.indexOf(prefix) === 0 && eventsOn(k).length; }).sort();
     if (!days.length){ body.innerHTML = '<p class="jk-list-empty">Keine Spiele in diesem Monat.</p>'; return; }
+    var next = nextDay();
     body.innerHTML = '<div class="jk-list">' + days.map(function(k){
-      var wd = (parseISO(k).getDay() + 6) % 7, isToday = k === TODAY_ISO;
-      return '<div class="jk-list-day' + (isToday ? ' is-today' : '') + '"><span>' + dayLabel(k) +
-        (isToday ? ' <span class="jk-today-tag">Heute</span>' : '') + '</span><span class="jk-list-wd">' + WEEKDAYS_LONG[wd] + '</span></div>' +
+      var wd = (parseISO(k).getDay() + 6) % 7, isToday = k === TODAY_ISO, isNext = k === next && !isToday;
+      return '<div class="jk-list-day' + (isToday ? ' is-today' : '') + (isNext ? ' is-next' : '') + '" data-date="' + k + '"><span>' + dayLabel(k) +
+        (isToday ? ' <span class="jk-today-tag">Heute</span>' : '') +
+        (isNext ? ' <span class="jk-today-tag">Nächster Termin</span>' : '') + '</span><span class="jk-list-wd">' + WEEKDAYS_LONG[wd] + '</span></div>' +
         eventsOn(k).map(row).join('');
     }).join('') + '</div>';
   }
@@ -220,7 +231,21 @@
   function setView(v){
     state.view = v;
     document.querySelectorAll('.jk-view-btn').forEach(function(x){ x.classList.toggle('is-active', x.dataset.view === v); });
+    if (v === 'list') jumpToNext(); else render();
+  }
+  // Listenansicht: zum Monat des nächsten Spieltags (ab heute) wechseln und
+  // dorthin scrollen. Läuft beim Öffnen der Liste und über "Heute" – nicht beim
+  // Blättern oder Filtern. Ist der Tag der erste der Liste, bleibt die Toolbar
+  // im Blick (kein Scrollen nötig).
+  var firstJump = true;
+  function jumpToNext(){
+    var k = nextDay();
+    if (k) state.ref = parseISO(k);
     render();
+    var smooth = !firstJump && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    firstJump = false;
+    var el = k && body.querySelector('.jk-list-day[data-date="' + k + '"]');
+    if (el && el.previousElementSibling) el.scrollIntoView({ block: 'start', behavior: smooth ? 'smooth' : 'auto' });
   }
   function step(dir){
     state.ref = state.view === 'week'
@@ -231,7 +256,10 @@
   document.querySelectorAll('.jk-view-btn').forEach(function(b){ b.addEventListener('click', function(){ setView(b.dataset.view); }); });
   document.getElementById('calPrev').addEventListener('click', function(){ step(-1); });
   document.getElementById('calNext').addEventListener('click', function(){ step(1); });
-  document.getElementById('calToday').addEventListener('click', function(){ state.ref = new Date(); render(); });
+  document.getElementById('calToday').addEventListener('click', function(){
+    if (state.view === 'list') { jumpToNext(); return; }
+    state.ref = new Date(); render();
+  });
 
   document.querySelectorAll('.jk-filter').forEach(function(b){
     function sync(){ b.setAttribute('aria-pressed', active[b.dataset.c] ? 'true' : 'false'); }
