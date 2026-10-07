@@ -30,6 +30,15 @@
      uebernommen aus --cyan / --blue / --cyan-soft der jeweiligen Zielseite. -->
 <body class="page-jump">
 <main class="jump">
+  <!-- Kalender-Icon oben rechts: Abreiß-Kalenderblatt mit dem heutigen Datum
+       (per Inline-JS gesetzt, ohne JS bleibt das Kalender-Symbol), Link auf jump_kalender.html -->
+  <a class="jump-cal-icon" href="jump_kalender.html" aria-label="Kalender aller Tipprunden" title="Kalender aller Tipprunden">
+    <span class="jci-rings" aria-hidden="true"><i></i><i></i></span>
+    <span class="jci-month" id="jciMonth" aria-hidden="true">Kal</span>
+    <span class="jci-day" id="jciDay" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 9h16M8 13h2M12 13h2M16 13h0M8 17h2M12 17h2"/></svg>
+    </span>
+  </a>
   <header class="jump-head">
     <svg class="jump-logo" viewBox="0 0 24 24" aria-hidden="true">
       <defs>
@@ -90,5 +99,12 @@
 
   <footer class="jump-foot mono">&copy; Feelochamp &middot; private Tipprunde</footer>
 </main>
+<script>
+  (function(){
+    var d = new Date();
+    document.getElementById('jciMonth').textContent = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'][d.getMonth()];
+    document.getElementById('jciDay').textContent = d.getDate();
+  })();
+</script>
 </body>
 </html>

@@ -162,6 +162,44 @@ body.page-jump{
 .jump-cal-link:hover{ color: var(--white); border-color: rgba(91,194,252,.5); background: rgba(91,194,252,.1); }
 .jump-cal-link:hover span{ transform: translateX(4px); }
 
+/* Kalender-Icon oben rechts (jump.html): Kalenderblatt mit Regenbogen-Kopf,
+   zeigt Monat + heutigen Tag. */
+.jump{ position:relative; }
+.jump-cal-icon{
+  position:absolute; top: clamp(1rem, 3vh, 1.75rem); right:16px;
+  width:64px; border-radius:14px;
+  display:flex; flex-direction:column; align-items:stretch; text-align:center;
+  background: #141925; border:1px solid var(--line);
+  box-shadow: 0 12px 30px -10px rgba(0,0,0,.7);
+  color: var(--white);
+  transform: rotate(-6deg);
+  transition: transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s ease, border-color .3s ease;
+}
+.jci-month{
+  border-radius:13px 13px 0 0; padding:.42rem 0 .3rem .18em; /* .18em gleicht letter-spacing aus */
+  background: linear-gradient(90deg, #ff3b3b, #ff9f1c, #ffe135, #3ddc6b, #3a9bff, #b44dff);
+  font-family:'JetBrains Mono', ui-monospace, monospace; font-weight:700;
+  font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:#0b0e14;
+}
+.jci-day{
+  display:flex; align-items:center; justify-content:center; height:42px;
+  font-family:'Bebas Neue', sans-serif; font-size:2.2rem; line-height:1; padding-top:.2rem;
+}
+.jci-rings{
+  position:absolute; top:-6px; left:0; right:0; display:flex; justify-content:space-between; padding:0 15px;
+  pointer-events:none;
+}
+.jci-rings i{
+  width:6px; height:13px; border-radius:3px;
+  background: linear-gradient(180deg, #e9edf5, #9aa3b4); box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.jump-cal-icon:hover, .jump-cal-icon:focus-visible{
+  color: var(--white); transform: rotate(0deg) translateY(-3px) scale(1.06);
+  border-color: rgba(91,194,252,.5);
+  box-shadow: 0 16px 36px -10px rgba(0,0,0,.75), 0 0 28px -4px rgba(91,194,252,.45);
+}
+@media (prefers-reduced-motion: reduce){ .jump-cal-icon{ transition:none; } }
+
 /* ---------- Kalender aller Tipprunden (jump_kalender.html) ---------- */
 /* Rundenfarben = Akzentfarben der Karten in jump.html (aus den Paletten
    der Zielseiten). Jeder Termin trägt .c-{cl,el,nl,db,oel}. */
