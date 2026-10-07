@@ -2176,7 +2176,8 @@ body:has(.modal-feelo.show) .modal-backdrop.show{ opacity:.7; }
 
 /* ---------- Jumppage (jump.html) ---------- */
 /* Eigenständige Einstiegsseite zu allen Tipprunden. Jede Karte bringt ihre
-   Akzentfarben als --acc / --acc-2 im style-Attribut mit. */
+   Akzentfarben als --acc / --acc-2 / --acc-text im style-Attribut mit –
+   jeweils --cyan / --blue / --cyan-soft aus der main.css der Zielseite. */
 body.page-jump{
   min-height:100vh;
   background:
@@ -2215,7 +2216,7 @@ body.page-jump{
   grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
 }
 .jump-card{
-  --acc: var(--cyan); --acc-2: var(--blue);
+  --acc: var(--cyan); --acc-2: var(--blue); --acc-text: var(--cyan-soft);
   position:relative; overflow:hidden; isolation:isolate;
   display:flex; flex-direction:column;
   min-height:260px; padding:1.4rem 1.3rem 1.2rem;
@@ -2253,7 +2254,7 @@ body.page-jump{
 .jump-card:hover::after, .jump-card:focus-visible::after{ opacity:.42; transform: scale(1.35); }
 .jump-code{
   font-family:'Bebas Neue', sans-serif; font-size:4.2rem; line-height:1; letter-spacing:.03em;
-  background: linear-gradient(160deg, var(--acc), var(--acc-2));
+  background: linear-gradient(160deg, var(--acc-text), var(--acc) 55%, var(--acc-2));
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
 .jump-name{ font-weight:800; font-size:1.08rem; margin-top:.7rem; line-height:1.25; }
@@ -2262,7 +2263,7 @@ body.page-jump{
   margin-top:auto; padding-top:1.2rem;
   font-family:'JetBrains Mono', ui-monospace, monospace;
   font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
-  color: var(--acc);
+  color: var(--acc-text);
 }
 .jump-go span{ display:inline-block; transition: transform .25s ease; }
 .jump-card:hover .jump-go span{ transform: translateX(5px); }
