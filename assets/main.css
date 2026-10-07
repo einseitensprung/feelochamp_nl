@@ -2173,3 +2173,112 @@ body:has(.modal-feelo.show) .modal-backdrop.show{ opacity:.7; }
   .q-table tr.q-game .team-name{ font-size:.85rem; }
   .q-table tr.nl-day td{ display:block; }
 }
+
+/* ---------- Jumppage (jump.html) ---------- */
+/* Eigenständige Einstiegsseite zu allen Tipprunden. Jede Karte bringt ihre
+   Akzentfarben als --acc / --acc-2 im style-Attribut mit. */
+body.page-jump{
+  min-height:100vh;
+  background:
+    radial-gradient(ellipse 900px 600px at 15% 0%, rgba(91,194,252,0.22), transparent 60%),
+    radial-gradient(ellipse 800px 620px at 90% 10%, rgba(180,77,255,0.18), transparent 58%),
+    radial-gradient(ellipse 900px 500px at 50% 110%, rgba(255,159,28,0.12), transparent 60%),
+    linear-gradient(180deg, #10141d 0%, #0b0e14 100%);
+  background-attachment: fixed;
+}
+.jump{
+  min-height:100vh; max-width:1240px; margin:0 auto;
+  padding: clamp(2.5rem, 7vh, 5rem) 16px 2rem;
+  display:flex; flex-direction:column; align-items:center;
+}
+.jump-head{ text-align:center; margin-bottom: clamp(2rem, 6vh, 3.5rem); }
+.jump-logo{
+  width:56px; height:56px; margin-bottom:1rem;
+  filter: drop-shadow(0 0 18px rgba(91,194,252,0.35));
+  animation: jump-spin 24s linear infinite;
+}
+@keyframes jump-spin{ to{ transform: rotate(360deg); } }
+.jump-title{
+  font-family:'Bebas Neue', sans-serif; font-weight:400;
+  font-size: clamp(3.4rem, 11vw, 6.5rem); line-height:.9; letter-spacing:.04em;
+  margin:.35rem 0 .6rem;
+}
+.jump-title span{
+  background: linear-gradient(90deg, #ff3b3b, #ff9f1c, #ffe135, #3ddc6b, #3a9bff, #b44dff);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.jump-lead{ color: var(--slate); font-size:1.05rem; margin:0; }
+
+.jump-grid{
+  width:100%;
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+}
+.jump-card{
+  --acc: var(--cyan); --acc-2: var(--blue);
+  position:relative; overflow:hidden; isolation:isolate;
+  display:flex; flex-direction:column;
+  min-height:260px; padding:1.4rem 1.3rem 1.2rem;
+  border-radius:1.1rem;
+  background: var(--panel);
+  border:1px solid var(--line);
+  color: var(--white);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  animation: jump-in .6s cubic-bezier(.2,.7,.2,1) both;
+}
+.jump-card:nth-child(2){ animation-delay:.06s; }
+.jump-card:nth-child(3){ animation-delay:.12s; }
+.jump-card:nth-child(4){ animation-delay:.18s; }
+.jump-card:nth-child(5){ animation-delay:.24s; }
+@keyframes jump-in{ from{ opacity:0; transform: translateY(18px); } }
+/* Farbbalken oben + Glow, der beim Hover hochfährt */
+.jump-card::before{
+  content:""; position:absolute; inset:0 0 auto; height:4px;
+  background: linear-gradient(90deg, var(--acc), var(--acc-2));
+}
+.jump-card::after{
+  content:""; position:absolute; z-index:-1;
+  width:220px; height:220px; right:-70px; bottom:-90px; border-radius:50%;
+  background: radial-gradient(circle, var(--acc), transparent 70%);
+  opacity:.18; transition: opacity .3s ease, transform .4s ease;
+}
+.jump-card:hover, .jump-card:focus-visible{
+  color: var(--white);
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--acc) 60%, transparent);
+  box-shadow: var(--shadow), 0 0 0 1px color-mix(in srgb, var(--acc) 35%, transparent),
+              0 18px 50px -12px color-mix(in srgb, var(--acc) 55%, transparent);
+}
+.jump-card:hover::after, .jump-card:focus-visible::after{ opacity:.42; transform: scale(1.35); }
+.jump-code{
+  font-family:'Bebas Neue', sans-serif; font-size:4.2rem; line-height:1; letter-spacing:.03em;
+  background: linear-gradient(160deg, var(--acc), var(--acc-2));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.jump-name{ font-weight:800; font-size:1.08rem; margin-top:.7rem; line-height:1.25; }
+.jump-sub{ color: var(--slate); font-size:.85rem; margin-top:.35rem; line-height:1.45; }
+.jump-go{
+  margin-top:auto; padding-top:1.2rem;
+  font-family:'JetBrains Mono', ui-monospace, monospace;
+  font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
+  color: var(--acc);
+}
+.jump-go span{ display:inline-block; transition: transform .25s ease; }
+.jump-card:hover .jump-go span{ transform: translateX(5px); }
+.jump-foot{ margin-top:auto; padding-top:3rem; font-size:.72rem; letter-spacing:.12em; color: rgba(166,166,166,.6); }
+
+@media (max-width: 575.98px){
+  .jump-grid{ grid-template-columns:1fr; gap:.75rem; }
+  .jump-card{
+    min-height:0; padding:1.1rem 1.1rem 1rem 5.6rem;
+    display:grid; grid-template-columns:1fr; align-content:center;
+  }
+  .jump-code{ position:absolute; left:1.1rem; top:50%; transform:translateY(-50%); font-size:3.2rem; }
+  .jump-name{ margin-top:0; }
+  .jump-go{ padding-top:.6rem; }
+}
+@media (prefers-reduced-motion: reduce){
+  .jump-logo, .jump-card{ animation:none; }
+  .jump-card, .jump-card::after, .jump-go span{ transition:none; }
+}

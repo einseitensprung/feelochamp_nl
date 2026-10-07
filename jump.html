@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feelochamp &ndash; Tipprunden</title>
+<meta name="description" content="Alle Feelochamp-Tipprunden auf einen Blick: Champions League, Europa League, Nations League, Deutsche Bundesliga und Österreichische Bundesliga.">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/main.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+
+<!-- Eigenstaendige Jumppage (kein Template, nicht in build.js): Einstieg zu allen
+     Tipprunden auf einseitensprung.at. Akzentfarbe je Karte ueber --acc / --acc-2. -->
+<body class="page-jump">
+<main class="jump">
+  <header class="jump-head">
+    <svg class="jump-logo" viewBox="0 0 24 24" aria-hidden="true">
+      <defs>
+        <linearGradient id="jumpRainbow" gradientUnits="userSpaceOnUse" x1="3" y1="3" x2="21" y2="21">
+          <stop offset="0" stop-color="#ff3b3b"/><stop offset=".2" stop-color="#ff9f1c"/>
+          <stop offset=".38" stop-color="#ffe135"/><stop offset=".56" stop-color="#3ddc6b"/>
+          <stop offset=".74" stop-color="#3a9bff"/><stop offset="1" stop-color="#b44dff"/>
+        </linearGradient>
+      </defs>
+      <g fill="none" stroke="url(#jumpRainbow)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 7.2l3.4 2.5-1.3 4h-4.2l-1.3-4L12 7.2z"/>
+        <path d="M12 7.2V4.3M15.4 9.7l2.7-1.6M14.1 13.7l1.7 2.8M9.9 13.7l-1.7 2.8M8.6 9.7l-2.7-1.6"/>
+      </g>
+    </svg>
+    <p class="eyebrow">einseitensprung.at &middot; seit 2002</p>
+    <h1 class="jump-title">Feelo<span>champ</span></h1>
+    <p class="jump-lead">W&auml;hle deine Tipprunde.</p>
+  </header>
+
+  <nav class="jump-grid" aria-label="Tipprunden">
+    <a class="jump-card" href="https://einseitensprung.at/cl/" style="--acc:#5bc2fc; --acc-2:#2d7dd8;">
+      <span class="jump-code">CL</span>
+      <span class="jump-name">Champions League</span>
+      <span class="jump-sub">Die K&ouml;nigsklasse &ndash; das Original seit 2002</span>
+      <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
+    </a>
+    <a class="jump-card" href="https://einseitensprung.at/el/" style="--acc:#ff9f1c; --acc-2:#e8590c;">
+      <span class="jump-code">EL</span>
+      <span class="jump-name">Europa League</span>
+      <span class="jump-sub">Donnerstagabend, Flutlicht, Au&szlig;enseiter</span>
+      <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
+    </a>
+    <a class="jump-card" href="https://einseitensprung.at/nl/" style="--acc:#b44dff; --acc-2:#6d28d9;">
+      <span class="jump-code">NL</span>
+      <span class="jump-name">Nations League</span>
+      <span class="jump-sub">Nationalteams statt Vereine</span>
+      <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
+    </a>
+    <a class="jump-card" href="https://einseitensprung.at/db/" style="--acc:#ffe135; --acc-2:#d4a017;">
+      <span class="jump-code">DB</span>
+      <span class="jump-name">Deutsche Bundesliga</span>
+      <span class="jump-sub">34 Spieltage, ein Meister</span>
+      <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
+    </a>
+    <a class="jump-card" href="https://einseitensprung.at/oel/" style="--acc:#ff4d5e; --acc-2:#c8102e;">
+      <span class="jump-code">&Ouml;L</span>
+      <span class="jump-name">&Ouml;sterreichische Bundesliga</span>
+      <span class="jump-sub">Heimisches Kicken, Meistergruppe inklusive</span>
+      <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
+    </a>
+  </nav>
+
+  <footer class="jump-foot mono">&copy; Feelochamp &middot; private Tipprunde</footer>
+</main>
+</body>
+</html>
