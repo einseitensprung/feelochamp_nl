@@ -79,7 +79,7 @@ body.page-jump{
 .jump-grid{
   width:100%;
   display:grid; gap:1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 6 Karten = 2 volle Reihen */
 }
 .jump-card{
   --acc: var(--cyan); --acc-2: var(--blue); --acc-text: var(--cyan-soft);
@@ -98,6 +98,7 @@ body.page-jump{
 .jump-card:nth-child(3){ animation-delay:.12s; }
 .jump-card:nth-child(4){ animation-delay:.18s; }
 .jump-card:nth-child(5){ animation-delay:.24s; }
+.jump-card:nth-child(6){ animation-delay:.30s; }
 @keyframes jump-in{ from{ opacity:0; transform: translateY(18px); } }
 /* Farbbalken oben + Glow, der beim Hover hochfährt */
 .jump-card::before{
@@ -135,6 +136,9 @@ body.page-jump{
 .jump-card:hover .jump-go span{ transform: translateX(5px); }
 .jump-foot{ margin-top:auto; padding-top:3rem; font-size:.72rem; letter-spacing:.12em; color: rgba(166,166,166,.6); }
 
+@media (max-width: 899.98px){
+  .jump-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 575.98px){
   .jump-grid{ grid-template-columns:1fr; gap:.75rem; }
   .jump-card{
@@ -142,6 +146,7 @@ body.page-jump{
     display:grid; grid-template-columns:1fr; align-content:center;
   }
   .jump-code{ position:absolute; left:1.1rem; top:50%; transform:translateY(-50%); font-size:3.2rem; }
+  .jump-code-long{ font-size:2.4rem; } /* dreistelliges Kürzel (ZWA) passt sonst nicht in die Spalte */
   .jump-name{ margin-top:0; }
   .jump-go{ padding-top:.6rem; }
 }
@@ -207,12 +212,12 @@ body.page-jump{
 }
 
 /* Gegenstück auf jump_kalender.html: zurück zur Jumppage. Gleiches Blatt,
-   Inhalt = 3×2-Raster in den Rundenfarben (.c-* aus dem Kalender-Abschnitt)
-   plus Pfeil. Ohne Ringe und leicht in die andere Richtung gedreht. */
+   Inhalt = 4×2-Raster in den Rundenfarben (.c-* aus dem Kalender-Abschnitt)
+   plus Pfeil (über zwei Zellen). Ohne Ringe und leicht in die andere Richtung gedreht. */
 .jump-home-icon{ transform: rotate(6deg); }
 .jump-home-icon .jci-month{ font-size:.5rem; letter-spacing:.14em; padding-left:.14em; }
 .jhi-grid{
-  display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap:4px;
+  display:grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, 1fr); gap:3px;
   padding:8px 9px 9px; height:42px; box-sizing:content-box;
 }
 .jhi-grid i{
@@ -220,6 +225,7 @@ body.page-jump{
   transition: transform .3s cubic-bezier(.2,.7,.2,1);
 }
 .jhi-grid .jhi-arrow{
+  grid-column: span 2;
   background:none; font-style:normal; font-weight:700; font-size:.95rem; line-height:1;
   display:flex; align-items:center; justify-content:center; color: var(--white);
 }
@@ -228,12 +234,13 @@ body.page-jump{
 
 /* ---------- Kalender aller Tippbewerbe (jump_kalender.html) ---------- */
 /* Rundenfarben = Akzentfarben der Karten in jump.html (aus den Paletten
-   der Zielseiten). Jeder Termin trägt .c-{cl,el,nl,db,oel}. */
+   der Zielseiten). Jeder Termin trägt .c-{cl,el,nl,db,oel,zwa}. */
 .c-cl { --acc:#22d3ee; --acc-2:#3b82f6; --acc-text:#8fe9f7; }
 .c-el { --acc:#ff6a1a; --acc-2:#e8460a; --acc-text:#ffb07a; }
 .c-nl { --acc:#5bc2fc; --acc-2:#2d7dd8; --acc-text:#a9e0ff; }
 .c-db { --acc:#d20515; --acc-2:#a8040f; --acc-text:#ff404a; }
 .c-oel{ --acc:#ff00b3; --acc-2:#00fff5; --acc-text:#ff33c2; }
+.c-zwa{ --acc:#33ffb8; --acc-2:#ea4225; --acc-text:#5cffc6; }
 
 .jk{ padding-top: clamp(1.5rem, 4vh, 2.5rem); align-items:stretch; }
 .jk-head{ display:flex; flex-direction:column; gap:1rem; margin-bottom:1.5rem; }
@@ -267,6 +274,7 @@ body.page-jump{
 .jk-filter[data-c="nl"]{ --acc:#5bc2fc; --acc-2:#2d7dd8; }
 .jk-filter[data-c="db"]{ --acc:#d20515; --acc-2:#a8040f; }
 .jk-filter[data-c="oel"]{ --acc:#ff00b3; --acc-2:#00fff5; }
+.jk-filter[data-c="zwa"]{ --acc:#33ffb8; --acc-2:#ea4225; }
 .jk-filter[aria-pressed="true"]{ color: var(--white); border-color: color-mix(in srgb, var(--acc) 55%, transparent); background: color-mix(in srgb, var(--acc) 12%, var(--panel)); }
 .jk-filter[aria-pressed="false"]{ opacity:.45; }
 .jk-filter[aria-pressed="false"] b{ background: #3a404c; }
