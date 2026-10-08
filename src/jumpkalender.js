@@ -1,5 +1,5 @@
-// Datenquelle für jump_kalender.html: holt die Spieltermine aller fünf
-// Tippbewerbe aus deren live kalender.asp (einseitensprung.at/{cl,el,nl,db,oel}/)
+// Datenquelle für jump_kalender.html: holt die Spieltermine aller sechs
+// Tippbewerbe aus deren live kalender.asp (einseitensprung.at/{cl,el,nl,db,oel,zwa}/)
 // und schreibt sie als assets/jump-kalender-data.js (window.JUMP_KALENDER).
 //
 //   node src/jumpkalender.js
@@ -12,13 +12,14 @@ const fs = require('fs');
 const path = require('path');
 
 const ROUNDS = [
-  // ko: K.o.-Platzhalter übernehmen? DB/ÖL sind Ligen – deren kalender.asp
+  // ko: K.o.-Platzhalter übernehmen? DB/ÖL/ZWA sind Ligen – deren kalender.asp
   // enthält nur einen kopierten, ungenutzten KO-Block.
   { id: 'cl', ko: true },
   { id: 'el', ko: true },
   { id: 'nl', ko: true },
   { id: 'db', ko: false },
   { id: 'oel', ko: false },
+  { id: 'zwa', ko: false },
 ];
 const OUT = path.join(__dirname, '..', 'assets', 'jump-kalender-data.js');
 
