@@ -76,6 +76,38 @@ body.page-jump{
 }
 .jump-lead{ color: var(--slate); font-size:1.05rem; margin:0; }
 
+/* Hero-Panels wie auf einseitensprung.at/cl/ (.hero-panel / .kicker-badge /
+   .hero-lede), hier zentriert und mit Regenbogen- statt Cyan-Akzent */
+.jump-hero{ display:flex; flex-direction:column; align-items:center; gap:.75rem; margin-bottom:1.6rem; }
+.hero-panel{
+  display:inline-block;
+  background: var(--panel);
+  border:1px solid var(--line);
+  border-radius:.6rem;
+  padding:.55rem 1rem;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.jump-hero .hero-panel:has(.jump-title){ padding:.7rem 1.4rem .55rem; }
+.jump-hero .jump-title{ margin:0; }
+.kicker-badge{
+  display:inline-flex; align-items:center; gap:.5rem;
+  border-radius:999px; padding:.35rem .9rem .35rem 1.1rem; /* links = letter-spacing-Ausgleich */
+  border:1px solid transparent;
+  background:
+    linear-gradient(rgba(16,20,29,.85), rgba(16,20,29,.85)) padding-box,
+    linear-gradient(90deg, #ff3b3b, #ff9f1c, #ffe135, #3ddc6b, #3a9bff, #b44dff) border-box;
+}
+.hero-lede{
+  max-width:36rem;
+  color: var(--slate);
+  font-size:1.02rem; line-height:1.6;
+  margin:0;
+}
+@media (max-width: 575.98px){
+  .hero-lede{ font-size:.95rem; }
+  .jump-hero .hero-panel:has(.jump-title){ padding:.6rem 1rem .45rem; }
+}
+
 .jump-grid{
   width:100%;
   display:grid; gap:1rem;
