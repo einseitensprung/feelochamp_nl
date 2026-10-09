@@ -98,7 +98,7 @@ body.page-jump{
     linear-gradient(90deg, #ff3b3b, #ff9f1c, #ffe135, #3ddc6b, #3a9bff, #b44dff) border-box;
 }
 .hero-lede{
-  max-width:30rem;
+  max-width:44rem;
   color: var(--slate);
   font-size:.8rem; line-height:1.55;
   margin:0;
