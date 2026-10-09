@@ -232,6 +232,24 @@ body.page-jump{
 .jump-home-icon:hover .jhi-grid i:not(.jhi-arrow){ transform: scale(1.12); }
 .jump-home-icon:hover .jhi-arrow{ transform: translateX(-2px); }
 
+/* Abo-Anker auf jump_kalender.html: drittes Blatt links neben dem Jumppage-Icon,
+   Feed-Symbol mit Regenbogen-Wellen, gegengleich gedreht. Springt zu #abo. */
+.jump-sub-icon{ right: calc(16px + 64px + 14px); }
+.jsi-feed{ display:block; width:30px; height:30px; margin:14px auto 15px; overflow:visible; /* Höhe = .jhi-grid (42px + 8/9px Padding) */ }
+.jsi-feed circle{ fill:#ff9f1c; }
+.jsi-feed path{ fill:none; stroke-width:3; stroke-linecap:round; transition: transform .3s cubic-bezier(.2,.7,.2,1), opacity .3s ease; transform-origin:6px 18px; }
+.jsi-feed .jsi-arc1{ stroke:#3ddc6b; }
+.jsi-feed .jsi-arc2{ stroke:#3a9bff; }
+.jump-sub-icon:hover .jsi-arc1{ transform: scale(1.08); }
+.jump-sub-icon:hover .jsi-arc2{ transform: scale(1.14); }
+@media (max-width: 767.98px){
+  .jump-sub-icon{ right: calc(32px + 64px + 16px); } /* zoom .5 -> wirkt wie 16px + 32px + 8px */
+}
+@media (prefers-reduced-motion: reduce){ .jsi-feed path{ transition:none; } }
+html:has(.page-jump-cal){ scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){ html:has(.page-jump-cal){ scroll-behavior:auto; } }
+.jk-sub{ scroll-margin-top:1.5rem; }
+
 /* ---------- Kalender aller Tippbewerbe (jump_kalender.html) ---------- */
 /* Rundenfarben = Akzentfarben der Karten in jump.html (aus den Paletten
    der Zielseiten). Jeder Termin trägt .c-{cl,el,nl,db,oel,zwa}. */

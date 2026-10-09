@@ -27,6 +27,15 @@
       <i class="c-cl"></i><i class="c-el"></i><i class="c-nl"></i><i class="c-db"></i><i class="c-oel"></i><i class="c-zwa"></i><i class="jhi-arrow">&larr;</i>
     </span>
   </a>
+  <!-- Zweites Blatt links daneben: Anker zum Abschnitt "Kalender abonnieren" -->
+  <a class="jump-cal-icon jump-sub-icon" href="#abo" aria-label="Kalender abonnieren" title="Kalender abonnieren">
+    <span class="jci-month" aria-hidden="true">Abo</span>
+    <svg class="jsi-feed" viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="6" cy="18" r="2.2"/>
+      <path class="jsi-arc1" d="M4 11a9 9 0 0 1 9 9"/>
+      <path class="jsi-arc2" d="M4 4a16 16 0 0 1 16 16"/>
+    </svg>
+  </a>
   <header class="jk-head">
     <a class="jk-back" href="jump.html">&larr; Jumppage</a>
     <div class="jk-brand">
@@ -79,7 +88,7 @@
 
   <!-- Kalender-Abos: ICS-Feeds aus ics/ (src/jumpkalender.js, per GitHub Action
        alle 6 h aktualisiert). Feed-Zeilen rendert das Script unten. -->
-  <section class="jk-sub" aria-labelledby="subTitle">
+  <section class="jk-sub" id="abo" aria-labelledby="subTitle">
     <div class="jk-sub-head">
       <div>
         <p class="eyebrow">Immer aktuell</p>
