@@ -480,13 +480,16 @@ html:has(.page-jump-cal){ scroll-behavior:smooth; }
 .jk-sub-name small{ display:block; font-size:.66rem; font-weight:400; letter-spacing:.1em; color: rgba(166,166,166,.7); }
 .jk-sub-actions{ flex:none; display:flex; gap:.3rem; }
 .jk-sub-btn{
-  display:inline-flex; align-items:center; height:1.9rem; padding:0 .6rem;
+  display:inline-flex; align-items:center; gap:.4rem; height:1.9rem; padding:0 .6rem 0 .5rem;
   border:1px solid var(--line); border-radius:.5rem; background: rgba(255,255,255,.04);
   color: var(--white); font: 600 .74rem/1 'Inter', sans-serif; cursor:pointer;
   transition: background .2s ease, border-color .2s ease, color .2s ease;
 }
 .jk-sub-btn:hover{ background: color-mix(in srgb, var(--acc) 22%, transparent); border-color: color-mix(in srgb, var(--acc) 60%, transparent); }
 .jk-sub-btn:focus-visible{ outline:2px solid var(--cyan); outline-offset:2px; }
+.jk-sub-ico{ width:14px; height:14px; flex:none; }
+.jk-sub-btn:hover .jk-sub-ico{ transform: scale(1.1); }
+.jk-sub-ico{ transition: transform .2s ease; }
 .jk-sub-copy{ color: var(--slate); }
 .jk-sub-copy.is-done{ color: var(--ink); background: #33ffb8; border-color: #33ffb8; }
 
