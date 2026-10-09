@@ -77,6 +77,38 @@
     <div id="calBody" aria-live="polite"><!-- injected --></div>
   </section>
 
+  <!-- Kalender-Abos: ICS-Feeds aus ics/ (src/jumpkalender.js, per GitHub Action
+       alle 6 h aktualisiert). Feed-Zeilen rendert das Script unten. -->
+  <section class="jk-sub" aria-labelledby="subTitle">
+    <div class="jk-sub-head">
+      <div>
+        <p class="eyebrow">Immer aktuell</p>
+        <h2 id="subTitle">Kalender abonnieren</h2>
+      </div>
+      <p class="jk-sub-lead">Alle Termine direkt in deinem Kalender &ndash; verschobene Ansto&szlig;zeiten und Ergebnisse kommen automatisch nach.</p>
+    </div>
+    <div class="jk-sub-feeds" id="subFeeds"><!-- injected --></div>
+    <div class="jk-sub-howto">
+      <div>
+        <h3>Google Calendar</h3>
+        <ol>
+          <li>Am Computer beim gew&uuml;nschten Feed auf <b>Google</b> klicken.</li>
+          <li><b>Kalender hinzuf&uuml;gen</b> best&auml;tigen &ndash; fertig, er erscheint auch am Handy.</li>
+          <li>Alternativ: Link kopieren, in Google Calendar bei <i>Weitere Kalender</i> auf <b>+</b> &rarr; <b>Per URL</b> einf&uuml;gen.</li>
+        </ol>
+        <p class="jk-sub-note">Google l&auml;dt Abos selbst nach, meist alle paar Stunden bis einmal t&auml;glich.</p>
+      </div>
+      <div>
+        <h3>Apple Kalender</h3>
+        <ol>
+          <li>Auf iPhone, iPad oder Mac beim Feed auf <b>Apple</b> tippen.</li>
+          <li><b>Abonnieren</b> best&auml;tigen; am Mac unter <i>Automatisch aktualisieren</i> z.&nbsp;B. <b>Jede Stunde</b> w&auml;hlen.</li>
+          <li>Alternativ: Link kopieren &rarr; iPhone: <i>Einstellungen &rarr; Kalender &rarr; Accounts &rarr; Account hinzuf&uuml;gen &rarr; Andere &rarr; Kalenderabo hinzuf&uuml;gen</i>, Mac: <i>Ablage &rarr; Neues Kalenderabonnement</i>.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
   <footer class="jump-foot mono" id="calStand">&copy; Feelochamp &middot; privater Tippbewerb</footer>
 </main>
 
@@ -325,6 +357,45 @@
   function applyMq(){ if (mq.matches && state.view === 'month') setView('list'); else if (!mq.matches && state.view === 'list') setView('month'); else jumpToNext(); }
   if (mq.addEventListener) mq.addEventListener('change', applyMq); else mq.addListener(applyMq);
   applyMq();
+})();
+
+// ---- Kalender-Abos: Feed-Zeilen mit Google- / Apple- / Kopier-Link ----
+(function(){
+  var BASE = 'raw.githubusercontent.com/einseitensprung/feelochamp_nl/main/ics/';
+  var FEEDS = [
+    { file:'alle', code:'Alle', name:'Alle Tippbewerbe', all:true },
+    { file:'cl',  code:'CL',  name:'Champions League' },
+    { file:'el',  code:'EL',  name:'Europa League' },
+    { file:'nl',  code:'NL',  name:'Nations League' },
+    { file:'db',  code:'DB',  name:'Deutsche Bundesliga' },
+    { file:'oel', code:'ÖL',  name:'Österreichische Bundesliga' },
+    { file:'zwa', code:'ZWA', name:'2. Liga' }
+  ];
+  var box = document.getElementById('subFeeds');
+  box.innerHTML = FEEDS.map(function(f){
+    var https = 'https://' + BASE + f.file + '.ics';
+    var webcal = 'webcal://' + BASE + f.file + '.ics';
+    return '<div class="jk-sub-feed ' + (f.all ? 'is-all' : 'c-' + f.file) + '">' +
+      '<b class="jk-sub-badge">' + f.code + '</b>' +
+      '<span class="jk-sub-name">' + f.name + '<small class="mono">' + f.file + '.ics</small></span>' +
+      '<span class="jk-sub-actions">' +
+        '<a class="jk-sub-btn" href="https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(webcal) + '" target="_blank" rel="noopener" title="In Google Calendar abonnieren">Google</a>' +
+        '<a class="jk-sub-btn" href="' + webcal + '" title="In Apple Kalender abonnieren">Apple</a>' +
+        '<button type="button" class="jk-sub-btn jk-sub-copy" data-url="' + https + '" title="Abo-Link kopieren">Link</button>' +
+      '</span></div>';
+  }).join('');
+
+  box.addEventListener('click', function(e){
+    var btn = e.target.closest('.jk-sub-copy');
+    if (!btn) return;
+    var url = btn.dataset.url;
+    function done(){
+      btn.classList.add('is-done'); btn.textContent = 'Kopiert';
+      setTimeout(function(){ btn.classList.remove('is-done'); btn.textContent = 'Link'; }, 1600);
+    }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(url).then(done, function(){ window.prompt('Abo-Link:', url); });
+    else window.prompt('Abo-Link:', url);
+  });
 })();
 </script>
 </body>
