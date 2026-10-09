@@ -98,13 +98,13 @@ body.page-jump{
     linear-gradient(90deg, #ff3b3b, #ff9f1c, #ffe135, #3ddc6b, #3a9bff, #b44dff) border-box;
 }
 .hero-lede{
-  max-width:36rem;
+  max-width:30rem;
   color: var(--slate);
-  font-size:1.02rem; line-height:1.6;
+  font-size:.8rem; line-height:1.55;
   margin:0;
 }
 @media (max-width: 575.98px){
-  .hero-lede{ font-size:.95rem; }
+  .hero-lede{ font-size:.76rem; }
   .jump-hero .hero-panel:has(.jump-title){ padding:.6rem 1rem .45rem; }
 }
 
