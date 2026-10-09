@@ -1,0 +1,38 @@
+# Holt alle 6 Stunden die Spieltermine aller Tippbewerbe (src/jumpkalender.js)
+# und committet assets/jump-kalender-data.js + ics/*.ics, falls sich etwas
+# geändert hat. Die ICS-Feeds sind über raw.githubusercontent.com abonnierbar.
+name: Jump-Kalender aktualisieren
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jumpkalender
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node src/jumpkalender.js
+      - name: Commit & Push bei Änderungen
+        run: |
+          git add assets/jump-kalender-data.js ics/
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898733+github-actions[bot]@users.noreply.github.com"
+          git commit -m "jumpkalender: Termine automatisch aktualisiert"
+          git pull --rebase
+          git push

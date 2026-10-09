@@ -1,0 +1,2151 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Feelochamp//Jump-Kalender//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Feelochamp – Champions League
+X-WR-TIMEZONE:Europe/Vienna
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cl-2026-09-08-aek-athen-lask@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260908T184500
+DTEND;TZID=Europe/Vienna:20260908T204500
+SUMMARY:[CL] AEK Athen : LASK
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-08-club-br-gge-aston-villa@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260908T184500
+DTEND;TZID=Europe/Vienna:20260908T204500
+SUMMARY:[CL] Club Brügge : Aston Villa
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-08-real-madrid-inter@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260908T210000
+DTEND;TZID=Europe/Vienna:20260908T230000
+SUMMARY:[CL] Real Madrid : Inter
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-08-dortmund-villareal@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260908T210000
+DTEND;TZID=Europe/Vienna:20260908T230000
+SUMMARY:[CL] Dortmund : Villareal
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-08-porto-man-city@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260908T210000
+DTEND;TZID=Europe/Vienna:20260908T230000
+SUMMARY:[CL] Porto : Man City
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-08-lille-real-betis@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260908T210000
+DTEND;TZID=Europe/Vienna:20260908T230000
+SUMMARY:[CL] Lille : Real Betis
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-09-barcelona-feyenoord@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260909T184500
+DTEND;TZID=Europe/Vienna:20260909T204500
+SUMMARY:[CL] Barcelona : Feyenoord
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-09-stuttgart-viking@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260909T184500
+DTEND;TZID=Europe/Vienna:20260909T204500
+SUMMARY:[CL] Stuttgart : Viking
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-09-psg-slovan-brati@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260909T210000
+DTEND;TZID=Europe/Vienna:20260909T230000
+SUMMARY:[CL] PSG : Slovan Brati
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-09-napoli-arsenal@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260909T210000
+DTEND;TZID=Europe/Vienna:20260909T230000
+SUMMARY:[CL] Napoli : Arsenal
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-09-liverpool-atletico@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260909T210000
+DTEND;TZID=Europe/Vienna:20260909T230000
+SUMMARY:[CL] Liverpool : Atletico
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-09-sporting-galatasaray@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260909T210000
+DTEND;TZID=Europe/Vienna:20260909T230000
+SUMMARY:[CL] Sporting : Galatasaray
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-10-psv-shakhtar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260910T184500
+DTEND;TZID=Europe/Vienna:20260910T204500
+SUMMARY:[CL] PSV : Shakhtar
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-10-fenerbahce-roma@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260910T184500
+DTEND;TZID=Europe/Vienna:20260910T204500
+SUMMARY:[CL] Fenerbahce : Roma
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-10-como-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260910T210000
+DTEND;TZID=Europe/Vienna:20260910T230000
+SUMMARY:[CL] Como : Leipzig
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-10-bayern-bod-glimt@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260910T210000
+DTEND;TZID=Europe/Vienna:20260910T230000
+SUMMARY:[CL] Bayern : Bodö/Glimt
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-10-man-utd-sabah@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260910T210000
+DTEND;TZID=Europe/Vienna:20260910T230000
+SUMMARY:[CL] Man Utd : Sabah
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-09-10-slavia-prag-lens@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260910T210000
+DTEND;TZID=Europe/Vienna:20260910T230000
+SUMMARY:[CL] Slavia Prag : Lens
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-sabah-slavia-prag@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T184500
+DTEND;TZID=Europe/Vienna:20261013T204500
+SUMMARY:[CL] Sabah : Slavia Prag
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-lens-sporting@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T184500
+DTEND;TZID=Europe/Vienna:20261013T204500
+SUMMARY:[CL] Lens : Sporting
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-viking-bayern@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T210000
+DTEND;TZID=Europe/Vienna:20261013T230000
+SUMMARY:[CL] Viking : Bayern
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-inter-club-br-gge@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T210000
+DTEND;TZID=Europe/Vienna:20261013T230000
+SUMMARY:[CL] Inter : Club Brügge
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-arsenal-lille@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T210000
+DTEND;TZID=Europe/Vienna:20261013T230000
+SUMMARY:[CL] Arsenal : Lille
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-atletico-man-utd@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T210000
+DTEND;TZID=Europe/Vienna:20261013T230000
+SUMMARY:[CL] Atletico : Man Utd
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-leipzig-psv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T210000
+DTEND;TZID=Europe/Vienna:20261013T230000
+SUMMARY:[CL] Leipzig : PSV
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-villareal-napoli@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T210000
+DTEND;TZID=Europe/Vienna:20261013T230000
+SUMMARY:[CL] Villareal : Napoli
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-13-galatasaray-barcelona@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261013T210000
+DTEND;TZID=Europe/Vienna:20261013T230000
+SUMMARY:[CL] Galatasaray : Barcelona
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-feyenoord-como@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T184500
+DTEND;TZID=Europe/Vienna:20261014T204500
+SUMMARY:[CL] Feyenoord : Como
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-lask-liverpool@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T184500
+DTEND;TZID=Europe/Vienna:20261014T204500
+SUMMARY:[CL] LASK : Liverpool
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-slovan-brati-stuttgart@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T210000
+DTEND;TZID=Europe/Vienna:20261014T230000
+SUMMARY:[CL] Slovan Brati : Stuttgart
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-man-city-psg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T210000
+DTEND;TZID=Europe/Vienna:20261014T230000
+SUMMARY:[CL] Man City : PSG
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-roma-real-madrid@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T210000
+DTEND;TZID=Europe/Vienna:20261014T230000
+SUMMARY:[CL] Roma : Real Madrid
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-aston-villa-fenerbahce@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T210000
+DTEND;TZID=Europe/Vienna:20261014T230000
+SUMMARY:[CL] Aston Villa : Fenerbahce
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-real-betis-porto@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T210000
+DTEND;TZID=Europe/Vienna:20261014T230000
+SUMMARY:[CL] Real Betis : Porto
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-bod-glimt-dortmund@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T210000
+DTEND;TZID=Europe/Vienna:20261014T230000
+SUMMARY:[CL] Bodö/Glimt : Dortmund
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-14-shakhtar-aek-athen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261014T210000
+DTEND;TZID=Europe/Vienna:20261014T230000
+SUMMARY:[CL] Shakhtar : AEK Athen
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-sabah-dortmund@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T184500
+DTEND;TZID=Europe/Vienna:20261020T204500
+SUMMARY:[CL] Sabah : Dortmund
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-fenerbahce-slavia-prag@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T184500
+DTEND;TZID=Europe/Vienna:20261020T204500
+SUMMARY:[CL] Fenerbahce : Slavia Prag
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-stuttgart-atletico@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T210000
+DTEND;TZID=Europe/Vienna:20261020T230000
+SUMMARY:[CL] Stuttgart : Atletico
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-psg-barcelona@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T210000
+DTEND;TZID=Europe/Vienna:20261020T230000
+SUMMARY:[CL] PSG : Barcelona
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-liverpool-villareal@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T210000
+DTEND;TZID=Europe/Vienna:20261020T230000
+SUMMARY:[CL] Liverpool : Villareal
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-man-city-aek-athen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T210000
+DTEND;TZID=Europe/Vienna:20261020T230000
+SUMMARY:[CL] Man City : AEK Athen
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-roma-slovan-brati@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T210000
+DTEND;TZID=Europe/Vienna:20261020T230000
+SUMMARY:[CL] Roma : Slovan Brati
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-porto-psv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T210000
+DTEND;TZID=Europe/Vienna:20261020T230000
+SUMMARY:[CL] Porto : PSV
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-20-napoli-bod-glimt@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261020T210000
+DTEND;TZID=Europe/Vienna:20261020T230000
+SUMMARY:[CL] Napoli : Bodö/Glimt
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-lille-galatasaray@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T184500
+DTEND;TZID=Europe/Vienna:20261021T204500
+SUMMARY:[CL] Lille : Galatasaray
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-como-man-utd@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T184500
+DTEND;TZID=Europe/Vienna:20261021T204500
+SUMMARY:[CL] Como : Man Utd
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-real-betis-feyenoord@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T210000
+DTEND;TZID=Europe/Vienna:20261021T230000
+SUMMARY:[CL] Real Betis : Feyenoord
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-bayern-arsenal@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T210000
+DTEND;TZID=Europe/Vienna:20261021T230000
+SUMMARY:[CL] Bayern : Arsenal
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-real-madrid-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T210000
+DTEND;TZID=Europe/Vienna:20261021T230000
+SUMMARY:[CL] Real Madrid : Leipzig
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-inter-shakhtar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T210000
+DTEND;TZID=Europe/Vienna:20261021T230000
+SUMMARY:[CL] Inter : Shakhtar
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-sporting-lask@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T210000
+DTEND;TZID=Europe/Vienna:20261021T230000
+SUMMARY:[CL] Sporting : LASK
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-aston-villa-viking@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T210000
+DTEND;TZID=Europe/Vienna:20261021T230000
+SUMMARY:[CL] Aston Villa : Viking
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-10-21-club-br-gge-lens@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261021T210000
+DTEND;TZID=Europe/Vienna:20261021T230000
+SUMMARY:[CL] Club Brügge : Lens
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-galatasaray-stuttgart@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T184500
+DTEND;TZID=Europe/Vienna:20261103T204500
+SUMMARY:[CL] Galatasaray : Stuttgart
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-shakhtar-sporting@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T184500
+DTEND;TZID=Europe/Vienna:20261103T204500
+SUMMARY:[CL] Shakhtar : Sporting
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-lask-slovan-brati@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T210000
+DTEND;TZID=Europe/Vienna:20261103T230000
+SUMMARY:[CL] LASK : Slovan Brati
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-atletico-bayern@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T210000
+DTEND;TZID=Europe/Vienna:20261103T230000
+SUMMARY:[CL] Atletico : Bayern
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-barcelona-aston-villa@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T210000
+DTEND;TZID=Europe/Vienna:20261103T230000
+SUMMARY:[CL] Barcelona : Aston Villa
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-man-utd-roma@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T210000
+DTEND;TZID=Europe/Vienna:20261103T230000
+SUMMARY:[CL] Man Utd : Roma
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-feyenoord-inter@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T210000
+DTEND;TZID=Europe/Vienna:20261103T230000
+SUMMARY:[CL] Feyenoord : Inter
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-bod-glimt-lille@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T210000
+DTEND;TZID=Europe/Vienna:20261103T230000
+SUMMARY:[CL] Bodö/Glimt : Lille
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-03-villareal-psg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261103T210000
+DTEND;TZID=Europe/Vienna:20261103T230000
+SUMMARY:[CL] Villareal : PSG
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-fenerbahce-liverpool@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T184500
+DTEND;TZID=Europe/Vienna:20261104T204500
+SUMMARY:[CL] Fenerbahce : Liverpool
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-aek-athen-real-madrid@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T184500
+DTEND;TZID=Europe/Vienna:20261104T204500
+SUMMARY:[CL] AEK Athen : Real Madrid
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-lens-como@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T210000
+DTEND;TZID=Europe/Vienna:20261104T230000
+SUMMARY:[CL] Lens : Como
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-dortmund-real-betis@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T210000
+DTEND;TZID=Europe/Vienna:20261104T230000
+SUMMARY:[CL] Dortmund : Real Betis
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-porto-napoli@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T210000
+DTEND;TZID=Europe/Vienna:20261104T230000
+SUMMARY:[CL] Porto : Napoli
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-psv-club-br-gge@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T210000
+DTEND;TZID=Europe/Vienna:20261104T230000
+SUMMARY:[CL] PSV : Club Brügge
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-leipzig-man-city@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T210000
+DTEND;TZID=Europe/Vienna:20261104T230000
+SUMMARY:[CL] Leipzig : Man City
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-slavia-prag-arsenal@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T210000
+DTEND;TZID=Europe/Vienna:20261104T230000
+SUMMARY:[CL] Slavia Prag : Arsenal
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-04-viking-sabah@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261104T210000
+DTEND;TZID=Europe/Vienna:20261104T230000
+SUMMARY:[CL] Viking : Sabah
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-galatasaray-aston-villa@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T184500
+DTEND;TZID=Europe/Vienna:20261124T204500
+SUMMARY:[CL] Galatasaray : Aston Villa
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-bod-glimt-lask@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T184500
+DTEND;TZID=Europe/Vienna:20261124T204500
+SUMMARY:[CL] Bodö/Glimt : LASK
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-como-aek-athen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T210000
+DTEND;TZID=Europe/Vienna:20261124T230000
+SUMMARY:[CL] Como : AEK Athen
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-real-madrid-psv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T210000
+DTEND;TZID=Europe/Vienna:20261124T230000
+SUMMARY:[CL] Real Madrid : PSV
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-man-city-napoli@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T210000
+DTEND;TZID=Europe/Vienna:20261124T230000
+SUMMARY:[CL] Man City : Napoli
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-arsenal-dortmund@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T210000
+DTEND;TZID=Europe/Vienna:20261124T230000
+SUMMARY:[CL] Arsenal : Dortmund
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-feyenoord-porto@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T210000
+DTEND;TZID=Europe/Vienna:20261124T230000
+SUMMARY:[CL] Feyenoord : Porto
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-leipzig-lens@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T210000
+DTEND;TZID=Europe/Vienna:20261124T230000
+SUMMARY:[CL] Leipzig : Lens
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-24-slovan-brati-real-betis@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261124T210000
+DTEND;TZID=Europe/Vienna:20261124T230000
+SUMMARY:[CL] Slovan Brati : Real Betis
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-slavia-prag-villareal@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T184500
+DTEND;TZID=Europe/Vienna:20261125T204500
+SUMMARY:[CL] Slavia Prag : Villareal
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-sabah-barcelona@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T184500
+DTEND;TZID=Europe/Vienna:20261125T204500
+SUMMARY:[CL] Sabah : Barcelona
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-shakhtar-fenerbahce@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T210000
+DTEND;TZID=Europe/Vienna:20261125T230000
+SUMMARY:[CL] Shakhtar : Fenerbahce
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-psg-roma@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T210000
+DTEND;TZID=Europe/Vienna:20261125T230000
+SUMMARY:[CL] PSG : Roma
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-inter-stuttgart@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T210000
+DTEND;TZID=Europe/Vienna:20261125T230000
+SUMMARY:[CL] Inter : Stuttgart
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-atletico-viking@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T210000
+DTEND;TZID=Europe/Vienna:20261125T230000
+SUMMARY:[CL] Atletico : Viking
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-sporting-man-utd@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T210000
+DTEND;TZID=Europe/Vienna:20261125T230000
+SUMMARY:[CL] Sporting : Man Utd
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-club-br-gge-liverpool@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T210000
+DTEND;TZID=Europe/Vienna:20261125T230000
+SUMMARY:[CL] Club Brügge : Liverpool
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-11-25-lille-bayern@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261125T210000
+DTEND;TZID=Europe/Vienna:20261125T230000
+SUMMARY:[CL] Lille : Bayern
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-viking-feyenoord@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T184500
+DTEND;TZID=Europe/Vienna:20261208T204500
+SUMMARY:[CL] Viking : Feyenoord
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-villareal-sabah@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T184500
+DTEND;TZID=Europe/Vienna:20261208T204500
+SUMMARY:[CL] Villareal : Sabah
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-aek-athen-galatasaray@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T210000
+DTEND;TZID=Europe/Vienna:20261208T230000
+SUMMARY:[CL] AEK Athen : Galatasaray
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-bayern-slavia-prag@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T210000
+DTEND;TZID=Europe/Vienna:20261208T230000
+SUMMARY:[CL] Bayern : Slavia Prag
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-barcelona-man-city@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T210000
+DTEND;TZID=Europe/Vienna:20261208T230000
+SUMMARY:[CL] Barcelona : Man City
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-roma-sporting@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T210000
+DTEND;TZID=Europe/Vienna:20261208T230000
+SUMMARY:[CL] Roma : Sporting
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-aston-villa-psg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T210000
+DTEND;TZID=Europe/Vienna:20261208T230000
+SUMMARY:[CL] Aston Villa : PSG
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-man-utd-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T210000
+DTEND;TZID=Europe/Vienna:20261208T230000
+SUMMARY:[CL] Man Utd : Leipzig
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-08-napoli-club-br-gge@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261208T210000
+DTEND;TZID=Europe/Vienna:20261208T230000
+SUMMARY:[CL] Napoli : Club Brügge
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-real-betis-como@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T184500
+DTEND;TZID=Europe/Vienna:20261209T204500
+SUMMARY:[CL] Real Betis : Como
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-slovan-brati-shakhtar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T184500
+DTEND;TZID=Europe/Vienna:20261209T204500
+SUMMARY:[CL] Slovan Brati : Shakhtar
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-lens-bod-glimt@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T210000
+DTEND;TZID=Europe/Vienna:20261209T230000
+SUMMARY:[CL] Lens : Bodö/Glimt
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-liverpool-porto@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T210000
+DTEND;TZID=Europe/Vienna:20261209T230000
+SUMMARY:[CL] Liverpool : Porto
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-arsenal-real-madrid@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T210000
+DTEND;TZID=Europe/Vienna:20261209T230000
+SUMMARY:[CL] Arsenal : Real Madrid
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-dortmund-inter@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T210000
+DTEND;TZID=Europe/Vienna:20261209T230000
+SUMMARY:[CL] Dortmund : Inter
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-psv-atletico@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T210000
+DTEND;TZID=Europe/Vienna:20261209T230000
+SUMMARY:[CL] PSV : Atletico
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-stuttgart-lille@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T210000
+DTEND;TZID=Europe/Vienna:20261209T230000
+SUMMARY:[CL] Stuttgart : Lille
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2026-12-09-lask-fenerbahce@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261209T210000
+DTEND;TZID=Europe/Vienna:20261209T230000
+SUMMARY:[CL] LASK : Fenerbahce
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-galatasaray-feyenoord@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T184500
+DTEND;TZID=Europe/Vienna:20270119T204500
+SUMMARY:[CL] Galatasaray : Feyenoord
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-bod-glimt-atletico@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T184500
+DTEND;TZID=Europe/Vienna:20270119T204500
+SUMMARY:[CL] Bodö/Glimt : Atletico
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-real-madrid-lask@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T210000
+DTEND;TZID=Europe/Vienna:20270119T230000
+SUMMARY:[CL] Real Madrid : LASK
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-inter-liverpool@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T210000
+DTEND;TZID=Europe/Vienna:20270119T230000
+SUMMARY:[CL] Inter : Liverpool
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-aston-villa-dortmund@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T210000
+DTEND;TZID=Europe/Vienna:20270119T230000
+SUMMARY:[CL] Aston Villa : Dortmund
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-porto-slavia-prag@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T210000
+DTEND;TZID=Europe/Vienna:20270119T230000
+SUMMARY:[CL] Porto : Slavia Prag
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-lille-slovan-brati@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T210000
+DTEND;TZID=Europe/Vienna:20270119T230000
+SUMMARY:[CL] Lille : Slovan Brati
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-stuttgart-club-br-gge@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T210000
+DTEND;TZID=Europe/Vienna:20270119T230000
+SUMMARY:[CL] Stuttgart : Club Brügge
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-19-aek-athen-roma@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270119T210000
+DTEND;TZID=Europe/Vienna:20270119T230000
+SUMMARY:[CL] AEK Athen : Roma
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-fenerbahce-villareal@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T184500
+DTEND;TZID=Europe/Vienna:20270120T204500
+SUMMARY:[CL] Fenerbahce : Villareal
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-sabah-napoli@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T184500
+DTEND;TZID=Europe/Vienna:20270120T204500
+SUMMARY:[CL] Sabah : Napoli
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-man-utd-bayern@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T210000
+DTEND;TZID=Europe/Vienna:20270120T230000
+SUMMARY:[CL] Man Utd : Bayern
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-lens-man-city@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T210000
+DTEND;TZID=Europe/Vienna:20270120T230000
+SUMMARY:[CL] Lens : Man City
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-como-psg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T210000
+DTEND;TZID=Europe/Vienna:20270120T230000
+SUMMARY:[CL] Como : PSG
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-real-betis-arsenal@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T210000
+DTEND;TZID=Europe/Vienna:20270120T230000
+SUMMARY:[CL] Real Betis : Arsenal
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-viking-psv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T210000
+DTEND;TZID=Europe/Vienna:20270120T230000
+SUMMARY:[CL] Viking : PSV
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-sporting-barcelona@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T210000
+DTEND;TZID=Europe/Vienna:20270120T230000
+SUMMARY:[CL] Sporting : Barcelona
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-20-leipzig-shakhtar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270120T210000
+DTEND;TZID=Europe/Vienna:20270120T230000
+SUMMARY:[CL] Leipzig : Shakhtar
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-club-br-gge-bod-glimt@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Club Brügge : Bodö/Glimt
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-slavia-prag-aston-villa@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Slavia Prag : Aston Villa
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-slovan-brati-inter@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Slovan Brati : Inter
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-shakhtar-real-madrid@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Shakhtar : Real Madrid
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-villareal-man-utd@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Villareal : Man Utd
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-napoli-viking@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Napoli : Viking
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-feyenoord-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Feyenoord : Leipzig
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-psv-stuttgart@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] PSV : Stuttgart
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-roma-lille@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Roma : Lille
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-dortmund-aek-athen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Dortmund : AEK Athen
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-atletico-fenerbahce@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Atletico : Fenerbahce
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-barcelona-como@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Barcelona : Como
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-arsenal-sabah@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Arsenal : Sabah
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-man-city-sporting@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Man City : Sporting
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-liverpool-lens@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Liverpool : Lens
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-psg-galatasaray@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] PSG : Galatasaray
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-lask-porto@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] LASK : Porto
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-01-27-bayern-real-betis@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270127T210000
+DTEND;TZID=Europe/Vienna:20270127T230000
+SUMMARY:[CL] Bayern : Real Betis
+DESCRIPTION:Champions League\nTipps: https://einseitensprung.at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-16-play-off-1-play-off-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270216T210000
+DTEND;TZID=Europe/Vienna:20270216T230000
+SUMMARY:[CL] Play-off 1 : Play-off 1
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-16-play-off-3-play-off-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270216T210000
+DTEND;TZID=Europe/Vienna:20270216T230000
+SUMMARY:[CL] Play-off 3 : Play-off 3
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-16-play-off-5-play-off-5@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270216T210000
+DTEND;TZID=Europe/Vienna:20270216T230000
+SUMMARY:[CL] Play-off 5 : Play-off 5
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-16-play-off-7-play-off-7@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270216T210000
+DTEND;TZID=Europe/Vienna:20270216T230000
+SUMMARY:[CL] Play-off 7 : Play-off 7
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-17-play-off-2-play-off-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270217T210000
+DTEND;TZID=Europe/Vienna:20270217T230000
+SUMMARY:[CL] Play-off 2 : Play-off 2
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-17-play-off-4-play-off-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270217T210000
+DTEND;TZID=Europe/Vienna:20270217T230000
+SUMMARY:[CL] Play-off 4 : Play-off 4
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-17-play-off-6-play-off-6@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270217T210000
+DTEND;TZID=Europe/Vienna:20270217T230000
+SUMMARY:[CL] Play-off 6 : Play-off 6
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-17-play-off-8-play-off-8@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270217T210000
+DTEND;TZID=Europe/Vienna:20270217T230000
+SUMMARY:[CL] Play-off 8 : Play-off 8
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-23-play-off-1-play-off-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270223T210000
+DTEND;TZID=Europe/Vienna:20270223T230000
+SUMMARY:[CL] Play-off 1 : Play-off 1
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-23-play-off-3-play-off-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270223T210000
+DTEND;TZID=Europe/Vienna:20270223T230000
+SUMMARY:[CL] Play-off 3 : Play-off 3
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-23-play-off-5-play-off-5@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270223T210000
+DTEND;TZID=Europe/Vienna:20270223T230000
+SUMMARY:[CL] Play-off 5 : Play-off 5
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-23-play-off-7-play-off-7@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270223T210000
+DTEND;TZID=Europe/Vienna:20270223T230000
+SUMMARY:[CL] Play-off 7 : Play-off 7
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-24-play-off-2-play-off-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270224T210000
+DTEND;TZID=Europe/Vienna:20270224T230000
+SUMMARY:[CL] Play-off 2 : Play-off 2
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-24-play-off-4-play-off-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270224T210000
+DTEND;TZID=Europe/Vienna:20270224T230000
+SUMMARY:[CL] Play-off 4 : Play-off 4
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-24-play-off-6-play-off-6@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270224T210000
+DTEND;TZID=Europe/Vienna:20270224T230000
+SUMMARY:[CL] Play-off 6 : Play-off 6
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-02-24-play-off-8-play-off-8@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270224T210000
+DTEND;TZID=Europe/Vienna:20270224T230000
+SUMMARY:[CL] Play-off 8 : Play-off 8
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-09-1-8-1-1-8-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270309T210000
+DTEND;TZID=Europe/Vienna:20270309T230000
+SUMMARY:[CL] 1/8 1 : 1/8 1
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-09-1-8-3-1-8-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270309T210000
+DTEND;TZID=Europe/Vienna:20270309T230000
+SUMMARY:[CL] 1/8 3 : 1/8 3
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-09-1-8-5-1-8-5@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270309T210000
+DTEND;TZID=Europe/Vienna:20270309T230000
+SUMMARY:[CL] 1/8 5 : 1/8 5
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-09-1-8-7-1-8-7@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270309T210000
+DTEND;TZID=Europe/Vienna:20270309T230000
+SUMMARY:[CL] 1/8 7 : 1/8 7
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-10-1-8-2-1-8-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270310T210000
+DTEND;TZID=Europe/Vienna:20270310T230000
+SUMMARY:[CL] 1/8 2 : 1/8 2
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-10-1-8-4-1-8-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270310T210000
+DTEND;TZID=Europe/Vienna:20270310T230000
+SUMMARY:[CL] 1/8 4 : 1/8 4
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-10-1-8-6-1-8-6@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270310T210000
+DTEND;TZID=Europe/Vienna:20270310T230000
+SUMMARY:[CL] 1/8 6 : 1/8 6
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-10-1-8-8-1-8-8@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270310T210000
+DTEND;TZID=Europe/Vienna:20270310T230000
+SUMMARY:[CL] 1/8 8 : 1/8 8
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-16-1-8-1-1-8-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270316T210000
+DTEND;TZID=Europe/Vienna:20270316T230000
+SUMMARY:[CL] 1/8 1 : 1/8 1
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-16-1-8-3-1-8-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270316T210000
+DTEND;TZID=Europe/Vienna:20270316T230000
+SUMMARY:[CL] 1/8 3 : 1/8 3
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-16-1-8-5-1-8-5@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270316T210000
+DTEND;TZID=Europe/Vienna:20270316T230000
+SUMMARY:[CL] 1/8 5 : 1/8 5
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-16-1-8-7-1-8-7@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270316T210000
+DTEND;TZID=Europe/Vienna:20270316T230000
+SUMMARY:[CL] 1/8 7 : 1/8 7
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-17-1-8-2-1-8-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270317T210000
+DTEND;TZID=Europe/Vienna:20270317T230000
+SUMMARY:[CL] 1/8 2 : 1/8 2
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-17-1-8-4-1-8-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270317T210000
+DTEND;TZID=Europe/Vienna:20270317T230000
+SUMMARY:[CL] 1/8 4 : 1/8 4
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-17-1-8-6-1-8-6@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270317T210000
+DTEND;TZID=Europe/Vienna:20270317T230000
+SUMMARY:[CL] 1/8 6 : 1/8 6
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-03-17-1-8-8-1-8-8@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270317T210000
+DTEND;TZID=Europe/Vienna:20270317T230000
+SUMMARY:[CL] 1/8 8 : 1/8 8
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-06-1-4-1-1-4-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270406T210000
+DTEND;TZID=Europe/Vienna:20270406T230000
+SUMMARY:[CL] 1/4 1 : 1/4 1
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-06-1-4-3-1-4-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270406T210000
+DTEND;TZID=Europe/Vienna:20270406T230000
+SUMMARY:[CL] 1/4 3 : 1/4 3
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-07-1-4-2-1-4-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270407T210000
+DTEND;TZID=Europe/Vienna:20270407T230000
+SUMMARY:[CL] 1/4 2 : 1/4 2
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-07-1-4-4-1-4-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270407T210000
+DTEND;TZID=Europe/Vienna:20270407T230000
+SUMMARY:[CL] 1/4 4 : 1/4 4
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-13-1-4-1-1-4-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270413T210000
+DTEND;TZID=Europe/Vienna:20270413T230000
+SUMMARY:[CL] 1/4 1 : 1/4 1
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-13-1-4-3-1-4-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270413T210000
+DTEND;TZID=Europe/Vienna:20270413T230000
+SUMMARY:[CL] 1/4 3 : 1/4 3
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-14-1-4-2-1-4-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270414T210000
+DTEND;TZID=Europe/Vienna:20270414T230000
+SUMMARY:[CL] 1/4 2 : 1/4 2
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-14-1-4-4-1-4-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270414T210000
+DTEND;TZID=Europe/Vienna:20270414T230000
+SUMMARY:[CL] 1/4 4 : 1/4 4
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-27-1-2-1-1-2-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270427T210000
+DTEND;TZID=Europe/Vienna:20270427T230000
+SUMMARY:[CL] 1/2 1 : 1/2 1
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-04-28-1-2-2-1-2-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270428T210000
+DTEND;TZID=Europe/Vienna:20270428T230000
+SUMMARY:[CL] 1/2 2 : 1/2 2
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-05-04-1-2-1-1-2-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270504T210000
+DTEND;TZID=Europe/Vienna:20270504T230000
+SUMMARY:[CL] 1/2 1 : 1/2 1
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-05-05-1-2-2-1-2-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270505T210000
+DTEND;TZID=Europe/Vienna:20270505T230000
+SUMMARY:[CL] 1/2 2 : 1/2 2
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cl-2027-06-05-finale@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270605T210000
+DTEND;TZID=Europe/Vienna:20270605T230000
+SUMMARY:[CL] Finale
+DESCRIPTION:Champions League – K.o.-Runde\nTipps: https://einseitensprung
+ .at/cl/
+URL:https://einseitensprung.at/cl/
+CATEGORIES:Champions League
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

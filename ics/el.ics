@@ -1,0 +1,2151 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Feelochamp//Jump-Kalender//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Feelochamp – Europa League
+X-WR-TIMEZONE:Europe/Vienna
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:el-2026-09-16-omonia-nikos-celta-de-vig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Omonia Nikos : Celta de Vig
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-16-ararat-armen-sparta-prag@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Ararat-Armen : Sparta Prag
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-16-leverkusen-celje@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Leverkusen : Celje
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-16-milan-benfica-liss@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Milan : Benfica Liss
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-16-olympiakos-jagiellonia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Olympiakos : Jagiellonia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-16-anderlecht-lyon@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Anderlecht : Lyon
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-16-sturm-graz-rennes@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Sturm Graz : Rennes
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-16-sunderland-az-alkmaar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Sunderland : AZ Alkmaar
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-16-hapoel-be-er-dinamo-zagre@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260916T210000
+DTEND;TZID=Europe/Vienna:20260916T230000
+SUMMARY:[EL] Hapoel Be´er : Dinamo Zagre
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-lillestr-m-torreense@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] Lilleström : Torreense
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-ofi-kreta-hoffenheim@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] OFI Kreta : Hoffenheim
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-besiktas-ist-marseille@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] Besiktas Ist : Marseille
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-crystal-pala-lech-posen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] Crystal Pala : Lech Posen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-viktoria-pil-union-saint-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] Viktoria Pil : Union Saint-
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-real-socieda-bournemouth@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] Real Socieda : Bournemouth
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-fc-red-bull-levski-sofia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] FC Red Bull : Levski Sofia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-juventus-nec-nijmegen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] Juventus : NEC Nijmegen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-09-17-celtic-glasg-ferencvaros@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260917T210000
+DTEND;TZID=Europe/Vienna:20260917T230000
+SUMMARY:[EL] Celtic Glasg : Ferencvaros
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-sparta-prag-lillestr-m@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T184500
+DTEND;TZID=Europe/Vienna:20261015T204500
+SUMMARY:[EL] Sparta Prag : Lilleström
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-lech-posen-leverkusen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T184500
+DTEND;TZID=Europe/Vienna:20261015T204500
+SUMMARY:[EL] Lech Posen : Leverkusen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-fc-red-bull-milan@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T184500
+DTEND;TZID=Europe/Vienna:20261015T204500
+SUMMARY:[EL] FC Red Bull : Milan
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-union-saint-real-socieda@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T184500
+DTEND;TZID=Europe/Vienna:20261015T204500
+SUMMARY:[EL] Union Saint- : Real Socieda
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-az-alkmaar-hapoel-be-er@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T184500
+DTEND;TZID=Europe/Vienna:20261015T204500
+SUMMARY:[EL] AZ Alkmaar : Hapoel Be´er
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-lyon-crystal-pala@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T184500
+DTEND;TZID=Europe/Vienna:20261015T204500
+SUMMARY:[EL] Lyon : Crystal Pala
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-torreense-sunderland@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T184500
+DTEND;TZID=Europe/Vienna:20261015T204500
+SUMMARY:[EL] Torreense : Sunderland
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-celje-omonia-nikos@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T184500
+DTEND;TZID=Europe/Vienna:20261015T204500
+SUMMARY:[EL] Celje : Omonia Nikos
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-nec-nijmegen-levski-sofia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] NEC Nijmegen : Levski Sofia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-marseille-olympiakos@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Marseille : Olympiakos
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-ferencvaros-viktoria-pil@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Ferencvaros : Viktoria Pil
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-dinamo-zagre-anderlecht@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Dinamo Zagre : Anderlecht
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-rennes-ofi-kreta@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Rennes : OFI Kreta
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-bournemouth-sturm-graz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Bournemouth : Sturm Graz
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-jagiellonia-ararat-armen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Jagiellonia : Ararat-Armen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-celta-de-vig-juventus@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Celta de Vig : Juventus
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-hoffenheim-besiktas-ist@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Hoffenheim : Besiktas Ist
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-15-benfica-liss-celtic-glasg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261015T210000
+DTEND;TZID=Europe/Vienna:20261015T230000
+SUMMARY:[EL] Benfica Liss : Celtic Glasg
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-juventus-rennes@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T184500
+DTEND;TZID=Europe/Vienna:20261022T204500
+SUMMARY:[EL] Juventus : Rennes
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-ofi-kreta-leverkusen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T184500
+DTEND;TZID=Europe/Vienna:20261022T204500
+SUMMARY:[EL] OFI Kreta : Leverkusen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-ararat-armen-az-alkmaar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T184500
+DTEND;TZID=Europe/Vienna:20261022T204500
+SUMMARY:[EL] Ararat-Armen : AZ Alkmaar
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-sturm-graz-marseille@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T184500
+DTEND;TZID=Europe/Vienna:20261022T204500
+SUMMARY:[EL] Sturm Graz : Marseille
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-lech-posen-sunderland@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T184500
+DTEND;TZID=Europe/Vienna:20261022T204500
+SUMMARY:[EL] Lech Posen : Sunderland
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-union-saint-hapoel-be-er@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T184500
+DTEND;TZID=Europe/Vienna:20261022T204500
+SUMMARY:[EL] Union Saint- : Hapoel Be´er
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-dinamo-zagre-nec-nijmegen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T184500
+DTEND;TZID=Europe/Vienna:20261022T204500
+SUMMARY:[EL] Dinamo Zagre : NEC Nijmegen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-ferencvaros-torreense@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T184500
+DTEND;TZID=Europe/Vienna:20261022T204500
+SUMMARY:[EL] Ferencvaros : Torreense
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-celtic-glasg-celta-de-vig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Celtic Glasg : Celta de Vig
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-viktoria-pil-levski-sofia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Viktoria Pil : Levski Sofia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-lillestr-m-real-socieda@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Lilleström : Real Socieda
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-celje-fc-red-bull@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Celje : FC Red Bull
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-bournemouth-milan@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Bournemouth : Milan
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-jagiellonia-anderlecht@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Jagiellonia : Anderlecht
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-besiktas-ist-crystal-pala@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Besiktas Ist : Crystal Pala
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-hoffenheim-lyon@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Hoffenheim : Lyon
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-omonia-nikos-benfica-liss@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Omonia Nikos : Benfica Liss
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-10-22-olympiakos-sparta-prag@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261022T210000
+DTEND;TZID=Europe/Vienna:20261022T230000
+SUMMARY:[EL] Olympiakos : Sparta Prag
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-real-socieda-lyon@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] Real Socieda : Lyon
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-milan-ferencvaros@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] Milan : Ferencvaros
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-nec-nijmegen-omonia-nikos@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] NEC Nijmegen : Omonia Nikos
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-crystal-pala-hoffenheim@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] Crystal Pala : Hoffenheim
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-lillestr-m-viktoria-pil@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] Lilleström : Viktoria Pil
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-levski-sofia-jagiellonia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] Levski Sofia : Jagiellonia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-rennes-olympiakos@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] Rennes : Olympiakos
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-anderlecht-fc-red-bull@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] Anderlecht : FC Red Bull
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-sparta-prag-bournemouth@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T184500
+DTEND;TZID=Europe/Vienna:20261105T204500
+SUMMARY:[EL] Sparta Prag : Bournemouth
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-hapoel-be-er-ofi-kreta@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] Hapoel Be´er : OFI Kreta
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-celtic-glasg-besiktas-ist@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] Celtic Glasg : Besiktas Ist
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-leverkusen-marseille@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] Leverkusen : Marseille
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-az-alkmaar-juventus@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] AZ Alkmaar : Juventus
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-torreense-ararat-armen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] Torreense : Ararat-Armen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-sturm-graz-celje@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] Sturm Graz : Celje
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-benfica-liss-lech-posen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] Benfica Liss : Lech Posen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-celta-de-vig-union-saint-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] Celta de Vig : Union Saint-
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-05-sunderland-dinamo-zagre@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261105T210000
+DTEND;TZID=Europe/Vienna:20261105T230000
+SUMMARY:[EL] Sunderland : Dinamo Zagre
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-celta-de-vig-bournemouth@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T184500
+DTEND;TZID=Europe/Vienna:20261126T204500
+SUMMARY:[EL] Celta de Vig : Bournemouth
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-besiktas-ist-hapoel-be-er@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T184500
+DTEND;TZID=Europe/Vienna:20261126T204500
+SUMMARY:[EL] Besiktas Ist : Hapoel Be´er
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-marseille-levski-sofia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T184500
+DTEND;TZID=Europe/Vienna:20261126T204500
+SUMMARY:[EL] Marseille : Levski Sofia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-dinamo-zagre-leverkusen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T184500
+DTEND;TZID=Europe/Vienna:20261126T204500
+SUMMARY:[EL] Dinamo Zagre : Leverkusen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-union-saint-lech-posen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T184500
+DTEND;TZID=Europe/Vienna:20261126T204500
+SUMMARY:[EL] Union Saint- : Lech Posen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-fc-red-bull-ararat-armen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T184500
+DTEND;TZID=Europe/Vienna:20261126T204500
+SUMMARY:[EL] FC Red Bull : Ararat-Armen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-olympiakos-milan@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T184500
+DTEND;TZID=Europe/Vienna:20261126T204500
+SUMMARY:[EL] Olympiakos : Milan
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-viktoria-pil-benfica-liss@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T184500
+DTEND;TZID=Europe/Vienna:20261126T204500
+SUMMARY:[EL] Viktoria Pil : Benfica Liss
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-torreense-celtic-glasg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] Torreense : Celtic Glasg
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-hoffenheim-sturm-graz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] Hoffenheim : Sturm Graz
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-sunderland-jagiellonia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] Sunderland : Jagiellonia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-juventus-omonia-nikos@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] Juventus : Omonia Nikos
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-sparta-prag-az-alkmaar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] Sparta Prag : AZ Alkmaar
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-ofi-kreta-anderlecht@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] OFI Kreta : Anderlecht
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-crystal-pala-real-socieda@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] Crystal Pala : Real Socieda
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-nec-nijmegen-rennes@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] NEC Nijmegen : Rennes
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-lyon-lillestr-m@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] Lyon : Lilleström
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-11-26-ferencvaros-celje@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261126T210000
+DTEND;TZID=Europe/Vienna:20261126T230000
+SUMMARY:[EL] Ferencvaros : Celje
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-ararat-armen-nec-nijmegen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T184500
+DTEND;TZID=Europe/Vienna:20261210T204500
+SUMMARY:[EL] Ararat-Armen : NEC Nijmegen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-az-alkmaar-sturm-graz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T184500
+DTEND;TZID=Europe/Vienna:20261210T204500
+SUMMARY:[EL] AZ Alkmaar : Sturm Graz
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-marseille-celta-de-vig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T184500
+DTEND;TZID=Europe/Vienna:20261210T204500
+SUMMARY:[EL] Marseille : Celta de Vig
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-jagiellonia-crystal-pala@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T184500
+DTEND;TZID=Europe/Vienna:20261210T204500
+SUMMARY:[EL] Jagiellonia : Crystal Pala
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-rennes-dinamo-zagre@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T184500
+DTEND;TZID=Europe/Vienna:20261210T204500
+SUMMARY:[EL] Rennes : Dinamo Zagre
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-hapoel-be-er-juventus@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T184500
+DTEND;TZID=Europe/Vienna:20261210T204500
+SUMMARY:[EL] Hapoel Be´er : Juventus
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-anderlecht-hoffenheim@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T184500
+DTEND;TZID=Europe/Vienna:20261210T204500
+SUMMARY:[EL] Anderlecht : Hoffenheim
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-omonia-nikos-celtic-glasg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T184500
+DTEND;TZID=Europe/Vienna:20261210T204500
+SUMMARY:[EL] Omonia Nikos : Celtic Glasg
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-celje-olympiakos@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Celje : Olympiakos
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-levski-sofia-lillestr-m@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Levski Sofia : Lilleström
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-lyon-union-saint-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Lyon : Union Saint-
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-lech-posen-ferencvaros@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Lech Posen : Ferencvaros
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-milan-sunderland@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Milan : Sunderland
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-leverkusen-besiktas-ist@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Leverkusen : Besiktas Ist
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-bournemouth-viktoria-pil@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Bournemouth : Viktoria Pil
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-benfica-liss-ofi-kreta@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Benfica Liss : OFI Kreta
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-fc-red-bull-sparta-prag@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] FC Red Bull : Sparta Prag
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2026-12-10-real-socieda-torreense@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261210T210000
+DTEND;TZID=Europe/Vienna:20261210T230000
+SUMMARY:[EL] Real Socieda : Torreense
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-ferencvaros-juventus@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] Ferencvaros : Juventus
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-sturm-graz-ofi-kreta@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] Sturm Graz : OFI Kreta
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-lillestr-m-bournemouth@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] Lilleström : Bournemouth
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-jagiellonia-lyon@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] Jagiellonia : Lyon
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-besiktas-ist-union-saint-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] Besiktas Ist : Union Saint-
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-real-socieda-viktoria-pil@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] Real Socieda : Viktoria Pil
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-olympiakos-hoffenheim@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] Olympiakos : Hoffenheim
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-ararat-armen-celje@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] Ararat-Armen : Celje
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-nec-nijmegen-benfica-liss@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T184500
+DTEND;TZID=Europe/Vienna:20270121T204500
+SUMMARY:[EL] NEC Nijmegen : Benfica Liss
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-crystal-pala-sparta-prag@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] Crystal Pala : Sparta Prag
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-levski-sofia-milan@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] Levski Sofia : Milan
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-lech-posen-torreense@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] Lech Posen : Torreense
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-celtic-glasg-marseille@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] Celtic Glasg : Marseille
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-rennes-omonia-nikos@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] Rennes : Omonia Nikos
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-leverkusen-fc-red-bull@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] Leverkusen : FC Red Bull
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-hapoel-be-er-celta-de-vig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] Hapoel Be´er : Celta de Vig
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-anderlecht-sunderland@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] Anderlecht : Sunderland
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-21-az-alkmaar-dinamo-zagre@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270121T210000
+DTEND;TZID=Europe/Vienna:20270121T230000
+SUMMARY:[EL] AZ Alkmaar : Dinamo Zagre
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-hoffenheim-ferencvaros@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Hoffenheim : Ferencvaros
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-sunderland-levski-sofia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Sunderland : Levski Sofia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-celje-nec-nijmegen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Celje : NEC Nijmegen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-marseille-anderlecht@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Marseille : Anderlecht
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-milan-ararat-armen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Milan : Ararat-Armen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-viktoria-pil-jagiellonia@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Viktoria Pil : Jagiellonia
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-dinamo-zagre-sturm-graz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Dinamo Zagre : Sturm Graz
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-union-saint-celtic-glasg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Union Saint- : Celtic Glasg
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-omonia-nikos-besiktas-ist@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Omonia Nikos : Besiktas Ist
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-torreense-olympiakos@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Torreense : Olympiakos
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-ofi-kreta-lech-posen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] OFI Kreta : Lech Posen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-juventus-real-socieda@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Juventus : Real Socieda
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-celta-de-vig-lillestr-m@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Celta de Vig : Lilleström
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-sparta-prag-rennes@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Sparta Prag : Rennes
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-bournemouth-hapoel-be-er@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Bournemouth : Hapoel Be´er
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-fc-red-bull-crystal-pala@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] FC Red Bull : Crystal Pala
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-benfica-liss-az-alkmaar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Benfica Liss : AZ Alkmaar
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-01-28-lyon-leverkusen@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270128T210000
+DTEND;TZID=Europe/Vienna:20270128T230000
+SUMMARY:[EL] Lyon : Leverkusen
+DESCRIPTION:Europa League\nTipps: https://einseitensprung.at/el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-18-play-off-1-play-off-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270218T210000
+DTEND;TZID=Europe/Vienna:20270218T230000
+SUMMARY:[EL] Play-off 1 : Play-off 1
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-18-play-off-2-play-off-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270218T210000
+DTEND;TZID=Europe/Vienna:20270218T230000
+SUMMARY:[EL] Play-off 2 : Play-off 2
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-18-play-off-3-play-off-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270218T210000
+DTEND;TZID=Europe/Vienna:20270218T230000
+SUMMARY:[EL] Play-off 3 : Play-off 3
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-18-play-off-4-play-off-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270218T210000
+DTEND;TZID=Europe/Vienna:20270218T230000
+SUMMARY:[EL] Play-off 4 : Play-off 4
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-18-play-off-5-play-off-5@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270218T210000
+DTEND;TZID=Europe/Vienna:20270218T230000
+SUMMARY:[EL] Play-off 5 : Play-off 5
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-18-play-off-6-play-off-6@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270218T210000
+DTEND;TZID=Europe/Vienna:20270218T230000
+SUMMARY:[EL] Play-off 6 : Play-off 6
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-18-play-off-7-play-off-7@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270218T210000
+DTEND;TZID=Europe/Vienna:20270218T230000
+SUMMARY:[EL] Play-off 7 : Play-off 7
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-18-play-off-8-play-off-8@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270218T210000
+DTEND;TZID=Europe/Vienna:20270218T230000
+SUMMARY:[EL] Play-off 8 : Play-off 8
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-25-play-off-1-play-off-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270225T210000
+DTEND;TZID=Europe/Vienna:20270225T230000
+SUMMARY:[EL] Play-off 1 : Play-off 1
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-25-play-off-2-play-off-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270225T210000
+DTEND;TZID=Europe/Vienna:20270225T230000
+SUMMARY:[EL] Play-off 2 : Play-off 2
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-25-play-off-3-play-off-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270225T210000
+DTEND;TZID=Europe/Vienna:20270225T230000
+SUMMARY:[EL] Play-off 3 : Play-off 3
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-25-play-off-4-play-off-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270225T210000
+DTEND;TZID=Europe/Vienna:20270225T230000
+SUMMARY:[EL] Play-off 4 : Play-off 4
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-25-play-off-5-play-off-5@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270225T210000
+DTEND;TZID=Europe/Vienna:20270225T230000
+SUMMARY:[EL] Play-off 5 : Play-off 5
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-25-play-off-6-play-off-6@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270225T210000
+DTEND;TZID=Europe/Vienna:20270225T230000
+SUMMARY:[EL] Play-off 6 : Play-off 6
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-25-play-off-7-play-off-7@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270225T210000
+DTEND;TZID=Europe/Vienna:20270225T230000
+SUMMARY:[EL] Play-off 7 : Play-off 7
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-02-25-play-off-8-play-off-8@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270225T210000
+DTEND;TZID=Europe/Vienna:20270225T230000
+SUMMARY:[EL] Play-off 8 : Play-off 8
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-11-1-8-1-1-8-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270311T210000
+DTEND;TZID=Europe/Vienna:20270311T230000
+SUMMARY:[EL] 1/8 1 : 1/8 1
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-11-1-8-2-1-8-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270311T210000
+DTEND;TZID=Europe/Vienna:20270311T230000
+SUMMARY:[EL] 1/8 2 : 1/8 2
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-11-1-8-3-1-8-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270311T210000
+DTEND;TZID=Europe/Vienna:20270311T230000
+SUMMARY:[EL] 1/8 3 : 1/8 3
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-11-1-8-4-1-8-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270311T210000
+DTEND;TZID=Europe/Vienna:20270311T230000
+SUMMARY:[EL] 1/8 4 : 1/8 4
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-11-1-8-5-1-8-5@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270311T210000
+DTEND;TZID=Europe/Vienna:20270311T230000
+SUMMARY:[EL] 1/8 5 : 1/8 5
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-11-1-8-6-1-8-6@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270311T210000
+DTEND;TZID=Europe/Vienna:20270311T230000
+SUMMARY:[EL] 1/8 6 : 1/8 6
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-11-1-8-7-1-8-7@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270311T210000
+DTEND;TZID=Europe/Vienna:20270311T230000
+SUMMARY:[EL] 1/8 7 : 1/8 7
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-11-1-8-8-1-8-8@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270311T210000
+DTEND;TZID=Europe/Vienna:20270311T230000
+SUMMARY:[EL] 1/8 8 : 1/8 8
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-18-1-8-1-1-8-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270318T210000
+DTEND;TZID=Europe/Vienna:20270318T230000
+SUMMARY:[EL] 1/8 1 : 1/8 1
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-18-1-8-2-1-8-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270318T210000
+DTEND;TZID=Europe/Vienna:20270318T230000
+SUMMARY:[EL] 1/8 2 : 1/8 2
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-18-1-8-3-1-8-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270318T210000
+DTEND;TZID=Europe/Vienna:20270318T230000
+SUMMARY:[EL] 1/8 3 : 1/8 3
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-18-1-8-4-1-8-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270318T210000
+DTEND;TZID=Europe/Vienna:20270318T230000
+SUMMARY:[EL] 1/8 4 : 1/8 4
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-18-1-8-5-1-8-5@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270318T210000
+DTEND;TZID=Europe/Vienna:20270318T230000
+SUMMARY:[EL] 1/8 5 : 1/8 5
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-18-1-8-6-1-8-6@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270318T210000
+DTEND;TZID=Europe/Vienna:20270318T230000
+SUMMARY:[EL] 1/8 6 : 1/8 6
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-18-1-8-7-1-8-7@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270318T210000
+DTEND;TZID=Europe/Vienna:20270318T230000
+SUMMARY:[EL] 1/8 7 : 1/8 7
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-03-18-1-8-8-1-8-8@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270318T210000
+DTEND;TZID=Europe/Vienna:20270318T230000
+SUMMARY:[EL] 1/8 8 : 1/8 8
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-08-1-4-1-1-4-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270408T210000
+DTEND;TZID=Europe/Vienna:20270408T230000
+SUMMARY:[EL] 1/4 1 : 1/4 1
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-08-1-4-2-1-4-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270408T210000
+DTEND;TZID=Europe/Vienna:20270408T230000
+SUMMARY:[EL] 1/4 2 : 1/4 2
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-08-1-4-3-1-4-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270408T210000
+DTEND;TZID=Europe/Vienna:20270408T230000
+SUMMARY:[EL] 1/4 3 : 1/4 3
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-08-1-4-4-1-4-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270408T210000
+DTEND;TZID=Europe/Vienna:20270408T230000
+SUMMARY:[EL] 1/4 4 : 1/4 4
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-15-1-4-1-1-4-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270415T210000
+DTEND;TZID=Europe/Vienna:20270415T230000
+SUMMARY:[EL] 1/4 1 : 1/4 1
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-15-1-4-2-1-4-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270415T210000
+DTEND;TZID=Europe/Vienna:20270415T230000
+SUMMARY:[EL] 1/4 2 : 1/4 2
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-15-1-4-3-1-4-3@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270415T210000
+DTEND;TZID=Europe/Vienna:20270415T230000
+SUMMARY:[EL] 1/4 3 : 1/4 3
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-15-1-4-4-1-4-4@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270415T210000
+DTEND;TZID=Europe/Vienna:20270415T230000
+SUMMARY:[EL] 1/4 4 : 1/4 4
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-29-1-2-1-1-2-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270429T210000
+DTEND;TZID=Europe/Vienna:20270429T230000
+SUMMARY:[EL] 1/2 1 : 1/2 1
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-04-29-1-2-2-1-2-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270429T210000
+DTEND;TZID=Europe/Vienna:20270429T230000
+SUMMARY:[EL] 1/2 2 : 1/2 2
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-05-06-1-2-1-1-2-1@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270506T210000
+DTEND;TZID=Europe/Vienna:20270506T230000
+SUMMARY:[EL] 1/2 1 : 1/2 1
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-05-06-1-2-2-1-2-2@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270506T210000
+DTEND;TZID=Europe/Vienna:20270506T230000
+SUMMARY:[EL] 1/2 2 : 1/2 2
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:el-2027-05-26-finale@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20270526T210000
+DTEND;TZID=Europe/Vienna:20270526T230000
+SUMMARY:[EL] Finale
+DESCRIPTION:Europa League – K.o.-Runde\nTipps: https://einseitensprung.at
+ /el/
+URL:https://einseitensprung.at/el/
+CATEGORIES:Europa League
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

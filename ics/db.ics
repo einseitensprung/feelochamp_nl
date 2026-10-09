@@ -1,0 +1,1116 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Feelochamp//Jump-Kalender//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Feelochamp – Deutsche Bundesliga
+X-WR-TIMEZONE:Europe/Vienna
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:db-2026-08-28-fc-bayern-m-vfb-stuttgar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260828T203000
+DTEND;TZID=Europe/Vienna:20260828T223000
+SUMMARY:[DB] FC Bayern Mü : VFB Stuttgar
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-08-29-rb-leipzig-borussia-m-n@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260829T153000
+DTEND;TZID=Europe/Vienna:20260829T173000
+SUMMARY:[DB] RB Leipzig : Borussia Mön
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-08-29-1-fc-mainz-sc-paderborn@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260829T153000
+DTEND;TZID=Europe/Vienna:20260829T173000
+SUMMARY:[DB] 1.FC Mainz : SC Paderborn
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-08-29-1-fc-union-b-eintracht-fr@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260829T153000
+DTEND;TZID=Europe/Vienna:20260829T173000
+SUMMARY:[DB] 1.FC Union B : Eintracht Fr
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-08-29-1-fc-k-ln-tsg-hoffenhe@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260829T153000
+DTEND;TZID=Europe/Vienna:20260829T173000
+SUMMARY:[DB] 1.FC Köln : TSG Hoffenhe
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-08-29-sv-elversber-bayer-04-lev@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260829T153000
+DTEND;TZID=Europe/Vienna:20260829T173000
+SUMMARY:[DB] SV Elversber : Bayer 04 Lev
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-08-29-borussia-dor-hsv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260829T183000
+DTEND;TZID=Europe/Vienna:20260829T203000
+SUMMARY:[DB] Borussia Dor : HSV
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-08-30-sc-freiburg-sv-werder-br@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260830T153000
+DTEND;TZID=Europe/Vienna:20260830T173000
+SUMMARY:[DB] SC Freiburg : SV Werder Br
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-08-30-fc-augsburg-fc-schalke@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260830T173000
+DTEND;TZID=Europe/Vienna:20260830T193000
+SUMMARY:[DB] FC Augsburg : FC Schalke
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-04-vfb-stuttgar-1-fc-k-ln@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260904T203000
+DTEND;TZID=Europe/Vienna:20260904T223000
+SUMMARY:[DB] VFB Stuttgar : 1.FC Köln
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-05-bayer-04-lev-1-fc-union-b@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260905T153000
+DTEND;TZID=Europe/Vienna:20260905T173000
+SUMMARY:[DB] Bayer 04 Lev : 1.FC Union B
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-05-sc-paderborn-sc-freiburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260905T153000
+DTEND;TZID=Europe/Vienna:20260905T173000
+SUMMARY:[DB] SC Paderborn : SC Freiburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-05-borussia-m-n-sv-elversber@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260905T153000
+DTEND;TZID=Europe/Vienna:20260905T173000
+SUMMARY:[DB] Borussia Mön : SV Elversber
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-05-tsg-hoffenhe-borussia-dor@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260905T153000
+DTEND;TZID=Europe/Vienna:20260905T173000
+SUMMARY:[DB] TSG Hoffenhe : Borussia Dor
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-05-sv-werder-br-rb-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260905T153000
+DTEND;TZID=Europe/Vienna:20260905T173000
+SUMMARY:[DB] SV Werder Br : RB Leipzig
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-05-fc-schalke-fc-bayern-m-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260905T183000
+DTEND;TZID=Europe/Vienna:20260905T203000
+SUMMARY:[DB] FC Schalke : FC Bayern Mü
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-06-hsv-1-fc-mainz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260906T153000
+DTEND;TZID=Europe/Vienna:20260906T173000
+SUMMARY:[DB] HSV : 1.FC Mainz
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-06-eintracht-fr-fc-augsburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260906T173000
+DTEND;TZID=Europe/Vienna:20260906T193000
+SUMMARY:[DB] Eintracht Fr : FC Augsburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-11-1-fc-union-b-fc-schalke@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260911T203000
+DTEND;TZID=Europe/Vienna:20260911T223000
+SUMMARY:[DB] 1.FC Union B : FC Schalke
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-12-1-fc-mainz-eintracht-fr@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260912T153000
+DTEND;TZID=Europe/Vienna:20260912T173000
+SUMMARY:[DB] 1.FC Mainz : Eintracht Fr
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-12-borussia-dor-sc-paderborn@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260912T153000
+DTEND;TZID=Europe/Vienna:20260912T173000
+SUMMARY:[DB] Borussia Dor : SC Paderborn
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-12-tsg-hoffenhe-vfb-stuttgar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260912T153000
+DTEND;TZID=Europe/Vienna:20260912T173000
+SUMMARY:[DB] TSG Hoffenhe : VFB Stuttgar
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-12-sc-freiburg-borussia-m-n@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260912T153000
+DTEND;TZID=Europe/Vienna:20260912T173000
+SUMMARY:[DB] SC Freiburg : Borussia Mön
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-12-fc-augsburg-bayer-04-lev@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260912T153000
+DTEND;TZID=Europe/Vienna:20260912T173000
+SUMMARY:[DB] FC Augsburg : Bayer 04 Lev
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-12-1-fc-k-ln-sv-werder-br@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260912T183000
+DTEND;TZID=Europe/Vienna:20260912T203000
+SUMMARY:[DB] 1.FC Köln : SV Werder Br
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-13-rb-leipzig-hsv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260913T153000
+DTEND;TZID=Europe/Vienna:20260913T173000
+SUMMARY:[DB] RB Leipzig : HSV
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-13-sv-elversber-fc-bayern-m-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260913T173000
+DTEND;TZID=Europe/Vienna:20260913T193000
+SUMMARY:[DB] SV Elversber : FC Bayern Mü
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-18-fc-bayern-m-1-fc-union-b@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260918T203000
+DTEND;TZID=Europe/Vienna:20260918T223000
+SUMMARY:[DB] FC Bayern Mü : 1.FC Union B
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-19-eintracht-fr-sc-freiburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260919T153000
+DTEND;TZID=Europe/Vienna:20260919T173000
+SUMMARY:[DB] Eintracht Fr : SC Freiburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-19-borussia-m-n-1-fc-mainz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260919T153000
+DTEND;TZID=Europe/Vienna:20260919T173000
+SUMMARY:[DB] Borussia Mön : 1.FC Mainz
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-19-hsv-1-fc-k-ln@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260919T153000
+DTEND;TZID=Europe/Vienna:20260919T173000
+SUMMARY:[DB] HSV : 1.FC Köln
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-19-sv-werder-br-fc-augsburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260919T153000
+DTEND;TZID=Europe/Vienna:20260919T173000
+SUMMARY:[DB] SV Werder Br : FC Augsburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-19-vfb-stuttgar-borussia-dor@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260919T183000
+DTEND;TZID=Europe/Vienna:20260919T203000
+SUMMARY:[DB] VFB Stuttgar : Borussia Dor
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-20-bayer-04-lev-rb-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260920T153000
+DTEND;TZID=Europe/Vienna:20260920T173000
+SUMMARY:[DB] Bayer 04 Lev : RB Leipzig
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-20-fc-schalke-sv-elversber@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260920T173000
+DTEND;TZID=Europe/Vienna:20260920T193000
+SUMMARY:[DB] FC Schalke : SV Elversber
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-09-20-sc-paderborn-tsg-hoffenhe@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20260920T193000
+DTEND;TZID=Europe/Vienna:20260920T213000
+SUMMARY:[DB] SC Paderborn : TSG Hoffenhe
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-09-borussia-dor-sv-werder-br@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261009T203000
+DTEND;TZID=Europe/Vienna:20261009T223000
+SUMMARY:[DB] Borussia Dor : SV Werder Br
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-10-fc-augsburg-fc-bayern-m-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261010T153000
+DTEND;TZID=Europe/Vienna:20261010T173000
+SUMMARY:[DB] FC Augsburg : FC Bayern Mü
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-10-1-fc-mainz-bayer-04-lev@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261010T153000
+DTEND;TZID=Europe/Vienna:20261010T173000
+SUMMARY:[DB] 1.FC Mainz : Bayer 04 Lev
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-10-1-fc-union-b-sv-elversber@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261010T153000
+DTEND;TZID=Europe/Vienna:20261010T173000
+SUMMARY:[DB] 1.FC Union B : SV Elversber
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-10-sc-paderborn-vfb-stuttgar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261010T153000
+DTEND;TZID=Europe/Vienna:20261010T173000
+SUMMARY:[DB] SC Paderborn : VFB Stuttgar
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-10-tsg-hoffenhe-hsv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261010T153000
+DTEND;TZID=Europe/Vienna:20261010T173000
+SUMMARY:[DB] TSG Hoffenhe : HSV
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-10-rb-leipzig-eintracht-fr@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261010T183000
+DTEND;TZID=Europe/Vienna:20261010T203000
+SUMMARY:[DB] RB Leipzig : Eintracht Fr
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-11-1-fc-k-ln-borussia-m-n@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261011T153000
+DTEND;TZID=Europe/Vienna:20261011T173000
+SUMMARY:[DB] 1.FC Köln : Borussia Mön
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-11-sc-freiburg-fc-schalke@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261011T153000
+DTEND;TZID=Europe/Vienna:20261011T173000
+SUMMARY:[DB] SC Freiburg : FC Schalke
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-16-eintracht-fr-1-fc-k-ln@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261016T203000
+DTEND;TZID=Europe/Vienna:20261016T223000
+SUMMARY:[DB] Eintracht Fr : 1.FC Köln
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-17-sv-elversber-fc-augsburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261017T153000
+DTEND;TZID=Europe/Vienna:20261017T173000
+SUMMARY:[DB] SV Elversber : FC Augsburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-17-1-fc-union-b-borussia-dor@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261017T153000
+DTEND;TZID=Europe/Vienna:20261017T173000
+SUMMARY:[DB] 1.FC Union B : Borussia Dor
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-17-hsv-vfb-stuttgar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261017T153000
+DTEND;TZID=Europe/Vienna:20261017T173000
+SUMMARY:[DB] HSV : VFB Stuttgar
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-17-fc-schalke-1-fc-mainz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261017T153000
+DTEND;TZID=Europe/Vienna:20261017T173000
+SUMMARY:[DB] FC Schalke : 1.FC Mainz (0:0)
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-17-sv-werder-br-sc-paderborn@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261017T153000
+DTEND;TZID=Europe/Vienna:20261017T173000
+SUMMARY:[DB] SV Werder Br : SC Paderborn
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-17-fc-bayern-m-rb-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261017T183000
+DTEND;TZID=Europe/Vienna:20261017T203000
+SUMMARY:[DB] FC Bayern Mü : RB Leipzig
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-18-bayer-04-lev-sc-freiburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261018T153000
+DTEND;TZID=Europe/Vienna:20261018T173000
+SUMMARY:[DB] Bayer 04 Lev : SC Freiburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-18-borussia-m-n-tsg-hoffenhe@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261018T173000
+DTEND;TZID=Europe/Vienna:20261018T193000
+SUMMARY:[DB] Borussia Mön : TSG Hoffenhe
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-23-vfb-stuttgar-borussia-m-n@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261023T203000
+DTEND;TZID=Europe/Vienna:20261023T223000
+SUMMARY:[DB] VFB Stuttgar : Borussia Mön
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-24-rb-leipzig-sv-elversber@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261024T153000
+DTEND;TZID=Europe/Vienna:20261024T173000
+SUMMARY:[DB] RB Leipzig : SV Elversber
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-24-fc-augsburg-1-fc-union-b@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261024T153000
+DTEND;TZID=Europe/Vienna:20261024T173000
+SUMMARY:[DB] FC Augsburg : 1.FC Union B
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-24-1-fc-mainz-sv-werder-br@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261024T153000
+DTEND;TZID=Europe/Vienna:20261024T173000
+SUMMARY:[DB] 1.FC Mainz : SV Werder Br
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-24-1-fc-k-ln-fc-schalke@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261024T153000
+DTEND;TZID=Europe/Vienna:20261024T173000
+SUMMARY:[DB] 1.FC Köln : FC Schalke
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-24-sc-paderborn-hsv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261024T153000
+DTEND;TZID=Europe/Vienna:20261024T173000
+SUMMARY:[DB] SC Paderborn : HSV
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-24-borussia-dor-eintracht-fr@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261024T183000
+DTEND;TZID=Europe/Vienna:20261024T203000
+SUMMARY:[DB] Borussia Dor : Eintracht Fr
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-25-tsg-hoffenhe-bayer-04-lev@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261025T153000
+DTEND;TZID=Europe/Vienna:20261025T173000
+SUMMARY:[DB] TSG Hoffenhe : Bayer 04 Lev
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-25-sc-freiburg-fc-bayern-m-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261025T173000
+DTEND;TZID=Europe/Vienna:20261025T193000
+SUMMARY:[DB] SC Freiburg : FC Bayern Mü
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-30-sv-elversber-1-fc-mainz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261030T203000
+DTEND;TZID=Europe/Vienna:20261030T223000
+SUMMARY:[DB] SV Elversber : 1.FC Mainz
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-31-bayer-04-lev-vfb-stuttgar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261031T153000
+DTEND;TZID=Europe/Vienna:20261031T173000
+SUMMARY:[DB] Bayer 04 Lev : VFB Stuttgar
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-31-fc-augsburg-sc-freiburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261031T153000
+DTEND;TZID=Europe/Vienna:20261031T173000
+SUMMARY:[DB] FC Augsburg : SC Freiburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-31-borussia-m-n-sc-paderborn@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261031T153000
+DTEND;TZID=Europe/Vienna:20261031T173000
+SUMMARY:[DB] Borussia Mön : SC Paderborn
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-31-sv-werder-br-tsg-hoffenhe@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261031T153000
+DTEND;TZID=Europe/Vienna:20261031T173000
+SUMMARY:[DB] SV Werder Br : TSG Hoffenhe
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-31-fc-schalke-rb-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261031T153000
+DTEND;TZID=Europe/Vienna:20261031T173000
+SUMMARY:[DB] FC Schalke : RB Leipzig
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-10-31-fc-bayern-m-borussia-dor@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261031T183000
+DTEND;TZID=Europe/Vienna:20261031T203000
+SUMMARY:[DB] FC Bayern Mü : Borussia Dor
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-01-1-fc-union-b-1-fc-k-ln@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261101T153000
+DTEND;TZID=Europe/Vienna:20261101T173000
+SUMMARY:[DB] 1.FC Union B : 1.FC Köln
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-01-eintracht-fr-hsv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261101T173000
+DTEND;TZID=Europe/Vienna:20261101T193000
+SUMMARY:[DB] Eintracht Fr : HSV
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-06-hsv-borussia-m-n@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261106T203000
+DTEND;TZID=Europe/Vienna:20261106T223000
+SUMMARY:[DB] HSV : Borussia Mön
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-07-borussia-dor-sv-elversber@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261107T153000
+DTEND;TZID=Europe/Vienna:20261107T173000
+SUMMARY:[DB] Borussia Dor : SV Elversber
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-07-sc-paderborn-eintracht-fr@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261107T153000
+DTEND;TZID=Europe/Vienna:20261107T173000
+SUMMARY:[DB] SC Paderborn : Eintracht Fr
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-07-1-fc-mainz-fc-bayern-m-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261107T153000
+DTEND;TZID=Europe/Vienna:20261107T173000
+SUMMARY:[DB] 1.FC Mainz : FC Bayern Mü
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-07-rb-leipzig-fc-augsburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261107T153000
+DTEND;TZID=Europe/Vienna:20261107T173000
+SUMMARY:[DB] RB Leipzig : FC Augsburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-07-vfb-stuttgar-sv-werder-br@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261107T183000
+DTEND;TZID=Europe/Vienna:20261107T203000
+SUMMARY:[DB] VFB Stuttgar : SV Werder Br
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-08-1-fc-k-ln-bayer-04-lev@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261108T153000
+DTEND;TZID=Europe/Vienna:20261108T173000
+SUMMARY:[DB] 1.FC Köln : Bayer 04 Lev
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-08-sc-freiburg-1-fc-union-b@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261108T173000
+DTEND;TZID=Europe/Vienna:20261108T193000
+SUMMARY:[DB] SC Freiburg : 1.FC Union B
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-08-tsg-hoffenhe-fc-schalke@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261108T193000
+DTEND;TZID=Europe/Vienna:20261108T213000
+SUMMARY:[DB] TSG Hoffenhe : FC Schalke
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-20-fc-bayern-m-1-fc-k-ln@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261120T203000
+DTEND;TZID=Europe/Vienna:20261120T223000
+SUMMARY:[DB] FC Bayern Mü : 1.FC Köln
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-21-sv-elversber-sc-freiburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261121T153000
+DTEND;TZID=Europe/Vienna:20261121T173000
+SUMMARY:[DB] SV Elversber : SC Freiburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-21-bayer-04-lev-sc-paderborn@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261121T153000
+DTEND;TZID=Europe/Vienna:20261121T173000
+SUMMARY:[DB] Bayer 04 Lev : SC Paderborn
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-21-eintracht-fr-tsg-hoffenhe@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261121T153000
+DTEND;TZID=Europe/Vienna:20261121T173000
+SUMMARY:[DB] Eintracht Fr : TSG Hoffenhe
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-21-1-fc-union-b-rb-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261121T153000
+DTEND;TZID=Europe/Vienna:20261121T173000
+SUMMARY:[DB] 1.FC Union B : RB Leipzig
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-21-borussia-m-n-borussia-dor@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261121T153000
+DTEND;TZID=Europe/Vienna:20261121T173000
+SUMMARY:[DB] Borussia Mön : Borussia Dor
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-21-fc-schalke-vfb-stuttgar@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261121T183000
+DTEND;TZID=Europe/Vienna:20261121T203000
+SUMMARY:[DB] FC Schalke : VFB Stuttgar
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-22-fc-augsburg-1-fc-mainz@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261122T153000
+DTEND;TZID=Europe/Vienna:20261122T173000
+SUMMARY:[DB] FC Augsburg : 1.FC Mainz
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-22-sv-werder-br-hsv@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261122T173000
+DTEND;TZID=Europe/Vienna:20261122T193000
+SUMMARY:[DB] SV Werder Br : HSV
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-27-sv-werder-br-borussia-m-n@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261127T203000
+DTEND;TZID=Europe/Vienna:20261127T223000
+SUMMARY:[DB] SV Werder Br : Borussia Mön
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-28-1-fc-mainz-1-fc-union-b@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261128T153000
+DTEND;TZID=Europe/Vienna:20261128T173000
+SUMMARY:[DB] 1.FC Mainz : 1.FC Union B
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-28-hsv-fc-bayern-m-@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261128T153000
+DTEND;TZID=Europe/Vienna:20261128T173000
+SUMMARY:[DB] HSV : FC Bayern Mü
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-28-1-fc-k-ln-sv-elversber@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261128T153000
+DTEND;TZID=Europe/Vienna:20261128T173000
+SUMMARY:[DB] 1.FC Köln : SV Elversber
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-28-sc-paderborn-fc-schalke@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261128T153000
+DTEND;TZID=Europe/Vienna:20261128T173000
+SUMMARY:[DB] SC Paderborn : FC Schalke
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-28-vfb-stuttgar-eintracht-fr@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261128T183000
+DTEND;TZID=Europe/Vienna:20261128T203000
+SUMMARY:[DB] VFB Stuttgar : Eintracht Fr
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-29-sc-freiburg-rb-leipzig@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261129T153000
+DTEND;TZID=Europe/Vienna:20261129T173000
+SUMMARY:[DB] SC Freiburg : RB Leipzig
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-29-tsg-hoffenhe-fc-augsburg@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261129T173000
+DTEND;TZID=Europe/Vienna:20261129T193000
+SUMMARY:[DB] TSG Hoffenhe : FC Augsburg
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:db-2026-11-29-borussia-dor-bayer-04-lev@einseitensprung.at
+DTSTAMP:20261009T195701Z
+DTSTART;TZID=Europe/Vienna:20261129T193000
+DTEND;TZID=Europe/Vienna:20261129T213000
+SUMMARY:[DB] Borussia Dor : Bayer 04 Lev
+DESCRIPTION:Deutsche Bundesliga\nTipps: https://einseitensprung.at/db/
+URL:https://einseitensprung.at/db/
+CATEGORIES:Deutsche Bundesliga
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
