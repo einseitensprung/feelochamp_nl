@@ -1,5 +1,5 @@
-// Datenquelle für jump_kalender.html: holt die Spieltermine aller sechs
-// Tippbewerbe aus deren live kalender.asp (einseitensprung.at/{cl,el,nl,db,oel,zwa}/)
+// Datenquelle für jump_kalender.html: holt die Spieltermine aller sieben
+// Tippbewerbe aus deren live kalender.asp (einseitensprung.at/{cl,el,nl,db,oel,zwa,pl}/)
 // und schreibt sie als assets/jump-kalender-data.js (window.JUMP_KALENDER)
 // sowie als iCalendar-Feeds ics/alle.ics + ics/<runde>.ics (abonnierbar in
 // Google Calendar & Co.).
@@ -17,7 +17,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROUNDS = [
-  // ko: K.o.-Platzhalter übernehmen? DB/ÖL/ZWA sind Ligen – deren kalender.asp
+  // ko: K.o.-Platzhalter übernehmen? DB/ÖL/ZWA/PL sind Ligen – deren kalender.asp
   // enthält nur einen kopierten, ungenutzten KO-Block.
   { id: 'cl', ko: true, name: 'Champions League' },
   { id: 'el', ko: true, name: 'Europa League' },
@@ -25,6 +25,7 @@ const ROUNDS = [
   { id: 'db', ko: false, name: 'Deutsche Bundesliga' },
   { id: 'oel', ko: false, name: 'Österreichische Bundesliga' },
   { id: 'zwa', ko: false, name: '2. Liga' },
+  { id: 'pl', ko: false, name: 'Premier League' },
 ];
 const OUT = path.join(__dirname, '..', 'assets', 'jump-kalender-data.js');
 const ICS_DIR = path.join(__dirname, '..', 'ics');

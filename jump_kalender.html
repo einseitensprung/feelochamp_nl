@@ -20,11 +20,11 @@
 <body class="page-jump page-jump-cal">
 <main class="jump jk">
   <!-- Icon oben rechts zurück zur Jumppage: gleiches Kartenblatt wie das
-       Kalender-Icon in jump.html, statt Datum ein Mini-Raster der sechs Runden -->
+       Kalender-Icon in jump.html, statt Datum ein Mini-Raster der sieben Runden -->
   <a class="jump-cal-icon jump-home-icon" href="jump.html" aria-label="Zurück zur Jumppage" title="Zurück zur Jumppage">
     <span class="jci-month" aria-hidden="true">Jumppage</span>
     <span class="jhi-grid" aria-hidden="true">
-      <i class="c-cl"></i><i class="c-el"></i><i class="c-nl"></i><i class="c-db"></i><i class="c-oel"></i><i class="c-zwa"></i><i class="jhi-arrow">&larr;</i>
+      <i class="c-cl"></i><i class="c-el"></i><i class="c-nl"></i><i class="c-db"></i><i class="c-oel"></i><i class="c-zwa"></i><i class="c-pl"></i><i class="jhi-arrow">&larr;</i>
     </span>
   </a>
   <!-- Zweites Blatt links daneben: Anker zum Abschnitt "Kalender abonnieren" -->
@@ -67,6 +67,7 @@
     <button type="button" class="jk-filter" data-c="db" aria-pressed="true"><b>DB</b> Dt. Bundesliga</button>
     <button type="button" class="jk-filter" data-c="oel" aria-pressed="true"><b>&Ouml;L</b> &Ouml;st. Bundesliga</button>
     <button type="button" class="jk-filter" data-c="zwa" aria-pressed="true"><b>ZWA</b> 2. Liga</button>
+    <button type="button" class="jk-filter" data-c="pl" aria-pressed="true"><b>PL</b> Premier League</button>
   </div>
 
   <section class="jk-card">
@@ -144,7 +145,8 @@
     nl:  { code:'NL', name:'Nations League',            url:'https://einseitensprung.at/nl/' },
     db:  { code:'DB', name:'Deutsche Bundesliga',       url:'https://einseitensprung.at/db/' },
     oel: { code:'ÖL', name:'Österreichische Bundesliga', url:'https://einseitensprung.at/oel/' },
-    zwa: { code:'ZWA', name:'2. Liga',                  url:'https://einseitensprung.at/zwa/' }
+    zwa: { code:'ZWA', name:'2. Liga',                  url:'https://einseitensprung.at/zwa/' },
+    pl:  { code:'PL', name:'Premier League',            url:'https://einseitensprung.at/pl/' }
   };
   var DATA = window.JUMP_KALENDER || { events: [] };
   var ALL = DATA.events;
@@ -152,7 +154,7 @@
 
   // ---- Filter (welche Runden sichtbar), pro Besucher gemerkt ----
   var STORE = 'jumpKalenderFilter';
-  var active = { cl:true, el:true, nl:true, db:true, oel:true, zwa:true };
+  var active = { cl:true, el:true, nl:true, db:true, oel:true, zwa:true, pl:true };
   try { var saved = JSON.parse(localStorage.getItem(STORE)); if (saved) Object.keys(active).forEach(function(k){ if (k in saved) active[k] = !!saved[k]; }); } catch (e) {}
   function saveFilter(){ try { localStorage.setItem(STORE, JSON.stringify(active)); } catch (e) {} }
 
@@ -378,7 +380,8 @@
     { file:'nl',  code:'NL',  name:'Nations League' },
     { file:'db',  code:'DB',  name:'Deutsche Bundesliga' },
     { file:'oel', code:'ÖL',  name:'Österreichische Bundesliga' },
-    { file:'zwa', code:'ZWA', name:'2. Liga' }
+    { file:'zwa', code:'ZWA', name:'2. Liga' },
+    { file:'pl',  code:'PL',  name:'Premier League' }
   ];
   // Dienst-Icons (Google-„G" in Markenfarben, Apple-Logo in Textfarbe, Kettenglied)
   var ICON = {
