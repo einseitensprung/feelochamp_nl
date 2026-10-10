@@ -111,11 +111,11 @@ body.page-jump{
 .jump-grid{
   width:100%;
   display:grid; gap:1rem;
-  /* 7 Karten auf 12 Spalten: oben 4 (je 3), unten 3 breitere (je 4) */
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  /* 7 gleich breite Karten auf 8 Halbspalten: oben 4, unten 3 zentriert */
+  grid-template-columns: repeat(8, minmax(0, 1fr));
 }
-.jump-grid > .jump-card{ grid-column: span 3; }
-.jump-grid > .jump-card:nth-child(n+5){ grid-column: span 4; }
+.jump-grid > .jump-card{ grid-column: span 2; }
+.jump-grid > .jump-card:nth-child(5){ grid-column: 2 / span 2; }
 .jump-card{
   --acc: var(--cyan); --acc-2: var(--blue); --acc-text: var(--cyan-soft);
   position:relative; overflow:hidden; isolation:isolate;
@@ -193,12 +193,13 @@ body.page-jump{
 .jump-foot{ margin-top:auto; padding-top:3rem; font-size:.72rem; letter-spacing:.12em; color: rgba(166,166,166,.6); }
 
 @media (max-width: 899.98px){
-  .jump-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .jump-grid > .jump-card, .jump-grid > .jump-card:nth-child(n+5){ grid-column:auto; }
-  .jump-grid > .jump-card:last-child:nth-child(odd){ grid-column: 1 / -1; } /* 7. Karte über die volle Breite */
+  .jump-grid{ grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .jump-grid > .jump-card, .jump-grid > .jump-card:nth-child(5){ grid-column: span 2; }
+  .jump-grid > .jump-card:last-child:nth-child(odd){ grid-column: 2 / span 2; } /* 7. Karte gleich breit, zentriert */
 }
 @media (max-width: 575.98px){
   .jump-grid{ grid-template-columns:1fr; gap:.75rem; }
+  .jump-grid > .jump-card, .jump-grid > .jump-card:nth-child(5), .jump-grid > .jump-card:last-child:nth-child(odd){ grid-column:auto; }
   .jump-card{
     min-height:0; padding:1.1rem 1.1rem 1rem 5.6rem;
     display:grid; grid-template-columns:1fr; align-content:center;
