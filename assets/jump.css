@@ -166,6 +166,26 @@ body.page-jump{
 }
 .jump-go span{ display:inline-block; transition: transform .25s ease; }
 .jump-card:hover .jump-go span{ transform: translateX(5px); }
+/* Countdown bis zum nächsten Anpfiff der Runde (Inline-JS in jump.html) */
+.jump-cd{
+  display:flex; flex-direction:column; gap:.2rem;
+  margin-top:1rem; padding:.6rem .75rem;
+  border-radius:.7rem;
+  background: color-mix(in srgb, var(--acc) 9%, rgba(0,0,0,.25));
+  border:1px solid color-mix(in srgb, var(--acc) 28%, transparent);
+}
+.jump-cd[hidden]{ display:none; }
+.jump-cd-label{ font-size:.6rem; letter-spacing:.16em; text-transform:uppercase; color: var(--slate); }
+.jump-cd-time{ font-size:1.05rem; color: var(--white); font-variant-numeric: tabular-nums; white-space:nowrap; }
+.jump-cd-time b{ font-weight:700; }
+.jump-cd-time i{ font-style:normal; font-size:.68em; color: var(--acc-text); margin-left:.08em; }
+.jump-cd-match{ font-size:.74rem; color: var(--slate); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.jump-cd.is-live .jump-cd-label, .jump-cd.is-live .jump-cd-time{ color: var(--acc-text); }
+.jump-cd-dot{
+  display:inline-block; width:.5em; height:.5em; margin-right:.45em; vertical-align:.12em;
+  border-radius:50%; background: var(--acc); animation: jump-pulse 1.4s ease-in-out infinite;
+}
+@keyframes jump-pulse{ 50%{ opacity:.25; } }
 .jump-foot{ margin-top:auto; padding-top:3rem; font-size:.72rem; letter-spacing:.12em; color: rgba(166,166,166,.6); }
 
 @media (max-width: 899.98px){
@@ -181,10 +201,12 @@ body.page-jump{
   .jump-code-long{ font-size:2.4rem; } /* dreistelliges Kürzel (ZWA) passt sonst nicht in die Spalte */
   .jump-name{ margin-top:0; }
   .jump-go{ padding-top:.6rem; }
+  .jump-cd{ margin-top:.6rem; padding:.45rem .6rem; }
 }
 @media (prefers-reduced-motion: reduce){
   .jump-logo, .jump-card{ animation:none; }
   .jump-card, .jump-card::after, .jump-go span{ transition:none; }
+  .jump-cd-dot{ animation:none; }
 }
 
 .jump-cal-link{

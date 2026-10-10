@@ -69,40 +69,70 @@
   </header>
 
   <nav class="jump-grid" aria-label="Tippbewerbe">
-    <a class="jump-card" href="https://einseitensprung.at/cl/" style="--acc:#22d3ee; --acc-2:#3b82f6; --acc-text:#8fe9f7;">
+    <a class="jump-card" href="https://einseitensprung.at/cl/" data-c="cl" style="--acc:#22d3ee; --acc-2:#3b82f6; --acc-text:#8fe9f7;">
       <span class="jump-code">CL</span>
       <span class="jump-name">Champions League</span>
       <span class="jump-sub">Die K&ouml;nigsklasse &ndash; das Original seit 2002</span>
+      <span class="jump-cd" hidden>
+        <span class="jump-cd-label mono">N&auml;chstes Spiel</span>
+        <span class="jump-cd-time mono" aria-hidden="true"></span>
+        <span class="jump-cd-match"></span>
+      </span>
       <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
     </a>
-    <a class="jump-card" href="https://einseitensprung.at/el/" style="--acc:#ff6a1a; --acc-2:#e8460a; --acc-text:#ffb07a;">
+    <a class="jump-card" href="https://einseitensprung.at/el/" data-c="el" style="--acc:#ff6a1a; --acc-2:#e8460a; --acc-text:#ffb07a;">
       <span class="jump-code">EL</span>
       <span class="jump-name">Europa League</span>
       <span class="jump-sub">Donnerstagabend, Flutlicht, Au&szlig;enseiter</span>
+      <span class="jump-cd" hidden>
+        <span class="jump-cd-label mono">N&auml;chstes Spiel</span>
+        <span class="jump-cd-time mono" aria-hidden="true"></span>
+        <span class="jump-cd-match"></span>
+      </span>
       <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
     </a>
-    <a class="jump-card" href="https://einseitensprung.at/nl/" style="--acc:#5bc2fc; --acc-2:#2d7dd8; --acc-text:#a9e0ff;">
+    <a class="jump-card" href="https://einseitensprung.at/nl/" data-c="nl" style="--acc:#5bc2fc; --acc-2:#2d7dd8; --acc-text:#a9e0ff;">
       <span class="jump-code">NL</span>
       <span class="jump-name">Nations League</span>
       <span class="jump-sub">Nationalteams statt Vereine</span>
+      <span class="jump-cd" hidden>
+        <span class="jump-cd-label mono">N&auml;chstes Spiel</span>
+        <span class="jump-cd-time mono" aria-hidden="true"></span>
+        <span class="jump-cd-match"></span>
+      </span>
       <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
     </a>
-    <a class="jump-card" href="https://einseitensprung.at/db/" style="--acc:#d20515; --acc-2:#a8040f; --acc-text:#ff404a;">
+    <a class="jump-card" href="https://einseitensprung.at/db/" data-c="db" style="--acc:#d20515; --acc-2:#a8040f; --acc-text:#ff404a;">
       <span class="jump-code">DB</span>
       <span class="jump-name">Deutsche Bundesliga</span>
       <span class="jump-sub">34 Spieltage, ein Meister</span>
+      <span class="jump-cd" hidden>
+        <span class="jump-cd-label mono">N&auml;chstes Spiel</span>
+        <span class="jump-cd-time mono" aria-hidden="true"></span>
+        <span class="jump-cd-match"></span>
+      </span>
       <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
     </a>
-    <a class="jump-card" href="https://einseitensprung.at/oel/" style="--acc:#ff00b3; --acc-2:#00fff5; --acc-text:#ff33c2;">
+    <a class="jump-card" href="https://einseitensprung.at/oel/" data-c="oel" style="--acc:#ff00b3; --acc-2:#00fff5; --acc-text:#ff33c2;">
       <span class="jump-code">&Ouml;L</span>
       <span class="jump-name">&Ouml;sterreichische Bundesliga</span>
       <span class="jump-sub">Heimisches Kicken, Meistergruppe inklusive</span>
+      <span class="jump-cd" hidden>
+        <span class="jump-cd-label mono">N&auml;chstes Spiel</span>
+        <span class="jump-cd-time mono" aria-hidden="true"></span>
+        <span class="jump-cd-match"></span>
+      </span>
       <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
     </a>
-    <a class="jump-card" href="https://einseitensprung.at/zwa/" style="--acc:#33ffb8; --acc-2:#ea4225; --acc-text:#5cffc6;">
+    <a class="jump-card" href="https://einseitensprung.at/zwa/" data-c="zwa" style="--acc:#33ffb8; --acc-2:#ea4225; --acc-text:#5cffc6;">
       <span class="jump-code jump-code-long">ZWA</span>
       <span class="jump-name">2. Liga</span>
       <span class="jump-sub">Das Unterhaus &ndash; Aufstiegskampf und Amateurteams</span>
+      <span class="jump-cd" hidden>
+        <span class="jump-cd-label mono">N&auml;chstes Spiel</span>
+        <span class="jump-cd-time mono" aria-hidden="true"></span>
+        <span class="jump-cd-match"></span>
+      </span>
       <span class="jump-go" aria-hidden="true">Los geht&rsquo;s <span>&rarr;</span></span>
     </a>
   </nav>
@@ -114,11 +144,70 @@
 
   <footer class="jump-foot mono">&copy; Feelochamp &middot; privater Tippbewerb</footer>
 </main>
+<script src="assets/jump-kalender-data.js"></script>
 <script>
   (function(){
     var d = new Date();
     document.getElementById('jciMonth').textContent = ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'][d.getMonth()];
     document.getElementById('jciDay').textContent = d.getDate();
+  })();
+  /* Countdown je Karte bis zum nächsten Anpfiff der Runde (Daten aus
+     assets/jump-kalender-data.js, Zeiten in Europe/Vienna). Läuft ein Spiel
+     gerade (Anpfiff vor < 2 h), steht dort „Live“. */
+  (function(){
+    var data = window.JUMP_KALENDER;
+    if (!data || !data.events) return;
+    var LIVE_MS = 2 * 3600 * 1000;
+    var fmt;
+    try { fmt = new Intl.DateTimeFormat('en-US', { timeZone:'Europe/Vienna', hourCycle:'h23',
+      year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit' }); } catch (e) {}
+    function viennaOffset(ts){
+      if (!fmt) return -new Date(ts).getTimezoneOffset() * 60000;
+      var p = {}; fmt.formatToParts(new Date(ts)).forEach(function(x){ p[x.type] = +x.value; });
+      return Date.UTC(p.year, p.month - 1, p.day, p.hour, p.minute) - Math.floor(ts / 60000) * 60000;
+    }
+    function kickoff(ev){
+      var d = ev.d.split('-'), t = (ev.t || '00:00').split(':');
+      var wall = Date.UTC(+d[0], +d[1] - 1, +d[2], +t[0], +t[1]);
+      var ts = wall - viennaOffset(wall);
+      return wall - viennaOffset(ts);
+    }
+    var byRound = {};
+    data.events.forEach(function(ev){
+      (byRound[ev.c] = byRound[ev.c] || []).push({ ts: kickoff(ev), title: ev.title });
+    });
+    Object.keys(byRound).forEach(function(c){ byRound[c].sort(function(a, b){ return a.ts - b.ts; }); });
+    function pad(n){ return (n < 10 ? '0' : '') + n; }
+    var cards = [].slice.call(document.querySelectorAll('.jump-card[data-c]'));
+    function tick(){
+      var now = Date.now();
+      cards.forEach(function(card){
+        var box = card.querySelector('.jump-cd'), list = byRound[card.getAttribute('data-c')] || [];
+        var live = null, next = null;
+        for (var i = 0; i < list.length; i++){
+          if (list[i].ts <= now && now < list[i].ts + LIVE_MS && !live) live = list[i];
+          if (list[i].ts > now){ next = list[i]; break; }
+        }
+        var ev = live || next;
+        if (!ev){ box.hidden = true; return; }
+        box.hidden = false;
+        box.classList.toggle('is-live', !!live);
+        var label = box.querySelector('.jump-cd-label'), time = box.querySelector('.jump-cd-time');
+        box.querySelector('.jump-cd-match').textContent = ev.title;
+        if (live){
+          label.textContent = 'Jetzt live';
+          time.innerHTML = '<span class="jump-cd-dot"></span>L&auml;uft';
+          return;
+        }
+        label.textContent = 'Nächstes Spiel in';
+        var s = Math.floor((ev.ts - now) / 1000), days = Math.floor(s / 86400);
+        time.innerHTML =
+          '<b>' + days + '</b><i>T</i> <b>' + pad(Math.floor(s / 3600) % 24) + '</b><i>h</i> <b>' +
+          pad(Math.floor(s / 60) % 60) + '</b><i>m</i> <b>' + pad(s % 60) + '</b><i>s</i>';
+      });
+    }
+    tick();
+    setInterval(tick, 1000);
   })();
 </script>
 </body>
