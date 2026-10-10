@@ -111,8 +111,11 @@ body.page-jump{
 .jump-grid{
   width:100%;
   display:grid; gap:1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 6 Karten = 2 volle Reihen */
+  /* 7 Karten auf 12 Spalten: oben 4 (je 3), unten 3 breitere (je 4) */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
+.jump-grid > .jump-card{ grid-column: span 3; }
+.jump-grid > .jump-card:nth-child(n+5){ grid-column: span 4; }
 .jump-card{
   --acc: var(--cyan); --acc-2: var(--blue); --acc-text: var(--cyan-soft);
   position:relative; overflow:hidden; isolation:isolate;
@@ -131,6 +134,7 @@ body.page-jump{
 .jump-card:nth-child(4){ animation-delay:.18s; }
 .jump-card:nth-child(5){ animation-delay:.24s; }
 .jump-card:nth-child(6){ animation-delay:.30s; }
+.jump-card:nth-child(7){ animation-delay:.36s; }
 @keyframes jump-in{ from{ opacity:0; transform: translateY(18px); } }
 /* Farbbalken oben + Glow, der beim Hover hochfährt */
 .jump-card::before{
@@ -190,6 +194,8 @@ body.page-jump{
 
 @media (max-width: 899.98px){
   .jump-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .jump-grid > .jump-card, .jump-grid > .jump-card:nth-child(n+5){ grid-column:auto; }
+  .jump-grid > .jump-card:last-child:nth-child(odd){ grid-column: 1 / -1; } /* 7. Karte über die volle Breite */
 }
 @media (max-width: 575.98px){
   .jump-grid{ grid-template-columns:1fr; gap:.75rem; }
