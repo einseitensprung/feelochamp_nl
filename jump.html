@@ -164,7 +164,8 @@
   })();
   /* Countdown je Karte bis zum nächsten Anpfiff der Runde (Daten aus
      assets/jump-kalender-data.js, Zeiten in Europe/Vienna). Läuft ein Spiel
-     gerade (Anpfiff vor < 2 h), steht dort „Live“. */
+     gerade (Anpfiff vor < 2 h), steht dort „Live“ – bei mehreren laufenden
+     Spielen rollen deren Paarungen vertikal durch. */
   (function(){
     var data = window.JUMP_KALENDER;
     if (!data || !data.events) return;
@@ -190,24 +191,63 @@
     Object.keys(byRound).forEach(function(c){ byRound[c].sort(function(a, b){ return a.ts - b.ts; }); });
     function pad(n){ return (n < 10 ? '0' : '') + n; }
     var cards = [].slice.call(document.querySelectorAll('.jump-card[data-c]'));
+    /* Mehrere laufende Spiele: Spielzeile als vertikaler Ticker, der alle
+       3 s eine Zeile weiterrollt (erste Zeile am Ende dupliziert für die
+       nahtlose Schleife). Neu aufgebaut wird nur, wenn sich die Liste ändert. */
+    var STEP_MS = 3000, ROLL_MS = 500;
+    function setMatches(box, titles){
+      var key = titles.join('|');
+      if (box._key === key) return;
+      box._key = key; box._idx = 0;
+      var el = box.querySelector('.jump-cd-match');
+      el.classList.toggle('is-ticker', titles.length > 1);
+      if (titles.length < 2){ el.textContent = titles[0]; box._reel = null; return; }
+      var reel = document.createElement('span');
+      reel.className = 'jump-cd-reel';
+      titles.concat(titles[0]).forEach(function(t, i){
+        var row = document.createElement('span');
+        row.textContent = t;
+        if (i === titles.length) row.setAttribute('aria-hidden', 'true');
+        reel.appendChild(row);
+      });
+      el.textContent = '';
+      el.appendChild(reel);
+      box._reel = reel; box._n = titles.length;
+    }
+    function roll(){
+      cards.forEach(function(card){
+        var box = card.querySelector('.jump-cd'), reel = box._reel;
+        if (!reel || box.hidden || card.matches(':hover')) return;
+        box._idx++;
+        reel.style.transition = '';
+        reel.style.transform = 'translateY(' + (-box._idx * 100 / (box._n + 1)) + '%)';
+        if (box._idx === box._n) setTimeout(function(){
+          if (box._reel !== reel) return;
+          box._idx = 0;
+          reel.style.transition = 'none';
+          reel.style.transform = 'translateY(0)';
+        }, ROLL_MS + 50);
+      });
+    }
     function tick(){
       var now = Date.now();
       cards.forEach(function(card){
         var box = card.querySelector('.jump-cd'), list = byRound[card.getAttribute('data-c')] || [];
-        var live = null, next = null;
+        var live = [], next = null;
         for (var i = 0; i < list.length; i++){
-          if (list[i].ts <= now && now < list[i].ts + LIVE_MS && !live) live = list[i];
+          if (list[i].ts <= now && now < list[i].ts + LIVE_MS) live.push(list[i]);
           if (list[i].ts > now){ next = list[i]; break; }
         }
-        var ev = live || next;
+        var ev = live[0] || next;
         if (!ev){ box.hidden = true; return; }
         box.hidden = false;
-        box.classList.toggle('is-live', !!live);
+        box.classList.toggle('is-live', live.length > 0);
         var label = box.querySelector('.jump-cd-label'), time = box.querySelector('.jump-cd-time');
-        box.querySelector('.jump-cd-match').textContent = ev.title;
-        if (live){
+        setMatches(box, live.length ? live.map(function(x){ return x.title; }) : [ev.title]);
+        if (live.length){
           label.textContent = 'Jetzt live';
-          time.innerHTML = '<span class="jump-cd-dot"></span>L&auml;uft';
+          time.innerHTML = '<span class="jump-cd-dot"></span>' +
+            (live.length > 1 ? live.length + ' Spiele laufen' : 'L&auml;uft');
           return;
         }
         label.textContent = 'Nächstes Spiel in';
@@ -219,6 +259,7 @@
     }
     tick();
     setInterval(tick, 1000);
+    setInterval(roll, STEP_MS);
   })();
 </script>
 </body>
