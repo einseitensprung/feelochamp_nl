@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:pl-2026-08-21-arsenal-coventry-cit@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260821T210000
 DTEND;TZID=Europe/Vienna:20260821T230000
 SUMMARY:[PL] Arsenal : Coventry Cit
@@ -37,7 +37,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-08-22-hull-city-manchester-u@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260822T133000
 DTEND;TZID=Europe/Vienna:20260822T153000
 SUMMARY:[PL] Hull City : Manchester U
@@ -47,30 +47,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-08-22-everton-crystal-pala@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260822T160000
-DTEND;TZID=Europe/Vienna:20260822T180000
-SUMMARY:[PL] Everton : Crystal Pala
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:pl-2026-08-22-ipswich-town-sunderland@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260822T160000
-DTEND;TZID=Europe/Vienna:20260822T180000
-SUMMARY:[PL] Ipswich Town : Sunderland
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-08-22-nottingham-f-leeds-united@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260822T160000
 DTEND;TZID=Europe/Vienna:20260822T180000
 SUMMARY:[PL] Nottingham F : Leeds United
@@ -80,8 +58,30 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-08-22-ipswich-town-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260822T160000
+DTEND;TZID=Europe/Vienna:20260822T180000
+SUMMARY:[PL] Ipswich Town : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-08-22-everton-crystal-pala@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260822T160000
+DTEND;TZID=Europe/Vienna:20260822T180000
+SUMMARY:[PL] Everton : Crystal Pala
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-08-22-brentford-tottenham-ho@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260822T183000
 DTEND;TZID=Europe/Vienna:20260822T203000
 SUMMARY:[PL] Brentford : Tottenham Ho
@@ -91,19 +91,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-08-23-brighton-and-aston-villa@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260823T150000
-DTEND;TZID=Europe/Vienna:20260823T170000
-SUMMARY:[PL] Brighton and : Aston Villa
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-08-23-manchester-c-bournemouth@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260823T150000
 DTEND;TZID=Europe/Vienna:20260823T170000
 SUMMARY:[PL] Manchester C : Bournemouth
@@ -113,8 +102,19 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-08-23-brighton-and-aston-villa@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260823T150000
+DTEND;TZID=Europe/Vienna:20260823T170000
+SUMMARY:[PL] Brighton and : Aston Villa
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-08-23-newcastle-un-liverpool@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260823T173000
 DTEND;TZID=Europe/Vienna:20260823T193000
 SUMMARY:[PL] Newcastle Un : Liverpool
@@ -125,7 +125,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-08-24-fullham-chelsea@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260824T210000
 DTEND;TZID=Europe/Vienna:20260824T230000
 SUMMARY:[PL] Fullham : Chelsea
@@ -136,7 +136,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-08-28-crystal-pala-manchester-c@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260828T210000
 DTEND;TZID=Europe/Vienna:20260828T230000
 SUMMARY:[PL] Crystal Pala : Manchester C
@@ -147,7 +147,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-08-29-liverpool-nottingham-f@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260829T133000
 DTEND;TZID=Europe/Vienna:20260829T153000
 SUMMARY:[PL] Liverpool : Nottingham F
@@ -158,7 +158,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-08-29-bournemouth-everton@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260829T160000
 DTEND;TZID=Europe/Vienna:20260829T180000
 SUMMARY:[PL] Bournemouth : Everton
@@ -169,7 +169,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-08-29-coventry-cit-hull-city@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260829T160000
 DTEND;TZID=Europe/Vienna:20260829T180000
 SUMMARY:[PL] Coventry Cit : Hull City
@@ -180,7 +180,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-08-29-tottenham-ho-newcastle-un@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260829T183000
 DTEND;TZID=Europe/Vienna:20260829T203000
 SUMMARY:[PL] Tottenham Ho : Newcastle Un
@@ -190,30 +190,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-08-30-chelsea-brighton-and@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260830T150000
-DTEND;TZID=Europe/Vienna:20260830T170000
-SUMMARY:[PL] Chelsea : Brighton and
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:pl-2026-08-30-leeds-united-brentford@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260830T150000
-DTEND;TZID=Europe/Vienna:20260830T170000
-SUMMARY:[PL] Leeds United : Brentford
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-08-30-sunderland-fullham@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260830T150000
 DTEND;TZID=Europe/Vienna:20260830T170000
 SUMMARY:[PL] Sunderland : Fullham
@@ -223,8 +201,30 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-08-30-leeds-united-brentford@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260830T150000
+DTEND;TZID=Europe/Vienna:20260830T170000
+SUMMARY:[PL] Leeds United : Brentford
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-08-30-chelsea-brighton-and@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260830T150000
+DTEND;TZID=Europe/Vienna:20260830T170000
+SUMMARY:[PL] Chelsea : Brighton and
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-08-30-manchester-u-ipswich-town@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260830T173000
 DTEND;TZID=Europe/Vienna:20260830T193000
 SUMMARY:[PL] Manchester U : Ipswich Town
@@ -235,7 +235,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-08-31-aston-villa-arsenal@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260831T210000
 DTEND;TZID=Europe/Vienna:20260831T230000
 SUMMARY:[PL] Aston Villa : Arsenal
@@ -246,7 +246,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-04-ipswich-town-liverpool@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260904T210000
 DTEND;TZID=Europe/Vienna:20260904T230000
 SUMMARY:[PL] Ipswich Town : Liverpool
@@ -257,7 +257,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-05-newcastle-un-bournemouth@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260905T133000
 DTEND;TZID=Europe/Vienna:20260905T153000
 SUMMARY:[PL] Newcastle Un : Bournemouth
@@ -268,7 +268,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-05-manchester-c-coventry-cit@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260905T160000
 DTEND;TZID=Europe/Vienna:20260905T180000
 SUMMARY:[PL] Manchester C : Coventry Cit
@@ -279,7 +279,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-05-nottingham-f-tottenham-ho@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260905T160000
 DTEND;TZID=Europe/Vienna:20260905T180000
 SUMMARY:[PL] Nottingham F : Tottenham Ho
@@ -289,19 +289,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-09-05-brentford-sunderland@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260905T160000
-DTEND;TZID=Europe/Vienna:20260905T180000
-SUMMARY:[PL] Brentford : Sunderland
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-09-05-fullham-crystal-pala@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260905T160000
 DTEND;TZID=Europe/Vienna:20260905T180000
 SUMMARY:[PL] Fullham : Crystal Pala
@@ -312,7 +301,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-05-brighton-and-leeds-united@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260905T160000
 DTEND;TZID=Europe/Vienna:20260905T180000
 SUMMARY:[PL] Brighton and : Leeds United
@@ -322,8 +311,19 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-09-05-brentford-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260905T160000
+DTEND;TZID=Europe/Vienna:20260905T180000
+SUMMARY:[PL] Brentford : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-09-05-hull-city-aston-villa@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260905T183000
 DTEND;TZID=Europe/Vienna:20260905T203000
 SUMMARY:[PL] Hull City : Aston Villa
@@ -334,7 +334,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-06-everton-manchester-u@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260906T150000
 DTEND;TZID=Europe/Vienna:20260906T170000
 SUMMARY:[PL] Everton : Manchester U
@@ -345,7 +345,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-06-arsenal-chelsea@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260906T173000
 DTEND;TZID=Europe/Vienna:20260906T193000
 SUMMARY:[PL] Arsenal : Chelsea
@@ -356,7 +356,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-12-chelsea-hull-city@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260912T160000
 DTEND;TZID=Europe/Vienna:20260912T180000
 SUMMARY:[PL] Chelsea : Hull City
@@ -366,41 +366,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-09-12-aston-villa-nottingham-f@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260912T160000
-DTEND;TZID=Europe/Vienna:20260912T180000
-SUMMARY:[PL] Aston Villa : Nottingham F
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:pl-2026-09-12-bournemouth-brentford@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260912T160000
-DTEND;TZID=Europe/Vienna:20260912T180000
-SUMMARY:[PL] Bournemouth : Brentford
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:pl-2026-09-12-liverpool-fullham@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260912T160000
-DTEND;TZID=Europe/Vienna:20260912T180000
-SUMMARY:[PL] Liverpool : Fullham
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-09-12-crystal-pala-ipswich-town@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260912T160000
 DTEND;TZID=Europe/Vienna:20260912T180000
 SUMMARY:[PL] Crystal Pala : Ipswich Town
@@ -410,8 +377,41 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-09-12-liverpool-fullham@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260912T160000
+DTEND;TZID=Europe/Vienna:20260912T180000
+SUMMARY:[PL] Liverpool : Fullham
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-09-12-bournemouth-brentford@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260912T160000
+DTEND;TZID=Europe/Vienna:20260912T180000
+SUMMARY:[PL] Bournemouth : Brentford
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-09-12-aston-villa-nottingham-f@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260912T160000
+DTEND;TZID=Europe/Vienna:20260912T180000
+SUMMARY:[PL] Aston Villa : Nottingham F
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-09-12-tottenham-ho-everton@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260912T183000
 DTEND;TZID=Europe/Vienna:20260912T203000
 SUMMARY:[PL] Tottenham Ho : Everton
@@ -422,7 +422,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-12-sunderland-arsenal@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260912T210000
 DTEND;TZID=Europe/Vienna:20260912T230000
 SUMMARY:[PL] Sunderland : Arsenal
@@ -433,7 +433,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-13-coventry-cit-brighton-and@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260913T150000
 DTEND;TZID=Europe/Vienna:20260913T170000
 SUMMARY:[PL] Coventry Cit : Brighton and
@@ -444,7 +444,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-13-manchester-u-manchester-c@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260913T173000
 DTEND;TZID=Europe/Vienna:20260913T193000
 SUMMARY:[PL] Manchester U : Manchester C
@@ -455,7 +455,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-14-leeds-united-newcastle-un@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260914T210000
 DTEND;TZID=Europe/Vienna:20260914T230000
 SUMMARY:[PL] Leeds United : Newcastle Un
@@ -466,7 +466,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-18-brentford-chelsea@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260918T210000
 DTEND;TZID=Europe/Vienna:20260918T230000
 SUMMARY:[PL] Brentford : Chelsea
@@ -477,7 +477,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-19-tottenham-ho-aston-villa@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260919T133000
 DTEND;TZID=Europe/Vienna:20260919T153000
 SUMMARY:[PL] Tottenham Ho : Aston Villa
@@ -487,19 +487,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-09-19-brighton-and-arsenal@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260919T160000
-DTEND;TZID=Europe/Vienna:20260919T180000
-SUMMARY:[PL] Brighton and : Arsenal
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-09-19-everton-ipswich-town@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260919T160000
 DTEND;TZID=Europe/Vienna:20260919T180000
 SUMMARY:[PL] Everton : Ipswich Town
@@ -510,7 +499,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-09-19-newcastle-un-hull-city@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260919T160000
 DTEND;TZID=Europe/Vienna:20260919T180000
 SUMMARY:[PL] Newcastle Un : Hull City
@@ -520,8 +509,19 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-09-19-brighton-and-arsenal@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260919T160000
+DTEND;TZID=Europe/Vienna:20260919T180000
+SUMMARY:[PL] Brighton and : Arsenal
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-09-19-nottingham-f-coventry-cit@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260919T183000
 DTEND;TZID=Europe/Vienna:20260919T203000
 SUMMARY:[PL] Nottingham F : Coventry Cit
@@ -531,30 +531,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-09-20-bournemouth-liverpool@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260920T150000
-DTEND;TZID=Europe/Vienna:20260920T170000
-SUMMARY:[PL] Bournemouth : Liverpool
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:pl-2026-09-20-leeds-united-crystal-pala@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20260920T150000
-DTEND;TZID=Europe/Vienna:20260920T170000
-SUMMARY:[PL] Leeds United : Crystal Pala
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-09-20-manchester-c-sunderland@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260920T150000
 DTEND;TZID=Europe/Vienna:20260920T170000
 SUMMARY:[PL] Manchester C : Sunderland
@@ -564,8 +542,30 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-09-20-leeds-united-crystal-pala@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260920T150000
+DTEND;TZID=Europe/Vienna:20260920T170000
+SUMMARY:[PL] Leeds United : Crystal Pala
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-09-20-bournemouth-liverpool@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20260920T150000
+DTEND;TZID=Europe/Vienna:20260920T170000
+SUMMARY:[PL] Bournemouth : Liverpool
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-09-20-fullham-manchester-u@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20260920T173000
 DTEND;TZID=Europe/Vienna:20260920T193000
 SUMMARY:[PL] Fullham : Manchester U
@@ -576,7 +576,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-10-arsenal-leeds-united@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261010T133000
 DTEND;TZID=Europe/Vienna:20261010T153000
 SUMMARY:[PL] Arsenal : Leeds United
@@ -586,41 +586,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-10-10-chelsea-bournemouth@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20261010T160000
-DTEND;TZID=Europe/Vienna:20261010T180000
-SUMMARY:[PL] Chelsea : Bournemouth
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:pl-2026-10-10-sunderland-brighton-and@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20261010T160000
-DTEND;TZID=Europe/Vienna:20261010T180000
-SUMMARY:[PL] Sunderland : Brighton and
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:pl-2026-10-10-ipswich-town-fullham@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20261010T160000
-DTEND;TZID=Europe/Vienna:20261010T180000
-SUMMARY:[PL] Ipswich Town : Fullham
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-10-10-aston-villa-brentford@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261010T160000
 DTEND;TZID=Europe/Vienna:20261010T180000
 SUMMARY:[PL] Aston Villa : Brentford
@@ -630,8 +597,41 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-10-10-chelsea-bournemouth@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261010T160000
+DTEND;TZID=Europe/Vienna:20261010T180000
+SUMMARY:[PL] Chelsea : Bournemouth
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-10-ipswich-town-fullham@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261010T160000
+DTEND;TZID=Europe/Vienna:20261010T180000
+SUMMARY:[PL] Ipswich Town : Fullham
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-10-sunderland-brighton-and@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261010T160000
+DTEND;TZID=Europe/Vienna:20261010T180000
+SUMMARY:[PL] Sunderland : Brighton and
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-10-10-manchester-u-tottenham-ho@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261010T183000
 DTEND;TZID=Europe/Vienna:20261010T203000
 SUMMARY:[PL] Manchester U : Tottenham Ho
@@ -642,7 +642,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-11-hull-city-everton@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261011T150000
 DTEND;TZID=Europe/Vienna:20261011T170000
 SUMMARY:[PL] Hull City : Everton
@@ -653,7 +653,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-11-crystal-pala-nottingham-f@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261011T150000
 DTEND;TZID=Europe/Vienna:20261011T170000
 SUMMARY:[PL] Crystal Pala : Nottingham F
@@ -664,7 +664,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-11-liverpool-manchester-c@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261011T173000
 DTEND;TZID=Europe/Vienna:20261011T193000
 SUMMARY:[PL] Liverpool : Manchester C
@@ -675,7 +675,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-12-coventry-cit-newcastle-un@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261012T210000
 DTEND;TZID=Europe/Vienna:20261012T230000
 SUMMARY:[PL] Coventry Cit : Newcastle Un
@@ -685,8 +685,118 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-10-17-fullham-hull-city@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261017T180000
+DTEND;TZID=Europe/Vienna:20261017T200000
+SUMMARY:[PL] Fullham : Hull City
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-17-brentford-liverpool@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261017T180000
+DTEND;TZID=Europe/Vienna:20261017T200000
+SUMMARY:[PL] Brentford : Liverpool
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-17-newcastle-un-aston-villa@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261017T180000
+DTEND;TZID=Europe/Vienna:20261017T200000
+SUMMARY:[PL] Newcastle Un : Aston Villa
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-17-everton-chelsea@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261017T180000
+DTEND;TZID=Europe/Vienna:20261017T200000
+SUMMARY:[PL] Everton : Chelsea
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-17-manchester-c-ipswich-town@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261017T180000
+DTEND;TZID=Europe/Vienna:20261017T200000
+SUMMARY:[PL] Manchester C : Ipswich Town
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-18-nottingham-f-arsenal@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261018T180000
+DTEND;TZID=Europe/Vienna:20261018T200000
+SUMMARY:[PL] Nottingham F : Arsenal
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-18-leeds-united-manchester-u@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261018T180000
+DTEND;TZID=Europe/Vienna:20261018T200000
+SUMMARY:[PL] Leeds United : Manchester U
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-18-brighton-and-crystal-pala@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261018T180000
+DTEND;TZID=Europe/Vienna:20261018T200000
+SUMMARY:[PL] Brighton and : Crystal Pala
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-18-bournemouth-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261018T180000
+DTEND;TZID=Europe/Vienna:20261018T200000
+SUMMARY:[PL] Bournemouth : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-19-tottenham-ho-coventry-cit@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261019T180000
+DTEND;TZID=Europe/Vienna:20261019T200000
+SUMMARY:[PL] Tottenham Ho : Coventry Cit
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-10-23-ipswich-town-nottingham-f@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261023T210000
 DTEND;TZID=Europe/Vienna:20261023T230000
 SUMMARY:[PL] Ipswich Town : Nottingham F
@@ -697,7 +807,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-24-aston-villa-manchester-c@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261024T133000
 DTEND;TZID=Europe/Vienna:20261024T153000
 SUMMARY:[PL] Aston Villa : Manchester C
@@ -707,19 +817,8 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-10-24-coventry-cit-fullham@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20261024T160000
-DTEND;TZID=Europe/Vienna:20261024T180000
-SUMMARY:[PL] Coventry Cit : Fullham
-DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
-URL:https://einseitensprung.at/pl/
-CATEGORIES:Premier League
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:pl-2026-10-24-arsenal-everton@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261024T160000
 DTEND;TZID=Europe/Vienna:20261024T180000
 SUMMARY:[PL] Arsenal : Everton
@@ -729,8 +828,19 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-10-24-coventry-cit-fullham@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261024T160000
+DTEND;TZID=Europe/Vienna:20261024T180000
+SUMMARY:[PL] Coventry Cit : Fullham
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-10-24-chelsea-tottenham-ho@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261024T183000
 DTEND;TZID=Europe/Vienna:20261024T203000
 SUMMARY:[PL] Chelsea : Tottenham Ho
@@ -740,8 +850,19 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pl-2026-10-25-manchester-u-bournemouth@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261025T150000
+DTEND;TZID=Europe/Vienna:20261025T170000
+SUMMARY:[PL] Manchester U : Bournemouth
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:pl-2026-10-25-liverpool-brighton-and@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261025T150000
 DTEND;TZID=Europe/Vienna:20261025T170000
 SUMMARY:[PL] Liverpool : Brighton and
@@ -752,7 +873,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-25-hull-city-brentford@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261025T150000
 DTEND;TZID=Europe/Vienna:20261025T170000
 SUMMARY:[PL] Hull City : Brentford
@@ -763,7 +884,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-25-crystal-pala-newcastle-un@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261025T150000
 DTEND;TZID=Europe/Vienna:20261025T170000
 SUMMARY:[PL] Crystal Pala : Newcastle Un
@@ -774,7 +895,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:pl-2026-10-25-sunderland-leeds-united@einseitensprung.at
-DTSTAMP:20261024T160034Z
+DTSTAMP:20261024T205336Z
 DTSTART;TZID=Europe/Vienna:20261025T150000
 DTEND;TZID=Europe/Vienna:20261025T170000
 SUMMARY:[PL] Sunderland : Leeds United
@@ -784,11 +905,1100 @@ CATEGORIES:Premier League
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:pl-2026-10-25-manchester-u-bournemouth@einseitensprung.at
-DTSTAMP:20261024T160034Z
-DTSTART;TZID=Europe/Vienna:20261025T150000
-DTEND;TZID=Europe/Vienna:20261025T170000
-SUMMARY:[PL] Manchester U : Bournemouth
+UID:pl-2026-10-31-chelsea-manchester-u@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261031T133000
+DTEND;TZID=Europe/Vienna:20261031T153000
+SUMMARY:[PL] Chelsea : Manchester U
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-31-manchester-c-brighton-and@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261031T160000
+DTEND;TZID=Europe/Vienna:20261031T180000
+SUMMARY:[PL] Manchester C : Brighton and
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-31-hull-city-ipswich-town@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261031T160000
+DTEND;TZID=Europe/Vienna:20261031T180000
+SUMMARY:[PL] Hull City : Ipswich Town
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-31-coventry-cit-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261031T160000
+DTEND;TZID=Europe/Vienna:20261031T180000
+SUMMARY:[PL] Coventry Cit : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-31-bournemouth-leeds-united@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261031T160000
+DTEND;TZID=Europe/Vienna:20261031T180000
+SUMMARY:[PL] Bournemouth : Leeds United
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-31-brentford-nottingham-f@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261031T160000
+DTEND;TZID=Europe/Vienna:20261031T180000
+SUMMARY:[PL] Brentford : Nottingham F
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-31-tottenham-ho-crystal-pala@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261031T183000
+DTEND;TZID=Europe/Vienna:20261031T203000
+SUMMARY:[PL] Tottenham Ho : Crystal Pala
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-10-31-aston-villa-fullham@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261031T210000
+DTEND;TZID=Europe/Vienna:20261031T230000
+SUMMARY:[PL] Aston Villa : Fullham
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-01-liverpool-arsenal@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261101T173000
+DTEND;TZID=Europe/Vienna:20261101T193000
+SUMMARY:[PL] Liverpool : Arsenal
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-02-newcastle-un-everton@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261102T173000
+DTEND;TZID=Europe/Vienna:20261102T193000
+SUMMARY:[PL] Newcastle Un : Everton
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-06-everton-coventry-cit@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261106T210000
+DTEND;TZID=Europe/Vienna:20261106T230000
+SUMMARY:[PL] Everton : Coventry Cit
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-07-leeds-united-tottenham-ho@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261107T133000
+DTEND;TZID=Europe/Vienna:20261107T153000
+SUMMARY:[PL] Leeds United : Tottenham Ho
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-07-arsenal-hull-city@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261107T160000
+DTEND;TZID=Europe/Vienna:20261107T180000
+SUMMARY:[PL] Arsenal : Hull City
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-07-fullham-newcastle-un@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261107T160000
+DTEND;TZID=Europe/Vienna:20261107T180000
+SUMMARY:[PL] Fullham : Newcastle Un
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-07-nottingham-f-manchester-c@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261107T183000
+DTEND;TZID=Europe/Vienna:20261107T203000
+SUMMARY:[PL] Nottingham F : Manchester C
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-08-brighton-and-brentford@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261108T150000
+DTEND;TZID=Europe/Vienna:20261108T170000
+SUMMARY:[PL] Brighton and : Brentford
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-08-crystal-pala-liverpool@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261108T150000
+DTEND;TZID=Europe/Vienna:20261108T170000
+SUMMARY:[PL] Crystal Pala : Liverpool
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-08-ipswich-town-bournemouth@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261108T150000
+DTEND;TZID=Europe/Vienna:20261108T170000
+SUMMARY:[PL] Ipswich Town : Bournemouth
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-08-sunderland-chelsea@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261108T150000
+DTEND;TZID=Europe/Vienna:20261108T170000
+SUMMARY:[PL] Sunderland : Chelsea
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-08-manchester-u-aston-villa@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261108T173000
+DTEND;TZID=Europe/Vienna:20261108T193000
+SUMMARY:[PL] Manchester U : Aston Villa
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-21-manchester-c-fullham@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261121T133000
+DTEND;TZID=Europe/Vienna:20261121T153000
+SUMMARY:[PL] Manchester C : Fullham
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-21-tottenham-ho-ipswich-town@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261121T160000
+DTEND;TZID=Europe/Vienna:20261121T180000
+SUMMARY:[PL] Tottenham Ho : Ipswich Town
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-21-coventry-cit-crystal-pala@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261121T160000
+DTEND;TZID=Europe/Vienna:20261121T180000
+SUMMARY:[PL] Coventry Cit : Crystal Pala
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-21-chelsea-leeds-united@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261121T160000
+DTEND;TZID=Europe/Vienna:20261121T180000
+SUMMARY:[PL] Chelsea : Leeds United
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-21-aston-villa-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261121T160000
+DTEND;TZID=Europe/Vienna:20261121T180000
+SUMMARY:[PL] Aston Villa : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-21-bournemouth-nottingham-f@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261121T160000
+DTEND;TZID=Europe/Vienna:20261121T180000
+SUMMARY:[PL] Bournemouth : Nottingham F
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-21-newcastle-un-arsenal@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261121T183000
+DTEND;TZID=Europe/Vienna:20261121T203000
+SUMMARY:[PL] Newcastle Un : Arsenal
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-22-hull-city-brighton-and@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261122T150000
+DTEND;TZID=Europe/Vienna:20261122T170000
+SUMMARY:[PL] Hull City : Brighton and
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-22-liverpool-manchester-u@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261122T173000
+DTEND;TZID=Europe/Vienna:20261122T193000
+SUMMARY:[PL] Liverpool : Manchester U
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-23-brentford-everton@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261123T210000
+DTEND;TZID=Europe/Vienna:20261123T230000
+SUMMARY:[PL] Brentford : Everton
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-27-nottingham-f-chelsea@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261127T210000
+DTEND;TZID=Europe/Vienna:20261127T230000
+SUMMARY:[PL] Nottingham F : Chelsea
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-28-leeds-united-coventry-cit@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261128T160000
+DTEND;TZID=Europe/Vienna:20261128T180000
+SUMMARY:[PL] Leeds United : Coventry Cit
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-28-manchester-u-brentford@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261128T160000
+DTEND;TZID=Europe/Vienna:20261128T180000
+SUMMARY:[PL] Manchester U : Brentford
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-28-ipswich-town-aston-villa@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261128T183000
+DTEND;TZID=Europe/Vienna:20261128T203000
+SUMMARY:[PL] Ipswich Town : Aston Villa
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-29-everton-liverpool@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261129T130000
+DTEND;TZID=Europe/Vienna:20261129T150000
+SUMMARY:[PL] Everton : Liverpool
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-29-brighton-and-newcastle-un@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261129T150500
+DTEND;TZID=Europe/Vienna:20261129T170500
+SUMMARY:[PL] Brighton and : Newcastle Un
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-29-crystal-pala-hull-city@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261129T150500
+DTEND;TZID=Europe/Vienna:20261129T170500
+SUMMARY:[PL] Crystal Pala : Hull City
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-29-fullham-bournemouth@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261129T150500
+DTEND;TZID=Europe/Vienna:20261129T170500
+SUMMARY:[PL] Fullham : Bournemouth
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-29-sunderland-tottenham-ho@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261129T150500
+DTEND;TZID=Europe/Vienna:20261129T170500
+SUMMARY:[PL] Sunderland : Tottenham Ho
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-11-29-arsenal-manchester-c@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261129T173000
+DTEND;TZID=Europe/Vienna:20261129T193000
+SUMMARY:[PL] Arsenal : Manchester C
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-01-coventry-cit-ipswich-town@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261201T210000
+DTEND;TZID=Europe/Vienna:20261201T230000
+SUMMARY:[PL] Coventry Cit : Ipswich Town
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-02-hull-city-nottingham-f@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261202T203000
+DTEND;TZID=Europe/Vienna:20261202T223000
+SUMMARY:[PL] Hull City : Nottingham F
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-02-liverpool-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261202T203000
+DTEND;TZID=Europe/Vienna:20261202T223000
+SUMMARY:[PL] Liverpool : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-02-chelsea-crystal-pala@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261202T203000
+DTEND;TZID=Europe/Vienna:20261202T223000
+SUMMARY:[PL] Chelsea : Crystal Pala
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-02-manchester-c-leeds-united@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261202T203000
+DTEND;TZID=Europe/Vienna:20261202T223000
+SUMMARY:[PL] Manchester C : Leeds United
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-02-aston-villa-everton@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261202T211500
+DTEND;TZID=Europe/Vienna:20261202T231500
+SUMMARY:[PL] Aston Villa : Everton
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-02-bournemouth-brighton-and@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261202T211500
+DTEND;TZID=Europe/Vienna:20261202T231500
+SUMMARY:[PL] Bournemouth : Brighton and
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-02-brentford-arsenal@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261202T211500
+DTEND;TZID=Europe/Vienna:20261202T231500
+SUMMARY:[PL] Brentford : Arsenal
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-02-newcastle-un-manchester-u@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261202T211500
+DTEND;TZID=Europe/Vienna:20261202T231500
+SUMMARY:[PL] Newcastle Un : Manchester U
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-03-tottenham-ho-fullham@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261203T210000
+DTEND;TZID=Europe/Vienna:20261203T230000
+SUMMARY:[PL] Tottenham Ho : Fullham
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-05-chelsea-liverpool@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261205T133000
+DTEND;TZID=Europe/Vienna:20261205T153000
+SUMMARY:[PL] Chelsea : Liverpool
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-05-manchester-u-coventry-cit@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261205T160000
+DTEND;TZID=Europe/Vienna:20261205T180000
+SUMMARY:[PL] Manchester U : Coventry Cit
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-05-aston-villa-crystal-pala@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261205T160000
+DTEND;TZID=Europe/Vienna:20261205T180000
+SUMMARY:[PL] Aston Villa : Crystal Pala
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-05-bournemouth-hull-city@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261205T160000
+DTEND;TZID=Europe/Vienna:20261205T180000
+SUMMARY:[PL] Bournemouth : Hull City
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-05-leeds-united-ipswich-town@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261205T160000
+DTEND;TZID=Europe/Vienna:20261205T180000
+SUMMARY:[PL] Leeds United : Ipswich Town
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-05-nottingham-f-brighton-and@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261205T183000
+DTEND;TZID=Europe/Vienna:20261205T203000
+SUMMARY:[PL] Nottingham F : Brighton and
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-05-brentford-manchester-c@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261205T210000
+DTEND;TZID=Europe/Vienna:20261205T230000
+SUMMARY:[PL] Brentford : Manchester C
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-06-everton-fullham@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261206T150000
+DTEND;TZID=Europe/Vienna:20261206T170000
+SUMMARY:[PL] Everton : Fullham
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-06-newcastle-un-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261206T150000
+DTEND;TZID=Europe/Vienna:20261206T170000
+SUMMARY:[PL] Newcastle Un : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-06-tottenham-ho-arsenal@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261206T173000
+DTEND;TZID=Europe/Vienna:20261206T193000
+SUMMARY:[PL] Tottenham Ho : Arsenal
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-12-fullham-brentford@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261212T160000
+DTEND;TZID=Europe/Vienna:20261212T180000
+SUMMARY:[PL] Fullham : Brentford
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-12-ipswich-town-newcastle-un@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261212T160000
+DTEND;TZID=Europe/Vienna:20261212T180000
+SUMMARY:[PL] Ipswich Town : Newcastle Un
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-12-liverpool-leeds-united@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261212T160000
+DTEND;TZID=Europe/Vienna:20261212T180000
+SUMMARY:[PL] Liverpool : Leeds United
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-12-manchester-c-chelsea@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261212T183000
+DTEND;TZID=Europe/Vienna:20261212T203000
+SUMMARY:[PL] Manchester C : Chelsea
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-13-brighton-and-everton@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261213T150000
+DTEND;TZID=Europe/Vienna:20261213T170000
+SUMMARY:[PL] Brighton and : Everton
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-13-sunderland-nottingham-f@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261213T150000
+DTEND;TZID=Europe/Vienna:20261213T170000
+SUMMARY:[PL] Sunderland : Nottingham F
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-13-arsenal-bournemouth@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261213T150000
+DTEND;TZID=Europe/Vienna:20261213T170000
+SUMMARY:[PL] Arsenal : Bournemouth
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-13-coventry-cit-aston-villa@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261213T173000
+DTEND;TZID=Europe/Vienna:20261213T193000
+SUMMARY:[PL] Coventry Cit : Aston Villa
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-13-crystal-pala-manchester-u@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261213T200000
+DTEND;TZID=Europe/Vienna:20261213T220000
+SUMMARY:[PL] Crystal Pala : Manchester U
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-14-hull-city-tottenham-ho@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261214T210000
+DTEND;TZID=Europe/Vienna:20261214T230000
+SUMMARY:[PL] Hull City : Tottenham Ho
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-19-brentford-newcastle-un@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261219T133000
+DTEND;TZID=Europe/Vienna:20261219T153000
+SUMMARY:[PL] Brentford : Newcastle Un
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-19-bournemouth-coventry-cit@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261219T160000
+DTEND;TZID=Europe/Vienna:20261219T180000
+SUMMARY:[PL] Bournemouth : Coventry Cit
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-19-leeds-united-fullham@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261219T160000
+DTEND;TZID=Europe/Vienna:20261219T180000
+SUMMARY:[PL] Leeds United : Fullham
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-19-manchester-c-hull-city@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261219T160000
+DTEND;TZID=Europe/Vienna:20261219T180000
+SUMMARY:[PL] Manchester C : Hull City
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-19-nottingham-f-everton@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261219T160000
+DTEND;TZID=Europe/Vienna:20261219T180000
+SUMMARY:[PL] Nottingham F : Everton
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-19-liverpool-tottenham-ho@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261219T183000
+DTEND;TZID=Europe/Vienna:20261219T203000
+SUMMARY:[PL] Liverpool : Tottenham Ho
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-20-brighton-and-ipswich-town@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261220T150000
+DTEND;TZID=Europe/Vienna:20261220T170000
+SUMMARY:[PL] Brighton and : Ipswich Town
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-20-sunderland-crystal-pala@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261220T150000
+DTEND;TZID=Europe/Vienna:20261220T170000
+SUMMARY:[PL] Sunderland : Crystal Pala
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-20-arsenal-manchester-u@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261220T173000
+DTEND;TZID=Europe/Vienna:20261220T193000
+SUMMARY:[PL] Arsenal : Manchester U
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-21-chelsea-aston-villa@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261221T210000
+DTEND;TZID=Europe/Vienna:20261221T230000
+SUMMARY:[PL] Chelsea : Aston Villa
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-26-aston-villa-leeds-united@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261226T133000
+DTEND;TZID=Europe/Vienna:20261226T153000
+SUMMARY:[PL] Aston Villa : Leeds United
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-26-everton-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261226T160000
+DTEND;TZID=Europe/Vienna:20261226T180000
+SUMMARY:[PL] Everton : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-26-fullham-brighton-and@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261226T160000
+DTEND;TZID=Europe/Vienna:20261226T180000
+SUMMARY:[PL] Fullham : Brighton and
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-26-ipswich-town-brentford@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261226T160000
+DTEND;TZID=Europe/Vienna:20261226T180000
+SUMMARY:[PL] Ipswich Town : Brentford
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-26-tottenham-ho-bournemouth@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261226T160000
+DTEND;TZID=Europe/Vienna:20261226T180000
+SUMMARY:[PL] Tottenham Ho : Bournemouth
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-26-hull-city-liverpool@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261226T183000
+DTEND;TZID=Europe/Vienna:20261226T203000
+SUMMARY:[PL] Hull City : Liverpool
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-26-newcastle-un-manchester-c@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261226T210000
+DTEND;TZID=Europe/Vienna:20261226T230000
+SUMMARY:[PL] Newcastle Un : Manchester C
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-27-coventry-cit-chelsea@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261227T150000
+DTEND;TZID=Europe/Vienna:20261227T170000
+SUMMARY:[PL] Coventry Cit : Chelsea
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-27-manchester-u-nottingham-f@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261227T173000
+DTEND;TZID=Europe/Vienna:20261227T193000
+SUMMARY:[PL] Manchester U : Nottingham F
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-27-crystal-pala-arsenal@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261227T200000
+DTEND;TZID=Europe/Vienna:20261227T220000
+SUMMARY:[PL] Crystal Pala : Arsenal
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-29-hull-city-leeds-united@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261229T203000
+DTEND;TZID=Europe/Vienna:20261229T223000
+SUMMARY:[PL] Hull City : Leeds United
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-29-tottenham-ho-brighton-and@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261229T203000
+DTEND;TZID=Europe/Vienna:20261229T223000
+SUMMARY:[PL] Tottenham Ho : Brighton and
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-29-everton-manchester-c@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261229T211500
+DTEND;TZID=Europe/Vienna:20261229T231500
+SUMMARY:[PL] Everton : Manchester C
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-30-coventry-cit-brentford@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261230T203000
+DTEND;TZID=Europe/Vienna:20261230T223000
+SUMMARY:[PL] Coventry Cit : Brentford
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-30-crystal-pala-bournemouth@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261230T203000
+DTEND;TZID=Europe/Vienna:20261230T223000
+SUMMARY:[PL] Crystal Pala : Bournemouth
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-30-fullham-arsenal@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261230T203000
+DTEND;TZID=Europe/Vienna:20261230T223000
+SUMMARY:[PL] Fullham : Arsenal
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-30-manchester-u-sunderland@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261230T203000
+DTEND;TZID=Europe/Vienna:20261230T223000
+SUMMARY:[PL] Manchester U : Sunderland
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-30-newcastle-un-nottingham-f@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261230T203000
+DTEND;TZID=Europe/Vienna:20261230T223000
+SUMMARY:[PL] Newcastle Un : Nottingham F
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-30-ipswich-town-chelsea@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261230T211500
+DTEND;TZID=Europe/Vienna:20261230T231500
+SUMMARY:[PL] Ipswich Town : Chelsea
+DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
+URL:https://einseitensprung.at/pl/
+CATEGORIES:Premier League
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-2026-12-30-aston-villa-liverpool@einseitensprung.at
+DTSTAMP:20261024T205336Z
+DTSTART;TZID=Europe/Vienna:20261230T211500
+DTEND;TZID=Europe/Vienna:20261230T231500
+SUMMARY:[PL] Aston Villa : Liverpool
 DESCRIPTION:Premier League\nTipps: https://einseitensprung.at/pl/
 URL:https://einseitensprung.at/pl/
 CATEGORIES:Premier League
