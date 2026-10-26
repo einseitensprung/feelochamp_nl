@@ -160,6 +160,10 @@ body.page-jump{
   background: linear-gradient(160deg, var(--acc-text), var(--acc) 55%, var(--acc-2));
   -webkit-background-clip:text; background-clip:text; color:transparent;
 }
+/* ÖFB-Cup: Kürzel in Rot-Weiß-Rot, waagrechte Streifen von oben nach unten */
+.jump-card[data-c="oec"] .jump-code{
+  background-image: linear-gradient(180deg, #ed2939 0 33%, #fff 33% 56%, #ed2939 56% 100%);
+}
 .jump-name{ font-weight:800; font-size:1.08rem; margin-top:.7rem; line-height:1.25; }
 .jump-sub{ color: var(--slate); font-size:.85rem; margin-top:.35rem; line-height:1.45; }
 .jump-go{
