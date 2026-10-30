@@ -23,7 +23,7 @@ const ROUNDS = [
   { id: 'cl', ko: true, name: 'Champions League' },
   { id: 'el', ko: true, name: 'Europa League' },
   { id: 'nl', ko: true, name: 'Nations League' },
-  { id: 'db', ko: false, name: 'Deutsche Bundesliga' },
+  { id: 'db', path: 'dbl', ko: false, name: 'Deutsche Bundesliga' }, // liegt unter /dbl/, id bleibt db (CSS-Klassen, ics/db.ics)
   { id: 'oel', ko: false, name: 'Österreichische Bundesliga' },
   { id: 'zwa', ko: false, name: '2. Liga' },
   { id: 'pl', ko: false, name: 'Premier League' },
@@ -197,7 +197,7 @@ async function main() {
   const events = [];
   let failed = 0;
   for (const r of ROUNDS) {
-    const url = `https://einseitensprung.at/${r.id}/kalender.asp`;
+    const url = `https://einseitensprung.at/${r.path || r.id}/kalender.asp`;
     try {
       const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 feelochamp-jumpkalender' } });
       if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
