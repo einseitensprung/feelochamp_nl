@@ -193,19 +193,29 @@ function parseKO(src) {
 }
 
 async function main() {
+  const prev = readPrevious();
   const events = [];
+  let failed = 0;
   for (const r of ROUNDS) {
     const url = `https://einseitensprung.at/${r.id}/kalender.asp`;
-    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 feelochamp-jumpkalender' } });
-    if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
-    const src = await res.text();
-    const liga = parseLiga(src);
-    const ko = r.ko ? parseKO(src) : [];
-    console.log(`${r.id}: ${liga.length} Spiele${r.ko ? ` + ${ko.length} K.o.-Platzhalter` : ''}`);
-    for (const e of liga.concat(ko)) events.push({ c: r.id, ...e });
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 feelochamp-jumpkalender' } });
+      if (!res.ok) throw new Error(`${url}: HTTP ${res.status}`);
+      const src = await res.text();
+      const liga = parseLiga(src);
+      const ko = r.ko ? parseKO(src) : [];
+      console.log(`${r.id}: ${liga.length} Spiele${r.ko ? ` + ${ko.length} K.o.-Platzhalter` : ''}`);
+      for (const e of liga.concat(ko)) events.push({ c: r.id, ...e });
+    } catch (e) {
+      // Runde nicht abrufbar (z. B. passwortgeschützt): letzte bekannte Termine behalten
+      failed++;
+      const kept = prev ? prev.events.filter((ev) => ev.c === r.id) : [];
+      console.log(`::warning::${r.id}: ${e.message} – ${kept.length} bisherige Termine behalten`);
+      events.push(...kept);
+    }
   }
+  if (failed === ROUNDS.length) throw new Error('Keine Runde abrufbar');
   events.sort((a, b) => a.d.localeCompare(b.d) || a.t.localeCompare(b.t) || a.c.localeCompare(b.c));
-  const prev = readPrevious();
   const unchanged = prev && JSON.stringify(prev.events) === JSON.stringify(events);
   if (unchanged && !process.argv.includes('--force')) {
     if (!fs.existsSync(path.join(ICS_DIR, 'alle.ics'))) writeICS(prev);
