@@ -9,7 +9,7 @@
   var TABS = [
     { label: 'Europa League', short: 'EL', href: 'https://einseitensprung.at/el/' },
     { label: 'Champions League', short: 'CL', href: 'https://einseitensprung.at/cl/' },
-    { label: 'Deutsche Bundesliga', short: 'DL', href: 'https://einseitensprung.at/db/' },
+    { label: 'Deutsche Bundesliga', short: 'DL', href: 'https://einseitensprung.at/dbl/' },
   ];
 
   var nav = document.createElement('nav');
